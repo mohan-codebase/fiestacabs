@@ -34,11 +34,11 @@ const Banner = () => {
         {
             id: 3,
             image: "/images/home/banner/banner-3.png", // Placeholder
-            title: "Safe, Reliable, and Smart Corporate Transport.",
+            title: "Tailored Transport Solutions for Every Business Need.",
             subtitle:
-                "Experience the best in class employee transportation services with our dedicated fleet and professional drivers.",
-            cta: "Our Services",
-            ctaLink: "/services",
+                "From daily commutes to airport transfers, we design flexible, scalable transport solutions that adapt to your business requirements.",
+            cta: "Explore Solutions",
+            ctaLink: "/solutions",
         },
     ];
 
