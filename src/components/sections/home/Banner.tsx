@@ -33,7 +33,7 @@ const Banner = () => {
         },
         {
             id: 3,
-            image: "/images/home/banner/banner-3.png", // Placeholder
+            image: "/images/home/banner/banner-3.jpg",
             title: "Tailored Transport Solutions for Every Business Need.",
             subtitle:
                 "From daily commutes to airport transfers, we design flexible, scalable transport solutions that adapt to your business requirements.",
