@@ -22,7 +22,7 @@ const Header = () => {
 
     return (
         <header className="fixed top-0 left-0 w-full z-50 bg-[#1a1a1a] text-white shadow-md">
-            <div className="container mx-auto px-4 py-7 flex items-center justify-between">
+            <div className="max-w-[1440px] mx-auto px-4 py-4 flex items-center justify-between">
                 {/* Logo Section */}
                 <div className="flex items-center">
                     {/* Placeholder for Logo if image not available, mimicking the design */}
@@ -50,7 +50,7 @@ const Header = () => {
                             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                         </button>
                         <div className="absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
-                            <Link href="/about" className="block px-4 py-2 hover:bg-gray-100">Company Profile</Link>
+                            <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-100">About Us</Link>
                             <Link href="/team" className="block px-4 py-2 hover:bg-gray-100">Our Team</Link>
                             <Link href="/mission" className="block px-4 py-2 hover:bg-gray-100">Mission & Vision</Link>
                         </div>
@@ -120,7 +120,7 @@ const Header = () => {
                             </button>
                             {activeDropdown === 'about' && (
                                 <div className="pl-4 mt-2 space-y-2 text-gray-300">
-                                    <Link href="/about" className="block hover:text-white" onClick={toggleMobileMenu}>Company Profile</Link>
+                                    <Link href="/about-us" className="block hover:text-white" onClick={toggleMobileMenu}>About Us</Link>
                                     <Link href="/team" className="block hover:text-white" onClick={toggleMobileMenu}>Our Team</Link>
                                     <Link href="/mission" className="block hover:text-white" onClick={toggleMobileMenu}>Mission & Vision</Link>
                                 </div>

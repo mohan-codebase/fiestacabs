@@ -19,31 +19,31 @@ const Banner = () => {
             subtitle:
                 "Fiesta Smart Mobility leads the EV revolution with zero-emission, tech-enabled employee transport for a clean, connected, carbon-free future.",
             cta: "Know More",
-            ctaLink: "/about",
+            ctaLink: "/",
         },
         // Add more slides here if needed
         {
             id: 2,
             image: "/images/home/banner/banner-2.png", // Placeholder
-            title: "Safe, Reliable, and Smart Corporate Transport.",
+            title: "Renting a car - Made Easy Safe and Simple",
             subtitle:
-                "Experience the best in class employee transportation services with our dedicated fleet and professional drivers.",
-            cta: "Our Services",
-            ctaLink: "/services",
+                "Just Rent, Rent is our Responsibility . Relax and Reach your Destination safe with guaranteed comfort.",
+            cta: "Know More",
+            ctaLink: "/",
         },
         {
             id: 3,
             image: "/images/home/banner/banner-3.jpg",
-            title: "Tailored Transport Solutions for Every Business Need.",
+            title: "Safely Connecting Work and Home!",
             subtitle:
-                "From daily commutes to airport transfers, we design flexible, scalable transport solutions that adapt to your business requirements.",
-            cta: "Explore Solutions",
-            ctaLink: "/solutions",
+                "With over 25 years of expertise in employee transport solutions, our company ensures safe, reliable, and comfortable travel from office to home.",
+            cta: "Know More",
+            ctaLink: "/",
         },
     ];
 
     return (
-        <section className="relative w-full h-[600px] md:h-[700px] lg:h-[800px] bg-gray-900 text-white overflow-hidden">
+        <section className="relative w-full h-[600px] md:h-[800px] lg:h-[800px] bg-gray-900 text-white overflow-hidden">
             <Swiper
                 spaceBetween={0}
                 centeredSlides={true}
@@ -57,8 +57,7 @@ const Banner = () => {
                         return '<span class="' + className + ' swiper-pagination-bullet-custom"></span>';
                     },
                 }}
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation, EffectFade]}
+                modules={[Autoplay, Pagination, EffectFade]}
                 effect="fade"
                 className="mySwiper w-full h-full"
             >
@@ -81,7 +80,7 @@ const Banner = () => {
 
                             {/* Content */}
                             <div className="relative z-20 text-center px-4 max-w-5xl mx-auto">
-                                <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-lg">
+                                <h1 className="text-3xl md:text-5xl  font-bold mb-6 leading-tight drop-shadow-lg">
                                     {slide.title}
                                 </h1>
                                 <p className="text-lg md:text-xl lg:text-2xl text-gray-200 mb-8 max-w-3xl mx-auto drop-shadow-md">
@@ -89,7 +88,7 @@ const Banner = () => {
                                 </p>
                                 <Link
                                     href={slide.ctaLink}
-                                    className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white font-bold py-3 px-8 rounded shadow-lg transition-transform transform hover:scale-105"
+                                    className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white font-bold py-3 px-8 rounded shadow-lg transition-transform transform "
                                 >
                                     {slide.cta}
                                 </Link>
