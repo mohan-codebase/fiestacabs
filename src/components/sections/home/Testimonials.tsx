@@ -18,7 +18,17 @@ interface Testimonial {
     rating: number;
 }
 
-const Testimonials = () => {
+interface TestimonialsProps {
+    eyebrow?: string;
+    title?: string;
+    showEyebrow?: boolean;
+}
+
+const Testimonials = ({
+    eyebrow = "TESTIMONIALS",
+    title = "What our customer says",
+    showEyebrow = true,
+}: TestimonialsProps) => {
     const testimonials: Testimonial[] = [
         {
             id: "1",
@@ -82,11 +92,13 @@ const Testimonials = () => {
             <div className="max-w-[1440px] mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <p className="text-[#D32F2F] uppercase tracking-wider text-sm font-semibold mb-3">
-                        TESTIMONIALS
-                    </p>
+                    {showEyebrow && (
+                        <p className="text-[#D32F2F] uppercase tracking-wider text-sm font-semibold mb-3">
+                            {eyebrow}
+                        </p>
+                    )}
                     <h2 className="text-4xl md:text-4xl font-bold text-gray-900">
-                        What our customer says
+                        {title}
                     </h2>
                 </div>
 

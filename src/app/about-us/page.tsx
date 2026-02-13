@@ -2,6 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Button from "../../components/common/Button";
 import PageHero from "../../components/common/PageHero";
+import WhyChooseUs from "../../components/sections/aboutus/WhyChooseUs";
+import MissionVisible from "../../components/sections/aboutus/MissionVisible";
 
 export const metadata = {
     title: "About Us - Fiesta Smart Mobility",
@@ -15,83 +17,40 @@ export default function AboutUs() {
             id: "1",
             name: "John Doe",
             position: "CEO & Founder",
-            image: "/images/about/team/leader-1.jpg",
+            image: "/images/about-us/meet-our-leaders/Agnello G Fernandes.jpg",
         },
         {
             id: "2",
             name: "Jane Smith",
             position: "Chief Operating Officer",
-            image: "/images/about/team/leader-2.jpg",
+            image: "/images/about-us/meet-our-leaders/Avasarala Sriniva Rao.jpg",
         },
         {
             id: "3",
             name: "Michael Brown",
             position: "Chief Technology Officer",
-            image: "/images/about/team/leader-3.jpg",
+            image: "/images/about-us/meet-our-leaders/G.Panchatcharam.jpg",
         },
         {
             id: "4",
             name: "Sarah Johnson",
             position: "Head of Operations",
-            image: "/images/about/team/leader-4.jpg",
+            image: "/images/about-us/meet-our-leaders/G.Suresh Kumar.jpg",
         },
         {
             id: "5",
             name: "David Wilson",
             position: "Head of Sales",
-            image: "/images/about/team/leader-5.jpg",
+            image: "/images/about-us/meet-our-leaders/M.Pandimanian.jpg",
         },
         {
             id: "6",
             name: "Emily Davis",
             position: "Head of Customer Success",
-            image: "/images/about/team/leader-6.jpg",
+            image: "/images/about-us/meet-our-leaders/V.Sajju Kumar.jpg",
         },
-    ];
 
-    const benefits = [
-        {
-            id: "1",
-            title: "Favorite Delivery Service",
-            description:
-                "Our commitment to excellence and customer satisfaction has made us the preferred choice for businesses across industries.",
-            image: "/images/about/benefits/delivery-service.jpg",
-        },
-        {
-            id: "2",
-            title: "24/7 Customer Support",
-            description:
-                "Round-the-clock support ensures your transportation needs are met anytime, anywhere with immediate assistance.",
-            image: "/images/about/benefits/customer-support.jpg",
-        },
-        {
-            id: "3",
-            title: "100% Secure & Eco-Friendly",
-            description:
-                "Our eco-friendly fleet and secure transportation protocols ensure safe, sustainable journeys for all passengers.",
-            image: "/images/about/benefits/eco-friendly.jpg",
-        },
-        {
-            id: "4",
-            title: "Fast & Reliable Service",
-            description:
-                "Punctuality is our priority. We ensure timely pickups and drop-offs with our efficient fleet management.",
-            image: "/images/about/benefits/fast-service.jpg",
-        },
-        {
-            id: "5",
-            title: "Flexible Payment Options",
-            description:
-                "Multiple payment methods including digital wallets, cards, and corporate billing for your convenience.",
-            image: "/images/about/benefits/payment-options.jpg",
-        },
-        {
-            id: "6",
-            title: "Experienced Drivers",
-            description:
-                "Our professional, verified drivers undergo rigorous training and background checks for your safety.",
-            image: "/images/about/benefits/experienced-drivers.jpg",
-        },
+
     ];
 
     return (
@@ -100,21 +59,24 @@ export default function AboutUs() {
             <PageHero
                 title="About Us"
                 subtitle="Your trusted partner in smart mobility solutions"
-                backgroundImage="/images/about/hero-banner.jpg"
+                backgroundImage="/images/about-us/banner/about-us-banner.jpg"
                 height="md"
             />
+
+            {/* Vision & Mission */}
+            <MissionVisible />
 
             {/* Company Information */}
             <section className="w-full py-20 bg-white">
                 <div className="max-w-[1440px] mx-auto px-4">
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         {/* Left - Image */}
-                        <div className="relative h-[400px] rounded-2xl overflow-hidden">
+                        <div className="relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden">
                             <Image
-                                src="/images/about/company-info.jpg"
+                                src="/images/about-us/about-us.png"
                                 alt="Fiesta Smart Mobility"
                                 fill
-                                style={{ objectFit: "cover" }}
+                                style={{ objectFit: "contain" }}
                             />
                         </div>
 
@@ -163,7 +125,7 @@ export default function AboutUs() {
             </section>
 
             {/* Leadership Team */}
-            <section className="w-full py-20 bg-gray-50">
+            <section className="w-full py-20 ">
                 <div className="max-w-[1440px] mx-auto px-4">
                     <div className="text-center mb-16">
                         <h2 className="text-4xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -179,14 +141,14 @@ export default function AboutUs() {
                         {leaders.map((leader) => (
                             <div
                                 key={leader.id}
-                                className="bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-lg transition-shadow duration-300"
+                                className=" rounded-2xl overflow-hidden  "
                             >
-                                <div className="relative h-80">
+                                <div className="relative h-80 w-full">
                                     <Image
                                         src={leader.image}
                                         alt={leader.name}
                                         fill
-                                        style={{ objectFit: "cover" }}
+                                        style={{ objectFit: "contain" }}
                                     />
                                 </div>
                                 <div className="p-6 text-center">
@@ -202,46 +164,7 @@ export default function AboutUs() {
             </section>
 
             {/* Why Customers Choose Us */}
-            <section className="w-full py-20 bg-white">
-                <div className="max-w-[1440px] mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-4xl font-bold text-gray-900 mb-4">
-                            Why Customers Choose Us
-                        </h2>
-                        <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-                            Discover what makes us the preferred choice for
-                            transportation services
-                        </p>
-                    </div>
-
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                        {benefits.map((benefit) => (
-                            <div
-                                key={benefit.id}
-                                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300"
-                            >
-                                <div className="relative h-48 overflow-hidden">
-                                    <Image
-                                        src={benefit.image}
-                                        alt={benefit.title}
-                                        fill
-                                        style={{ objectFit: "cover" }}
-                                        className="group-hover:scale-110 transition-transform duration-300"
-                                    />
-                                </div>
-                                <div className="p-6">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-3">
-                                        {benefit.title}
-                                    </h3>
-                                    <p className="text-gray-700 leading-relaxed">
-                                        {benefit.description}
-                                    </p>
-                                </div>
-                            </div>
-                        ))}
-                    </div>
-                </div>
-            </section>
+            <WhyChooseUs />
 
             {/* CTA Section */}
             <section className="w-full py-20 bg-[#D32F2F]">

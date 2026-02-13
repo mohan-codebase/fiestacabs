@@ -2,7 +2,6 @@ import Image from "next/image";
 import Banner from "../components/sections/home/Banner";
 import Milestones from "../components/sections/home/Milestones";
 import Partners from "../components/sections/home/Partners";
-import About from "../components/sections/home/About";
 import CarCategories from "../components/sections/home/CarCategories";
 import Services from "../components/sections/home/Services";
 import Experience from "../components/sections/home/Experience";
@@ -15,7 +14,6 @@ export default function Home() {
       <Banner />
       <Milestones />
       <Partners />
-      <About />
       <CarCategories />
       <Services />
       <Experience />
