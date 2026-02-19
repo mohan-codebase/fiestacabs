@@ -91,7 +91,7 @@ const Header = () => {
                                     <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path></svg>
                                 </Link>
                                 <div className="absolute left-full top-0 ml-1 w-64 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover/sub:opacity-100 group-hover/sub:visible transition-all duration-300 transform origin-top-left z-50">
-                                    <Link href="/" className="block px-4 py-2 hover:bg-gray-100">Outstation Rides</Link>
+                                    <Link href="/outstation-rides" className="block px-4 py-2 hover:bg-gray-100">Outstation Rides</Link>
                                     <Link href="/wedding-cars" className="block px-4 py-2 hover:bg-gray-100">Wedding Cars</Link>
                                     <Link href="/corporate-car-rental-service" className="block px-4 py-2 hover:bg-gray-100">Corporate Car Rental Service</Link>
                                 </div>

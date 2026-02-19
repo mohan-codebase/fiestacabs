@@ -14,6 +14,11 @@ const nextConfig: NextConfig = {
         hostname: "www.fiestacabs.com",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "images.unsplash.com",
+        pathname: "/**",
+      },
     ],
   },
 };
