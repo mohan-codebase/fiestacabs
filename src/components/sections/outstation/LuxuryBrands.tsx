@@ -3,16 +3,18 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
-import { SiBmw, SiKia, SiToyota, SiVolvo, SiMercedes } from "react-icons/si";
+import Image from "next/image";
 import "swiper/css";
 
 const LuxuryBrands = () => {
     const brands = [
-        { name: "BMW", icon: <SiBmw /> },
-        { name: "Kia", icon: <SiKia /> },
-        { name: "Toyota", icon: <SiToyota /> },
-        { name: "Volvo", icon: <SiVolvo /> },
-        { name: "Mercedes", icon: <SiMercedes /> },
+        { name: "Benz", src: "/images/services-offered/premium-car-rentals/outstation-rides/benz.png" },
+        { name: "BMW", src: "/images/services-offered/premium-car-rentals/outstation-rides/bmw.png" },
+        { name: "Toyota", src: "/images/services-offered/premium-car-rentals/outstation-rides/toyota.png" },
+        { name: "Volvo", src: "/images/services-offered/premium-car-rentals/outstation-rides/volvo.png" },
+        { name: "Audi", src: "/images/services-offered/premium-car-rentals/outstation-rides/audi.png" },
+        { name: "Jaguar", src: "/images/services-offered/premium-car-rentals/outstation-rides/jaguar.png" },
+        { name: "Kia", src: "/images/services-offered/premium-car-rentals/outstation-rides/kia.png" },
     ];
 
     return (
@@ -48,10 +50,8 @@ const LuxuryBrands = () => {
                 >
                     {[...brands, ...brands, ...brands].map((brand, index) => (
                         <SwiperSlide key={index} className="flex justify-center items-center py-4">
-                            <div className="flex flex-col items-center gap-4 group opacity-60 grayscale hover:grayscale-0 hover:opacity-100 transition-all duration-300">
-                                <div className="text-6xl md:text-7xl text-gray-700 group-hover:text-black transition-colors transform group-hover:scale-110 duration-300">
-                                    {brand.icon}
-                                </div>
+                            <div className="flex flex-col items-center gap-4 transition-all duration-300 transform hover:scale-110">
+                                <Image src={brand.src} alt={brand.name} width={120} height={80} className="object-contain" />
                             </div>
                         </SwiperSlide>
                     ))}

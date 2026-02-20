@@ -10,7 +10,7 @@ import CTA from "../../components/sections/premium/CTA";
 
 const PremiumCarRentalsPage = () => {
     return (
-        <main className="w-full pt-20">
+        <main className="w-full">
             <Hero />
             <Services />
             <Technology />

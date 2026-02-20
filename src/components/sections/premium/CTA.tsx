@@ -8,7 +8,7 @@ const CTA = () => {
     return (
         <section className="relative py-24 overflow-hidden">
             <div className="absolute inset-0 z-0">
-                <Image src="/images/premium-car-rentals/experience-bg.jpg" alt="Experience Background" fill className="object-cover brightness-[0.3]" />
+                <Image src="/images/premium-car-rentals/unnamed-8.jpg" alt="Experience Background" fill className="object-cover brightness-[0.3]" />
             </div>
             <div className="max-w-[1440px] mx-auto px-4 relative z-10 text-center text-white">
                 <h2 className="text-3xl md:text-5xl font-bold mb-8">Experience the Difference of Premium Travel</h2>

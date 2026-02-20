@@ -8,13 +8,16 @@ import Testimonials from "../../components/sections/home/Testimonials";
 import Partners from "../../components/sections/home/Partners";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";
-import VehicleShowcase from "../../components/sections/outstation/VehicleShowcase";
+
 import PopularRoutes from "../../components/sections/outstation/PopularRoutes";
 import WhyChooseUs from "../../components/sections/outstation/WhyChooseUs";
+import InteriorGallery from "../../components/sections/outstation/InteriorGallery";
 import Cities from "../../components/sections/outstation/Cities";
 import LuxuryBrands from "../../components/sections/outstation/LuxuryBrands";
 import GroupTravel from "../../components/sections/outstation/GroupTravel";
 import BookingProcess from "../../components/sections/outstation/BookingProcess";
+import SafetyComfort from "../../components/sections/outstation/SafetyComfort";
+import Offers from "../../components/sections/outstation/Offers";
 import CTA from "../../components/sections/outstation/CTA";
 
 const OutstationRidesPage = () => {
@@ -29,13 +32,16 @@ const OutstationRidesPage = () => {
         <main className="w-full relative">
             <Hero />
             <VehicleSelection />
-            <VehicleShowcase />
-            <PopularRoutes />
-            <BookingProcess />
             <WhyChooseUs />
             <Cities />
+            <InteriorGallery />
+            <PopularRoutes />
+            <BookingProcess />
+            <SafetyComfort />
+            <Testimonials eyebrow="TESTIMONIALS" title="Your Outstation Ride Starts Here" />
             <LuxuryBrands />
             <GroupTravel />
+            <Offers />
 
             {/* Floating Buttons */}
             <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3">

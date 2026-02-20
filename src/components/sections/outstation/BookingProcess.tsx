@@ -54,7 +54,7 @@ const BookingProcess = () => {
 
                         <div className="bg-gray-50 p-6 rounded-xl border-l-4 border-[#EC2028] mb-10">
                             <p className="text-gray-600">
-                                <span className="font-bold text-gray-900 block mb-2">Here’s how it works:</span>
+                                <span className="font-bold text-gray-900 block mb-2">Trip Updates:</span>
                                 You’ll get SMS and email updates for every ride. You don’t need to wait or check again. Our team will share driver contact and vehicle number in advance, all information is also available on our website.
                             </p>
                         </div>
@@ -71,8 +71,8 @@ const BookingProcess = () => {
                     <div className="w-full lg:w-1/2 relative h-[600px] lg:h-[700px]">
                         <div className="absolute inset-0 bg-gray-100 rounded-3xl overflow-hidden shadow-2xl">
                             <Image
-                                src="https://images.unsplash.com/photo-1526512340740-9217d0159da9?q=80&w=2070&auto=format&fit=crop"
-                                alt="Couple looking at map on car hood"
+                                src="/images/services-offered/premium-car-rentals/outstation-rides/easy-3-step-booking.jpg"
+                                alt="Easy 3-Step Booking Process"
                                 fill
                                 className="object-cover"
                             />

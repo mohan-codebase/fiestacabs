@@ -8,7 +8,7 @@ const CTA = () => {
     return (
         <section
             className="py-24 relative bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1519681393784-d120267933ba?q=80&w=2070&auto=format&fit=crop")' }} // Placeholder: People enjoying a road trip/sunset
+            style={{ backgroundImage: 'url("/images/services-offered/premium-car-rentals/outstation-rides/outstation-ride-starts-here.jpg")' }}
         >
             {/* Dark Overlay */}
             <div className="absolute inset-0 bg-black/60 md:bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
@@ -29,7 +29,7 @@ const CTA = () => {
                     </h2>
 
                     <p className="text-xl text-gray-200 mb-8 leading-relaxed">
-                        Need a ride beyond city limits? Fiesta makes outstation travel easy, safe, and affordable. Whether you're planning a weekend getaway or traveling for work, go where you want—with comfort and peace of mind.
+                        Need a ride beyond city limits? Fiesta makes outstation travel easy, safe, and affordable. Whether you&apos;re planning a weekend getaway or traveling for work, go where you want—with comfort and peace of mind.
                     </p>
 
                     <div className="space-y-4 mb-10">

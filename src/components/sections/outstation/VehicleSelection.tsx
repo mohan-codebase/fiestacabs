@@ -8,23 +8,23 @@ const VehicleSelection = () => {
     const vehicleTypes = [
         {
             title: "Sedans",
-            description: "For quick trips, airport drops, 2–4 passengers",
-            image: "/images/home/car-categories/standard.png",
+            description: "Efficient & comfortable for small families or solo travelers.",
+            image: "/images/services-offered/premium-car-rentals/outstation-rides/sedans.jpg",
         },
         {
             title: "SUVs",
-            description: "Spacious, great for long travel and heavy luggage",
-            image: "/images/home/car-categories/muv.png",
+            description: "More space and power for long-distance comfort.",
+            image: "/images/services-offered/premium-car-rentals/outstation-rides/suvs.jpg",
         },
         {
             title: "Minivans & Tempo Travellers",
-            description: "Large teams, client groups, or VIP guests",
-            image: "/images/home/car-categories/luxury.png",
+            description: "Ideal for large groups, team outings, and family events.",
+            image: "/images/services-offered/premium-car-rentals/outstation-rides/mini-vans.png",
         },
         {
             title: "Premium cars",
-            description: "Corolla, Camry, and Innova Crysta for top-level executives",
-            image: "/images/home/car-categories/premium.png",
+            description: "Luxury travel for executive needs and special occasions.",
+            image: "/images/services-offered/premium-car-rentals/outstation-rides/premium-cars.png",
         }
     ];
 

@@ -55,7 +55,7 @@ const PopularRoutes = () => {
                 {/* Footer Text */}
                 <div className="mb-8">
                     <p className="text-gray-600 leading-relaxed max-w-6xl">
-                        Whether you're booking a road trip, airport drop or interstate cab, we have vehicle availability across most regions in India. Companies in manufacturing, IT, retail, and pharma all use our cab services for reliable travel with family or professional contacts.
+                        Whether you&apos;re booking a road trip, airport drop or interstate cab, we have vehicle availability across most regions in India. Companies in manufacturing, IT, retail, and pharma all use our cab services for reliable travel with family or professional contacts.
                     </p>
                 </div>
                 <div className="w-24 h-1 bg-[#EC2028]"></div>

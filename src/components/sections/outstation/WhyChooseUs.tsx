@@ -2,63 +2,51 @@
 
 import React from "react";
 import Image from "next/image";
-import { FaMapMarkerAlt, FaShieldAlt, FaClock, FaClipboardList } from "react-icons/fa";
+import { FaUserPlus, FaShieldAlt, FaMapMarkedAlt } from "react-icons/fa";
 
 const WhyChooseUs = () => {
+    const reasons = [
+        {
+            title: "Flexible Trips & Payment",
+            desc: "Add stops, change route, or extend your trip. Pay only for what you travel.",
+            icon: <FaMapMarkedAlt />,
+        },
+        {
+            title: "Door-to-Door Pickup",
+            desc: "We pick you up from your doorstep and drop you exactly where you need to be.",
+            icon: <FaUserPlus />,
+        },
+        {
+            title: "Verified Driver Details",
+            desc: "Driver name, phone number, and car number shared before the trip.",
+            icon: <FaShieldAlt />,
+        },
+    ];
+
     return (
-        <section className="py-20 bg-gray-50 overflow-hidden">
-            <div className="max-w-7xl mx-auto px-4 lg:px-8">
-                <div className="flex flex-col lg:flex-row items-center gap-16">
+        <section className="py-20 bg-white">
+            <div className="max-w-[1240px] mx-auto px-4">
+                <div className="text-center mb-16">
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+                        Top Reasons to Choose Our Intercity Service
+                    </h2>
+                    <p className="text-gray-600 max-w-3xl mx-auto leading-relaxed text-lg">
+                        We are not just a cab booking app. We are a travel partner that ensures your outstation journey is as smooth as possible.
+                    </p>
+                </div>
 
-                    {/* Image - Left */}
-                    <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px]">
-                        <div className="absolute inset-0 bg-gray-200 rounded-3xl overflow-hidden shadow-2xl">
-                            <Image
-                                src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop"
-                                alt="Woman looking out of car window safely"
-                                fill
-                                className="object-cover"
-                            />
-                        </div>
-                    </div>
-
-                    {/* Text Content - Right */}
-                    <div className="w-full lg:w-1/2">
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-8 leading-tight">
-                            Travel Safely and Comfortably with Us
-                        </h2>
-
-                        <p className="text-gray-600 text-lg mb-10 leading-relaxed">
-                            We understand that companies want more than just a working car. They need secure and convenient transport, especially for employees and business guests. Here’s what makes us different:
-                        </p>
-
-                        <div className="space-y-6">
-                            {[
-                                "Every driver is background verified",
-                                "Vehicles are cleaned and sanitised after every trip",
-                                "Customer support checks every ride status",
-                                "Tracking links shared for every trip",
-                                "Corporate dashboard for billing, invoices and history"
-                            ].map((item, index) => (
-                                <div key={index} className="flex gap-4 items-center">
-                                    <div className="shrink-0 text-[#EC2028] text-2xl">
-                                        <FaShieldAlt />
-                                    </div>
-                                    <p className="text-gray-800 text-lg font-medium">{item}</p>
-                                </div>
-                            ))}
-                        </div>
-
-                        <div className="mt-10 pt-8 border-t border-gray-200">
-                            <p className="text-gray-600 mb-4">
-                                We also support airport pickups, late-night drops, and same-day outstation cab booking for visits to tourist places.
-                            </p>
-                            <p className="text-gray-600">
-                                Need shuttle service for employees or inter-office movement? We’ve set up regular routes for daily and weekly schedules. You choose the time. We take care of the travel requirements.
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    {reasons.map((reason, index) => (
+                        <div key={index} className="flex flex-col items-center text-center p-8 rounded-2xl bg-white border border-gray-100 shadow-lg hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
+                            <div className="w-20 h-20 rounded-full bg-red-50 text-[#EC2028] flex items-center justify-center text-3xl mb-6 group-hover:bg-[#EC2028] group-hover:text-white transition-colors duration-300">
+                                {reason.icon}
+                            </div>
+                            <h3 className="text-xl font-bold mb-4 text-gray-900">{reason.title}</h3>
+                            <p className="text-gray-600 leading-relaxed">
+                                {reason.desc}
                             </p>
                         </div>
-                    </div>
-
+                    ))}
                 </div>
             </div>
         </section>

@@ -36,8 +36,8 @@ const GroupTravel = () => {
                     <div className="w-full lg:w-1/2 relative h-[500px] lg:h-[600px] order-1 lg:order-2">
                         <div className="absolute inset-0 bg-gray-200 rounded-3xl overflow-hidden shadow-2xl">
                             <Image
-                                src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=2069&auto=format&fit=crop"
-                                alt="Friends enjoying a road trip group travel"
+                                src="/images/services-offered/premium-car-rentals/outstation-rides/manage-group.jpg"
+                                alt="Manage Group Travel Without Any Stress"
                                 fill
                                 className="object-cover"
                             />
