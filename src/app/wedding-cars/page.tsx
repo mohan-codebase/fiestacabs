@@ -4,9 +4,13 @@ import Milestones from "../../components/sections/home/Milestones";
 import WeddingIntro from "../../components/sections/wedding/WeddingIntro";
 import WeddingCities from "../../components/sections/wedding/WeddingCities";
 import WeddingFeatures from "../../components/sections/wedding/WeddingFeatures";
+import WeddingAddOnServices from "../../components/sections/wedding/WeddingAddOnServices";
 import WeddingFleetGrid from "../../components/sections/wedding/WeddingFleetGrid";
 import FleetShowcase from "../../components/sections/wedding/FleetShowcase";
 import WeddingReliability from "../../components/sections/wedding/WeddingReliability";
+import WeddingStories from "../../components/sections/wedding/WeddingStories";
+import LuxuryBrands from "../../components/sections/outstation/LuxuryBrands";
+import WeddingCTA from "../../components/sections/wedding/WeddingCTA";
 import FAQ from "../../components/sections/home/FAQ";
 
 export const metadata = {
@@ -24,9 +28,13 @@ const WeddingCarsPage = () => {
             <WeddingCities />
             <FleetShowcase />
             <WeddingFleetGrid />
-             <WeddingFeatures />
+            <WeddingFeatures />
             <WeddingReliability />
-           
+            <WeddingAddOnServices />
+            <LuxuryBrands />
+            <WeddingCTA />
+            <WeddingStories />
+
             <FAQ />
         </main>
     );
