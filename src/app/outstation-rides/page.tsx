@@ -7,9 +7,8 @@ import FAQ from "../../components/sections/home/FAQ";
 import Testimonials from "../../components/sections/home/Testimonials";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";
-
-import PopularRoutes from "../../components/sections/outstation/PopularRoutes";
 import WhyChooseUs from "../../components/sections/outstation/WhyChooseUs";
+import PopularRoutes from "../../components/sections/outstation/PopularRoutes";
 import InteriorGallery from "../../components/sections/outstation/InteriorGallery";
 import Cities from "../../components/sections/outstation/Cities";
 import LuxuryBrands from "../../components/sections/outstation/LuxuryBrands";
@@ -38,12 +37,10 @@ const OutstationRidesPage = () => {
             <BookingProcess />
             <SafetyComfort />
             {/* <Testimonials eyebrow="TESTIMONIALS" title="Your Outstation Ride Starts Here" /> */}
-                <CTA />
+            <CTA />
             <LuxuryBrands />
             <GroupTravel />
             <Offers />
-
-     
             <FAQ />
         </main>
     );

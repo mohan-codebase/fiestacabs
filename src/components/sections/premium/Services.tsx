@@ -10,7 +10,7 @@ const Services = () => {
             {/* Local and Outstation trips */}
             <section className="py-20 bg-white">
                 <div className="max-w-[1440px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div className="relative h-[350px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl">
+                    <div className="relative h-[350px] md:h-[450px]  overflow-hidden ">
                         <Image src="/images/premium-car-rentals/local-outstation.jpeg" alt="Local and Outstation Trips" fill className="object-cover" />
                     </div>
                     <div>
@@ -47,7 +47,7 @@ const Services = () => {
                             To Know More
                         </Link>
                     </div>
-                    <div className="relative h-[350px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl order-1 md:order-2">
+                    <div className="relative h-[350px] md:h-[450px]  overflow-hidden  order-1 md:order-2">
                         <Image src="/images/premium-car-rentals/weddings.jpg" alt="Weddings" fill className="object-cover" />
                     </div>
                 </div>
@@ -56,7 +56,7 @@ const Services = () => {
             {/* Corporate Events */}
             <section className="py-20 bg-white">
                 <div className="max-w-[1440px] mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                    <div className="relative h-[350px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl">
+                    <div className="relative h-[350px] md:h-[450px]  overflow-hidden ">
                         <Image src="/images/premium-car-rentals/corporate-events.avif" alt="Corporate Events" fill className="object-cover" />
                     </div>
                     <div>
@@ -93,7 +93,7 @@ const Services = () => {
                             To Know More
                         </button>
                     </div>
-                    <div className="relative h-[350px] md:h-[450px] rounded-2xl overflow-hidden shadow-xl order-1 md:order-2">
+                    <div className="relative h-[350px] md:h-[450px] overflow-hidden order-1 md:order-2">
                         <Image src="/images/premium-car-rentals/airport-transfers.avif" alt="Airport Transfers" fill className="object-cover" />
                     </div>
                 </div>

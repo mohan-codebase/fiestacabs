@@ -1,9 +1,10 @@
 import React from "react";
 import WeddingHero from "../../components/sections/wedding/WeddingHero";
-import Milestones from "../../components/sections/wedding/Milestones";
+import Milestones from "../../components/sections/home/Milestones";
 import WeddingIntro from "../../components/sections/wedding/WeddingIntro";
 import WeddingCities from "../../components/sections/wedding/WeddingCities";
 import WeddingFeatures from "../../components/sections/wedding/WeddingFeatures";
+import WeddingFleetGrid from "../../components/sections/wedding/WeddingFleetGrid";
 import FleetShowcase from "../../components/sections/wedding/FleetShowcase";
 import WeddingReliability from "../../components/sections/wedding/WeddingReliability";
 import FAQ from "../../components/sections/home/FAQ";
@@ -19,11 +20,13 @@ const WeddingCarsPage = () => {
         <main className="w-full bg-white relative">
             <WeddingHero />
             <Milestones />
-            <WeddingFeatures />
             <WeddingIntro />
             <WeddingCities />
             <FleetShowcase />
+            <WeddingFleetGrid />
+             <WeddingFeatures />
             <WeddingReliability />
+           
             <FAQ />
         </main>
     );

@@ -10,7 +10,7 @@ const Technology = () => {
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     <div className="w-full lg:w-1/2 relative h-[300px] md:h-[400px]">
-                        <Image src="/images/premium-car-rentals/technology.png" alt="Technology" fill className="object-contain" />
+                        <Image src="/images/premium-car-rentals/technology.png" alt="Technology" fill className="object-cover" />
                     </div>
                     <div className="w-full lg:w-1/2">
                         <span className="bg-[#EC2028] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Technology Travel Solutions</span>

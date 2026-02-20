@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const CTA = () => {
     return (
-        <section className="relative py-24 overflow-hidden">
+        <section className="relative py-24 overflow-hidden md:mb-20">
             <div className="absolute inset-0 z-0">
                 <Image src="/images/premium-car-rentals/unnamed-8.jpg" alt="Experience Background" fill className="object-cover brightness-[0.3]" />
             </div>

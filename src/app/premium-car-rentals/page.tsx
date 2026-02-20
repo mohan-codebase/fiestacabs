@@ -15,7 +15,6 @@ const PremiumCarRentalsPage = () => {
             <Services />
             <Technology />
             <CTA />
-            <Testimonials eyebrow="WHAT CLIENTS SAY" title="What our customer says" />
             <FAQ />
         </main>
     );
