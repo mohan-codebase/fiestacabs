@@ -69,12 +69,12 @@ const BookingProcess = () => {
 
                     {/* Image - Right */}
                     <div className="w-full lg:w-1/2 relative h-[600px] lg:h-[700px]">
-                        <div className="absolute inset-0 bg-gray-100 rounded-3xl overflow-hidden shadow-2xl">
+                        <div className="absolute inset-0   overflow-hidden">
                             <Image
                                 src="/images/services-offered/premium-car-rentals/outstation-rides/easy-3-step-booking.jpg"
                                 alt="Easy 3-Step Booking Process"
                                 fill
-                                className="object-cover"
+                                className="object-contain"
                             />
                         </div>
                     </div>

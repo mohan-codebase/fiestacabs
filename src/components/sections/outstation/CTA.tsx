@@ -11,7 +11,7 @@ const CTA = () => {
             style={{ backgroundImage: 'url("/images/services-offered/premium-car-rentals/outstation-rides/outstation-ride-starts-here.jpg")' }}
         >
             {/* Dark Overlay */}
-            <div className="absolute inset-0 bg-black/60 md:bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
+            <div className="absolute inset-0 bg-black/10 md:bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
 
             <div className="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
                 <div className="w-full md:w-2/3 lg:w-1/2">

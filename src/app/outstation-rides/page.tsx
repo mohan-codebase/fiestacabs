@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import FAQ from "../../components/sections/home/FAQ";
 import Testimonials from "../../components/sections/home/Testimonials";
-import Partners from "../../components/sections/home/Partners";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";
 
@@ -38,29 +37,13 @@ const OutstationRidesPage = () => {
             <PopularRoutes />
             <BookingProcess />
             <SafetyComfort />
-            <Testimonials eyebrow="TESTIMONIALS" title="Your Outstation Ride Starts Here" />
+            {/* <Testimonials eyebrow="TESTIMONIALS" title="Your Outstation Ride Starts Here" /> */}
+                <CTA />
             <LuxuryBrands />
             <GroupTravel />
             <Offers />
 
-            {/* Floating Buttons */}
-            <div className="fixed bottom-8 right-8 z-50 flex flex-col items-end gap-3">
-                <Link href="#booking-form" className="bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 px-6 rounded-full shadow-2xl flex items-center gap-2 transition-all hover:scale-105 active:scale-95 animate-bounce-slow">
-                    <FaArrowRight /> Contact Now
-                </Link>
-                <button
-                    onClick={scrollToTop}
-                    className="bg-[#EC2028] hover:bg-red-700 text-white w-10 h-10 rounded flex items-center justify-center shadow-lg transition-all hover:-translate-y-1"
-                    aria-label="Scroll to top"
-                >
-                    <FaArrowRight className="-rotate-90" />
-                </button>
-            </div>
-
-
-            <CTA />
-            <Partners />
-            <Testimonials eyebrow="TESTIMONIALS" title="What our customer says" />
+     
             <FAQ />
         </main>
     );

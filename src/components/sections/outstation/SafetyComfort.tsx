@@ -12,7 +12,7 @@ const SafetyComfort = () => {
 
                     {/* Image - Left */}
                     <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px]">
-                        <div className="absolute inset-0 bg-gray-200 rounded-3xl overflow-hidden shadow-2xl">
+                        <div className="absolute inset-0  overflow-hidden">
                             <Image
                                 src="/images/services-offered/premium-car-rentals/outstation-rides/travel-safely.jpg"
                                 alt="Travel Safely and Comfortably"

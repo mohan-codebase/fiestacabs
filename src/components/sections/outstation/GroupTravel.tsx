@@ -34,7 +34,7 @@ const GroupTravel = () => {
 
                     {/* Image - Right */}
                     <div className="w-full lg:w-1/2 relative h-[500px] lg:h-[600px] order-1 lg:order-2">
-                        <div className="absolute inset-0 bg-gray-200 rounded-3xl overflow-hidden shadow-2xl">
+                        <div className="absolute inset-0 overflow-hidden ">
                             <Image
                                 src="/images/services-offered/premium-car-rentals/outstation-rides/manage-group.jpg"
                                 alt="Manage Group Travel Without Any Stress"
