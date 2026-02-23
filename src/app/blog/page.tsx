@@ -6,74 +6,16 @@ export const metadata = {
     description: "Blogs",
 };
 
-interface BlogPost {
-    title: string;
-    excerpt: string;
-    image: string;
-    url: string;
-    date: string;
-}
-
-const posts: BlogPost[] = [
-    {
-        title: "Top Corporate Employee Transportation for Enhanced Efficiency",
-        excerpt:
-            "Top Corporate Employee Transportation for Enhanced Efficiency Can a better commute change workplace performance? It usually starts with strong corporate employee transportation systems that take",
-        image: "/images/blog/post-1.jpeg",
-        url: "/blog/top-corporate-employee-transportation-for-enhanced-efficiency",
-        date: "December 15, 2025",
-    },
-    {
-        title: "Enhancing the Mobility of People: Strategies for Effective Integration",
-        excerpt:
-            "Enhancing the Mobility of People: Strategies for Effective Integration Why in many countries, especially in India, does the mobility of people look different for each",
-        image: "/images/blog/post-2.jpeg",
-        url: "/blog/enhancing-the-mobility-of-people-strategies-for-effective-integration",
-        date: "December 11, 2025",
-    },
-    {
-        title: "Understanding Nodal Point Transport: Key Insights and Applications",
-        excerpt:
-            "Understanding Nodal Point Transport: Key Insights and Applications Why do some transport systems run smoother than others? The answer often connects to nodal point transport,",
-        image: "/images/blog/post-3.jpg",
-        url: "/blog/understanding-nodal-point-transport-key-insights-and-applications",
-        date: "December 4, 2025",
-    },
-    {
-        title: "Best Car Rental in Chennai with Driver | Affordable & Reliable Service",
-        excerpt:
-            "In a city like Chennai, where every street is alive with culture, business, and history, getting from one destination to another efficiently can make all the difference.",
-        image: "/images/blog/post-4.avif",
-        url: "/blog/best-car-rental-in-chennai-with-driver-affordable-reliable-service",
-        date: "August 26, 2025",
-    },
-    {
-        title: "Are you Looking for Top Shuttle Service Solutions for Your Daily Commute Needs ?",
-        excerpt:
-            "Home Blog Top Shuttle Service Solutions for Your Daily Commute Needs Top Shuttle Service Solutions for Your Daily Commute Needs Finding a reliable, efficient, and",
-        image: "/images/blog/post-5.jpg",
-        url: "/blog/top-shuttle-service-solutions-for-your-daily-commute-needs",
-        date: "May 24, 2025",
-    },
-    {
-        title: "Essential Guide to Wedding Car Rental for Your Special Day",
-        excerpt:
-            "Home Blog Essential Guide to Wedding Car Rental for Your Special Day Essential Guide to Wedding Car Rental for Your Special Day Your wedding day",
-        image: "/images/blog/post-6.png",
-        url: "/blog/essential-guide-to-wedding-car-rental-for-your-special-day",
-        date: "May 24, 2025",
-    },
-    {
-        title: "Why Employee Transportation Services Matter",
-        excerpt:
-            "Why Employee Transportation Services Matter Why Employee Transportation Services Matter As urban areas grow more congested and work hours increase, the need for structured employee",
-        image: "/images/blog/post-7.jpg",
-        url: "/blog/ets",
-        date: "May 24, 2025",
-    },
-];
+import { blogPosts } from "../../data/blogPosts";
 
 export default function BlogPage() {
+    const posts = blogPosts.map(post => ({
+        title: post.title,
+        excerpt: post.excerpt,
+        image: post.image,
+        url: `/blog/${post.slug}`,
+        date: post.date,
+    }));
     return (
         <div className="w-full bg-[#efefef]">
             <section className="relative min-h-[260px] md:min-h-[484px] overflow-hidden">
@@ -102,12 +44,10 @@ export default function BlogPage() {
                         {posts.map((post) => (
                             <article
                                 key={post.url}
-                                className="bg-white rounded-[12px] border border-[#e0e0e0] shadow-[0_2px_16px_rgba(0,0,0,0.08)] overflow-hidden"
+                                className="bg-white  border border-[#e0e0e0] shadow-[0_2px_16px_rgba(0,0,0,0.08)] overflow-hidden"
                             >
                                 <Link
                                     href={post.url}
-                                    target="_blank"
-                                    rel="noopener noreferrer"
                                     className="relative block w-full pt-[50%] md:pt-[58%]"
                                 >
                                     <Image
@@ -126,8 +66,6 @@ export default function BlogPage() {
                                     >
                                         <Link
                                             href={post.url}
-                                            target="_blank"
-                                            rel="noopener noreferrer"
                                             className="hover:text-[#ff2a2a] transition-colors"
                                         >
                                             {post.title}
@@ -143,8 +81,6 @@ export default function BlogPage() {
 
                                     <Link
                                         href={post.url}
-                                        target="_blank"
-                                        rel="noopener noreferrer"
                                         className="text-[11px] font-bold uppercase tracking-[0.04em] text-[#ff2a2a] hover:text-[#d10f0f] transition-colors"
                                         style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
                                     >

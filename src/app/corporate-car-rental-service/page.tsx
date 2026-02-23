@@ -1,35 +1,41 @@
-import HeroForm from "../../components/common/HeroForm";
+import React from "react";
+import CorporateHero from "../../components/sections/corporate/CorporateHero";
+import CorporateIntro from "../../components/sections/corporate/CorporateIntro";
+import CorporateWhyMatters from "../../components/sections/corporate/CorporateWhyMatters";
+import CorporateDelivers from "../../components/sections/corporate/CorporateDelivers";
+import CorporateCities from "../../components/sections/corporate/CorporateCities";
+import CorporateWhatMiss from "../../components/sections/corporate/CorporateWhatMiss";
+import CorporateHowCreates from "../../components/sections/corporate/CorporateHowCreates";
+import CorporateCTA from "../../components/sections/corporate/CorporateCTA";
+import LuxuryBrands from "../../components/sections/outstation/LuxuryBrands";
 import Testimonials from "../../components/sections/home/Testimonials";
 import FAQ from "../../components/sections/home/FAQ";
+import CorporateAdvantages from "../../components/sections/corporate/CorporateAdvantages";
+import CorporateOftenMiss from "../../components/sections/corporate/CorporateOftenMiss";
+import CorporateFleetTable from "../../components/sections/corporate/CorporateFleetTable";
 
 export const metadata = {
-    title: "Corporate Car Rental Service | Fiesta Smart Mobility",
+    title: "Best Corporate Car Rental Service | Fiesta Smart Mobility",
     description:
-        "Reliable and professional corporate car rental solutions for business meetings, airport transfers, and client visits.",
+        "Discover how to pick a reliable, cost-efficient, and professional corporate car rental service that meets your company's travel needs.",
 };
 
 const CorporateCarRentalPage = () => {
     return (
-        <div className="w-full bg-white">
-            <HeroForm
-                title="Corporate Car Rental Service"
-                subtitle="Reliable and professional car rental solutions for your business needs. Premium fleet for executives and clients."
-                imageSrc="/images/premium-car-rentals/corporate-events.avif"
-                ctaText="Get a Corporate Quote"
-            />
-
-            <section className="py-16 px-4 max-w-[1440px] mx-auto text-center">
-                <h2 className="text-3xl font-bold mb-6">Professional Corporate Mobility</h2>
-                <p className="max-w-3xl mx-auto text-gray-700 leading-relaxed">
-                    Fiesta Smart Mobility offers top-tier corporate car rental services designed for modern businesses.
-                    Whether it&apos;s airport transfers, client meetings, or daily commutes for executives,
-                    our fleet ensures comfort, punctuality, and professionalism.
-                </p>
-            </section>
-
-            <Testimonials eyebrow="Testimonials" title="Corporate Clients Love Us" showEyebrow />
+        <main className="w-full bg-white relative">
+            <CorporateHero />
+            <CorporateIntro />
+            <CorporateWhyMatters />
+            <CorporateDelivers />
+            <CorporateCities />
+            <CorporateAdvantages />
+            <CorporateWhatMiss />
+            <CorporateOftenMiss />
+            <CorporateFleetTable />
+            <CorporateHowCreates />
+            <CorporateCTA />
             <FAQ />
-        </div>
+        </main>
     );
 };
 
