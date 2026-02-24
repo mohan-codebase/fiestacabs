@@ -70,6 +70,14 @@ const Testimonials = ({
             role: "Event Management",
             rating: 5,
         },
+        {
+            id: "6",
+            quote: "We would like to thank you and your team member for excellent service to our organization. We are grateful to your team member by timely cab support to our employees for the CEO/Suppliers connect held at MSPT from 14th to 16th Dec 2023. This has been greatly helping us to meet our employee's requirement on time and supporting last minute request by responding/answering which has achieving customer satisfaction. We look forward the same level of commitment and standards in all our future projects/events, daily operations etc., Once again thanks to everyone.",
+            company: "Mahindra Research Valley",
+            person: "Admin Team",
+            role: "Admin Team",
+            rating: 5,
+        },
     ];
 
     const renderStars = (rating: number) => {

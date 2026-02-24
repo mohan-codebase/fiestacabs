@@ -3,6 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts, BlogPost, ContentBlock } from "../../../data/blogPosts";
+import Testimonials from "../../../components/sections/home/Testimonials";
+import FAQ from "../../../components/sections/home/FAQ";
+import FAQAccordion from "../../../components/common/FAQAccordion";
 
 interface PageProps {
     params: {
@@ -154,10 +157,17 @@ export default async function BlogPostPage({ params }: PageProps) {
                         </article>
 
                         {/* Bottom Decoration / FAQ section matching screenshot */}
-                        <div className="mt-20 text-center border-t border-gray-100 pt-10">
-                            <span className="text-[#EC2028] font-bold text-sm tracking-[0.2em] uppercase">Testimonials</span>
-                            <h2 className="text-3xl font-bold text-gray-900 mt-4 mb-2">What our customer says</h2>
-                            <h3 className="text-4xl font-bold text-gray-900">FAQ</h3>
+                        <div className="mt-20 border-t border-gray-100">
+                            <Testimonials eyebrow="TESTIMONIALS" title="What our customer says" />
+
+                            {post.faqs && (
+                                <div className="mt-12">
+                                    <h3 className="text-4xl font-bold text-gray-900 text-center mb-10">FAQ</h3>
+                                    <FAQAccordion items={post.faqs} defaultOpenIndex={0} />
+                                </div>
+                            )}
+
+                            {!post.faqs && <FAQ />}
                         </div>
 
                         {/* Social Share (Updated style) */}
