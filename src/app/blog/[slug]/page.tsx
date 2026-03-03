@@ -196,9 +196,9 @@ export default async function BlogPostPage({ params }: PageProps) {
                             <h3 className="text-2xl md:text-3xl font-bold text-white mb-6 leading-tight">
                                 Explore Further Blog Topics
                             </h3>
-                            <button className="bg-white text-[#EC2028] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">
+                            <Link href="/blog" className="bg-white text-[#EC2028] px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-colors shadow-lg">
                                 Click Here
-                            </button>
+                            </Link>
                         </div>
 
                         {/* Latest Posts */}

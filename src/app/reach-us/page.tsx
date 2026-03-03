@@ -1,6 +1,6 @@
-import ReachUsHero from "../../components/sections/contact/ReachUsHero";
-import ContactFormSection from "../../components/sections/contact/ContactFormSection";
-import OfficeLocations from "../../components/sections/contact/OfficeLocations";
+import ReachUsHero from "../../components/sections/reach-us/ReachUsHero";
+import ContactFormSection from "../../components/sections/reach-us/ContactFormSection";
+import OfficeLocations from "../../components/sections/reach-us/OfficeLocations";
 
 export const metadata = {
     title: "Reach Us | Fiesta Smart Mobility",

@@ -19,7 +19,7 @@ const Banner = () => {
             subtitle:
                 "Fiesta Smart Mobility leads the EV revolution with zero-emission, tech-enabled employee transport for a clean, connected, carbon-free future.",
             cta: "Know More",
-            ctaLink: "/",
+            ctaLink: "#milestones",
         },
         // Add more slides here if needed
         {
@@ -29,7 +29,7 @@ const Banner = () => {
             subtitle:
                 "Just Rent, Rent is our Responsibility . Relax and Reach your Destination safe with guaranteed comfort.",
             cta: "Know More",
-            ctaLink: "/",
+            ctaLink: "#milestones",
         },
         {
             id: 3,
@@ -38,7 +38,7 @@ const Banner = () => {
             subtitle:
                 "With over 25 years of expertise in employee transport solutions, our company ensures safe, reliable, and comfortable travel from office to home.",
             cta: "Know More",
-            ctaLink: "/",
+            ctaLink: "#milestones",
         },
     ];
 
@@ -88,7 +88,16 @@ const Banner = () => {
                                 </p>
                                 <Link
                                     href={slide.ctaLink}
-                                    className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white font-bold py-3 px-8 rounded shadow-lg transition-transform transform "
+                                    onClick={(e) => {
+                                        if (slide.ctaLink.startsWith("#")) {
+                                            e.preventDefault();
+                                            const element = document.getElementById(slide.ctaLink.substring(1));
+                                            if (element) {
+                                                element.scrollIntoView({ behavior: "smooth" });
+                                            }
+                                        }
+                                    }}
+                                    className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white font-bold py-3 px-8 rounded shadow-lg transition-transform transform cursor-pointer"
                                 >
                                     {slide.cta}
                                 </Link>

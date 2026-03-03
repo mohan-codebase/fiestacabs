@@ -26,7 +26,7 @@ const WhyDifferent = () => {
                         friction from daily commuting and reducing dependence on unreliable public transport.
                     </p>
                     <Link
-                        href="/contact"
+                        href="/reach-us"
                         className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md"
                     >
                         Talk to Our Team

@@ -4,9 +4,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import BookNowModal from "../common/BookNowModal";
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+    const [isBookNowModalOpen, setIsBookNowModalOpen] = useState(false);
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(null);
     const pathname = usePathname();
@@ -60,14 +62,29 @@ const Header = () => {
                     </Link>
 
                     <div className="relative group">
-                        <button className="flex items-center hover:text-red-500 transition-colors focus:outline-none">
+                        <Link
+                            href="/about-us"
+                            className={`flex items-center ${pathname === "/about-us" ? "text-[#EC2028]" : "hover:text-red-500"} transition-colors`}
+                        >
                             About Us
                             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-                        </button>
+                        </Link>
                         <div className="absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
                             <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-100">About Us</Link>
-                            <Link href="/team" className="block px-4 py-2 hover:bg-gray-100">Our Team</Link>
-                            <Link href="/mission" className="block px-4 py-2 hover:bg-gray-100">Mission & Vision</Link>
+                            <Link
+                                href="/about-us#leaders"
+                                className="block px-4 py-2 hover:bg-gray-100"
+                                onClick={(e) => {
+                                    if (pathname === '/about-us') {
+                                        e.preventDefault();
+                                        const element = document.getElementById('leaders');
+                                        if (element) element.scrollIntoView({ behavior: 'smooth' });
+                                    }
+                                }}
+                            >
+                                Our Team
+                            </Link>
+                            <Link href="/about-us#why-fiesta" className="block px-4 py-2 hover:bg-gray-100">Why Fiesta</Link>
                         </div>
                     </div>
 
@@ -111,16 +128,19 @@ const Header = () => {
                     <Link href="/blog" className={`${pathname === "/blog" ? "text-[#EC2028]" : "hover:text-red-500"} transition-colors`}>
                         Blog
                     </Link>
-                    <Link href="/contact" className="hover:text-red-500 transition-colors">
+                    <Link href="/reach-us" className="hover:text-red-500 transition-colors">
                         Reach Us
                     </Link>
                 </nav>
 
                 {/* CTA Button */}
                 <div className="hidden lg:block">
-                    <Link href="/book-now" className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-5 py-2 rounded shadow transition-colors font-semibold">
+                    <button
+                        onClick={() => setIsBookNowModalOpen(true)}
+                        className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-5 py-2 rounded shadow transition-colors font-semibold"
+                    >
                         Book Now
-                    </Link>
+                    </button>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -142,17 +162,39 @@ const Header = () => {
                         <Link href="/" className="hover:text-red-500 transition-colors" onClick={toggleMobileMenu}>Home</Link>
 
                         <div>
-                            <button
-                                onClick={() => toggleDropdown('about')}
-                                className="flex items-center justify-between w-full hover:text-red-500 transition-colors focus:outline-none"
-                            >
-                                About Us
-                                <svg className={`w-4 h-4 transform ${activeDropdown === 'about' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
-                            </button>
+                            <div className="flex items-center justify-between gap-2">
+                                <Link
+                                    href="/about-us"
+                                    className={`${pathname === "/about-us" ? "text-[#EC2028]" : "hover:text-red-500"} transition-colors`}
+                                    onClick={toggleMobileMenu}
+                                >
+                                    About Us
+                                </Link>
+                                <button
+                                    onClick={() => toggleDropdown('about')}
+                                    className="p-1 hover:text-red-500 transition-colors focus:outline-none"
+                                    aria-label="Toggle about menu"
+                                >
+                                    <svg className={`w-4 h-4 transform ${activeDropdown === 'about' ? 'rotate-180' : ''}`} fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
+                                </button>
+                            </div>
                             {activeDropdown === 'about' && (
                                 <div className="pl-4 mt-2 space-y-2 text-gray-300">
                                     <Link href="/about-us" className="block hover:text-white" onClick={toggleMobileMenu}>About Us</Link>
-                                    <Link href="/team" className="block hover:text-white" onClick={toggleMobileMenu}>Our Team</Link>
+                                    <Link
+                                        href="/about-us#leaders"
+                                        className="block hover:text-white"
+                                        onClick={(e) => {
+                                            toggleMobileMenu();
+                                            if (pathname === '/about-us') {
+                                                e.preventDefault();
+                                                const element = document.getElementById('leaders');
+                                                if (element) element.scrollIntoView({ behavior: 'smooth' });
+                                            }
+                                        }}
+                                    >
+                                        Our Team
+                                    </Link>
                                     <Link href="/mission" className="block hover:text-white" onClick={toggleMobileMenu}>Mission & Vision</Link>
                                 </div>
                             )}
@@ -214,14 +256,25 @@ const Header = () => {
                         >
                             Blog
                         </Link>
-                        <Link href="/contact" className="hover:text-red-500 transition-colors" onClick={toggleMobileMenu}>Reach Us</Link>
+                        <Link href="/reach-us" className="hover:text-red-500 transition-colors" onClick={toggleMobileMenu}>Reach Us</Link>
 
-                        <Link href="/book-now" className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-5 py-2 rounded shadow transition-colors font-semibold text-center mt-4" onClick={toggleMobileMenu}>
+                        <button
+                            onClick={() => {
+                                toggleMobileMenu();
+                                setIsBookNowModalOpen(true);
+                            }}
+                            className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-5 py-2 rounded shadow transition-colors font-semibold text-center mt-4 w-full"
+                        >
                             Book Now
-                        </Link>
+                        </button>
                     </nav>
                 </div>
             )}
+            {/* Book Now Modal */}
+            <BookNowModal
+                isOpen={isBookNowModalOpen}
+                onClose={() => setIsBookNowModalOpen(false)}
+            />
         </header>
     );
 };

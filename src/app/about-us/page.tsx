@@ -15,46 +15,44 @@ export default function AboutUs() {
     const leaders = [
         {
             id: "1",
-            name: "John Doe",
-            position: "CEO & Founder",
-            image: "/images/about-us/meet-our-leaders/Agnello G Fernandes.jpg",
-        },
-        {
-            id: "2",
-            name: "Jane Smith",
-            position: "Chief Operating Officer",
-            image: "/images/about-us/meet-our-leaders/Avasarala Sriniva Rao.jpg",
-        },
-        {
-            id: "3",
-            name: "Michael Brown",
-            position: "Chief Technology Officer",
+            name: "G.Panchatcharam",
+            position: "Co-founder & CEO",
             image: "/images/about-us/meet-our-leaders/G.Panchatcharam.jpg",
         },
         {
-            id: "4",
-            name: "Sarah Johnson",
-            position: "Head of Operations",
+            id: "2",
+            name: "G.Suresh Kumar",
+            position: "Co-founder & President",
             image: "/images/about-us/meet-our-leaders/G.Suresh Kumar.jpg",
         },
         {
+            id: "3",
+            name: "Agnello G Fernandes",
+            position: "Chief Operating Officer - Employee Transport Service",
+            image: "/images/about-us/meet-our-leaders/Agnello G Fernandes.jpg",
+        },
+        {
+            id: "4",
+            name: "Avasarala Srinivasa Rao",
+            position: "Chief Operating Officer - Premium Car Rentals",
+            image: "/images/about-us/meet-our-leaders/Avasarala Sriniva Rao.jpg",
+        },
+        {
             id: "5",
-            name: "David Wilson",
-            position: "Head of Sales",
-            image: "/images/about-us/meet-our-leaders/M.Pandimanian.jpg",
+            name: "V.Sajju Kumar",
+            position: "Associate Vice President - Operations",
+            image: "/images/about-us/meet-our-leaders/V.Sajju Kumar.jpg",
         },
         {
             id: "6",
-            name: "Emily Davis",
-            position: "Head of Customer Success",
-            image: "/images/about-us/meet-our-leaders/V.Sajju Kumar.jpg",
+            name: "M.Pandimanian",
+            position: "Associate Vice President - Finance",
+            image: "/images/about-us/meet-our-leaders/M.Pandimanian.jpg",
         },
-
-
     ];
 
     return (
-        <div className="w-full">
+        <div className="w-full bg-[#f8f9fa]">
             {/* Hero Banner */}
             <PageHero
                 title="About Us"
@@ -116,7 +114,7 @@ export default function AboutUs() {
                                 </div>
                             </div>
 
-                            <Button href="/contact" variant="primary">
+                            <Button href="/reach-us" variant="primary">
                                 Contact Us
                             </Button>
                         </div>
@@ -125,37 +123,36 @@ export default function AboutUs() {
             </section>
 
             {/* Leadership Team */}
-            <section className="w-full py-20 ">
+            <section id="leaders" className="w-full py-20 bg-[#f8f9fa]">
                 <div className="max-w-[1440px] mx-auto px-4">
-                    <div className="text-center mb-16">
-                        <h2 className="text-4xl md:text-4xl font-bold text-gray-900 mb-4">
+                    <div className="mb-12">
+                        <h2 className="text-4xl font-bold text-[#2A2A2A] mb-4">
                             Meet Our Leaders
                         </h2>
-                        <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-                            Our experienced leadership team drives innovation and
-                            excellence in everything we do
-                        </p>
+                        <div className="w-16 h-1 bg-[#E31E24]"></div>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-6 gap-6">
                         {leaders.map((leader) => (
                             <div
                                 key={leader.id}
-                                className=" rounded-2xl overflow-hidden  "
+                                className="bg-white rounded overflow-hidden shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex flex-col h-full"
                             >
-                                <div className="relative h-80 w-full">
+                                <div className="relative aspect-[3/4] w-full bg-gray-100">
                                     <Image
                                         src={leader.image}
                                         alt={leader.name}
                                         fill
-                                        style={{ objectFit: "contain" }}
+                                        style={{ objectFit: "cover", objectPosition: "top" }}
                                     />
                                 </div>
-                                <div className="p-6 text-center">
-                                    <h3 className="text-xl font-bold text-gray-900 mb-2">
+                                <div className="p-4 text-center flex-grow flex flex-col justify-start">
+                                    <h3 className="text-[15px] font-bold text-[#2A2A2A] mb-1">
                                         {leader.name}
                                     </h3>
-                                    <p className="text-gray-600">{leader.position}</p>
+                                    <p className="text-[11px] text-[#666666] leading-tight">
+                                        {leader.position}
+                                    </p>
                                 </div>
                             </div>
                         ))}
@@ -164,33 +161,10 @@ export default function AboutUs() {
             </section>
 
             {/* Why Customers Choose Us */}
-            <WhyChooseUs />
-
-            {/* CTA Section */}
-            <section className="w-full py-20 bg-[#D32F2F]">
-                <div className="max-w-4xl mx-auto px-4 text-center">
-                    <h2 className="text-4xl md:text-4xl font-bold text-white mb-6">
-                        Ready to Experience Safe and Reliable Transportation?
-                    </h2>
-                    <p className="text-white/90 text-lg mb-8">
-                        Join hundreds of satisfied customers who trust us for their
-                        daily commute and special occasions
-                    </p>
-                    <div className="flex flex-wrap gap-4 justify-center">
-                        <Button href="/contact" variant="secondary" size="lg">
-                            Get Started
-                        </Button>
-                        <Button
-                            href="/services"
-                            variant="outline"
-                            size="lg"
-                            className="!border-white !text-white hover:!bg-white hover:!text-[#D32F2F]"
-                        >
-                            View Services
-                        </Button>
-                    </div>
-                </div>
+            <section id="why-fiesta" className="w-full py-20 ">
+                <WhyChooseUs />
             </section>
+
         </div>
     );
 }

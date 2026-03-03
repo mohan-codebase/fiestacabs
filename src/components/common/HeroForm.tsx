@@ -7,6 +7,7 @@ interface HeroFormProps {
     imageSrc: string;
     ctaText?: string;
     ctaLink?: string;
+    imageClassName?: string;
 }
 
 const HeroForm = ({
@@ -15,6 +16,7 @@ const HeroForm = ({
     imageSrc,
     ctaText = "Get a Free Quote",
     ctaLink = "#",
+    imageClassName,
 }: HeroFormProps) => {
     return (
         <section className="relative w-full overflow-hidden">
@@ -24,6 +26,7 @@ const HeroForm = ({
                     alt={title}
                     fill
                     priority
+                    className={imageClassName}
                     style={{ objectFit: "cover" }}
                 />
                 <div className="absolute inset-0 bg-black/60" />

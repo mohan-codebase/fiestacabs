@@ -9,12 +9,13 @@ const ContactFormSection = () => {
             <div className="max-w-standard mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                 {/* Left: Map Side */}
                 <div className="bg-white p-6 rounded-xl shadow-sm border border-gray-100 h-full flex flex-col justify-center items-center">
-                 <Image src="/images/about-us/form-left-img.jpeg" alt="Contact" width={500} height={500} className="w-full h-full object-cover"/>
+                    <Image src="/images/about-us/form-left-img.jpeg" alt="Contact" width={500} height={500} className="w-full h-full object-cover" />
                 </div>
 
                 {/* Right: Form Side */}
                 <div className="bg-white p-8 rounded-xl shadow-[0_10px_30px_rgba(0,0,0,0.05)] border border-gray-100">
                     <h2 className="text-3xl font-bold mb-8 text-gray-800">We Love to Hear From You</h2>
+                    <p className="text-gray-600 mb-8 leading-relaxed">Have questions or need assistance with your employee transport needs? Fill out the form below, and our team will get back to you promptly. We&apos;ll here to ensure your journey with Fiesta Smart Mobility is seamless and efficient.</p>
 
                     <form className="space-y-6">
                         <div className="grid grid-cols-1 gap-6">
@@ -66,9 +67,9 @@ const ContactFormSection = () => {
                         {/* Captcha Placeholder */}
                         <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 flex items-center gap-3">
                             <input type="checkbox" id="robot" className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500" />
-                            <label htmlFor="robot" className="text-sm text-gray-600 font-medium">I'm not a robot</label>
+                            <label htmlFor="robot" className="text-sm text-gray-600 font-medium">I&apos;m not a robot</label>
                             <div className="ml-auto">
-                                <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" width={24} height={24} className="opacity-70" />
+                                <Image src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" width={24} height={24} className="opacity-70" unoptimized />
                             </div>
                         </div>
 

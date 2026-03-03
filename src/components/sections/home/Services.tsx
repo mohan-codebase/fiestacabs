@@ -18,7 +18,7 @@ const Services = () => {
             description:
                 "Our vehicles are equipped with plush interiors, creating the perfect atmosphere for your special day.",
             image: "/images/home/our-services/premium-car-rentals.jpg",
-            link: "/services/premium-car-rentals",
+            link: "/premium-car-rentals",
         },
         {
             id: "employee-transport",

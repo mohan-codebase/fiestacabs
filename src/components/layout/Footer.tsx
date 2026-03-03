@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { contactInfo } from '../../data/contactInfo';
 
 const Footer = () => {
     return (
@@ -57,7 +58,7 @@ const Footer = () => {
                             <li><Link href="/about-us" className="hover:text-white transition-colors">About Us</Link></li>
                             <li><Link href="/clients" className="hover:text-white transition-colors">Clients</Link></li>
                             <li><Link href="/gallery" className="hover:text-white transition-colors">Gallery</Link></li>
-                            <li><Link href="/contact" className="hover:text-white transition-colors">Reach us</Link></li>
+                            <li><Link href="/reach-us" className="hover:text-white transition-colors">Reach us</Link></li>
                         </ul>
                     </div>
 
@@ -76,45 +77,20 @@ const Footer = () => {
                     <div>
                         <h3 className="text-white text-lg font-bold mb-6">Contact Info</h3>
                         <ul className="space-y-6">
-                            <li className="flex items-start">
-                                <span className="mr-3 mt-1 text-gray-400">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                                </span>
-                                <div>
-                                    <strong className="block text-white mb-1">24/7 Support</strong>
-                                    <span className="text-gray-400 text-sm">044 - 2220 0095 / 044 - 2230 0995</span>
-                                </div>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="mr-3 mt-1 text-gray-400">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                </span>
-                                <div>
-                                    <strong className="block text-white mb-1">Chennai Office (10 AM to 06 PM)</strong>
-                                    <span className="text-gray-400 text-sm">044 - 4771 10279 / +919600 437002</span>
-                                </div>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="mr-3 mt-1 text-gray-400">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                                </span>
-                                <div>
-                                    <strong className="block text-white mb-1">Bangalore Booking</strong>
-                                    <span className="text-gray-400 text-sm">080 - 4124 8273 / +91 96203 63632</span>
-                                </div>
-                            </li>
-                            <li className="flex items-start">
-                                <span className="mr-3 mt-1 text-gray-400">
-                                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                                </span>
-                                <div>
-                                    <strong className="block text-white mb-1">Sales Enquiry</strong>
-                                    <span className="text-gray-400 text-sm">+91 78458 67512</span>
-                                </div>
-                            </li>
+                            {Object.values(contactInfo).map((info, index) => (
+                                <li key={index} className="flex items-start">
+                                    <span className="mr-3 mt-1 text-gray-400">
+                                        {info.icon}
+                                    </span>
+                                    <div>
+                                        <strong className="block text-white mb-1">{info.label}</strong>
+                                        <span className="text-gray-400 text-sm">{info.numbers}</span>
+                                    </div>
+                                </li>
+                            ))}
                         </ul>
                         <div className="mt-6">
-                            <a href="/contact" className="inline-flex items-center bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-6 py-2 rounded shadow transition-colors font-bold">
+                            <a href="/reach-us" className="inline-flex items-center bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-6 py-2 rounded shadow transition-colors font-bold">
                                 <svg className="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M20 10.999h2C22 5.869 18.127 2 12.99 2v2C17.052 4 20 6.943 20 10.999z" /><path d="M13 8c2.103 0 3 .897 3 3h2c0-3.225-1.775-5-5-5v2zm3.422 5.443a1.001 1.001 0 0 0-1.391.043l-2.393 2.461c-.576-.11-1.734-.471-2.926-1.66-1.192-1.193-1.553-2.354-1.66-2.926l2.459-2.394a1 1 0 0 0 .043-1.391L6.859 3.513a1 1 0 0 0-1.391-.087l-2.17 1.861a1 1 0 0 0-.29.649c-.015.25-.301 6.172 4.291 10.766C11.305 20.707 16.323 21 17.705 21c.202 0 .326-.006.359-.008a.992.992 0 0 0 .648-.291l1.86-2.171a1 1 0 0 0-.086-1.391l-4.064-3.696z" /></svg>
                                 Contact Now
                             </a>

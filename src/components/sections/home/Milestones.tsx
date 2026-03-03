@@ -31,7 +31,7 @@ const Milestones = () => {
 
     return (
 
-        <>
+        <div id="milestones">
             {/* Section Header */}
             <div className="text-center my-16">
                 <p className="text-[#D32F2F] uppercase tracking-wider text-sm font-semibold">
@@ -76,7 +76,7 @@ const Milestones = () => {
                 </div>
             </div>
 
-        </>
+        </div>
     );
 };
 
