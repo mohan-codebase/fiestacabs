@@ -26,7 +26,7 @@ const Services = () => {
             description:
                 "Fiesta Smart Mobility ventured into this highly competitive business domain in the year 2001 by providing...",
             image: "/images/home/our-services/employee-transport-solutions.jpg",
-            link: "/services/employee-transport",
+            link: "/employee-transport-services",
         },
     ];
 

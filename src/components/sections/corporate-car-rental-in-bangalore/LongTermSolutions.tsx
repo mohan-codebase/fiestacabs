@@ -7,7 +7,7 @@ const LongTermSolutions = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
                     <div className="relative min-h-[400px] md:min-h-[600px] w-full overflow-hidden rounded-lg shadow-lg">
                         <Image
-                            src="/images/corporate-car-rental-in-bangalore/unnamed-7-1.jpg"
+                            src="/images/corporate-car-rental-in-bangalore/long-term-transport.jpg"
                             alt="Long Term Transport Solutions"
                             fill
                             className="object-cover"
@@ -17,16 +17,15 @@ const LongTermSolutions = () => {
                     <div className="flex flex-col justify-center space-y-8">
                         <div>
                             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-4">
-                                Corporate Rentals: Long-Term Transport Solutions
+                                Corporate Rentals: Long Term Transport Solutions
                             </h2>
                             <p className="text-[#555555] text-[15px] leading-[1.7]">
-                                In a country where road safety is critical, having high-standard drivers reduces accident risks. Fiesta Cabs invests in trained drivers and support teams to provide a consistently superior, secure, and hassle-free experience for client transport, long-term needs, or quick city trips. With their service, you are outsourcing transportation risk and logistics to a specialist who ensures customer satisfaction through transparency and professionalism.
-                            </p>
+                                In a country where road safety is critical, having high-standard drivers reduces accident risks. Fiesta Cabs invests in trained drivers and support teams to provide a consistently superior, secure, and hassle-free experience for client transport, long-term needs, or quick city trips. With their service, you are outsourcing transportation risk and logistics to a specialist who ensures customer satisfaction through transparency and professionalism.                            </p>
                         </div>
 
                         <div>
                             <h2 className="text-2xl md:text-3xl font-bold text-gray-900 leading-tight mb-4">
-                                Corporate Travel: Managing Bangalore&apos;s Traffic Complexities
+                                Corporate Travel: Managing Bangalore&apos;s Traffic Congestions
                             </h2>
                             <div className="space-y-4 text-[#555555] text-[15px] leading-[1.7]">
                                 <p>

@@ -2,6 +2,7 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { FaFileInvoiceDollar, FaTools, FaMapMarkedAlt, FaRegFileAlt, FaHeadset } from "react-icons/fa";
 import { FaStopwatch } from "react-icons/fa6";
 
@@ -96,9 +97,9 @@ const WhyChooseUs = () => {
                         </div>
 
                         {/* Button */}
-                        <button className="bg-[#EC2028] hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors text-sm">
+                        <Link href="/reach-us" className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors text-sm">
                             To Know More
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </div>

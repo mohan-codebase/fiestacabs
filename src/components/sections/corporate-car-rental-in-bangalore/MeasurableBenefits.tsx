@@ -11,17 +11,15 @@ const MeasurableBenefits = () => {
                         </h2>
                         <div className="space-y-4 text-[#555555] text-[15px] leading-[1.7]">
                             <p>
-                                Opting for a structured corporate car hire has immense advantages over relying on ad hoc transportation arrangements. Firstly, it offers financial predictability. Our corporate car rental rates are transparent and billing is simplified, which means your finance team spends less time auditing travel expenses.
-                            </p>
+                                For financial decision-makers and procurement managers, choosing a corporate car rental provider comes down to measurable benefits and efficiency. Leveraging advanced technology and streamlined operations reduces corporate travel costs, improves executive productivity, and supports the entire team. In Bangalore, transport solutions show measurable impact; companies switching from owning a fleet to managed long-term rentals could show 28% lower maintenance and insurance costs. GPS-enabled vehicles with efficient route planning reduce fuel consumption and wear-and-tear by 15%. For businesses managing high-volume trips and frequent site visits, these solutions are essential and practical.                            </p>
                             <p>
-                                Secondly, it reflects a genuine concern for employee welfare. By providing comfortable, reliable transportation, you boost morale and productivity. Our rent car corporate options are designed to ensure that your staff reaches the workplace refreshed and leaves safely after a long day. Overall, our solutions provide a seamless blend of cost effectiveness, luxury, and reliability. By addressing the multifaceted challenges of corporate mobility, Fiesta sets a benchmark for rent corporate cars services making us the ideal travel partner for your business in Bangalore.
-                            </p>
+                                Fiesta Cabs provides transparent billing and customisable packages for cab rental services in Bangalore, helping corporate clients forecast transport costs and avoid fluctuating rates. Reliable service ensures on-time arrivals exceeding 98.5%, reducing financial losses from delays or missed flights. This quantitative reliability supports a strong corporate rentals strategy and long-term dependable decision-making.                            </p>
                         </div>
                     </div>
 
                     <div className="relative min-h-[400px] md:min-h-[600px] w-full overflow-hidden rounded-lg shadow-lg order-1 md:order-2">
                         <Image
-                            src="/images/corporate-car-rental-in-bangalore/unnamed-8.jpg"
+                            src="/images/corporate-car-rental-in-bangalore/buisness-travel.jpg"
                             alt="Measurable Benefits for Companies"
                             fill
                             className="object-cover"

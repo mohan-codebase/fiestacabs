@@ -85,6 +85,15 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                 maxLength={180}
                             ></textarea>
                         </div>
+                        <div className="flex justify-between items-center border border-gray-200 bg-gray-50 rounded p-2 md:p-3 w-full mb-2 shadow-sm">
+                            <div className="flex items-center gap-3">
+                                <input type="checkbox" required id="robot-modal" className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500 cursor-pointer" />
+                                <label htmlFor="robot-modal" className="text-sm text-gray-700 cursor-pointer">I'm not a robot</label>
+                            </div>
+                            <div className="flex flex-col items-center justify-center">
+                                <img src="/images/reCAPTCHA_icon.png" alt="reCAPTCHA" className="w-6 h-6 object-contain" />
+                            </div>
+                        </div>
                         <div className="pt-2">
                             <button
                                 type="submit"

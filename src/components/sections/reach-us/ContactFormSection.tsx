@@ -66,8 +66,8 @@ const ContactFormSection = () => {
 
                         {/* Captcha Placeholder */}
                         <div className="p-4 bg-gray-50 rounded-lg border border-gray-200 flex items-center gap-3">
-                            <input type="checkbox" id="robot" className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500" />
-                            <label htmlFor="robot" className="text-sm text-gray-600 font-medium">I&apos;m not a robot</label>
+                            <input type="checkbox" required id="robot" className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500 cursor-pointer" />
+                            <label htmlFor="robot" className="text-sm text-gray-600 font-medium cursor-pointer">I&apos;m not a robot</label>
                             <div className="ml-auto">
                                 <Image src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" width={24} height={24} className="opacity-70" unoptimized />
                             </div>

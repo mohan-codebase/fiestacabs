@@ -4,11 +4,11 @@ import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import BookNowModal from "../common/BookNowModal";
+import { useModal } from "../../context/ModalContext";
 
 const Header = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-    const [isBookNowModalOpen, setIsBookNowModalOpen] = useState(false);
+    const { openModal } = useModal();
     const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
     const [activeSubDropdown, setActiveSubDropdown] = useState<string | null>(null);
     const pathname = usePathname();
@@ -136,7 +136,7 @@ const Header = () => {
                 {/* CTA Button */}
                 <div className="hidden lg:block">
                     <button
-                        onClick={() => setIsBookNowModalOpen(true)}
+                        onClick={openModal}
                         className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-5 py-2 rounded shadow transition-colors font-semibold"
                     >
                         Book Now
@@ -261,7 +261,7 @@ const Header = () => {
                         <button
                             onClick={() => {
                                 toggleMobileMenu();
-                                setIsBookNowModalOpen(true);
+                                openModal();
                             }}
                             className="bg-[#D32F2F] hover:bg-[#B71C1C] text-white px-5 py-2 rounded shadow transition-colors font-semibold text-center mt-4 w-full"
                         >
@@ -270,11 +270,6 @@ const Header = () => {
                     </nav>
                 </div>
             )}
-            {/* Book Now Modal */}
-            <BookNowModal
-                isOpen={isBookNowModalOpen}
-                onClose={() => setIsBookNowModalOpen(false)}
-            />
         </header>
     );
 };

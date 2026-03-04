@@ -28,6 +28,9 @@ export const metadata: Metadata = {
   },
 };
 
+import { ModalProvider } from "../context/ModalContext";
+import GlobalModal from "../components/common/GlobalModal";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -38,12 +41,15 @@ export default function RootLayout({
       <body
         className={`${poppinsFont.variable} antialiased`}
       >
-        <Header />
-        <main className="pt-18 min-h-screen">
-          {children}
-        </main>
-        <Footer />
-        <ScrollToTop />
+        <ModalProvider>
+          <Header />
+          <main className="pt-18 min-h-screen">
+            {children}
+          </main>
+          <Footer />
+          <ScrollToTop />
+          <GlobalModal />
+        </ModalProvider>
       </body>
     </html>
   );

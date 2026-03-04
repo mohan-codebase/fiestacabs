@@ -8,7 +8,7 @@ const Introduction = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
                     <div className="relative min-h-[400px] md:min-h-[600px] w-full overflow-hidden rounded-lg shadow-lg">
                         <Image
-                            src="/images/corporate-car-rental-in-bangalore/unnamed-2-2.jpg"
+                            src="/images/corporate-car-rental-in-bangalore/unnamed-8.jpg"
                             alt="Best Corporate Car Rental Services"
                             fill
                             className="object-cover"

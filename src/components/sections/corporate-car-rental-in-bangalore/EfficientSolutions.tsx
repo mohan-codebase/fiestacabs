@@ -28,7 +28,7 @@ const EfficientSolutions = () => {
 
                     <div className="relative min-h-[400px] md:min-h-[600px] w-full overflow-hidden rounded-lg shadow-lg order-1 md:order-2">
                         <Image
-                            src="/images/corporate-car-rental-in-bangalore/unnamed-4-2.jpg"
+                            src="/images/corporate-car-rental-in-bangalore/corporate car rental-efficient solutions.jpeg"
                             alt="Airport Transfers and Efficient Solutions"
                             fill
                             className="object-cover"

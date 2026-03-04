@@ -89,9 +89,9 @@ const Services = () => {
                                 Professional chauffeurs are dedicated to providing an efficient and relaxing experience, handling all your luggage and ensuring punctuality. We keep track of your departure time to guarantee you're picked up and dropped off promptly.
                             </p>
                         </div>
-                        <button className="inline-block mt-8 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded transition-colors">
+                        <Link href="/services-offered" className="inline-block mt-8 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded transition-colors">
                             To Know More
-                        </button>
+                        </Link>
                     </div>
                     <div className="relative h-[350px] md:h-[450px] overflow-hidden order-1 md:order-2">
                         <Image src="/images/premium-car-rentals/airport-transfers.avif" alt="Airport Transfers" fill className="object-cover" />

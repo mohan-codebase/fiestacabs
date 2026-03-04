@@ -7,7 +7,7 @@ const ContactCTA = () => {
         <section className="relative py-24 md:py-32">
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/corporate-car-rental-in-bangalore/unnamed-6-2.jpg"
+                    src="/images/corporate-car-rental-in-bangalore/contact-cta.jpg"
                     alt="Contact Fiesta Cabs for Corporate Rentals Today"
                     fill
                     className="object-cover object-left"

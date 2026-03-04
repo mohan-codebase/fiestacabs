@@ -7,7 +7,7 @@ const CorporateEvents = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
                     <div className="relative min-h-[400px] md:min-h-[600px] w-full overflow-hidden rounded-lg shadow-lg">
                         <Image
-                            src="/images/corporate-car-rental-in-bangalore/unnamed-5-2.jpg"
+                            src="/images/corporate-car-rental-in-bangalore/corporate events-smooth transport.jpg"
                             alt="Corporate Events and Customizable Solutions"
                             fill
                             className="object-cover"
@@ -38,6 +38,7 @@ const CorporateEvents = () => {
                             </p>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </section>

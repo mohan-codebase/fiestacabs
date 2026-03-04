@@ -93,11 +93,11 @@ const HeroForm = ({
                                 />
                             </div>
 
-                            {/* Mock reCAPTCHA */}
+                            {/* Captcha */}
                             <div className="flex justify-between items-center border border-gray-200 bg-gray-50 rounded p-2 md:p-3 w-full sm:w-[300px] mb-4 shadow-sm">
                                 <div className="flex items-center gap-3">
-                                    <div className="w-6 h-6 border-2 border-gray-300 rounded-sm bg-white cursor-pointer"></div>
-                                    <span className="text-sm text-gray-700">I'm not a robot</span>
+                                    <input type="checkbox" required id="robot-hero" className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500 cursor-pointer" />
+                                    <label htmlFor="robot-hero" className="text-sm text-gray-700 cursor-pointer">I'm not a robot</label>
                                 </div>
                                 <div className="flex flex-col items-center justify-center">
                                     <div className="w-8 h-8 relative">
