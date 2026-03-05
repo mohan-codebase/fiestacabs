@@ -13,6 +13,7 @@ const BookNowButton = ({ children, className }: BookNowButtonProps) => {
 
     return (
         <button
+            type="button"
             onClick={openModal}
             className={className}
         >

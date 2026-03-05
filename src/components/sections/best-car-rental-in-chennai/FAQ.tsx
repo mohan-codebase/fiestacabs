@@ -2,25 +2,9 @@
 
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { getLiveFaqsByPath } from "../../../data/liveFaqContent";
 
-const faqs = [
-    {
-        question: "What models are available for rent finding rent cars?",
-        answer: "Our fleet comprises a diverse range of vehicles including economy hatchbacks to premium SUVs and luxury sedans."
-    },
-    {
-        question: "How exactly can I modify or cancel my booking?",
-        answer: "You can easily modify or cancel your booking through our website portal or a simple phone call to our support line."
-    },
-    {
-        question: "Are outstation travel fees included in the final price?",
-        answer: "The quote provided covers all basics; however, toll taxes and specific permits might incur additional costs."
-    },
-    {
-        question: "How thoroughly are your cars maintained and sanitized?",
-        answer: "We perform a thorough top-to-bottom clean out and routine maintenance after every single trip."
-    }
-];
+const faqs = getLiveFaqsByPath("/best-car-rental-in-chennai");
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);

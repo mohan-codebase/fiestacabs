@@ -47,7 +47,7 @@ const cityCards: CityCard[] = [
 const PanIndiaServices = () => {
     return (
         <section className="w-full py-14 bg-[#fafafa]">
-            <div className="max-w-[1440px] mx-auto px-4">
+            <div className="max-w-6xl mx-auto px-4">
                 <div className="text-center max-w-4xl mx-auto mb-10">
                     <h3 className="text-2xl md:text-3xl font-bold mb-3">Pan-India Employee Shuttle Services</h3>
                     <p className="text-gray-700">

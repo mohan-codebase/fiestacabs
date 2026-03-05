@@ -67,8 +67,8 @@ const Footer = () => {
                         <h3 className="text-white text-lg font-bold mb-6">Our Services</h3>
                         <ul className="space-y-3">
                             <li><Link href="/employee-transport-services" className="hover:text-white transition-colors">Employee Transport solutions</Link></li>
-                            <li><Link href="/services-offered" className="hover:text-white transition-colors">Outstation Rides</Link></li>
-                            <li><Link href="/premium-car-rentals" className="hover:text-white transition-colors">Wedding Cars</Link></li>
+                            <li><Link href="/outstation-rides" className="hover:text-white transition-colors">Outstation Rides</Link></li>
+                            <li><Link href="/wedding-cars" className="hover:text-white transition-colors">Wedding Cars</Link></li>
                             <li><Link href="/shuttle-service" className="hover:text-white transition-colors">Shuttle Service</Link></li>
                         </ul>
                     </div>

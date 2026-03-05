@@ -50,7 +50,7 @@ const FAQ = () => {
                     {/* Left Side - Title and Description */}
                     <div>
                         <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                            FAQ
+                            FAQs
                         </h2>
                         <p className="text-gray-200 text-lg leading-relaxed mb-6">
                             Find answers to the most common questions about our corporate car rentals in Mumbai. To assure you of a reliable ride we are here to answer your queries right away.

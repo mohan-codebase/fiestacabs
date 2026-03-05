@@ -12,7 +12,7 @@ const CarRentalServices = () => {
                                 Car Rental Services: More Than Regular Taxis
                             </h2>
                             <p className="text-[#555555] text-[15px] leading-[1.7]">
-                                Unlike standard cabs where availability can be unpredictable, corporate car rentals offer assured service. There&apos;s no stress of sudden cancellations or haggling over fares. Booking a corporate cab means guaranteed availability, transparent pricing, and professional service. Fiesta Cabs elevates this with a well-maintained fleet and thoroughly vetted drivers.
+                                A reliable car rental service like Fiestacabs offers a lot more than regular taxis, with access to a diverse fleet of well-maintained vehicles, including everything from the compact Toyota Etios to the comfortable Toyota Camry and spacious SUVs. Your business needs a service that offers competitive rates and cost efficiency without any hidden costs.
                             </p>
                         </div>
 
@@ -21,7 +21,7 @@ const CarRentalServices = () => {
                                 Airport Transfers: Hassle-Free for VIP Guests
                             </h2>
                             <p className="text-[#555555] text-[15px] leading-[1.7]">
-                                First impressions matter, especially when receiving VIP clients or senior executives at the Chhatrapati Shivaji Maharaj International Airport. A premium corporate cab waiting at the terminal not only ensures a smooth journey to the hotel or office but also reflects well on your company&apos;s brand image. It conveys professionalism and care right from the start.
+                                For VIP guests and business clients, first impressions matter. Airport transfers must be hassle-free. A good corporate cab services provider ensures a smooth and professional experience from the moment someone lands. Around 70% of corporate trips in Mumbai begin or end with an airport transfer. Reliable providers like Fiesta offer professional chauffeurs for this task. They use GPS-enabled systems to plan the best routes to and from the airport, such as Chhatrapati Shivaji International Airport, which guarantees punctuality and reduces travel worry.
                             </p>
                         </div>
                     </div>

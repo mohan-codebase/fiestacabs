@@ -1,4 +1,5 @@
 import React from "react";
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -6,17 +7,46 @@ import { blogPosts, BlogPost, ContentBlock } from "../../../data/blogPosts";
 import Testimonials from "../../../components/sections/home/Testimonials";
 import FAQ from "../../../components/sections/home/FAQ";
 import FAQAccordion from "../../../components/common/FAQAccordion";
+import BookNowButton from "../../../components/common/BookNowButton";
 
 interface PageProps {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 }
 
 export async function generateStaticParams() {
     return blogPosts.map((post: BlogPost) => ({
         slug: post.slug,
     }));
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+    const { slug } = await params;
+    const post = blogPosts.find((p: BlogPost) => p.slug === slug);
+
+    if (!post) {
+        return {
+            title: "Blog | Fiesta Smart Mobility",
+            description: "Read mobility insights and transport guides from Fiesta Smart Mobility.",
+        };
+    }
+
+    return {
+        title: `${post.title} | Fiesta Blog`,
+        description: post.excerpt,
+        openGraph: {
+            title: post.title,
+            description: post.excerpt,
+            images: [
+                {
+                    url: post.bannerImage || post.image,
+                    alt: post.title,
+                },
+            ],
+            type: "article",
+        },
+    };
 }
 
 export default async function BlogPostPage({ params }: PageProps) {
@@ -30,6 +60,30 @@ export default async function BlogPostPage({ params }: PageProps) {
     const latestPosts = blogPosts
         .filter((p: BlogPost) => p.slug !== slug)
         .slice(0, 5);
+
+    const postUrl = `https://fiestacabs.com/blog/${slug}`;
+    const encodedPostUrl = encodeURIComponent(postUrl);
+    const encodedTitle = encodeURIComponent(post.title);
+    const shareLinks = [
+        {
+            name: "facebook",
+            icon: "f",
+            color: "bg-[#3b5998]",
+            href: `https://www.facebook.com/sharer/sharer.php?u=${encodedPostUrl}`,
+        },
+        {
+            name: "twitter",
+            icon: "x",
+            color: "bg-[#1da1f2]",
+            href: `https://twitter.com/intent/tweet?url=${encodedPostUrl}&text=${encodedTitle}`,
+        },
+        {
+            name: "linkedin",
+            icon: "in",
+            color: "bg-[#0077b5]",
+            href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedPostUrl}`,
+        },
+    ];
 
     return (
         <div className="w-full bg-[#f8f9fa]">
@@ -174,15 +228,18 @@ export default async function BlogPostPage({ params }: PageProps) {
                         <div className="mt-12 pt-8 border-t border-gray-100">
                             <span className="text-gray-500 font-bold block mb-4 text-sm">Share this post:</span>
                             <div className="flex flex-wrap gap-3">
-                                {[
-                                    { name: 'facebook', icon: 'f Facebook', color: 'bg-[#3b5998]' },
-                                    { name: 'twitter', icon: 't Twitter', color: 'bg-[#1da1f2]' },
-                                    { name: 'linkedin', icon: 'in LinkedIn', color: 'bg-[#0077b5]' }
-                                ].map((social) => (
-                                    <div key={social.name} className={`${social.color} text-white px-5 py-2.5 rounded text-xs font-bold flex items-center gap-2 cursor-pointer hover:opacity-90 transition-opacity shadow-sm uppercase tracking-wide`}>
-                                        <span className="text-lg leading-none">{social.icon.split(' ')[0]}</span>
+                                {shareLinks.map((social) => (
+                                    <a
+                                        key={social.name}
+                                        href={social.href}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        aria-label={`Share on ${social.name}`}
+                                        className={`${social.color} text-white px-5 py-2.5 rounded text-xs font-bold flex items-center gap-2 hover:opacity-90 transition-opacity shadow-sm uppercase tracking-wide`}
+                                    >
+                                        <span className="text-lg leading-none">{social.icon}</span>
                                         <span>{social.name}</span>
-                                    </div>
+                                    </a>
                                 ))}
                             </div>
                         </div>
@@ -207,10 +264,10 @@ export default async function BlogPostPage({ params }: PageProps) {
                                 <h3 className="text-[22px] font-bold text-gray-900">
                                     Latest Posts
                                 </h3>
-                                <button className="bg-[#EC2028] text-white text-[13px] px-4 py-2 rounded-md font-bold flex items-center gap-2 hover:bg-red-700 transition-colors">
+                                <BookNowButton className="bg-[#EC2028] text-white text-[13px] px-4 py-2 rounded-md font-bold flex items-center gap-2 hover:bg-red-700 transition-colors">
                                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
                                     Contact Now
-                                </button>
+                                </BookNowButton>
                             </div>
 
                             <div className="space-y-6">

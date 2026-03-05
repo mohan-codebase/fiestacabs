@@ -18,13 +18,15 @@ const SmarterWay = () => {
                         Fiesta Smart Mobility&apos;s Shuttle Service: The Smarter Way to Commute
                     </h3>
                     <p className="text-gray-700 leading-relaxed mb-4">
-                        Employee satisfaction and productivity begin long before work starts. Daily commute quality
-                        is one of the most impactful but often ignored factors in workforce experience.
+                        n today’s work culture, employee satisfaction and productivity begin well before they step into the office and continue long after they leave.
+
+                        The daily commute is one of the most overlooked yet impactful aspects of your workforce’s experience.
+
+                        If your team is still navigating long queues, mind-numbing traffic, unpredictable public transportation options, or stressful last-mile transit, it’s time for a better solution.
+
+                        Enter Fiesta Smart Mobility—your reliable partner for a smarter, safer, and more efficient shuttle service tailored for modern businesses.
                     </p>
-                    <p className="text-gray-700 leading-relaxed">
-                        If your teams still face long queues, traffic, and unpredictable public transport, Fiesta
-                        offers a safer and more efficient alternative built for modern businesses.
-                    </p>
+
                 </div>
             </div>
         </section>

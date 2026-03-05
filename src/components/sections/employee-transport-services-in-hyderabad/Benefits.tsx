@@ -4,11 +4,11 @@ import { FaCheckCircle } from 'react-icons/fa';
 
 const Benefits = () => {
     const benefitsList = [
-        "GPS-Enabled Cabs for real-time tracking",
-        "Fixed routes without any unexpected detours",
-        "Well-maintained hygiene standards strictly followed",
-        "Timely pick-up and drop without any delays",
-        "Verified drivers giving you secure rides"
+        " Reduces stress and fatigue from daily traffic. ",
+        " Improves punctuality and employee satisfaction. ",
+        " Enhances safety during late-night and early-morning shifts. ",
+        " Minimizes absenteeism and scheduling issues. ",
+        " Builds a reliable and productive workforce. "
     ];
 
     return (

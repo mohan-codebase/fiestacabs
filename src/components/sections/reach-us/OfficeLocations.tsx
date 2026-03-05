@@ -48,16 +48,16 @@ const OfficeLocations = () => {
     const mainOffices: OfficeInfo[] = [
         {
             title: "Head Office",
-            description: "523, Vinayagapuram Main Road, MMDA-II Nagar, Velachery, Kolathur, Chennai-600 123.",
-            calls: ["044 - 23 73 8089", "+91 80560 20000"],
-            mail: "info@fiestacabs.com",
+            description: "523, Vinayagapuram Main Road,Viduthalai Nagar 1st St, S. Kolathur, Chennai 600 129.",
+            calls: ["044 - 2220 0095", "+91 96004 37002"],
+            mail: "info@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/iJzEyJBuqw5gPGdi6"
         },
         {
             title: "Registered Office",
-            description: "No. 05, L.D.G. Road, Little Mount, Saidapet, Chennai - 600 015.",
-            calls: ["044 - 2235 0000", "+91 80560 30000"],
-            mail: "regd-office@fiestacabs.com",
+            description: "No. 99, L D G Road, Little Mount, Saidapet, Chennai - 600 015.",
+            calls: ["044 - 223 - 00995", "+91 88070 10095"],
+            mail: "rac@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/JgYNwC3fE6eeZjLM7"
         }
     ];
@@ -65,65 +65,65 @@ const OfficeLocations = () => {
     const branchOffices: OfficeInfo[] = [
         {
             title: "Bangalore",
-            description: "No. 15/A, 2nd Floor, RJ Silks, Ramamurthy Nagar Main Road, Bangalore - 560 013.",
-            calls: ["080 - 4124 5555", "+91 95133 33642"],
-            mail: "bangalore@fiestacabs.com",
+            description: "No. 45/A, 2nd Floor, RJ Elite, Ramamurthy Nagar Main Road, Bengaluru - 560 016.",
+            calls: ["080 - 4124 8273", "+91 99164 54848"],
+            mail: "racblr@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/GPb8QGLZcnGrUpsS7"
         },
         {
             title: "Mumbai",
-            description: "115/1st Floor, ACME Industrial Park, Goregaon East, Mumbai - 400 063.",
-            calls: ["+91 76780 16252"],
-            mail: "mumbai@fiestacabs.com",
+            description: "# 109, 1st Floor, ACME Industrial Park, Goregaon East, Mumbai - 400 063.",
+            calls: ["+91 74188 85492"],
+            mail: "sales_mumbai@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/hRzXwzYehaateDti7"
         },
         {
             title: "Hyderabad",
-            description: "G-1/12102, 1st Floor, Sri Sai Colony, Kanakadurga Temple, Shaikpet, Hyderabad, Telangana 500008",
-            calls: ["+91 91520 12020"],
-            mail: "hyderabad@fiestacabs.com",
+            description: "8-1-43/1/B, 1st Floor Satya Colony, Opp: Hanuman Temple, Shaikpet, Golconda, Hyderabad- 500008.",
+            calls: ["+91 91001 09864"],
+            mail: "sales_hyd@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/XE5QtytQx78EJCjs7"
         },
         {
             title: "Mahindra World City",
-            description: "26, Shanthivedu Street, Near Mahindra World City, Anjur, Tamil Nadu - 603002",
-            calls: ["+91 7338876007"],
-            mail: "mwc@fiestacabs.com",
+            description: "58, Bharathiyar Street, near Mcity, Mahindra World City, Veerapuram, Tamil Nadu - 603002",
+            calls: ["+91 73059 80807"],
+            mail: "m_city@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/7sreBh2Y777LipL46"
         },
         {
             title: "Hosur (Tamil nadu)",
-            description: "No 232/1, Goundar Thottam, Thorapalli Agraharam, Hosur-635109",
-            calls: ["+91 91235 37330"],
-            mail: "hosur@fiestacabs.com",
+            description: "No.3/36/1, Gandhi Nagar, Thorapalli Agraharam, Hosur-635 109.",
+            calls: ["+91 733 877 7076"],
+            mail: "bts_hosur@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/xMG8HDRK2Ux2Y9vz9"
         },
         {
             title: "Gurgaon",
-            description: "H-16/3 127, Gautam Bhavan Arcade, Graham Lab-1, Gurgaon 122022",
-            calls: ["+91 11444 04443"],
-            mail: "north-region@fiestacabs.com",
+            description: "H-103 GF, Sushant Shopping Arcade, Sushant Lok-1, Gurgaon-122009",
+            calls: ["+91 81488 22633"],
+            mail: "sales_gurgaon@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/Cz8fyv8PDHfdUUiM6"
         },
         {
             title: "Pune",
-            description: "Nicho Facade, Office No. 204, 2nd Floor 682 Road, Plot Number 26 & 27, Sanewadi Aundh, Gaon, Pune - 411007",
-            calls: ["+91 80560 97010"],
-            mail: "pune@fiestacabs.com",
+            description: "Niche Facade, Office No. 204, 2nd Floor 232 Road, Plot Number: 26 & 27 Survey Number, Sakore Nagar, Pune - 411014.",
+            calls: ["+91 82913 82323"],
+            mail: "sales_pune@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/S439Q7RD5yHzxxQN7"
         },
         {
             title: "Kolkata",
-            description: "84/H/2, Dumarao Draster Road, Kolkata, West Bengal - 700 015",
-            calls: ["+91 80560 30000"],
-            mail: "east-region@fiestacabs.com",
+            description: "34/1Q, Ballygunge Circular Road, Kolkata, West Bengal - 700 019.",
+            calls: ["+91 63850 50605"],
+            mail: "sales_kolkata@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/8syBrMdSTp4fERnr7"
         },
         {
             title: "Oragadam (Kanchipuram)",
-            description: "No. 44, Venkatapuram - Vallam Road, Oragadam Junction, Opp to Apollo Tyres, Chengalpattu, Kanchipuram - 602 105",
-            calls: ["+91 73388 76010"],
-            mail: "oragadam@fiestacabs.com",
+            description: "No. 44, Vandalur - Walajabad Road, Oragadam Junction, Opp. to Apollo Tyres, Oragadam, Kanchipuram - 602 105.",
+            calls: ["+91 98840 13783"],
+            mail: "rac_ord@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/AXH4hubFwTsP7kL46"
         }
     ];

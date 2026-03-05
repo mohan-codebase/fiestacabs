@@ -83,11 +83,9 @@ const Services = () => {
                         <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Airport Transfers</h2>
                         <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
                             <p>
-                                Experience seamless, stress-free airport transfers with our premium vehicle fleet. Whether you're traveling for business or leisure, we ensure a smooth and timely journey from your home or office to the airport.
-                            </p>
+Experience seamless, stress-free airport transfers with our premium vehicle fleet. Whether you're traveling for business or leisure, we ensure a smooth and timely journey from your home or office to the airport. Our high-end vehicles, including luxury sedans and spacious SUVs, provide the utmost comfort for solo travelers or groups. Professional chauffeurs are dedicated to providing an efficient and relaxing experience, handling all your luggage and ensuring punctuality.                             </p>
                             <p>
-                                Professional chauffeurs are dedicated to providing an efficient and relaxing experience, handling all your luggage and ensuring punctuality. We keep track of your departure time to guarantee you're picked up and dropped off promptly.
-                            </p>
+ We keep track of your departure time to guarantee you're picked up and dropped off promptly. With plush interiors and modern amenities, you'll enjoy a relaxing ride before or after your journey. Available 24/7, we cater to all your airport transfer needs, whether it's an early morning or late-night flight. Our service is designed to make your trip hassle-free, allowing you to focus on your travel. Trust us for an airport transfer that’s as smooth and comfortable as the flight itself.                             </p>
                         </div>
                         <Link href="/services-offered" className="inline-block mt-8 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded transition-colors">
                             To Know More

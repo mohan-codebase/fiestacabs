@@ -2,29 +2,9 @@
 
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { getLiveFaqsByPath } from "../../../data/liveFaqContent";
 
-const faqData = [
-    {
-        question: "How early should I book the wedding car?",
-        answer: "To guarantee your preferred luxury wedding car in Chennai, we recommend booking at least 1-2 months in advance, especially during peak wedding season."
-    },
-    {
-        question: "Are decorations included in the car rental package?",
-        answer: "Our packages primarily cover the vehicle and chauffeur. However, we are happy to coordinate with your chosen decorators to ensure the car is ready and beautifully adorned for your event."
-    },
-    {
-        question: "Is there a minimum rental period?",
-        answer: "Yes, we typically have minimum rental blocks, such as 4 or 8 hours. Contact our team to discuss your specific schedule, and we can tailor a package to fit your needs."
-    },
-    {
-        question: "Can I view the vehicle before confirming my booking?",
-        answer: "Absolutely. We understand the importance of perfection on your wedding day. You can schedule a visit to inspect the luxury wedding car of your choice before finalizing the booking."
-    },
-    {
-        question: "What areas do you cover?",
-        answer: "Our wedding car rental services are available across Chennai and its surrounding regions. For outstation destination weddings, please contact us for custom intercity travel packages."
-    }
-];
+const faqData = getLiveFaqsByPath("/wedding-car-rental-in-chennai");
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);

@@ -22,11 +22,8 @@ const TrustedBy = () => {
                             Trusted by Leading Companies Across Hyderabad
                         </h2>
                         <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                            Fiesta Cabs is trusted by the leading corporate companies across Hyderabad for their daily transportation needs. Our track record highlights a high retention rate and long-standing partnership with the industry leaders.
-                        </p>
-                        <p className="text-gray-700 text-lg leading-relaxed">
-                            Over the years, we have proven to deliver employee transport services ensuring punctuality, safety, and operational excellence giving you a seamless employee commute.
-                        </p>
+With 9+ years of experience, 300+ vehicles, and 40+ employees in Telangana, Fiesta has built strong partnerships with top corporates and IT parks. Our focus on reliability, transparency, and efficiency makes us the go-to choice for organizations seeking premium employee mobility solutions.                        </p>
+                   
                     </div>
                 </div>
             </div>

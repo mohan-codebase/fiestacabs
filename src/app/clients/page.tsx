@@ -15,14 +15,14 @@ const itClients = [
     { name: "Groupon", image: "/images/clients/it/groupon.png" },
     { name: "Grant Thornton", image: "/images/clients/it/grant-thornton.png" },
     { name: "Gen", image: "/images/clients/it/gen.png" },
-    { name: "Comcast", image: "/images/clients/it/comcast.png" },
+    { name: "Comcast", image: "/images/clients/it/comcast-1.png" },
     { name: "Cognizant", image: "/images/clients/it/cognizant.png" },
     { name: "Amazon", image: "/images/clients/it/amazon.png" },
     { name: "Walmart", image: "/images/clients/it/walmart.png" },
-    { name: "Walmart Global Tech", image: "/images/clients/it/walmart-global-tech.png" },
-    { name: "Vertex", image: "/images/clients/it/vertex.png" },
+    { name: "Walmart Global Tech", image: "/images/clients/it/walmart-global-tech-1.png" },
+    { name: "Vertex", image: "/images/clients/it/vertex-1.png" },
     { name: "Tristha", image: "/images/clients/it/tristha.png" },
-    { name: "Thirdware", image: "/images/clients/it/thirdware.png" },
+    { name: "Thirdware", image: "/images/clients/it/thirdwave.png" },
     { name: "Technosoft", image: "/images/clients/it/technosoft.png" },
     { name: "TCS", image: "/images/clients/it/tcs.png" },
     { name: "Tavant", image: "/images/clients/it/tavant.png" },
@@ -41,11 +41,11 @@ const itClients = [
 const manufacturingClients = [
     { name: "Aditya Birla", image: "/images/clients/manufacturing/aditya-birla.png" },
     { name: "Shriram Properties", image: "/images/clients/manufacturing/shriram-properties.png" },
-    { name: "Saint-Gobain", image: "/images/clients/manufacturing/saint-gobain.png" },
+    { name: "Saint-Gobain", image: "/images/clients/manufacturing/saint-gobain-1.png" },
     { name: "Rico", image: "/images/clients/manufacturing/rico.png" },
     { name: "Resmed", image: "/images/clients/manufacturing/resmed.png" },
     { name: "Praxair", image: "/images/clients/manufacturing/praxair.png" },
-    { name: "Mahindra", image: "/images/clients/manufacturing/mahindra.png" },
+    { name: "Mahindra", image: "/images/clients/manufacturing/mahindra-1.png" },
     { name: "Loreal", image: "/images/clients/manufacturing/loreal.png" },
     { name: "Gyproc", image: "/images/clients/manufacturing/gyproc.png" },
     { name: "GGS", image: "/images/clients/manufacturing/ggs.png" },
@@ -62,160 +62,88 @@ const manufacturingClients = [
 
 const educationClients = [
     { name: "Shiv Nadar", image: "/images/clients/education/shiv-nadar.png" },
-    { name: "SSN", image: "/images/clients/education/ssn.png" },
+    { name: "SSN", image: "/images/clients/education/ssn-1.png" },
 ];
 
 const bankingClients = [
-    { name: "Wells Fargo", image: "/images/clients/banking/wells-fargo.png" },
+    { name: "Wells Fargo", image: "/images/clients/banking/wells-fargo-2.png" },
     { name: "Sundaram Finance", image: "/images/clients/banking/sundaram-finance.png" },
-    { name: "Fiserv", image: "/images/clients/banking/fiserv.png" },
-    { name: "Citi", image: "/images/clients/banking/citi.png" },
-    { name: "TVS Sundaram", image: "/images/clients/banking/tvs-sundaram.png" },
-];
-
-const hotelClients = [
-    { name: "Novotel", image: "/images/clients/hotels/novotel.png" },
-    { name: "Mercure", image: "/images/clients/hotels/mercure.png" },
-    { name: "Ibis", image: "/images/clients/hotels/ibis.png" },
-    { name: "Holiday Inn", image: "/images/clients/hotels/holiday-inn.png" },
-    { name: "Turyaa", image: "/images/clients/hotels/turyaa.png" },
-];
-
-const airlineClients = [
-    { name: "Air Asia", image: "/images/clients/airlines/air-asia.png" },
-    { name: "Star Air", image: "/images/clients/airlines/star-air.png" },
+    { name: "Fiserv", image: "/images/clients/banking/fiserv-1.png" },
+    { name: "Citi", image: "/images/clients/banking/citi-1.png" },
 ];
 
 export default function ClientsPage() {
     return (
-        <main>
-            {/* Hero Section */}
-            <section className="relative h-[40vh] min-h-[300px] flex items-center justify-center bg-gray-900 text-white">
-                <div className="absolute inset-0 bg-black/60 z-10"></div>
-                <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: "url('/images/contact-banner.jpg')" }} // Using a placeholder or existing banner
-                ></div>
+        <main className="bg-white">
+            <section className="relative flex min-h-[320px] items-center justify-center overflow-hidden px-4 py-20 md:min-h-[488px] md:py-24">
+                <div className="absolute inset-0 z-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/clients/live/hero-bg.jpg')" }}></div>
+                <div className="absolute inset-0 z-10 bg-black/60"></div>
                 <div className="relative z-20 text-center">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Clients</h1>
-                    <div className="flex items-center justify-center gap-2 text-sm md:text-base">
-                        <Link href="/" className="hover:text-red-500 transition-colors">
-                            Home
-                        </Link>
-                        <span>/</span>
-                        <span className="text-red-500">Clients</span>
-                    </div>
+                    <h1 className="text-4xl font-bold text-white md:text-5xl">Clients</h1>
                 </div>
             </section>
 
-            {/* Filter/Navigation Section */}
-            <section className="py-12 bg-gray-50">
-                <div className="max-w-7xl mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center mb-8">Our Partners and Supports</h2>
-                    <div className="flex flex-wrap justify-center gap-4">
+            <section className="bg-[#ececec] px-4 py-12 md:py-14">
+                <div className="mx-auto max-w-7xl">
+                    <p className="text-center text-xs font-semibold uppercase tracking-[0.4em] text-red-600">Clients</p>
+                    <h2 className="mt-3 text-center text-4xl font-bold text-[#262626] md:text-[46px]">Our Partners and Supports</h2>
+
+                    <div className="mt-8 flex flex-wrap justify-center gap-3 md:gap-4">
                         <Link
-                            href="#it-clients"
-                            className="px-6 py-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 font-medium"
+                            href="#Mainit"
+                            className="bg-red-600 px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#cb1b22]"
                         >
                             IT Clients
                         </Link>
                         <Link
-                            href="#manufacturing-clients"
-                            className="px-6 py-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 font-medium"
+                            href="#Manu"
+                            className="bg-red-600 px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#cb1b22]"
                         >
                             Manufacturing Clients
                         </Link>
                         <Link
-                            href="#educational-institution"
-                            className="px-6 py-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 font-medium"
+                            href="#education1"
+                            className="bg-red-600 px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#cb1b22]"
                         >
                             Educational Institution
                         </Link>
                         <Link
-                            href="#banking-clients"
-                            className="px-6 py-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 font-medium"
+                            href="#Banking"
+                            className="bg-red-600 px-6 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#cb1b22]"
                         >
                             Banking Clients
-                        </Link>
-                        <Link
-                            href="#hotels"
-                            className="px-6 py-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 font-medium"
-                        >
-                            Hotels
-                        </Link>
-                        <Link
-                            href="#airlines"
-                            className="px-6 py-3 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-red-600 hover:text-white hover:border-red-600 transition-all duration-300 font-medium"
-                        >
-                            Airlines
                         </Link>
                     </div>
                 </div>
             </section>
 
-            {/* Client Categories */}
-            <ClientCategory
-                id="it-clients"
-                title="IT Clients"
-                clients={itClients}
-                enableSlider={true}
-                sliderSpeed={2500}
-                reverseDirection={true}
-            />
-            <ClientCategory
-                id="manufacturing-clients"
-                title="Manufacturing Clients"
-                clients={manufacturingClients}
-                enableSlider={true}
-                sliderSpeed={8000}
-                reverseDirection={false}
-            />
-            <ClientCategory
-                id="educational-institution"
-                title="Educational Institution"
-                clients={educationClients}
-                enableSlider={false}
-            />
-            <ClientCategory
-                id="banking-clients"
-                title="Banking Clients"
-                clients={bankingClients}
-                enableSlider={true}
-                sliderSpeed={2500}
-                reverseDirection={true}
-            />
-            <ClientCategory
-                id="hotels"
-                title="Hotels"
-                clients={hotelClients}
-                enableSlider={true}
-                sliderSpeed={3000}
-                reverseDirection={false}
-            />
-            <ClientCategory
-                id="airlines"
-                title="Airlines"
-                clients={airlineClients}
-                enableSlider={false}
-            />
+            <section className="bg-[#ececec] pb-16">
+                <ClientCategory id="Mainit" title="IT Clients" clients={itClients} />
+                <ClientCategory id="Manu" title="Manufacturing Clients" clients={manufacturingClients} />
+                <ClientCategory id="education1" title="Educational Institution" clients={educationClients} />
+                <ClientCategory id="Banking" title="Banking Clients" clients={bankingClients} />
+            </section>
 
-            {/* CTA Section */}
-            <section className="py-20 bg-gray-900 text-white text-center">
-                <div className="max-w-4xl mx-auto px-4">
-                    <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                        Reach Your Destination Safe and on Time, Every Time
-                    </h2>
-                    <p className="text-gray-300 mb-8 leading-relaxed">
-                        Fiesta operates with the soul objective of transporting its customers to their
-                        destinations on time, every time. We maintain a fleet of latest vehicles which operate
-                        with maximum efficiency due to the excellent maintenance and periodic service.
-                    </p>
-                    <Link
-                        href="/reach-us"
-                        className="inline-block px-8 py-3 bg-red-600 text-white rounded-lg font-bold hover:bg-red-700 transition-colors"
-                    >
-                        Contact Now
-                    </Link>
+            <section className="relative mt-10 overflow-hidden px-4 py-14 md:py-16">
+                <div className="absolute inset-0">
+                    <div className="h-full w-full bg-cover bg-[position:35%_0%] md:bg-[position:0_60%]" style={{ backgroundImage: "url('/images/clients/live/cta-bg.jpg')" }}></div>
+                    <div className="absolute inset-0 bg-black/70"></div>
+                </div>
+
+                <div className="relative z-10 mx-auto max-w-7xl">
+                    <div className="max-w-2xl md:ml-auto md:max-w-xl">
+                        <h2 className="text-3xl font-bold text-white md:text-4xl">Reach Your Destination Safe and on Time, Every Time</h2>
+                        <p className="mt-5 leading-relaxed text-gray-200">
+                            Fiesta operates with the soul objective of transporting its customers to their destinations on time, every time. We maintain a fleet
+                            of latest vehicles which operate with maximum efficiency due to the excellent maintenance and periodic service.
+                        </p>
+                        <Link
+                            href="/reach-us"
+                            className="mt-7 inline-block rounded-md bg-red-600 px-8 py-3 text-sm font-semibold text-white transition-colors hover:bg-red-700"
+                        >
+                            Contact Now
+                        </Link>
+                    </div>
                 </div>
             </section>
         </main>

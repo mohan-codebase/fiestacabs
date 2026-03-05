@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { getLiveFaqsByPath } from "../../../data/liveFaqContent";
 
 interface FAQItemProps {
     question: string;
@@ -39,38 +40,7 @@ const FAQItem = ({ question, answer, isOpen, onClick }: FAQItemProps) => {
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-    const faqs = [
-        {
-            question: "1. Is corporate car rental cheaper than individual booking?",
-            answer:
-                "Yes, renting corporate cars in bulk or signing a long term contract is usually more cost effective than paying for individual trips.",
-        },
-        {
-            question: "2. How do you ensure employee safety during transit?",
-            answer:
-                "Our drivers are rigorously vetted, highly trained, and well-versed with Bangalore's routes. Additionally, we ensure all our vehicles undergo strict maintenance and sanitization protocols prior to each trip."
-        },
-        {
-            question: "3. What kind of vehicles are included in corporate cab services?",
-            answer:
-                "We offer a highly customizable fleet that ranges from economical sedans for daily commutes to luxury SUVs and premium cars like Mercedes, BMW, and Audi for executive travels."
-        },
-        {
-            question: "4. Can we customize the car rental package according to our event schedule?",
-            answer:
-                "Absolutely. We work closely with your logistics team to design flexible rental packages that perfectly align with your event timelines, VIP pickups, and group transport needs."
-        },
-        {
-            question: "5. How can you handle sudden changes in our fleet requirements?",
-            answer:
-                "Our extensive fleet and dedicated support team allow us to accommodate last-minute scheduling changes or additional vehicle requests swiftly and efficiently."
-        },
-        {
-            question: "6. Whom do we contact in case of any issues with the rental cars?",
-            answer:
-                "You will be assigned a highly responsive dedicated account manager. We also provide a 24/7 support hotline to instantly resolve any transit or booking issues that may arise."
-        }
-    ];
+    const faqs = getLiveFaqsByPath("/corporate-car-rental-in-bangalore");
 
     return (
         <section className="py-16 md:py-24 relative bg-gray-50">

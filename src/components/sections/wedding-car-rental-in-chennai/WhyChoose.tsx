@@ -2,11 +2,11 @@ import Image from "next/image";
 
 const WhyChoose = () => {
     const listItems = [
-        "Well Maintained, Clean and Sanitized Cars",
-        "Professional Chauffeurs With Years of Experience",
-        "Punctual Pick-Up and Drop-Off Service",
-        "Affordable Pricing and Package Rates",
-        "Simple Booking Process & 24/7 Customer Support",
+        "Chauffeur-driven luxury wedding cars with trained drivers",
+        "Premium cars are maintained for the wedding day presentation",
+        "Flexible packages across hourly, daily, and monthly bases, and extended rental period options",
+        "Transparent pricing with no hidden costs",
+        "Proper verification through ID proof and all the necessary documents",
     ];
 
     const Icon = () => (
@@ -27,10 +27,10 @@ const WhyChoose = () => {
                         <h2 className="text-3xl md:text-[32px] font-bold text-gray-900 leading-tight">
                             Why Choose Fiesta for Luxury Car Rental in Chennai?
                         </h2>
+                        <p className="text-[#555555] text-[15px] leading-[1.7]">Service highlights include:</p>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Your wedding is one of the most important days of your life. Our luxury car rental in Chennai gives you the reliability and comfort you need at every stage of the event.
+                            Fiesta focuses on the best service delivery for all our customers seeking wedding car rental services in Chennai, with reasonable cost planning and professional execution.
                         </p>
-                        <p className="text-gray-900 font-semibold mb-2">We bring you to:</p>
 
                         <div className="space-y-4">
                             {listItems.map((item, index) => (
@@ -42,7 +42,7 @@ const WhyChoose = () => {
                         </div>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            Leave behind the stress of delays and traffic. With Fiesta's wedding car rental packages, sit back in plush, comfortable interiors and enjoy your special ride.
+                            Fiesta remains focused on structured execution so customers receive elegant travel with complete confidence on the wedding day.
                         </p>
                     </div>
 

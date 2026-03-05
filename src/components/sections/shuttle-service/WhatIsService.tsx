@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BookNowButton from "../../common/BookNowButton";
 
 const WhatIsService = () => {
     return (
@@ -17,24 +18,20 @@ const WhatIsService = () => {
                     <h2 className="text-3xl md:text-4xl font-bold mb-5">Fiesta&apos;s Shuttle Bus Service?</h2>
                     <div className="space-y-4 text-gray-700 leading-relaxed">
                         <p>
-                            Fiesta&apos;s shuttle bus service is a corporate commuting solution designed to
-                            transport employees between office locations and nearby transit hubs.
+                            Fiesta’s shuttle bus service is a corporate commuting solution designed to transport employees smoothly between their office locations and nearby transit hubs—such as metro stations, railway stations, and major bus terminals.
                         </p>
                         <p>
-                            It ensures seamless last-mile connectivity with convenient pick-up points and fixed
-                            time slots for predictable everyday travel.
+                            It ensures seamless last-mile connectivity that bridges the gap between home and office locations using convenient pick-up points and fixed time slots.
                         </p>
                         <p>
-                            With gate-to-gate coverage, Fiesta supports the full journey from office entry points
-                            to outer gate pickups, improving punctuality and reducing commute stress.
+                            With Gate to Gate Coverage, Fiesta covers the entire journey—from office entry points to outer gate pickups—ensuring hassle-free commuting through strategically chosen locations and consistent schedules.
+
+                            Whether you’re managing a small team or a large corporate workforce, Fiesta offers fully customizable transport services that enhance employee convenience, boost punctuality, and reduce absenteeism—all while providing unmatched comfort and safety.
                         </p>
                     </div>
-                    <a
-                        href="#"
-                        className="inline-flex items-center justify-center mt-6 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md"
-                    >
+                    <BookNowButton className="inline-flex items-center justify-center mt-6 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md">
                         Book Now
-                    </a>
+                    </BookNowButton>
                 </div>
             </div>
         </section>

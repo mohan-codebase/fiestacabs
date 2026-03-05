@@ -1,5 +1,5 @@
-import Link from "next/link";
 import Image from "next/image";
+import BookNowButton from "../../common/BookNowButton";
 
 const HassleFreeCTA = () => {
     const listItems = [
@@ -55,12 +55,9 @@ const HassleFreeCTA = () => {
                     </p>
 
                     <div className="pt-4">
-                        <Link
-                            href="#"
-                            className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-4 px-10 rounded-md transition-colors duration-300 text-lg"
-                        >
+                        <BookNowButton className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-4 px-10 rounded-md transition-colors duration-300 text-lg">
                             Book Now
-                        </Link>
+                        </BookNowButton>
                     </div>
                 </div>
             </div>

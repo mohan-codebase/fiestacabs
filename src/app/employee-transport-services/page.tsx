@@ -1,7 +1,11 @@
+import React from "react";
 import Image from "next/image";
 import { FaHandshake, FaTools, FaMoneyBillWave, FaThumbsUp, FaCar, FaStar, FaCogs } from "react-icons/fa";
 import Testimonials from "../../components/sections/home/Testimonials";
 import FAQ from "../../components/sections/home/FAQ";
+import BookNowButton from "../../components/common/BookNowButton";
+import GeneralEmployeeTransportForm from "../../components/sections/employee-transport/GeneralEmployeeTransportForm";
+import { run } from "node:test";
 
 export const metadata = {
     title: "Employee Transport Services | Fiesta Smart Mobility",
@@ -67,10 +71,10 @@ const EmployeeTransportServicesPage = () => {
     ];
 
     const shuttleItems = [
-        "We currently run employee shuttle routes across various cities, covering major business districts, IT hubs, and industrial zones.",
+        "Employee Shuttle Services in Various Cities : We currently run employee shuttle routes across various cities, covering major business districts, IT hubs, and industrial zones.",
         "Shuttle services for IT and Business Parks: We connect residential zones to IT corridors with well maintained vehicles, reliable service, and consistent transport solutions.",
-        "Shuttle services for Manufacturing & Industrial Areas: For industries operating in shifts, we provide round the clock service with secure transportation services for employees.",
-        "Shuttle services for Corporate Office Clusters: From high-rise corporate offices to co-working hubs, our employee transportation is tailored for precise schedules and minimal delays.",
+        "Shuttle services for Manufacturing & Industrial Areas: For industries operating in shifts, we provide round the clock service with secure transportation services for employees. ",
+        "Shuttle services for Corporate Office Clusters: From high-rise corporate offices to co-working hubs, our employee transportation is tailored for precise schedules and minimal delays. ",
     ];
 
     const differentiators = [
@@ -200,69 +204,12 @@ const EmployeeTransportServicesPage = () => {
                                 Safe, punctual, and comfortable daily commutes for your workforce across major Indian
                                 cities.
                             </p>
-                            <a
-                                href="#"
-                                className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow"
-                            >
+                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow">
                                 Get a Free Quote
-                            </a>
+                            </BookNowButton>
                         </div>
 
-                        <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8">
-                            <form className="space-y-4">
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
-                                        First Name <span className="text-red-600">*</span>
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
-                                        Email Address <span className="text-red-600">*</span>
-                                    </label>
-                                    <input
-                                        type="email"
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
-                                        Phone Number <span className="text-red-600">*</span>
-                                    </label>
-                                    <input
-                                        type="tel"
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
-                                        Company <span className="text-red-600">*</span>
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500"
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">Message</label>
-                                    <div className="text-xs text-gray-500 text-right mb-1">0 / 180</div>
-                                    <textarea
-                                        rows={4}
-                                        maxLength={180}
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"
-                                    />
-                                </div>
-                                <button
-                                    type="submit"
-                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-semibold py-3 rounded-md"
-                                >
-                                    Submit
-                                </button>
-                            </form>
-                        </div>
+                        <GeneralEmployeeTransportForm />
                     </div>
                 </div>
             </section>
@@ -331,12 +278,9 @@ const EmployeeTransportServicesPage = () => {
                                 cities a dependable, scalable, and cost effective way to manage corporate commutes, from
                                 home to corporate offices and back, every single day.
                             </p>
-                            <a
-                                href="#"
-                                className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow"
-                            >
+                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow">
                                 Get a Free Quote
-                            </a>
+                            </BookNowButton>
                         </div>
                     </div>
                 </div>
@@ -344,7 +288,7 @@ const EmployeeTransportServicesPage = () => {
 
             {/* Cities */}
             <section className="w-full py-16 bg-white">
-                <div className="max-w-[1440px] mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4">
                     <div className="text-center mb-10">
                         <h3 className="text-2xl md:text-3xl font-bold">Employee Transport Services Across Major Cities</h3>
                         <p className="text-gray-600 mt-3">
@@ -357,9 +301,9 @@ const EmployeeTransportServicesPage = () => {
                         {cityCards.map((city) => (
                             <div
                                 key={city.city}
-                                className="bg-[#FFEDED] rounded-2xl border-b-4 border-red-500 p-6 text-center"
+                                className="bg-[#FFEDED] rounded-3xl border-b-4 border-red-500 p-6 text-center"
                             >
-                                <div className="w-16 h-16 mx-auto rounded-full bg-white flex items-center justify-center mb-4">
+                                <div className="w-24 h-24 mx-auto rounded-full bg-white flex items-center justify-center mb-4">
                                     <Image
                                         src={city.icon}
                                         alt={city.city}
@@ -367,9 +311,9 @@ const EmployeeTransportServicesPage = () => {
                                         height={48}
                                     />
                                 </div>
-                                <h4 className="font-semibold text-gray-900 mb-2">
+                                <h1 className="font-semibold text-gray-900 mb-2 text-xl">
                                     Employee Transport in {city.city}
-                                </h4>
+                                </h1>
                                 <p className="text-sm text-gray-600">{city.description}</p>
                             </div>
                         ))}
@@ -379,7 +323,7 @@ const EmployeeTransportServicesPage = () => {
 
             {/* Why choose */}
             <section className="w-full py-16 bg-white">
-                <div className="max-w-[1440px] mx-auto px-4">
+                <div className="max-w-7xl mx-auto px-4">
                     <h3 className="text-2xl md:text-3xl font-bold text-center mb-10">
                         Why you need to choose fiesta
                     </h3>
@@ -387,9 +331,9 @@ const EmployeeTransportServicesPage = () => {
                         {whyChoose.map((item) => (
                             <div
                                 key={item.text}
-                                className="border border-gray-200 rounded-xl p-6 flex flex-col items-center text-center gap-4"
+                                className="border border-gray-200 rounded-3xl p-6 flex flex-col items-center text-center gap-4"
                             >
-                                <div className="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 text-xl">
+                                <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center text-red-600 text-xl">
                                     <item.icon />
                                 </div>
                                 <p className="text-gray-700 text-sm leading-relaxed">{item.text}</p>
@@ -422,12 +366,9 @@ const EmployeeTransportServicesPage = () => {
                                 ))}
                             </div>
                             <div className="mt-6">
-                                <a
-                                    href="#"
-                                    className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow"
-                                >
+                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow">
                                     To Know More
-                                </a>
+                                </BookNowButton>
                             </div>
                         </div>
                         <div className="relative h-[320px] md:h-[480px] rounded-md overflow-hidden">
@@ -661,12 +602,9 @@ const EmployeeTransportServicesPage = () => {
                                 </p>
                             </div>
                             <div className="mt-6">
-                                <a
-                                    href="#"
-                                    className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow"
-                                >
+                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow">
                                     Book Now
-                                </a>
+                                </BookNowButton>
                             </div>
                         </div>
                     </div>

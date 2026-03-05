@@ -4,10 +4,10 @@ import { MdOutlineCheckCircle } from 'react-icons/md';
 
 const Commitment = () => {
     const listItems = [
-        "Zero-tolerance policy towards safety lapses.",
-        "Continuous driver training for defensive driving and passenger etiquette.",
-        "24/7 control room support, resolving issues in real-time without causing delays.",
-        "Immediate alternate arrangements in the rare event of vehicle breakdown."
+        " Thorough background checks for drivers and support staff. ",
+        " Well maintained vehicles checked regularly to ensure a safe and smooth ride. ",
+        " Real time GPS tracking and live tracking for constant visibility and monitoring. ",
+        " Trained drivers and trained chauffeurs who prioritize employee safety and punctual arrivals. "
     ];
 
     return (
@@ -30,8 +30,7 @@ const Commitment = () => {
                             Our Commitment to Safety and Reliability
                         </h2>
                         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                            The safety and security of your employees is our priority. Every route is planned perfectly to minimize commute time.
-                        </p>
+                            Every trip under our employee transportation services in Bangalore begins with safety. We follow strict measures:                        </p>
 
                         <ul className="space-y-4 mb-8">
                             {listItems.map((item, index) => (
@@ -43,8 +42,7 @@ const Commitment = () => {
                         </ul>
 
                         <p className="text-gray-800 font-medium text-lg leading-relaxed">
-                            Focus completely on your core business operations, safe in the knowledge that your most valuable assets are in expert hands.
-                        </p>
+                            This structured approach ensures that employees enjoy comfortable rides every day, and companies remain confident in their chosen partner.                        </p>
                     </div>
                 </div>
             </div>

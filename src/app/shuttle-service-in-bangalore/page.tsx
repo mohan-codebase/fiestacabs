@@ -22,7 +22,7 @@ export default function ShuttleServiceBangalore() {
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
                 title="Fiesta Shuttle Service in Bangalore: Redefining the Corporate Commute"
-                subtitle="Book A Shuttle For Your Team"
+                subtitle=""
                 imageSrc="/images/shuttle-service-in-bangalore/unnamed-12.jpg"
                 ctaText="Book Corporate Shuttle in Bangalore"
                 imageClassName="brightness-[0.4]"

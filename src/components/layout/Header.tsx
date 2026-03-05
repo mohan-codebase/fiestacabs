@@ -195,7 +195,20 @@ const Header = () => {
                                     >
                                         Our Team
                                     </Link>
-                                    <Link href="/mission" className="block hover:text-white" onClick={toggleMobileMenu}>Mission & Vision</Link>
+                                    <Link
+                                        href="/about-us#mission-vision"
+                                        className="block hover:text-white"
+                                        onClick={(e) => {
+                                            toggleMobileMenu();
+                                            if (pathname === "/about-us") {
+                                                e.preventDefault();
+                                                const element = document.getElementById("mission-vision");
+                                                if (element) element.scrollIntoView({ behavior: "smooth" });
+                                            }
+                                        }}
+                                    >
+                                        Mission & Vision
+                                    </Link>
                                 </div>
                             )}
                         </div>

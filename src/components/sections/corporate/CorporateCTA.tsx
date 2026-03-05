@@ -29,9 +29,7 @@ const CorporateCTA = () => {
                     <button className="bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-10 py-4 rounded transition-colors text-lg">
                         Book Your Corporate Car Rental Now
                     </button>
-                    <button className="border-2 border-white text-white hover:bg-white hover:text-gray-900 font-semibold px-10 py-4 rounded transition-colors text-lg">
-                        Contact Us
-                    </button>
+                    
                 </div>
             </div>
         </section>

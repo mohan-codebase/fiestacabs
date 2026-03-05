@@ -1,11 +1,11 @@
-import Link from "next/link";
 import Image from "next/image";
+import BookNowButton from "../../common/BookNowButton";
 
 const DiscountCTA = () => {
     const listItems = [
-        "Special rates for multi-car bookings",
-        "Customisable packages",
-        "24/7 priority customer support for weddings"
+        "Hourly, daily, and monthly basis rentals",
+        "Wedding-focused rental period planning",
+        "Affordable price structures without compromising service quality"
     ];
 
     const Icon = () => (
@@ -23,7 +23,7 @@ const DiscountCTA = () => {
             <div className="absolute inset-0 z-0">
                 <Image
                     src="/images/wedding-car-rental-in-chennai/unnamed-8.jpg"
-                    alt="Discounted Rates for Wedding Car Rental Bookings in Chennai"
+                    alt="Choose Fiesta for Wedding Car Rental Services in Chennai"
                     fill
                     className="object-cover"
                 />
@@ -33,11 +33,14 @@ const DiscountCTA = () => {
             <div className="relative z-10 max-w-[1440px] mx-auto px-4 md:px-8 text-white">
                 <div className="max-w-3xl space-y-8">
                     <h2 className="text-3xl md:text-5xl font-bold leading-tight">
-                        Discounted Rates for Wedding Car Rental Bookings in Chennai
+                        Choose Fiesta for Wedding Car Rental Services in Chennai
                     </h2>
 
                     <p className="text-white/90 text-lg leading-relaxed">
-                        Ready to book? Get in touch with us early to take advantage of our exclusive wedding packages and discounts. Whether you need a single luxury car or an entire fleet for your guests, we guarantee the best prices in Chennai.
+                        Fiesta delivers professional luxury car rental Chennai solutions built for weddings, bridal car rental, and premium transportation needs.
+                    </p>
+                    <p className="text-white/90 text-lg leading-relaxed">
+                        Trained chauffeurs, structured service planning, and a focus on ultimate luxury without operational complexity support every wedding car.
                     </p>
 
                     <div className="space-y-4">
@@ -50,12 +53,9 @@ const DiscountCTA = () => {
                     </div>
 
                     <div className="pt-6">
-                        <Link
-                            href="#"
-                            className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-4 px-10 rounded-md transition-colors duration-300 text-lg"
-                        >
+                        <BookNowButton className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-4 px-10 rounded-md transition-colors duration-300 text-lg">
                             Book Now
-                        </Link>
+                        </BookNowButton>
                     </div>
                 </div>
             </div>

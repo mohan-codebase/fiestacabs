@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import BookNowButton from "../../common/BookNowButton";
 
 const Intro = () => {
     return (
@@ -16,15 +16,18 @@ const Intro = () => {
                     </div>
                     <div className="flex flex-col justify-center space-y-6">
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Your wedding day should be nothing short of a fairytale, and arriving in style sets the tone for your grand celebration. At <span className="font-semibold text-gray-900">Fiesta</span>, we provide an exquisite fleet of premium cars to make your wedding day memorable. Whether you're looking for classic vintage charm, sleek modern luxury, or a spacious ride for your family, our <span className="font-semibold text-gray-900">wedding car rental in Chennai</span> ensures you arrive with grace and elegance.
+                            A wedding day calls for refined arrivals, dependable transportation service, and premium presentation. Fiesta wedding car rental services in Chennai deliver elegant, chauffeur-driven solutions designed for wedding functions, bridal car rental needs, and special occasions. Each wedding car is selected to match ceremony standards while ensuring unmatched comfort and a memorable day.
                         </p>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            From the bridal entry to the grand farewell, every detail matters. Trust us to handle your transportation seamlessly while you focus on making beautiful memories.
+                            Fiesta operates as a trusted provider focused on wedding car rental in Chennai, offering luxury cars with professional drivers for seamless coordination across venues, guests, and schedules.
+                        </p>
+                        <p className="text-[#555555] text-[15px] leading-[1.7]">
+                            Fiesta is recognised for reliable luxury car rental services in Chennai, supporting weddings, corporate events, airport pickup, celebrity events, and film shootings through a structured rental system.
                         </p>
                         <div>
-                            <Link href="#" className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md transition-colors mt-4">
+                            <BookNowButton className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md transition-colors mt-4">
                                 Book Now
-                            </Link>
+                            </BookNowButton>
                         </div>
                     </div>
                 </div>

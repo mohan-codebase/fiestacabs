@@ -1,7 +1,9 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { FaChevronDown } from "react-icons/fa";
+import { usePathname } from "next/navigation";
+import { getLiveFaqsByPath } from "../../data/liveFaqContent";
 
 export interface FAQItem {
     id: string;
@@ -18,15 +20,39 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
     items,
     defaultOpenIndex = 0,
 }) => {
+    const pathname = usePathname();
     const [openIndex, setOpenIndex] = useState<number | null>(defaultOpenIndex);
 
+    const resolvedItems = useMemo(() => {
+        const liveItems = getLiveFaqsByPath(pathname || "/");
+        if (!liveItems.length) {
+            return items;
+        }
+
+        return liveItems.map((item, index) => ({
+            id: `live-faq-${index + 1}`,
+            question: item.question,
+            answer: item.answer,
+        }));
+    }, [items, pathname]);
+
+    const fallbackOpenIndex =
+        resolvedItems.length > 0
+            ? Math.min(defaultOpenIndex, resolvedItems.length - 1)
+            : null;
+
+    const activeOpenIndex =
+        openIndex !== null && openIndex < resolvedItems.length
+            ? openIndex
+            : fallbackOpenIndex;
+
     const toggleAccordion = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index);
+        setOpenIndex(activeOpenIndex === index ? null : index);
     };
 
     return (
         <div className="space-y-4">
-            {items.map((item, index) => (
+            {resolvedItems.map((item, index) => (
                 <div
                     key={item.id}
                     className="bg-[#D32F2F] rounded-lg overflow-hidden transition-all duration-300"
@@ -40,7 +66,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
                             {index + 1}. {item.question}
                         </span>
                         <FaChevronDown
-                            className={`flex-shrink-0 transition-transform duration-300 ${openIndex === index ? "rotate-180" : ""
+                            className={`flex-shrink-0 transition-transform duration-300 ${activeOpenIndex === index ? "rotate-180" : ""
                                 }`}
                             size={18}
                         />
@@ -48,7 +74,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
 
                     {/* Answer Content */}
                     <div
-                        className={`overflow-hidden transition-all duration-300 ${openIndex === index
+                        className={`overflow-hidden transition-all duration-300 ${activeOpenIndex === index
                                 ? "max-h-96 opacity-100"
                                 : "max-h-0 opacity-0"
                             }`}

@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const BridalCar = () => {
     const listItems = [
-        "Red carpet-style entries",
-        "Comfortable and spacious interiors",
-        "Trained drivers who adhere to timelines and schedules"
+        "Coordinated bridal arrival timing",
+        "Chauffeur-assisted entry and exit management",
+        "Premium wedding cars that turn heads during wedding functions"
     ];
 
     const Icon = () => (
@@ -26,9 +26,9 @@ const BridalCar = () => {
                             Bridal Car Rental for Wedding Day Arrivals
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Make sure the bride arrives with utmost sophistication. Our bridal car rental in Chennai offers stylish, air-conditioned cars with smooth rides ensuring the bride's makeup and attire stay perfect.
+                            Bridal car rental plays a vital role during wedding ceremonies. Fiesta provides the best bridal car rental solutions in Chennai with vehicles selected for photography, comfort, and calm travel between wedding venues.
                         </p>
-                        <p className="text-gray-900 font-semibold mt-2">We offer:</p>
+                        <p className="text-gray-900 font-semibold mt-2">Services include:</p>
 
                         <div className="space-y-4">
                             {listItems.map((item, index) => (
@@ -40,7 +40,7 @@ const BridalCar = () => {
                         </div>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            The bride deserves nothing but the best, and our premium car rentals will elevate the overall experience.
+                            Wedding car decoration support is available for floral styling aligned with ceremony themes and cultural preferences.
                         </p>
                     </div>
 

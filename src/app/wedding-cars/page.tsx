@@ -1,6 +1,6 @@
 import React from "react";
 import WeddingHero from "../../components/sections/wedding/WeddingHero";
-import Milestones from "../../components/sections/home/Milestones";
+import Milestones from "../../components/sections/wedding/Milestones";
 import WeddingIntro from "../../components/sections/wedding/WeddingIntro";
 import WeddingCities from "../../components/sections/wedding/WeddingCities";
 import WeddingFeatures from "../../components/sections/wedding/WeddingFeatures";

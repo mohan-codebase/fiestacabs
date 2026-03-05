@@ -5,7 +5,7 @@ const CostEffective = () => {
     const listItems = [
         {
             title: "Dependable Commutes",
-            desc: "Employees travel comfortably, arrive refreshed, and focus on work without commuting stress."
+            desc: " Employees travel comfortably, arrive refreshed, and focus on work without commuting stress. "
         },
         {
             title: "Hassle Free Operations",
@@ -16,11 +16,11 @@ const CostEffective = () => {
             desc: "Our dedicated team handles transport planning, operations, and support so organizations can focus on core goals."
         },
         {
-            title: "Ensured Productivity",
+            title: " Real Time Updates ",
             desc: "Clients benefit from real time data, live monitoring, and accurate schedule adherence."
         },
         {
-            title: "Commitment to Quality",
+            title: " Secure and Efficient ",
             desc: "Well maintained vehicles with reliable drivers ensure smooth travel for every employee, every day."
         }
     ];

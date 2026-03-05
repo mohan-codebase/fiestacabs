@@ -3,20 +3,24 @@ import Image from "next/image";
 const LuxuryCars = () => {
     const listItems = [
         {
-            title: "Mercedes-Benz S-Class or E-Class:",
-            desc: " For couples looking for pure luxury and status."
+            title: "Mercedes-Benz car rental",
+            desc: " with multiple Mercedes-Benz models for royal service"
         },
         {
-            title: "Audi A6 or BMW 5 Series:",
-            desc: " Sleek, high-performance, and a fantastic backdrop for pictures."
+            title: "BMW car rental options",
+            desc: " featuring premium BMW cars for elegant wedding day arrivals"
         },
         {
-            title: "Rolls Royce or Jaguar:",
-            desc: " For those who want the ultimate premium experience."
+            title: "Audi car rental options",
+            desc: " offering a stylish and composed wedding car presence"
         },
         {
-            title: "Toyota Innova Crysta / Kia Carnival:",
-            desc: " Perfect for family transportation with excellent comfort."
+            title: "Rolls-Royce",
+            desc: " for ultimate luxury and grand wedding entrances"
+        },
+        {
+            title: "Toyota Innova, Innova Crysta, Innova Hycross, and Toyota Vellfire",
+            desc: " for the premium group transportation"
         }
     ];
 
@@ -48,8 +52,9 @@ const LuxuryCars = () => {
                             Luxury Wedding Cars Available with Fiesta
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Every couple has their unique preference and style. What's your statement look? Choose the luxury wedding car in Chennai from our impressive fleet:
+                            Fiesta offers a refined selection of luxurious cars suitable for bridal cars, wedding guests, and premium transportation across Chennai, including city venues and destination functions.
                         </p>
+                        <p className="text-[#555555] text-[15px] leading-[1.7]">Available luxury cars include:</p>
 
                         <div className="space-y-4">
                             {listItems.map((item, index) => (
@@ -63,7 +68,7 @@ const LuxuryCars = () => {
                         </div>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            No matter what your theme or style is, our luxury car hire in Chennai makes sure you step out looking nothing less than royalty.
+                            Each vehicle undergoes routine checks to ensure smooth performance, clean interiors, and dignified presentation for wedding luxury car rental requirements.
                         </p>
                     </div>
                 </div>

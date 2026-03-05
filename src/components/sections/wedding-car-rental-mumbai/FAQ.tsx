@@ -2,32 +2,12 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { getLiveFaqsByPath } from "../../../data/liveFaqContent";
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);
 
-    const faqs = [
-        {
-            question: "What are the ways to rent a car in Mumbai?",
-            answer: "Look for dependable services with an expansive fleet. Make sure they cover both city navigation and specific venue drops so nothing gets left out."
-        },
-        {
-            question: "Can I out-station a premium car back and forth?",
-            answer: "Yes, we handle various out-station drops alongside standard city wedding packages. Kindly specify details beforehand."
-        },
-        {
-            question: "Can I rent a car based on specific wedding themes?",
-            answer: "Absolutely. We are able to coordinate the look of the vehicle to match elegant or vibrant themes. Contact us for custom decoration details."
-        },
-        {
-            question: "Are decorations included in the available packages?",
-            answer: "Yes, standard decorations are part of many packages. Elaborate or specific floral themes can be easily arranged as per request."
-        },
-        {
-            question: "How far in advance should I book?",
-            answer: "We recommend booking at least 1-2 months in advance, especially during peak wedding seasons in Mumbai, to guarantee your preferred car model."
-        }
-    ];
+    const faqs = getLiveFaqsByPath("/wedding-car-rental-mumbai");
 
     return (
         <section className="py-16 md:py-24 bg-[#f8f9fa] relative overflow-hidden">

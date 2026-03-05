@@ -1,6 +1,8 @@
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import SimplifyingTeamCommute from "../../components/sections/shuttle-service-in-gurgaon/SimplifyingTeamCommute";
+import GateToGateEffective from "../../components/sections/shuttle-service-in-gurgaon/GateToGateEffective";
+import GurgaonCommutesMadeEasy from "../../components/sections/shuttle-service-in-gurgaon/GurgaonCommutesMadeEasy";
 import WhatMakesDifferent from "../../components/sections/shuttle-service-in-gurgaon/WhatMakesDifferent";
 import CommutesMadeEasy from "../../components/sections/shuttle-service-in-gurgaon/CommutesMadeEasy";
 import EasilyIntegrated from "../../components/sections/shuttle-service-in-gurgaon/EasilyIntegrated";
@@ -11,8 +13,9 @@ import FAQ from "../../components/sections/shuttle-service-in-gurgaon/FAQ";
 import Testimonials from "../../components/sections/home/Testimonials";
 
 export const metadata = {
-    title: "Fiesta Shuttle Service in Gurgaon | Simplifying Your Team's Daily Commute",
-    description: "Fiesta Shuttle Service in Gurgaon - Simplifying Your Team's Daily Commute. Reliable, gate-to-gate corporate shuttle services across Cyber City, Udyog Vihar, and more.",
+    title: "Fiesta Shuttle Service in Gurgaon: Simplifying Your Team's Daily Commute",
+    description:
+        "Fiesta Shuttle Service in Gurgaon - Simplifying Your Team's Daily Commute. Reliable, gate-to-gate corporate shuttle services across Gurgaon business hubs.",
 };
 
 export default function ShuttleServiceGurgaon() {
@@ -20,13 +23,15 @@ export default function ShuttleServiceGurgaon() {
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
                 title="Fiesta Shuttle Service in Gurgaon Simplifying Your Team's Daily Commute"
-                subtitle="Book Your Employee Transport Today"
-                imageSrc="/images/shuttle-service-in-gurgaon/unnamed-15.jpg"
-                ctaText="Book Now"
+                subtitle=""
+                imageSrc="/images/shuttle-service-in-gurgaon/unnamed-14-e1763536998410.jpg"
+                ctaText="Book Your Employee Transport Today"
                 imageClassName="brightness-[0.5]"
             />
 
             <SimplifyingTeamCommute />
+            <GateToGateEffective />
+            <GurgaonCommutesMadeEasy />
             <WhatMakesDifferent />
             <CommutesMadeEasy />
             <EasilyIntegrated />

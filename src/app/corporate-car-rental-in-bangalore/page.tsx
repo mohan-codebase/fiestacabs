@@ -23,7 +23,7 @@ export default function CorporateCarRentalBangalorePage() {
             <HeroForm
                 title="Corporate Car Rental in Bangalore: Business Essentials"
                 subtitle=""
-                imageSrc="/images/corporate-car-rental-in-bangalore/unnamed-1-2.jpg"
+                imageSrc="/images/corporate-car-rental-in-bangalore/unnamed-8.jpg"
                 ctaText="Get A Free Quote"
             />
             <Introduction />

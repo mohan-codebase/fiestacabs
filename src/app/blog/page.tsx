@@ -14,7 +14,6 @@ export default function BlogPage() {
         excerpt: post.excerpt,
         image: post.image,
         url: `/blog/${post.slug}`,
-        date: post.date,
     }));
     return (
         <div className="w-full bg-[#efefef]">
@@ -33,7 +32,7 @@ export default function BlogPage() {
                         className="text-white text-5xl md:text-[58px] font-bold leading-none"
                         style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
                     >
-                        Blogs
+                        Blog
                     </h1>
                 </div>
             </section>
@@ -87,12 +86,6 @@ export default function BlogPage() {
                                         Read More &raquo;
                                     </Link>
 
-                                    <p
-                                        className="text-[11px] text-[#a1a1a1] mt-6"
-                                        style={{ fontFamily: "Helvetica, Arial, sans-serif" }}
-                                    >
-                                        {post.date}
-                                    </p>
                                 </div>
                             </article>
                         ))}

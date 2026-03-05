@@ -23,7 +23,7 @@ export default function CarRentForMarriageInDelhi() {
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
                 title="Car Rent for Marriage in Delhi"
-                subtitle="Book Your Wedding Car Now"
+                subtitle="Celebrate your big day with Fiesta’s chauffeur-driven car rentals in Pune, offering elegant wedding entrances, smooth guest transfers, and complete peace of mind."
                 imageSrc="/images/car-rent-for-marriage-in-delhi/kdsjf.jpg"
                 ctaText="Book Now"
                 imageClassName="brightness-[0.4]"

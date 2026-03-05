@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 const SimplifyingTeamCommute = () => {
     return (
@@ -8,7 +7,7 @@ const SimplifyingTeamCommute = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                     <div className="relative h-[300px] md:h-[450px] w-full overflow-hidden">
                         <Image
-                            src="/images/shuttle-service-in-gurgaon/unnamed-1-9.jpg"
+                            src="/images/shuttle-service-in-gurgaon/unnamed-15.jpg"
                             alt="Fiesta Shuttle Service in Gurgaon"
                             fill
                             className="object-cover"

@@ -22,8 +22,11 @@ const WhyDifferent = () => {
                     </p>
                     <h4 className="text-2xl font-semibold mb-2">Affordability Meets Convenience</h4>
                     <p className="text-gray-700 leading-relaxed mb-6">
-                        We offer affordable parking add-ons near high-demand pick-up points, helping remove
-                        friction from daily commuting and reducing dependence on unreliable public transport.
+                        Worried about parking hassles near transit hubs?
+
+                        We offer affordable parking spaces and optional affordable parking spaces add-ons near high-demand pick up points, allowing a true door-to-hub solution that eliminates friction from the daily routine.
+
+                        With Fiesta, there’s no need to juggle between public transportation options or navigate through mind-boggling traffic—all while trying to get to or from work on time.
                     </p>
                     <Link
                         href="/reach-us"

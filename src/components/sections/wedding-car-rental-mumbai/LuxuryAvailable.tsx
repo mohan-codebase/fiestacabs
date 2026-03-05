@@ -50,7 +50,7 @@ const LuxuryAvailable = () => {
                         </h2>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Fiesta offers a refined selection of luxurious cars suitable for bridal cars, wedding guests, and premium transportation across Mumbai, including city venues and destination functions.
+                            Fiesta offers a refined selection of luxurious cars suitable for bridal cars, wedding guests, and premium transportation across Chennai, including city venues and destination functions.
                         </p>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7] mb-2">

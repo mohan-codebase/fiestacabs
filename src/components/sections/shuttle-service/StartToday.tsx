@@ -1,4 +1,5 @@
 import Image from "next/image";
+import BookNowButton from "../../common/BookNowButton";
 
 const StartToday = () => {
     return (
@@ -9,25 +10,30 @@ const StartToday = () => {
                     <h3 className="text-3xl md:text-4xl font-bold mb-4">Smarter Commutes Are Just a Call Away</h3>
                     <div className="space-y-3 text-gray-700 leading-relaxed mb-6">
                         <p>
-                            Your employees deserve better than stressful daily travel. Fiesta&apos;s shuttle service
-                            helps improve attendance and reduce commute friction.
+                            Still wondering why struggle with complex commutes and unreliable public transport?
+
+                            Your employees deserve better. Fiesta’s employee shuttle service offers a win-win solution: happier staff, better attendance, and reduced travel stress.
+
+                            Set up a consultation and explore a custom plan for your organization
+                            Let your team experience the difference with their first ride
+
+                            Don’t wait. Join the movement that’s reshaping the way India commutes to work—one shuttl bus at a time.
+
+                            Fiesta Smart Mobility: Where Every Ride Means Business.
+
+                            Make the switch today and turn everyday commuting into your company’s strategic advantage.
                         </p>
-                        <p>
-                            Set up a consultation and explore a custom commuting plan for your organization.
-                        </p>
+
                     </div>
                     <div className="inline-flex items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 mb-5">
                         <span className="font-semibold text-gray-800">Call Us For Your Next Ride</span>
                         <span className="text-[#EC2028] font-bold">+91 78458 67512</span>
                     </div>
-                    <div>
-                        <a
-                            href="#"
-                            className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md"
-                        >
-                            Book Now
-                        </a>
-                    </div>
+                    <BookNowButton
+                        className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md"
+                    >
+                        Book Now
+                    </BookNowButton>
                 </div>
                 <div className="relative h-[420px] md:h-[600px] rounded-md overflow-hidden">
                     <Image

@@ -5,10 +5,10 @@ import { MdOutlineCheckCircle } from 'react-icons/md';
 
 const DesignedForNeeds = () => {
     const listItems = [
-        "Flexible pricing and billing structure.",
-        "Options available for ad-hoc movement and shuttle services.",
-        "Adherence to compliance norms and labor laws standardizing mobility.",
-        "Streamlined processes for route optimization and immediate deployments."
+        " Real time monitoring of every trip. ",
+        " Maximum optimization for reduced travel delays. ",
+        " Coverage for multiple pick ups and other corporate complexes in the city. ",
+        " Options to scale for pan India presence and expansion into nearby cities. "
     ];
 
     return (
@@ -21,8 +21,7 @@ const DesignedForNeeds = () => {
                             Designed for Employee and Business Needs
                         </h2>
                         <p className="text-gray-700 text-lg leading-relaxed mb-6">
-                            From standard hatchbacks for quick commutes to spacious buses for large teams, Fiesta Smart Mobility offers a diverse fleet customized for your company. Our transportation models cater perfectly to specific organizational demands, shift timings, and budgetary requirements.
-                        </p>
+                            Fiesta understands that no two businesses have the same transportation needs. That is why our employee transportation solutions are adaptable. Whether it’s daily commutes, round trip options, or planning for visiting clients, we create reliable systems backed by advanced technology and professional management.                        </p>
 
                         <ul className="space-y-4 mb-8">
                             {listItems.map((item, index) => (
@@ -34,8 +33,9 @@ const DesignedForNeeds = () => {
                         </ul>
 
                         <p className="text-gray-800 font-medium text-lg leading-relaxed mb-8">
-                            Make Fiesta Smart Mobility your corporate commute partner. Choose customized solutions tailored ideally for the fast-paced IT hubs and startup ecosystems of Bangalore. Let&apos;s make every commute worthwhile.
-                        </p>
+                            By choosing Fiesta, your organization not only reduces travel stress but also supports better workforce productivity. A hassle free commute helps employees arrive at work on time and start the day with focus. In the long run, this creates benefits for both your team and your business operations.
+
+                            With Fiesta’s employee transport, both employees and clients benefit from a seamless service built on commitment, efficiency, and reliability.                        </p>
 
                         <Link
                             href="/reach-us"

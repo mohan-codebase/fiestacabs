@@ -8,6 +8,7 @@ import KeyFeatures from "../../components/sections/shuttle-service/KeyFeatures";
 import SmarterWay from "../../components/sections/shuttle-service/SmarterWay";
 import StartToday from "../../components/sections/shuttle-service/StartToday";
 import WhyDifferent from "../../components/sections/shuttle-service/WhyDifferent";
+import CTA from "../../components/sections/shuttle-service/CTA";
 
 export const metadata = {
     title: "Shuttle Service | Fiesta Smart Mobility",
@@ -26,6 +27,7 @@ const ShuttleServicePage = () => {
             <SmarterWay />
             <StartToday />
             <WhyDifferent />
+            <CTA />
             <FAQ />
         </div>
     );

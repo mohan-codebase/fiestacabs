@@ -19,7 +19,7 @@ export default function EmployeeTransportationServicesBangalore() {
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
                 title="Employee Transportation Services in Bangalore"
-                subtitle="Book the ultimate employee transport services in Bangalore for a hassle-free boarding process at no extra costs down to reservations."
+                subtitle="In a fast-moving city like Bangalore, the daily commute can greatly influence how employees begin and end their workday. From long traffic jams to crowded public transport, travel challenges often lead to stress and lower productivity. At Fiesta, we provide Employee Transportation Services in Bangalore that make corporate commutes smoother, safer, and more reliable—helping your teams travel comfortably and arrive refreshed every day."
                 imageSrc="/images/employee-transportation-services-in-bangalore/unnamed-7-e1762835828914.jpg"
                 ctaText="Book Employee Transport in Bangalore"
             />

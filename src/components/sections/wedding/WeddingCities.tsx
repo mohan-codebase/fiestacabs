@@ -8,32 +8,32 @@ const WeddingCities = () => {
         {
             name: "Wedding Cars in\nChennai",
             desc: "Arrive in style at your Chennai wedding with Fiesta's luxury fleet. From vintage classics to modern sedans, we ensure a grand and elegant entry for your big day.",
-            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-hyderabad/luxury-wedding-cars.jpg"
+            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-chennai/luxury-wedding-cars.jpg"
         },
         {
             name: "Wedding Cars in\nHyderabad",
             desc: "Make your wedding day unforgettable in Hyderabad with Fiesta's premium cars. Our fleet is perfect for HITEC City, Gachibowli, and popular wedding venues across the city.",
-            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-hyderabad/luxury-wedding-cars.jpg"
+            icon: "/images/services-offered/premium-car-rentals/wedding-cars/luxury-suv.jpg"
         },
         {
             name: "Wedding Cars in\nBangalore",
             desc: "From Whitefield to Electronic City, Fiesta provides luxury wedding cars in Bangalore that guarantee punctual service and photo-ready elegance.",
-            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-bangalore/luxury-wedding-cars.jpg"
+            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-bangalore/wedd-cars-in-bangalore.jpg"
         },
         {
             name: "Wedding Cars in\nDelhi",
             desc: "Celebrate in style in the capital with Fiesta's curated fleet. Our wedding cars in Delhi are tailored for royal entries, complete with décor and trained chauffeurs.",
-            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-delhi/luxury-wedding-cars.jpg"
+            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-delhi/marriage-car-rent-in-delhi.jpg"
         },
         {
             name: "Wedding Cars in\nGurgaon",
             desc: "Whether it's Cyber City or Udyog Vihar, Fiesta's wedding car rentals in Gurgaon make every bridal entry truly memorable with luxury vehicles and on-time arrivals.",
-            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-gurgaon/luxury-wedding-cars.jpg"
+            icon: "/images/services-offered/premium-car-rentals/wedding-cars/entrance-in-style.jpg"
         },
         {
             name: "Wedding Cars in\nMumbai",
             desc: "Whether it's anywhere in Mumbai or its surrounding areas, Fiesta's car rental services in Mumbai ensure a smooth and stylish ride with well-maintained vehicles and on-time service.",
-            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-mumbai/luxury-wedding-cars.jpg"
+            icon: "/images/services-offered/premium-car-rentals/wedding-cars/wedding-cars-in-mumbai/luxury-cars-in-fiesta.jpg"
         }
     ];
 
@@ -62,11 +62,6 @@ const WeddingCities = () => {
                                     width={64}
                                     height={64}
                                     className="object-contain grayscale opacity-80"
-                                    onError={(e) => {
-                                        // Fallback icon placeholder if the image path doesn't exist
-                                        e.currentTarget.style.display = 'none';
-                                        e.currentTarget.parentElement!.innerHTML = '<span class="text-4xl text-gray-400">🏛️</span>';
-                                    }}
                                 />
                             </div>
                             <h3 className="text-2xl font-bold mb-4 text-gray-900 whitespace-pre-line leading-tight">

@@ -4,21 +4,17 @@ import Image from 'next/image';
 const RunningRoutes = () => {
     const listItems = [
         {
-            title: "Extensive Network",
-            desc: "We've mapped key routes to serve every major business hub in the city."
+            title: " HITEC City ",
+            desc: " Our shuttle network connects popular pick up points in nearby residential clusters to this thriving IT zone. Fewer delays, more productivity. "
         },
         {
-            title: "Connected Zones",
+            title: "Gachibowli",
             desc: "Our shuttle network connects popular pick up points in nearby residential clusters to this thriving IT zone. Fewer delays, more productivity."
         },
         {
-            title: "Accessible Hubs",
-            desc: "Whether your employees are coming from Kondapur, Madhapur, or beyond, our scheduled rides offer a dependable way to reach work with ease."
-        },
-        {
-            title: "Scalable Operations",
+            title: " Financial District & Beyond ",
             desc: "As more teams move into Hyderabad's expanding business parks, Fiesta continues to scale its routes, ensuring maximum coverage and consistent service."
-        }
+        },
     ];
 
     const Icon = () => (
@@ -38,7 +34,7 @@ const RunningRoutes = () => {
                         <h2 className="text-3xl md:text-[34px] font-bold text-gray-900 mb-8 leading-tight">
                             Fiesta Now Running Routes Across Hyderabad
                         </h2>
-
+                        <p className="text-gray-700 leading-relaxed mb-6">We’ve mapped key routes to serve every major business hub in the city.</p>
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4">

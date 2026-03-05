@@ -3,11 +3,11 @@ import Image from 'next/image';
 
 const WhyReliable = () => {
     const reasonsList = [
-        "Punctuality ensures better productivity",
-        "Reduced employee stress and fatigue",
-        "Enhanced safety and security for all",
-        "Cost-effective for both employees and employers",
-        "Boosts overall employee satisfaction"
+        "Avoids late arrivals during critical time",
+        "Reduces employee fatigue from long commutes",
+        "Supports employee safety for late-night shifts",
+        "Minimises absenteeism and scheduling issues",
+        "Ensures fixed routes for smooth daily travel"
     ];
 
     return (
@@ -31,17 +31,13 @@ const WhyReliable = () => {
                         </h2>
                         <div className="space-y-4 mb-8">
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                Reliable employee transport services in Hyderabad play a pivotal role in ensuring that your employees commence their workday with efficiency and punctuality setting a positive tone for the day.
-                            </p>
+                                In a growing city like Hyderabad, where traffic congestion and long commute times affect daily routines, reliable employee transportation services help reduce stress and boost punctuality.                             </p>
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                Providing your workforce with dependable transportation can significantly boost their morale and productivity. It eliminates the stress of daily commuting, allowing them to focus better on their core responsibilities.
-                            </p>
+                                Fiesta Smart Mobility’s Telangana operations include 40+ employees and 300 vehicles. Services currently reach 8 clients in the state. With 9 years of experience in the region, the company has established a steady presence. Telangana continues to offer opportunities for further growth and expansion.                            </p>
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                Furthermore, it showcases your company&apos;s commitment to employee well-being, which can be a strong factor in talent retention and attraction.
-                            </p>
+                                Companies across sectors depend on corporate employee transportation services to manage staff mobility, especially when shift timings are odd, or locations are far from public transit.                            </p>
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                Let us look at some of the key reasons why selecting out employee transport services in Hyderabad is a smart choice for your corporate needs:
-                            </p>
+                                An excellent service provides a dependable transportation service that shows a commitment to ensuring security, safety, saving time, and improving work focus.                            </p>
                         </div>
 
                         <ul className="space-y-4">

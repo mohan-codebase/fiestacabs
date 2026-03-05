@@ -14,11 +14,9 @@ const HowWeOperate = () => {
                         </h2>
                         <div className="space-y-6 mb-8">
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                Our sophisticated technology solutions and proactive monitoring make it effortless for human resources and admin teams to manage transportation. We combine innovative digital tools with experienced ground staff for optimal efficiency.
-                            </p>
+                                Our services in Bangalore are structured for efficiency, reliability, and convenience. From multiple pick ups across residential clusters to fixed drops at corporate hubs like Electronic City or Whitefield, our transportation services cover all major routes.                            </p>
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                Our vehicles are equipped with GPS tracking, panic buttons, and other modern safety features. Live reporting on vehicle location, boarding status, and timely arrival ensures maximum transparency. Through our customized solutions, we adapt to your organization&apos;s specific shift schedules.
-                            </p>
+                                With trained chauffeurs and experienced drivers, every journey is managed professionally. Routes are designed to ensure smooth rides, reduced delays, and punctual schedule adherence. For visiting clients or nearby cities, our system supports round trip planning with the same focus on safety and comfort.                            </p>
                         </div>
 
                         <Link

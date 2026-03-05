@@ -2,29 +2,9 @@
 
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { getLiveFaqsByPath } from "../../../data/liveFaqContent";
 
-const faqData = [
-    {
-        question: "1. How early should I book a wedding car in Bangalore?",
-        answer: "Booking 3-6 months in advance is recommended, especially during peak months from November to February."
-    },
-    {
-        question: "2. Are chauffeurs included with the wedding car rental?",
-        answer: "Yes. All vehicles come with professional drivers, trained and background-checked for safety and reliability."
-    },
-    {
-        question: "3. Are there hidden charges?",
-        answer: "No. Fiesta provides transparent pricing, covering fuel, driver allowances, and other costs."
-    },
-    {
-        question: "4. Which cars are popular for weddings in Bangalore?",
-        answer: "Luxury cars, SUVs, and vintage cars like Mercedes-Benz, Audi, and Rolls-Royce are widely chosen."
-    },
-    {
-        question: "5. Does Fiesta operate in other cities?",
-        answer: "Yes. Fiesta serves metro cities across India, providing luxury car rentals for weddings, special days, and destinations, ensuring every journey is safe, enjoyable, and leaves couples with pride."
-    }
-];
+const faqData = getLiveFaqsByPath("/wedding-cars-in-bangalore");
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);

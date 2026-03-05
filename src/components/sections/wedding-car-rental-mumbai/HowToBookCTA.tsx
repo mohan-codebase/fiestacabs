@@ -2,22 +2,10 @@ import Image from "next/image";
 
 const HowToBookCTA = () => {
     const steps = [
-        {
-            title: "Provide your Requirements",
-            desc: "Contact us using our form or call and specify the events you need a car for."
-        },
-        {
-            title: "Select your Car",
-            desc: "Choose from our premium selection of vehicles, tailored for your special entrance."
-        },
-        {
-            title: "Identify Locations",
-            desc: "Provide the venues along with your timeline. We will help establish perfect logistics."
-        },
-        {
-            title: "Confirm Your Booking",
-            desc: "Reserve your chosen vehicle securely to guarantee its availability on your big day."
-        }
+        "Plan Ahead: Book at least 2–3 months before the wedding, especially during peak season.",
+        "Select Your Vehicle: Choose from vintage cars, luxury cars, or family vehicles.",
+        "Customise Your Service: Add floral decorations and chauffeur support for a perfect experience.",
+        "Confirm and Relax: Ensure all details are arranged and enjoy a stress-free special day.",
     ];
 
     return (
@@ -50,18 +38,13 @@ const HowToBookCTA = () => {
                                         <path d="M8 12.5L10.5 15L16 9" stroke="#EC2028" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
                                     </svg>
                                 </div>
-                                <div>
-                                    <h3 className="text-lg font-bold text-white mb-1">{step.title}</h3>
-                                    <p className="text-white/80 text-[15px] leading-[1.6]">
-                                        {step.desc}
-                                    </p>
-                                </div>
+                                <p className="text-white/85 text-[15px] leading-[1.6]">{step}</p>
                             </div>
                         ))}
                     </div>
 
                     <p className="text-white/90 text-[15px] font-medium mb-8 max-w-lg">
-                        Ready to book right away? Connect with our dedicated support team to plan your wedding day logistics exactly the way you imagined!
+                        Fiesta offers a professional car rental service in Mumbai, delivering vehicles, drivers, and experiences customised for weddings, special occasions, and memorable celebrations.
                     </p>
 
                     <button className="bg-[#EC2028] hover:bg-red-700 text-white font-medium py-3 px-8 rounded-md transition-colors w-max">

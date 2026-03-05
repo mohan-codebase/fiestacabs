@@ -21,8 +21,8 @@ export default function ShuttleServicesHyderabad() {
     return (
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
-                title="Fiesta Shuttle Services in Hyderabad: Simplifying the City Commute"
-                subtitle="Book A Shuttle For Your Team"
+                title="Fiesta Shuttle Services in Hyderabad Simplifying the City Commute "
+                subtitle=""
                 imageSrc="/images/shuttle-services-in-hyderabad/unnamed-11.jpg"
                 ctaText="Book Corporate Shuttle in Hyderabad"
                 imageClassName="brightness-[0.4]"

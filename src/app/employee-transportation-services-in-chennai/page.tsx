@@ -1,7 +1,9 @@
+import React from "react";
 import Image from "next/image";
 import { FaCheck, FaPhoneAlt, FaCalendarAlt, FaBus, FaStar, FaLeaf, FaShieldAlt, FaUsers, FaChartLine, FaClock, FaHandHoldingUsd, FaRegFileAlt } from "react-icons/fa";
 import FAQ from "../../components/sections/home/FAQ";
 import FAQAccordion, { FAQItem } from "../../components/common/FAQAccordion";
+import ChennaiEmployeeTransportForm from "../../components/sections/employee-transport/ChennaiEmployeeTransportForm";
 
 export const metadata = {
     title: "Employee Transportation Services in Chennai | Fiesta Smart Mobility",
@@ -40,19 +42,19 @@ const ChennaiEmployeeTransportPage = () => {
     const differentiators = [
         {
             title: "Well Maintained Fleet",
-            description: "Regular maintenance checks to ensure zero breakdowns and maximum comfort.",
+            description: " Every vehicle is regularly checked, ensuring reliability and consistent performance. Maintenance is scheduled and monitored so that breakdowns are avoided, giving employees a smooth ride every time. ",
         },
         {
             title: "Professional Drivers",
-            description: "Highly trained, background-verified professionals committed to safety.",
+            description: " We employ trained and courteous drivers who understand city routes and prioritise safety. Their role is not just driving but making sure employees experience a secure and timely journey. ",
         },
         {
             title: "Real Time Tracking",
-            description: "Advanced GPS tracking for live updates and improved passenger safety.",
+            description: " With the use of advanced technology, our transportation services offer real time tracking of vehicles. This improves visibility, reliability, and helps HR and admin teams manage employee transportation with ease. ",
         },
         {
             title: "Seamless Experience",
-            description: "Integrated technology for smooth scheduling and route management.",
+            description: " We focus on providing a seamless service from pick up and drop to office entry, allowing employees to have a seamless experience every day. ",
         },
     ];
 
@@ -106,74 +108,13 @@ const ChennaiEmployeeTransportPage = () => {
                                 Employee Transportation Services in Chennai
                             </h1>
                             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
-                                Empower your workforce with stress-free and productive commutes through our reliable and efficient employee transportation services in Chennai.
-                            </p>
+                                In a fast-paced city like Chennai, employee travel shapes energy, focus, and well-being. At Fiesta, we provide reliable employee transportation services designed to make every commute safe, comfortable, and stress-free. From daily office rides to business trips, we help organizations boost productivity and employee satisfaction by ensuring smooth, secure, and hassle-free travel every day.                            </p>
                             <button className="bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded text-lg transition-colors">
                                 Book Your Employee Transport Today
                             </button>
                         </div>
 
-                        <div className="bg-white rounded-xl shadow-2xl p-6 md:p-8 w-full max-w-md mx-auto lg:ml-auto">
-                            <h3 className="text-xl font-bold text-gray-900 mb-6">Get A Custom Quote</h3>
-                            <form className="space-y-4">
-                                <div>
-                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                        First Name <span className="text-red-600">*</span>
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                        Email Address <span className="text-red-600">*</span>
-                                    </label>
-                                    <input
-                                        type="email"
-                                        className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                        Phone Number <span className="text-red-600">*</span>
-                                    </label>
-                                    <input
-                                        type="tel"
-                                        className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                        Company <span className="text-red-600">*</span>
-                                    </label>
-                                    <input
-                                        type="text"
-                                        className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                        Message
-                                    </label>
-                                    <textarea
-                                        rows={3}
-                                        maxLength={180}
-                                        className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] resize-none"
-                                    />
-                                </div>
-                                <button
-                                    type="submit"
-                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 rounded transition-colors"
-                                >
-                                    SUBMIT
-                                </button>
-                            </form>
-                        </div>
+                        <ChennaiEmployeeTransportForm />
                     </div>
                 </div>
             </section>
@@ -192,18 +133,13 @@ const ChennaiEmployeeTransportPage = () => {
                         </div>
                         <div>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                                Why Employee Transportation Matters in Chennai
+                                Why Employee Transportation Matters
                             </h2>
                             <div className="space-y-4 text-gray-700 leading-relaxed text-lg">
                                 <p>
-                                    Chennai's business landscape is expanding rapidly, with major IT hubs and industrial zones scattered across the city. Navigating through peak traffic hours can be a significant hurdle for employees, affecting their morale and productivity.
-                                </p>
+                                    Employee transportation services are no longer optional in a city that experiences heavy traffic and growing demand for mobility. Relying on scattered travel methods or public transport often results in delays, inconsistency, and lower morale. A structured employee transport system ensures that employees can reach their office refreshed, on time, and ready for a productive day.                                </p>
                                 <p>
-                                    Reliable employee transportation isn't just a perk; it's a strategic necessity. By providing structured commute solutions, businesses can significantly improve employee punctuality, ensure safety, and boost overall job satisfaction.
-                                </p>
-                                <p>
-                                    A stress-free commute allows your team to arrive at work energized and ready to tackle their day, directly contributing to your company's success in a competitive environment.
-                                </p>
+                                    For companies competing for talent, investing in the best employee transportation service is also a matter of retention. When travel is reliable, employees see real value in the support their organizations provide. This small step creates a positive impact on attendance, punctuality, and workforce satisfaction.                                </p>
                             </div>
                         </div>
                     </div>
@@ -218,8 +154,7 @@ const ChennaiEmployeeTransportPage = () => {
                             What Makes Our Transportation Services Different
                         </h2>
                         <p className="text-gray-600 text-lg">
-                            We go above and beyond to provide a service that truly stands out, focusing on every detail to ensure a premium experience for your workforce.
-                        </p>
+                            We have successfully established our operations in Chennai by combining planning, advanced technology, and a people-first approach. Our transportation services are designed with optimized routes, precise schedule planning, and a well maintained fleet to serve both small and large businesses.                        </p>
                     </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-8">
@@ -258,7 +193,7 @@ const ChennaiEmployeeTransportPage = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
                         <div className="relative h-[400px] md:h-[600px] lg:h-[800px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="/images/employee-transport/shuttle.jpg"
+                                src="/images/employee-transport/unnamed-1.jpg"
                                 alt="Professional Transportation Service"
                                 fill
                                 style={{ objectFit: "cover" }}
@@ -380,7 +315,7 @@ const ChennaiEmployeeTransportPage = () => {
                         </div>
                         <div className="order-1 lg:order-2 relative h-[400px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/employee-transport/additional.jpg"
+                                src="/images/employee-transport/unnamed-3.jpg"
                                 alt="Sustainable Transportation Solutions"
                                 fill
                                 style={{ objectFit: "cover" }}
@@ -392,7 +327,7 @@ const ChennaiEmployeeTransportPage = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="relative h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-2xl">
                             <Image
-                                src="/images/employee-transport/fiesta-commutes.avif"
+                                src="/images/employee-transport/unnamed-4.jpg"
                                 alt="Our Commitment"
                                 fill
                                 style={{ objectFit: "cover" }}
@@ -428,10 +363,10 @@ const ChennaiEmployeeTransportPage = () => {
                 </div>
                 <div className="relative z-10 max-w-[1440px] mx-auto px-4 lg:px-8 text-white">
                     <div className="max-w-4xl">
-                        <h2 className="text-4xl lg:text-6xl font-bold mb-10 leading-tight">
+                        <h2 className="text-4xl lg:text-4xl font-bold mb-10 leading-tight">
                             Get Started with Fiesta
                         </h2>
-                        <div className="space-y-6 text-xl lg:text-2xl text-gray-100 leading-relaxed mb-12 max-w-3xl">
+                        <div className="space-y-6 text-xl lg:text-md text-gray-100 leading-relaxed mb-12 max-w-3xl">
                             <p>
                                 If you are looking for dependable, structured, and cost effective employee transportation services in Chennai, Fiesta is here to help. We have successfully established ourselves as a trusted provider, supporting organizations of all sizes with transportation solutions that truly work.
                             </p>
@@ -445,7 +380,7 @@ const ChennaiEmployeeTransportPage = () => {
                                 Fiesta – Your preferred partner for employee transportation services in Chennai.
                             </p>
                         </div>
-                        <button className="bg-[#EC2028] text-white px-12 py-5 rounded-lg text-2xl font-bold hover:bg-[#c91b22] transition-colors duration-300 shadow-xl">
+                        <button className="bg-[#EC2028] text-white px-6 py-3 rounded-lg text-xl font-bold hover:bg-[#c91b22] transition-colors duration-300 shadow-xl">
                             Book Now
                         </button>
                     </div>

@@ -3,7 +3,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
-import { FaQuoteLeft, FaStar } from "react-icons/fa";
+import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -110,61 +110,76 @@ const Testimonials = ({
                     </h2>
                 </div>
 
-                {/* Testimonials Carousel */}
-                <Swiper
-                    modules={[Navigation, Pagination, Autoplay]}
-                    spaceBetween={30}
-                    slidesPerView={1}
-                    navigation
-                    pagination={{ clickable: true }}
-                    autoplay={{
-                        delay: 5000,
-                        disableOnInteraction: false,
-                    }}
-                    loop={true}
-                    className="testimonials-swiper"
-                >
-                    {testimonials.map((testimonial) => (
-                        <SwiperSlide key={testimonial.id}>
-                            <div className="bg-secondary rounded-2xl p-8 md:p-12 shadow-sm mb-12">
-                                {/* Quote Icon */}
-                                <div className="flex justify-center mb-6">
-                                    <FaQuoteLeft className="text-gray-300" size={48} />
+                <div className="relative group overflow-x-hidden">
+                    {/* Custom Navigation Arrows */}
+                    <button className="swiper-prev absolute left-2 md:left-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-gray-50 rounded-xl flex items-center justify-center shadow-lg hover:bg-white transition-all text-gray-400 hover:text-gray-900 border border-gray-100">
+                        <FaChevronLeft size={16} />
+                    </button>
+                    <button className="swiper-next absolute right-2 md:right-4 top-1/2 -translate-y-1/2 z-20 w-10 h-10 md:w-12 md:h-12 bg-gray-50 rounded-xl flex items-center justify-center shadow-lg hover:bg-white transition-all text-gray-400 hover:text-gray-900 border border-gray-100">
+                        <FaChevronRight size={16} />
+                    </button>
+
+                    {/* Testimonials Carousel */}
+                    <Swiper
+                        modules={[Navigation, Pagination, Autoplay]}
+                        spaceBetween={30}
+                        slidesPerView={1}
+                        navigation={{
+                            prevEl: '.swiper-prev',
+                            nextEl: '.swiper-next',
+                        }}
+                        pagination={{ clickable: true }}
+                        autoplay={{
+                            delay: 5000,
+                            disableOnInteraction: false,
+                        }}
+                        loop={true}
+                        className="testimonials-swiper"
+                    >
+                        {testimonials.map((testimonial) => (
+                            <SwiperSlide key={testimonial.id}>
+                                <div className="bg-[#FFF5F5] rounded-[40px] p-8 md:p-12 shadow-sm mb-12 border border-pink-50 max-w-6xl mx-auto">
+                                    {/* Quote Icon */}
+                                    <div className="flex justify-center mb-10">
+                                        <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-800">
+                                            <path d="M11.4286 0C5.11429 0 0 5.11429 0 11.4286V32H16V16H8V11.4286C8 9.54286 9.54286 8 11.4286 8V0ZM35.4286 0C29.1143 0 24 5.11429 24 11.4286V32H40V16H32V11.4286C32 9.54286 33.5429 8 35.4286 8V0Z" fill="currentColor" />
+                                        </svg>
+                                    </div>
+
+                                    {/* Quote Text */}
+                                    <p className="text-gray-800 text-sm md:text-[15px] font-medium leading-relaxed mb-10 text-center max-w-5xl mx-auto">
+                                        {testimonial.quote}
+                                    </p>
+
+                                    {/* Author Info */}
+                                    <div className="flex items-start gap-5 max-w-2xl mx-auto pl-4">
+                                        {/* Avatar */}
+                                        <div className="flex-shrink-0">
+                                            <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <circle cx="30" cy="30" r="30" fill="black" />
+                                                <circle cx="30" cy="22" r="8" fill="white" fillOpacity="0.2" />
+                                                <path d="M15 45C15 38.3726 21.7157 33 30 33C38.2843 33 45 38.3726 45 45" stroke="white" strokeWidth="3" strokeLinecap="round" strokeOpacity="0.3" />
+                                            </svg>
+                                        </div>
+
+                                        {/* Name, Role and Stars */}
+                                        <div className="flex flex-col gap-1">
+                                            <h4 className="font-bold text-gray-900 text-base">
+                                                {testimonial.company}
+                                            </h4>
+                                            <p className="text-gray-600 text-[13px] font-semibold mb-1">
+                                                {testimonial.role}
+                                            </p>
+                                            <div className="flex-shrink-0">
+                                                {renderStars(testimonial.rating)}
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-
-                                {/* Quote Text */}
-                                <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8 text-center max-w-4xl mx-auto">
-                                    {testimonial.quote}
-                                </p>
-
-                                {/* Author Info */}
-                                <div className="flex items-center justify-center gap-4 flex-wrap">
-                                    {/* Avatar */}
-                                    <div className="w-12 h-12 rounded-full bg-gray-800 flex items-center justify-center flex-shrink-0">
-                                        <span className="text-white font-semibold text-lg">
-                                            {testimonial.person.charAt(0)}
-                                        </span>
-                                    </div>
-
-                                    {/* Name and Company */}
-                                    <div className="text-center md:text-left">
-                                        <h4 className="font-bold text-gray-900 text-lg">
-                                            {testimonial.company}
-                                        </h4>
-                                        <p className="text-gray-600 text-sm">
-                                            {testimonial.person}
-                                        </p>
-                                    </div>
-
-                                    {/* Rating */}
-                                    <div className="flex-shrink-0">
-                                        {renderStars(testimonial.rating)}
-                                    </div>
-                                </div>
-                            </div>
-                        </SwiperSlide>
-                    ))}
-                </Swiper>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+                </div>
             </div>
         </section>
     );

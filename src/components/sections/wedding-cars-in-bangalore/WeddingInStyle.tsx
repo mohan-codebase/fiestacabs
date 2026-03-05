@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import BookNowButton from "../../common/BookNowButton";
 
 const WeddingInStyle = () => {
     return (
@@ -25,9 +25,9 @@ const WeddingInStyle = () => {
                             Whether it's a grand entrance, a comfortable ride for your guests, or a private drive for the couple, our vehicles promise style, safety, and reliability.
                         </p>
                         <div>
-                            <Link href="#" className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md transition-colors mt-2">
+                            <BookNowButton className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md transition-colors mt-2">
                                 Book Now
-                            </Link>
+                            </BookNowButton>
                         </div>
                     </div>
                 </div>

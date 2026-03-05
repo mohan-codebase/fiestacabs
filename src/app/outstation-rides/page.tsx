@@ -1,10 +1,4 @@
-"use client";
-
-import React from "react";
-import Link from "next/link";
-import { FaArrowRight } from "react-icons/fa";
 import FAQ from "../../components/sections/home/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";
 import WhyChooseUs from "../../components/sections/outstation/WhyChooseUs";
@@ -18,14 +12,13 @@ import SafetyComfort from "../../components/sections/outstation/SafetyComfort";
 import Offers from "../../components/sections/outstation/Offers";
 import CTA from "../../components/sections/outstation/CTA";
 
-const OutstationRidesPage = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: "smooth"
-        });
-    };
+export const metadata = {
+    title: "Outstation Rides | Fiesta Smart Mobility",
+    description:
+        "Travel between cities with Fiesta outstation rides featuring professional chauffeurs, safe vehicles, and transparent fares.",
+};
 
+const OutstationRidesPage = () => {
     return (
         <main className="w-full relative">
             <Hero />

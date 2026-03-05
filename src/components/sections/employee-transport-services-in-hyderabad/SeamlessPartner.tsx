@@ -12,11 +12,9 @@ const SeamlessPartner = () => {
                             Your Partner for Seamless Corporate Commutes
                         </h2>
                         <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                            At Fiesta Cabs, we have a complete and strictly professional driver fleet who has a neat track record and drives responsibly.
-                        </p>
+                            Choosing Fiesta means choosing more than a transport provider — it’s about partnering with a team that values safety, comfort, and consistency.                        </p>
                         <p className="text-gray-700 text-lg leading-relaxed">
-                            To top it with, our vehicles are constantly monitored making the rides for your employees safe, comfortable, and stress-free.
-                        </p>
+                            Let us handle your employee transportation needs so your workforce can focus on what truly matters — performance and productivity.                        </p>
                     </div>
 
                     {/* Right: Image */}

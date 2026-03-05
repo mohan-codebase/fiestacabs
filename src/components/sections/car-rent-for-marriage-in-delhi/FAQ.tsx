@@ -2,29 +2,9 @@
 
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { getLiveFaqsByPath } from "../../../data/liveFaqContent";
 
-const faqData = [
-    {
-        question: "1. How much does it cost to rent a car for a day or a few hours?",
-        answer: "Fiesta offers packages to fit different budgets. Prices depend on the car type and duration."
-    },
-    {
-        question: "2. How early should I book a car to avoid last-minute issues?",
-        answer: "Popular wedding dates fill fast. Contact Fiesta well in advance to secure your car."
-    },
-    {
-        question: "3. Can the car be decorated for the bride and groom?",
-        answer: "Fiesta cars can be arranged for wedding decorations to match your theme."
-    },
-    {
-        question: "4. Can cars be rented for multiple days or just one day?",
-        answer: "You can hire Fiesta cars for a single day or multiple wedding events, like mehendi, sangeet, and reception."
-    },
-    {
-        question: "5. Can family members or guests also rent cars from the same service?",
-        answer: "Fiesta also provides cars for guest transport, so your family and friends can book rides easily."
-    }
-];
+const faqData = getLiveFaqsByPath("/car-rent-for-marriage-in-delhi");
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);

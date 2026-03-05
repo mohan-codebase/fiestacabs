@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import BookNowButton from "../../common/BookNowButton";
 
 const CorporateIntro = () => {
     return (
@@ -38,9 +39,9 @@ const CorporateIntro = () => {
                         </div>
 
                         <div>
-                            <button className="bg-[#EC2028] hover:bg-red-700 text-white font-medium py-3 px-8 rounded transition-colors">
+                            <BookNowButton className="bg-[#EC2028] hover:bg-red-700 text-white font-medium py-3 px-8 rounded transition-colors">
                                 Get A Free Quote
-                            </button>
+                            </BookNowButton>
                         </div>
                     </div>
 

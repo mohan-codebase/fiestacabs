@@ -4,6 +4,7 @@ import Introduction from "../../components/sections/employee-transportation-serv
 import WhyChooseFiesta from "../../components/sections/employee-transportation-services-in-mumbai/WhyChooseFiesta";
 import WhyBusinessesTrust from "../../components/sections/employee-transportation-services-in-mumbai/WhyBusinessesTrust";
 import HowWeDeliver from "../../components/sections/employee-transportation-services-in-mumbai/HowWeDeliver";
+import CTA from "../../components/sections/employee-transportation-services-in-mumbai/CTA";
 import FAQ from "../../components/sections/employee-transportation-services-in-mumbai/FAQ";
 import Testimonials from "../../components/sections/home/Testimonials";
 
@@ -17,8 +18,8 @@ export default function EmployeeTransportationServicesMumbai() {
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
                 title="Employee Transportation Services in Mumbai"
-                subtitle="Book the ultimate employee transport services in Mumbai for a hassle-free boarding process at no extra costs down to reservations."
-                imageSrc="/images/employee-transportation-services-in-mumbai/unnamed-4-1.jpg"
+                subtitle="In a dynamic city like Mumbai, where time and efficiency drive success, daily commuting plays a major role in shaping employee morale and productivity. Fiesta’s Employee Transportation Services in Mumbai are designed to deliver safe, reliable, and comfortable travel experiences for your workforce. With expertly planned routes, a well-maintained fleet, and professional drivers, we ensure smooth, on-time commutes that reduce stress and support a more productive workday."
+                imageSrc="/images/employee-transportation-services-in-mumbai/unnamed-5.jpg"
                 ctaText="Book Employee Transport in Mumbai"
             />
 
@@ -29,6 +30,8 @@ export default function EmployeeTransportationServicesMumbai() {
             <HowWeDeliver />
 
             <WhyBusinessesTrust />
+
+            <CTA />
 
             <Testimonials
                 eyebrow="TESTIMONIALS"

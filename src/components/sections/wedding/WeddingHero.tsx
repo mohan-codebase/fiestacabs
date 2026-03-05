@@ -1,7 +1,32 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import Image from "next/image";
+import { sendEmailAction } from "../../../app/actions/emailActions";
+import BookNowButton from "../../common/BookNowButton";
 
 const WeddingHero = () => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        const formData = new FormData(e.currentTarget);
+        const data = {
+            name: formData.get("firstName") as string,
+            email: formData.get("email") as string,
+            phone: formData.get("phone") as string,
+            company: formData.get("company") as string,
+            formSource: "Wedding Hero Form",
+        };
+
+        const result = await sendEmailAction(data);
+        setSubmitStatus(result);
+        setIsSubmitting(false);
+    };
     return (
         <section className="relative w-full min-h-[600px] flex items-center justify-center pt-20 pb-16 lg:py-24">
             {/* Background Image */}
@@ -28,73 +53,108 @@ const WeddingHero = () => {
                         <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
                             Make your special day unforgettable with Fiesta’s luxury wedding car rentals.
                         </p>
-                        <button className="bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded text-lg transition-colors">
+                        <BookNowButton className="bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded text-lg transition-colors">
                             Book Now
-                        </button>
+                        </BookNowButton>
                     </div>
 
                     {/* Right Form Content */}
                     <div id="booking-form" className="bg-[#F8F9FA] rounded-[20px] shadow-2xl p-6 md:p-8 w-full max-w-md mx-auto lg:ml-auto">
-                        <form className="space-y-5">
-                            <div>
-                                <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                    First Name <span className="text-red-600">*</span>
-                                </label>
-                                <input
-                                    type="text"
-                                    className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                    Email Address <span className="text-red-600">*</span>
-                                </label>
-                                <input
-                                    type="email"
-                                    className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                    Phone Number <span className="text-red-600">*</span>
-                                </label>
-                                <input
-                                    type="tel"
-                                    className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                    Company <span className="text-red-600">*</span>
-                                </label>
-                                <input
-                                    type="text"
-                                    className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors"
-                                    required
-                                />
-                            </div>
-                            <div className="flex justify-between items-center border border-gray-200 bg-gray-50 rounded p-2 md:p-3 w-full mb-2 shadow-sm">
-                                <div className="flex items-center gap-3">
-                                    <input type="checkbox" required id="robot-wedding" className="w-5 h-5 rounded border-gray-300 text-[#EC2028] focus:ring-[#EC2028] cursor-pointer" />
-                                    <label htmlFor="robot-wedding" className="text-sm text-gray-700 cursor-pointer">I'm not a robot</label>
+                        {submitStatus?.success ? (
+                            <div className="py-12 text-center">
+                                <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
+                                    </svg>
                                 </div>
-                                <div className="flex flex-col items-center justify-center">
-                                    <img src="/images/reCAPTCHA_icon.png" alt="reCAPTCHA" className="w-6 h-6 object-contain" />
-                                </div>
+                                <h3 className="text-xl font-bold text-gray-900 mb-2">Thank You!</h3>
+                                <p className="text-gray-600">Your wedding inquiry has been received. We'll contact you shortly.</p>
+                                <button onClick={() => setSubmitStatus(null)} className="mt-4 text-[#EC2028] font-semibold">New Inquiry</button>
                             </div>
-                            <button
-                                type="submit"
-                                className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3.5 rounded transition-colors text-lg mt-2 flex justify-center items-center gap-2"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
-                                    <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
-                                </svg>
-                                Contact Now
-                            </button>
-                        </form>
+                        ) : (
+                            <form className="space-y-5" onSubmit={handleSubmit}>
+                                {submitStatus?.success === false && (
+                                    <div className="p-3 bg-red-50 border border-red-200 text-red-600 rounded text-sm">
+                                        {submitStatus.message}
+                                    </div>
+                                )}
+                                <div>
+                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                        First Name <span className="text-red-600">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="firstName"
+                                        className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                        Email Address <span className="text-red-600">*</span>
+                                    </label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                        Phone Number <span className="text-red-600">*</span>
+                                    </label>
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                        Company <span className="text-red-600">*</span>
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="company"
+                                        className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors"
+                                        required
+                                    />
+                                </div>
+                                <div className="flex justify-between items-center border border-gray-200 bg-gray-50 rounded p-2 md:p-3 w-full mb-2 shadow-sm">
+                                    <div className="flex items-center gap-3">
+                                        <input type="checkbox" required id="robot-wedding" className="w-5 h-5 rounded border-gray-300 text-[#EC2028] focus:ring-[#EC2028] cursor-pointer" />
+                                        <label htmlFor="robot-wedding" className="text-sm text-gray-700 cursor-pointer">I'm not a robot</label>
+                                    </div>
+                                    <div className="flex flex-col items-center justify-center">
+                                        <img src="/images/reCAPTCHA_icon.png" alt="reCAPTCHA" className="w-6 h-6 object-contain" />
+                                    </div>
+                                </div>
+                                <button
+                                    type="submit"
+                                    disabled={isSubmitting}
+                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3.5 rounded transition-colors text-lg mt-2 flex justify-center items-center gap-2 disabled:opacity-50"
+                                >
+                                    {isSubmitting ? (
+                                        <>
+                                            <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                                                <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                                                <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                                            </svg>
+                                            SENDING...
+                                        </>
+                                    ) : (
+                                        <>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                                                <path fillRule="evenodd" d="M1.5 4.5a3 3 0 013-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 01-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 006.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 011.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 01-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5z" clipRule="evenodd" />
+                                            </svg>
+                                            Contact Now
+                                        </>
+                                    )}
+                                </button>
+                            </form>
+                        )}
                     </div>
 
                 </div>

@@ -2,29 +2,9 @@
 
 import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import { getLiveFaqsByPath } from "../../../data/liveFaqContent";
 
-const faqData = [
-    {
-        question: "How are pick-up points decided near major landmarks?",
-        answer: "Pick-up points are strategically chosen near metro stations, petrol pumps, malls, and key landmarks like AIIMS and IGI Airport for easy access."
-    },
-    {
-        question: "Can companies request extra shuttles during peak days or corporate events in Gurgaon?",
-        answer: "Yes- companies can request extra shuttles in busy periods or for big events. Fiesta's employee-transport team will scale up the fleet and run additional buses or vans to match the demand."
-    },
-    {
-        question: "Are there options for long-distance routes?",
-        answer: "Fiesta shuttles can run for longer routes, like Gurgaon to Delhi offices, with planned pick-up points and timing for comfort and punctuality."
-    },
-    {
-        question: "Can shuttles carry bags or office equipment along with employees?",
-        answer: "Employees can carry personal bags and light office equipment on board; shuttles are spacious and air-conditioned for convenience."
-    },
-    {
-        question: "Are there shuttle options for employees living outside of metro areas?",
-        answer: "Fiesta serves employees in distant zones like Sohna or Manesar with dedicated routes and fixed pick-up points for minimal waiting."
-    }
-];
+const faqData = getLiveFaqsByPath("/shuttle-service-in-gurgaon");
 
 const FAQ = () => {
     const [openIndex, setOpenIndex] = useState<number | null>(0);

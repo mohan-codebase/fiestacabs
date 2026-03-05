@@ -4,10 +4,10 @@ import { MdOutlineCancel } from 'react-icons/md';
 
 const WhyChooseUs = () => {
     const listItems = [
-        "Eliminating transportation hassles for your team, letting them focus on productivity.",
-        "Modern fleet of vehicles, maintained rigorously to meet the highest safety and comfort standards.",
-        "Experienced drivers, equipped to navigate smoothly through Bangalore's evolving infrastructure.",
-        "Real-time tracking capabilities, giving your management and employees peace of mind on the move."
+        " Employee safety as a top priority, ensuring that every trip is managed with care and attention. ",
+        " Efficient routes and maximum optimization so that employees experience minimal delays during peak hours. ",
+        " Advanced technology including real time GPS tracking, live tracking, and real time monitoring for better visibility of every ride. ",
+        " Hassle free commute that allows the workforce to reach the office refreshed and on time. "
     ];
 
     return (
@@ -31,11 +31,9 @@ const WhyChooseUs = () => {
                         </h2>
                         <div className="space-y-4 mb-6">
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                Fiesta Smart Mobility is rated as the topmost employee transportation services provider in Bangalore. For the last 20 years, we have built a reputation driven by safety, reliability, and unparalleled customer service.
-                            </p>
+                                Choosing the right transportation services in Bangalore can directly influence employee satisfaction, attendance, and long-term retention. With our dedicated team, trained drivers, and well maintained vehicles, we make the daily commute a reliable part of the workday rather than a challenge.                            </p>
                             <p className="text-gray-700 text-lg leading-relaxed">
-                                The expanding city faces unique challenges, especially when it comes to traffic management. Ensure your employees arrive on time, fresh, and ready to contribute to business success. Our commitment to punctuality ensures your workforce focuses on their jobs without worrying about the commute.
-                            </p>
+                                Our focus is simple: provide reliable employee transportation services that balance safety, punctuality, and cost effectiveness while addressing the specific requirements of every company. By delivering employee transport services built on quality, professional operations, and well planned routes, we help businesses and organizations streamline their corporate commutes across the city.                            </p>
                         </div>
 
                         <h3 className="text-xl font-bold text-gray-900 mb-4">We emphasize:</h3>
@@ -49,8 +47,7 @@ const WhyChooseUs = () => {
                         </ul>
 
                         <p className="text-gray-800 font-medium text-lg leading-relaxed">
-                            Partner with an experienced fleet business tailored to your unique needs, ensuring continuous and smooth operations round the clock.
-                        </p>
+                            By offering consistent, structured employee transportation services, we build long-term partnerships with companies looking for dependable solutions for their corporate offices.                        </p>
                     </div>
                 </div>
             </div>

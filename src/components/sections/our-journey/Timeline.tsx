@@ -1,130 +1,189 @@
 import Image from "next/image";
-import { FaHistory } from "react-icons/fa";
+import { ReactNode } from "react";
+import { FaRegClock } from "react-icons/fa";
 
-const milestones = [
+interface Milestone {
+    year: string;
+    description: ReactNode;
+    image: string;
+}
+
+const milestones: Milestone[] = [
     {
         year: "1998",
-        title: "",
         description: "Started Premium Car Rental Services as a Partnership company",
-        image: "/images/our-journey/timeline-1998.jpg",
+        image: "/images/our-journey/live/timeline-1998.jpg",
     },
     {
         year: "2001",
-        title: "",
         description:
             "Launched Employee Transportation Solutions for convenient and efficient commuting services for corporate employees.",
-        image: "/images/our-journey/timeline-2001.jpg",
+        image: "/images/our-journey/live/timeline-2001.jpg",
     },
     {
         year: "2006",
-        title: "",
         description:
             "Transformed into a private limited company and renamed as Fiesta Car Rentals & Logistics Pvt Ltd.",
-        image: "/images/our-journey/timeline-2006.jpg",
+        image: "/images/our-journey/live/timeline-2006.jpg",
     },
     {
         year: "2011",
-        title: "",
         description:
             "Fiesta expanded its branch to Bangalore and opened multiple branches in Chennai.",
-        image: "/images/our-journey/timeline-2011.jpg",
+        image: "/images/our-journey/live/timeline-2011.jpg",
     },
     {
         year: "2012",
-        title: "",
         description: "Launched Staff Bus Transportation services",
-        image: "/images/our-journey/timeline-2012.jpg",
+        image: "/images/our-journey/live/timeline-2012.jpg",
     },
     {
         year: "2016",
-        title: "",
         description: "Fiesta expanded its branches to Hyderabad and Pune.",
-        image: "/images/our-journey/timeline-2016.jpg",
+        image: "/images/our-journey/live/timeline-2016.jpg",
     },
     {
         year: "2022",
-        title: "",
         description: "Launched Student Bus Transportation",
-        image: "/images/our-journey/timeline-2022.jpg",
+        image: "/images/our-journey/live/timeline-2022.jpg",
     },
     {
         year: "2023",
-        title: "",
         description: "25th Anniversary",
-        image: "/images/our-journey/timeline-2023.jpg",
+        image: "/images/our-journey/live/timeline-2023.jpg",
     },
     {
         year: "2025",
-        title: "",
-        description:
-            "Expanded branch in Hosur, Mumbai, Gurgaon. Fleet size: 200 own vehicles and 2000+ partner vehicles.",
-        image: "/images/our-journey/timeline-2025.jpg",
+        description: (
+            <>
+                Expanded branch in Hosur, Mumbai, Gurgaon.
+                <br />
+                Fleet size: 200 own vehicles and 2000+ partner vehicles.
+            </>
+        ),
+        image: "/images/our-journey/live/timeline-2025.jpg",
     },
 ];
 
+const YearLabel = ({ year, align }: { year: string; align: "left" | "right" }) => (
+    <div
+        className={`hidden md:flex flex-col pt-1 ${align === "left" ? "items-end pr-10 text-right" : "items-start pl-10 text-left"
+            }`}
+    >
+        <span className="text-[42px] font-bold leading-none text-[#111111]">{year}</span>
+        <span className="text-[34px] leading-none text-[#1f1f1f]">Year</span>
+    </div>
+);
+
+const Card = ({ milestone, side }: { milestone: Milestone; side: "left" | "right" }) => (
+    <div className={`relative ${side === "left" ? "md:pr-8" : "md:pl-8"}`}>
+        <div
+            className={`hidden md:block absolute top-3 h-8 w-5 border-red-600 ${
+                side === "left"
+                    ? "right-1 border-r-[3px] border-t-[3px] border-b-[3px] rounded-r-[10px]"
+                    : "left-1 border-l-[3px] border-t-[3px] border-b-[3px] rounded-l-[10px]"
+            }`}
+        ></div>
+
+        <article
+            className={`mx-auto max-w-[560px] overflow-hidden rounded-[8px] bg-[#f7f7f7] shadow-[0_3px_12px_rgba(0,0,0,0.15)] ${
+                side === "left" ? "md:border-r-[4px]" : "md:border-l-[4px]"
+            } border-red-600`}
+        >
+            <div className="p-3">
+                <div className="relative aspect-[5/3] w-full overflow-hidden border border-[#1a1a1a30] bg-white">
+                    <Image
+                        src={milestone.image}
+                        alt={`${milestone.year} Milestone`}
+                        fill
+                        className="object-cover"
+                        sizes="(max-width: 768px) 100vw, 46vw"
+                    />
+                </div>
+            </div>
+            <div className="px-4 pb-5 pt-1 text-center">
+                <p className="text-lg leading-[1.45] text-[#2a2a2a]">{milestone.description}</p>
+            </div>
+        </article>
+    </div>
+);
+
+const Marker = () => (
+    <div className="relative z-10 mx-auto mb-4 flex h-14 w-14 items-center justify-center rounded-full border-4 border-white bg-[#ef2a31] shadow-[0_0_0_2px_#bdbdbd] md:mb-0">
+        <FaRegClock className="text-2xl text-white" />
+    </div>
+);
+
 const Timeline = () => {
     return (
-        <div className="py-16 max-w-7xl mx-auto px-4 bg-white">
-            <div className="relative">
-                {/* Center Line */}
-                <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gray-200 transform -translate-x-1/2 hidden md:block"></div>
+        <section className="bg-[#ececec] px-4 pb-24 pt-14 md:pt-20">
+            <div className="mx-auto max-w-[1460px]">
+                <div className="relative hidden md:block">
+                    <div className="absolute left-1/2 top-0 hidden h-full w-1 -translate-x-1/2 bg-[#c8c8c8] md:block"></div>
+                    <div className="absolute left-1/2 top-0 hidden h-4 w-4 -translate-x-1/2 rounded-full bg-[#c8c8c8] md:block"></div>
 
-                {milestones.map((milestone, index) => (
-                    <div
-                        key={milestone.year}
-                        className={`mb-12 flex flex-col md:flex-row items-center w-full relative ${index % 2 === 0 ? "md:flex-row-reverse" : ""
-                            }`}
-                    >
-                        {/* Year Display (Opposite Side) */}
-                        <div className={`w-full md:w-5/12 hidden md:flex flex-col justify-center ${index % 2 === 0 ? "text-right pr-8 items-end" : "text-left pl-8 items-start"
-                            }`}>
-                            <span className="text-4xl font-bold text-black">{milestone.year}</span>
-                            <span className="text-lg text-gray-500">Year</span>
-                        </div>
+                    <div className="space-y-16 md:space-y-20 md:pt-8">
+                        {milestones.map((milestone, index) => {
+                            const isCardRight = index % 2 === 0;
 
-                        {/* Center Icon */}
-                        <div className="absolute left-1/2 transform -translate-x-1/2 flex items-center justify-center w-12 h-12 rounded-full bg-red-600 border-4 border-white z-10 shadow-md md:mb-0 mb-6">
-                            <FaHistory className="text-white w-5 h-5" />
-                        </div>
+                            return (
+                                <div key={milestone.year} className="relative">
+                                    <div className="md:grid md:grid-cols-[minmax(0,1fr)_84px_minmax(0,1fr)] md:items-start">
+                                        {isCardRight ? (
+                                            <>
+                                                <YearLabel year={milestone.year} align="left" />
+                                                <Marker />
+                                                <Card milestone={milestone} side="right" />
+                                            </>
+                                        ) : (
+                                            <>
+                                                <Card milestone={milestone} side="left" />
+                                                <Marker />
+                                                <YearLabel year={milestone.year} align="right" />
+                                            </>
+                                        )}
+                                    </div>
 
-                        {/* Mobile Year Display (Visible only on mobile) */}
-                        <div className="md:hidden flex flex-col items-center mb-4">
-                            <span className="text-3xl font-bold text-black">{milestone.year}</span>
-                            <span className="text-sm text-gray-500">Year</span>
-                        </div>
-
-                        {/* Content Card */}
-                        <div className="w-full md:w-5/12 px-4 md:px-0">
-                            <div className={`bg-white shadow-[0_3px_10px_rgb(0,0,0,0.2)] rounded-lg overflow-hidden relative
-                                ${index % 2 !== 0 ? "md:mr-8 md:border-r-4 md:border-red-600" : "md:ml-8 md:border-l-4 md:border-red-600"}
-                                border-t-4 border-red-600 md:border-t-0
-                            `}>
-                                {/* Triangle Connector */}
-                                <div className={`hidden md:block absolute top-[20px] w-0 h-0 border-t-[10px] border-t-transparent border-b-[10px] border-b-transparent
-                                    ${index % 2 !== 0
-                                        ? "right-[-14px] border-l-[15px] border-l-red-600"
-                                        : "left-[-14px] border-r-[15px] border-r-red-600"}
-                                `}></div>
-
-                                <div className="relative h-64 w-full bg-gray-100">
-                                    <Image
-                                        src={milestone.image}
-                                        alt={`${milestone.year} Milestone`}
-                                        fill
-                                        className="object-cover"
-                                    />
                                 </div>
-                                <div className="p-6">
-                                    <p className="text-gray-700 text-base leading-relaxed">
-                                        {milestone.description}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
+                            );
+                        })}
                     </div>
-                ))}
+                </div>
+
+                <div className="relative space-y-10 md:hidden">
+                    <div className="absolute left-5 top-0 h-full w-[3px] bg-[#c8c8c8]"></div>
+
+                    {milestones.map((milestone) => (
+                        <div key={`mobile-${milestone.year}`} className="relative pl-14">
+                            <div className="absolute left-0 top-1 z-10 flex h-10 w-10 items-center justify-center rounded-full border-4 border-white bg-[#ef2a31] shadow-[0_0_0_1px_#bdbdbd]">
+                                <FaRegClock className="text-base text-white" />
+                            </div>
+                            <div className="mb-3">
+                                <span className="block text-2xl font-bold leading-none text-[#111111]">{milestone.year}</span>
+                                <span className="text-sm text-[#2d2d2d]">Year</span>
+                            </div>
+
+                            <article className="overflow-hidden rounded-[8px] bg-[#f7f7f7] shadow-[0_3px_12px_rgba(0,0,0,0.15)] border-l-[4px] border-red-600">
+                                <div className="p-3">
+                                    <div className="relative aspect-[5/3] w-full overflow-hidden border border-[#1a1a1a30] bg-white">
+                                        <Image
+                                            src={milestone.image}
+                                            alt={`${milestone.year} Milestone`}
+                                            fill
+                                            className="object-cover"
+                                            sizes="100vw"
+                                        />
+                                    </div>
+                                </div>
+                                <div className="px-4 pb-4 pt-1 text-center">
+                                    <p className="text-base leading-[1.45] text-[#2a2a2a]">{milestone.description}</p>
+                                </div>
+                            </article>
+                        </div>
+                    ))}
+                </div>
             </div>
-        </div>
+        </section>
     );
 };
 

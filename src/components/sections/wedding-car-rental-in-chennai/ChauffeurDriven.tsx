@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const ChauffeurDriven = () => {
     const listItems = [
-        "Navigating through busy city traffic",
-        "Finding parking spaces at crowded wedding venues",
-        "Coordinating arrivals and departures for family members"
+        "Wedding car rental for the bride and groom",
+        "Transportation service for family members and wedding guests",
+        "Corporate events, celebrity events, and surprise rides related to wedding celebrations"
     ];
 
     const Icon = () => (
@@ -35,8 +35,9 @@ const ChauffeurDriven = () => {
                             Chauffeur-Driven Wedding Transportation Services
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            We don't just provide a car; we provide an experience. Our chauffeur-driven wedding cars ensure that you don't have to worry about:
+                            Fiesta offers only chauffeur-driven car rental services in Chennai, ensuring structured movement across wedding schedules, airport pickup arrangements, and guest transportation.
                         </p>
+                        <p className="text-gray-900 font-semibold mt-2">Professional drivers support:</p>
 
                         <div className="space-y-4">
                             {listItems.map((item, index) => (
@@ -48,7 +49,7 @@ const ChauffeurDriven = () => {
                         </div>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            Our drivers are professionals, smartly dressed, and trained to respect your privacy.
+                            This approach supports stress-free coordination without operational responsibility placed on customers.
                         </p>
                     </div>
                 </div>

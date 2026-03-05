@@ -8,32 +8,32 @@ const WhyChooseFiesta = () => {
     const features = [
         {
             title: "Real-Time Tracking",
-            description: "Real-time tracking enables you to track your cab to estimate the arrival time.",
+            description: " Live GPS tracking keeps your teams informed and ensures safer travel, especially during late-night shifts.",
             icon: <MdOutlineAccessTime className="text-[#E31E24] w-8 h-8" />
         },
         {
             title: "Well-Maintained Fleet",
-            description: "The vehicles are well-maintained and are safe to provide you with a ride free from stress.",
+            description: "Clean, regularly serviced vehicles minimize delays and ensure a comfortable journey.",
             icon: <AiOutlineCar className="text-[#E31E24] w-8 h-8" />
         },
         {
             title: "Verified Drivers",
-            description: "All the verified drivers are well-trained and have a great track record with experience.",
+            description: "All chauffeurs are background-checked, trained, and experienced for corporate travel.",
             icon: <MdOutlineVerifiedUser className="text-[#E31E24] w-8 h-8" />
         },
         {
             title: "Customized Routes",
-            description: "Get customized routes that will get you to the destination quickly during peak hours too.",
+            description: "For organizations, investing in structured employee transportation services translates to measurable savings.",
             icon: <FaRoute className="text-[#E31E24] w-8 h-8" />
         },
         {
             title: "Shift-Based Scheduling",
-            description: "Shift-based scheduling at Fiesta Cabs ensures reliable transport no matter the timings.",
+            description: "From booking to pick up and drop, every step is designed to provide a seamless experience.",
             icon: <BiCalendarCheck className="text-[#E31E24] w-8 h-8" />
         },
         {
             title: "24/7 Support",
-            description: "A round-the-clock service support ensures assistance against your queries.",
+            description: "A dedicated emergency team ensures immediate assistance whenever needed.",
             icon: <MdSupportAgent className="text-[#E31E24] w-8 h-8" />
         }
     ];
@@ -46,8 +46,7 @@ const WhyChooseFiesta = () => {
                         Why Choose Fiesta for Employee Transportation in Hyderabad
                     </h2>
                     <p className="text-gray-600 max-w-3xl mx-auto text-lg">
-                        When looking for dependable employee transport services in Hyderabad, look no further than Fiesta Cabs. We are your ideal partner.
-                    </p>
+                        Our services go beyond just getting employees from one place to another. We focus on convenience, reliability, and safety to create a better commute experience.                    </p>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">

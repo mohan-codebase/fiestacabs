@@ -2,15 +2,15 @@ import Image from "next/image";
 
 const DecorationSupport = () => {
     const decorationItems = [
-        "Timely arrival for decoration prep",
-        "Careful handling of the car's exterior paint and polish",
-        "Adding any necessary props for the bride and groom"
+        "Decoration-ready luxury cars",
+        "Floral arrangements suitable for a wedding luxury car rental",
+        "Vehicles prepared for premium wedding photography"
     ];
 
     const supportItems = [
-        "Clear breakdown of costs, fuel, and driver charges",
-        "Detailed itineraries for smooth execution",
-        "Dedicated coordinators for event managers"
+        "Reservation coordination for wedding car rental services",
+        "Customer assistance during rental usage",
+        "On-call coordination for schedule changes"
     ];
 
     const Icon = () => (
@@ -42,7 +42,7 @@ const DecorationSupport = () => {
                                 Wedding Car Decoration Support
                             </h2>
                             <p className="text-[#555555] text-[15px] leading-[1.7]">
-                                A wedding car is incomplete without stunning decorations. Our team coordinates with your decorators to ensure:
+                                Wedding car decoration services enhance visual appeal during ceremonies and photography sessions.
                             </p>
 
                             <div className="space-y-4">
@@ -60,7 +60,7 @@ const DecorationSupport = () => {
                                 Easy Booking and Customer Support
                             </h2>
                             <p className="text-[#555555] text-[15px] leading-[1.7]">
-                                Booking a luxury car for your wedding should be the easiest part of your planning process. Our simple booking system offers:
+                                Fiesta simplifies booking for car rental Chennai customers through assisted reservations and service guidance.
                             </p>
 
                             <div className="space-y-4">
@@ -73,7 +73,7 @@ const DecorationSupport = () => {
                             </div>
 
                             <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                                With Fiesta, there are no hidden fees, just pure luxury and peace of mind.
+                                Booking helps secure preferred luxury cars for the wedding day travel.
                             </p>
                         </div>
                     </div>

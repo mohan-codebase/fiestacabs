@@ -4,6 +4,7 @@ import Button from "../../components/common/Button";
 import PageHero from "../../components/common/PageHero";
 import WhyChooseUs from "../../components/sections/aboutus/WhyChooseUs";
 import MissionVisible from "../../components/sections/aboutus/MissionVisible";
+import Cta from "../../components/sections/aboutus/Cta";
 
 export const metadata = {
     title: "About Us - Fiesta Smart Mobility",
@@ -56,13 +57,12 @@ export default function AboutUs() {
             {/* Hero Banner */}
             <PageHero
                 title="About Us"
-                subtitle="Your trusted partner in smart mobility solutions"
-                backgroundImage="/images/about-us/banner/about-us-banner.jpg"
+                subtitle=""
+                backgroundImage="/images/about-us/banner/WhatsApp-Image-2025-02-17-at-11.22.49-PM.jpeg"
                 height="md"
             />
 
-            {/* Vision & Mission */}
-            <MissionVisible />
+
 
             {/* Company Information */}
             <section className="w-full py-20 bg-white">
@@ -81,46 +81,34 @@ export default function AboutUs() {
                         {/* Right - Content */}
                         <div>
                             <h2 className="text-4xl md:text-4xl font-bold text-gray-900 mb-6">
-                                Fiesta Cabs is Innovative & Youngest Services
-                            </h2>
+                                Fiesta, A Name to Remember in Employee Transport Services                            </h2>
                             <p className="text-gray-700 leading-relaxed mb-6">
-                                Fiesta Smart Mobility ventured into the highly
-                                competitive business domain in 2001 by providing
-                                employee transportation services. Over the years, we
-                                have grown to become one of the most trusted names in
-                                the industry.
+
+
+                                Fiesta Smart Mobility Private Limited
+
+                                With 27 years of excellence, Fiesta Smart Mobility Private Limited is a leading provider of integrated employee transport services for the corporate sector.
+
+                                Established in 1998 in Chennai, we have expanded to achieve a pan-India presence and a dedicated team of 300+ employees nationwide.
+
+                                Our core services include Employee Transport Solutions and Premium Car Rentals, designed to meet the unique needs of businesses.
+
+
+
                             </p>
                             <p className="text-gray-700 leading-relaxed mb-8">
-                                Our commitment to excellence, safety, and customer
-                                satisfaction has helped us build lasting relationships
-                                with businesses across various sectors. We combine
-                                innovation with reliability to deliver seamless
-                                transportation solutions.
+                                Recognized as one of the Best employee transport servicesBest employee transport servicesBest employee transport services, Fiesta has achieved a 1.2 billion rupee turnover, a testament to our commitment to quality and customer satisfaction.
+
+                                To align with sustainability goals, we are actively investing in Electric Vehicles (EVs) to cater to the evolving transportation needs of organizations.
                             </p>
 
-                            {/* Stats */}
-                            <div className="grid grid-cols-2 gap-6 mb-8">
-                                <div className="bg-gray-50 p-6 rounded-lg">
-                                    <h3 className="text-3xl font-bold text-[#D32F2F] mb-2">
-                                        20+
-                                    </h3>
-                                    <p className="text-gray-700">Years of Excellence</p>
-                                </div>
-                                <div className="bg-gray-50 p-6 rounded-lg">
-                                    <h3 className="text-3xl font-bold text-[#D32F2F] mb-2">
-                                        500+
-                                    </h3>
-                                    <p className="text-gray-700">Happy Clients</p>
-                                </div>
-                            </div>
-
-                            <Button href="/reach-us" variant="primary">
-                                Contact Us
-                            </Button>
                         </div>
                     </div>
                 </div>
             </section>
+
+            {/* Vision & Mission */}
+            <MissionVisible />
 
             {/* Leadership Team */}
             <section id="leaders" className="w-full py-20 bg-[#f8f9fa]">
@@ -160,10 +148,15 @@ export default function AboutUs() {
                 </div>
             </section>
 
+
+            {/* Call to Action */}
+            <Cta />
+
             {/* Why Customers Choose Us */}
             <section id="why-fiesta" className="w-full py-20 ">
                 <WhyChooseUs />
             </section>
+
 
         </div>
     );

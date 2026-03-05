@@ -12,14 +12,13 @@ const Conclusion = () => {
                             Conclusion
                         </h2>
                         <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                            Considering all these components, there&apos;s no denying the paramount role of a reliable employee transport service in the corporate framework of a city like Hyderabad.
-                        </p>
+                            In a city like Hyderabad, where smooth and timely commutes are critical to business success, partnering with the right employee transport service can make all the difference.                        </p>
                         <p className="text-gray-700 mb-6 text-lg leading-relaxed">
-                            Fiesta Cabs is a distinguished leader providing effective and dependable employee transport services in Hyderabad.
-                        </p>
+                            A reliable transportation provider brings cost effectiveness and value to your organization by reducing commute-related stress and enhancing employee safety and satisfaction.                        </p>
                         <p className="text-gray-900 font-semibold text-lg leading-relaxed">
-                            Contact Fiesta Cabs today and assure your employees the commute they truly deserve!
-                        </p>
+                            Fiesta sets the benchmark with its seamless operations, GPS-enabled fleet, real-time tracking, and responsive support.
+
+                            Choose Fiesta, and make every commute count.                        </p>
                     </div>
 
                     {/* Right: Image */}

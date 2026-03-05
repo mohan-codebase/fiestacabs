@@ -6,15 +6,15 @@ const CommitmentSafety = () => {
     const listItems = [
         {
             title: "Strict Safety Protocols",
-            desc: "Safety is our top priority, and we ensure strict compliance with every journey."
+            desc: " Each vehicle follows company’s transportation standards, ensuring adherence to best practices. "
         },
         {
             title: "Adherent Driver Conduct",
-            desc: "Each vehicle follows company's transportation standards, ensuring adherence to best practices."
+            desc: " Background checks and training programs ensure that employees can trust the people driving them. "
         },
         {
             title: "Real Time Monitoring",
-            desc: "Background checks and training programs ensure that employees can trust the people driving them. GPS tracking and real time tracking allow organizations to track routes and ensure employee safety."
+            desc: " GPS tracking and real time tracking allow organizations to track routes and ensure employee safety. "
         },
         {
             title: "Secure Commutes",

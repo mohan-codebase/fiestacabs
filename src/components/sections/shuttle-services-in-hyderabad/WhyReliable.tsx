@@ -4,24 +4,20 @@ import Image from 'next/image';
 const WhyReliable = () => {
     const listItems = [
         {
-            title: "Smart Routing & Scheduling",
-            desc: "We design every route with your team in mind. From real-time planning to customer-first service delivery, Fiesta ensures that your employees ride better every day."
+            title: " Fixed Pick Up Points and Schedules ",
+            desc: " Employees know exactly when and where to board their shuttle. From metro-connected stops to well-known landmarks, our pickup locations are easy to access. "
         },
         {
-            title: "Convenient Boarding",
-            desc: "Employees know exactly when and where to board their shuttle. From metro-connected stops to well-known landmarks, our pickup locations are easy to access."
+            title: " Ride in Comfort, Every Time ",
+            desc: " Our spacious, air-conditioned buses offer more than just a seat, they provide a peaceful, stress-free ride so your team arrives fresh and ready. "
         },
         {
-            title: "Comfort & Productivity",
-            desc: "Our spacious, air-conditioned buses offer more than just a seat, they provide a peaceful, stress-free ride so your team arrives fresh and ready."
+            title: " Fast and Efficient Routing ",
+            desc: " We study traffic patterns and road conditions to ensure every trip follows the most efficient directions. It’s part of our commitment to reliable, timely service. "
         },
         {
-            title: "Reliable and Prompt",
-            desc: "We study traffic patterns and road conditions to ensure every trip follows the most efficient directions. It's part of our commitment to reliable, timely service."
-        },
-        {
-            title: "Safety and Support",
-            desc: "From trained drivers to basic safety protocols in every vehicle, we make sure every passenger enjoys a secure experience."
+            title: " Safety and Support ",
+            desc: " From trained drivers to basic safety protocols in every vehicle, we make sure every passenger enjoys a secure experience. "
         }
     ];
 
@@ -43,7 +39,7 @@ const WhyReliable = () => {
                         <h2 className="text-3xl md:text-[34px] font-bold text-gray-900 mb-10 leading-tight">
                             What Makes Our Hyderabad Shuttle Services Reliable?
                         </h2>
-
+                        <p className="text-gray-700 leading-relaxed mb-6">We design every route with your team in mind. From real-time planning to customer-first service delivery, Fiesta ensures that your employees ride better every day.</p>
                         <div className="space-y-8">
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4">

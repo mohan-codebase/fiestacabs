@@ -50,7 +50,7 @@ const WeddingFeatures = () => {
                             {features.slice(0, 3).map((feature, index) => (
                                 <div
                                     key={index}
-                                    className="bg-white rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center w-full md:w-[320px] flex-shrink-0 border border-gray-100/50"
+                                    className="bg-white rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center w-full md:flex-1 md:min-w-0 border border-gray-100/50"
                                 >
                                     <div className="mb-6 h-12 flex items-center justify-center">
                                         {feature.icon}
@@ -70,7 +70,7 @@ const WeddingFeatures = () => {
                             {features.slice(3, 5).map((feature, index) => (
                                 <div
                                     key={index + 3}
-                                    className="bg-white rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center w-full md:w-[320px] flex-shrink-0 border border-gray-100/50"
+                                    className="bg-white rounded-2xl p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.1)] hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center w-full md:flex-1 md:min-w-0 border border-gray-100/50"
                                 >
                                     <div className="mb-6 h-12 flex items-center justify-center">
                                         {feature.icon}

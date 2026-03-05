@@ -23,17 +23,21 @@ const GetStarted = () => {
                         Get Started Today
                     </h2>
                     <p className="text-gray-200 text-lg md:text-xl mb-8 leading-relaxed">
-                        Explore our customized transport solutions in Hyderabad tailored for your workforce and streamline your employee commute with us.
-                    </p>
+                        Experience seamless and reliable Employee Transport Services in Hyderabad with Fiesta Smart Mobility. From real-time tracking to safe, comfortable rides — we make commuting stress-free for your workforce.                    </p>
 
                     <div className="space-y-4 mb-10">
                         <div className="flex items-start gap-4">
                             <div className="w-2 h-2 bg-[#E31E24] rounded-full mt-2.5 flex-shrink-0"></div>
-                            <p className="text-white text-lg">Talk to our experts today to set up a comprehensive transit system for your employees seamlessly.</p>
+                            <p className="text-white text-lg">
+
+
+
+                                Call us today or request a free consultation to explore how our tailored transport solutions can simplify employee commuting for your organization.
+                            </p>
                         </div>
                         <div className="flex items-start gap-4">
                             <div className="w-2 h-2 bg-[#E31E24] rounded-full mt-2.5 flex-shrink-0"></div>
-                            <p className="text-white text-lg">For more details, contact us or visit our frequently asked questions.</p>
+                            <p className="text-white text-lg">Fiesta Smart Mobility — Driving Hyderabad’s Workforce, One Ride at a Time.</p>
                         </div>
                     </div>
 

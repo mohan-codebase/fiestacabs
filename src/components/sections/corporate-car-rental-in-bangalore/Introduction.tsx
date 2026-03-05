@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import BookNowButton from "../../common/BookNowButton";
 
 const Introduction = () => {
     return (
@@ -33,12 +33,9 @@ const Introduction = () => {
                         </div>
 
                         <div className="pt-4">
-                            <Link
-                                href="/reach-us"
-                                className="inline-block bg-[#E31E24] hover:bg-black text-white px-8 py-3 rounded text-lg font-medium transition-colors duration-300"
-                            >
+                            <BookNowButton className="inline-block bg-[#E31E24] hover:bg-black text-white px-8 py-3 rounded text-lg font-medium transition-colors duration-300">
                                 Get A Free Quote
-                            </Link>
+                            </BookNowButton>
                         </div>
                     </div>
                 </div>

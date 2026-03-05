@@ -2,7 +2,7 @@ import React from "react";
 
 const MissionVisible = () => {
     return (
-        <section className="w-full py-10 md:py-16 bg-white">
+        <section id="mission-vision" className="w-full py-10 md:py-16 bg-white">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     {/* Vision Card */}

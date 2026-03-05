@@ -24,20 +24,15 @@ const SimpleReliable = () => {
 
                     <div className="space-y-6 mb-10">
                         <p className="text-gray-200 text-lg leading-relaxed">
-                            At Fiesta Smart Mobility, our solutions are centered around bringing maximum value to your organization. By adopting best practices, we consistently optimize fleet utilization, maintaining the highest standard for everyday commutes.
-                        </p>
+                            At Fiesta, we believe that office travel should never feel difficult. That is why our employee transportation services in Bangalore are designed with simple systems that work every day. We make sure your employees have a smooth ride to the office and back home without stress.                        </p>
                         <p className="text-gray-200 text-lg leading-relaxed">
-                            Navigating Bangalore&apos;s traffic landscape requires experience. We have a solid mechanism linking our transport hubs securely. Efficient execution allows you to run uninterrupted operations.
-                        </p>
+                            Our focus is on safety, timely travel, and a comfortable journey for every person who boards. With well maintained vehicles and trained drivers, we bring peace of mind to both employees and companies. Each trip follows efficient routes with real time GPS tracking so that you know exactly where the vehicle is.                        </p>
                         <p className="text-gray-200 text-lg leading-relaxed">
-                            The technology interface offers custom reporting and insights to your team for financial analysis and route planning. Maximize business efficiency quickly.
-                        </p>
+                            If your company is planning to improve corporate commutes, Fiesta provides the right mix of quality service, reliable transport, and cost effective solutions.                        </p>
                         <p className="text-gray-200 text-lg leading-relaxed">
-                            Discover the peace of mind knowing your employees are traveling safely, consistently, and comfortably.
-                        </p>
+                            Are you ready to give your employees a dependable and hassle free commute every day?                        </p>
                         <p className="text-gray-100 font-medium text-lg leading-relaxed">
-                            Take a step ahead in redefining the employee commute experience with Fiesta Smart Mobility.
-                        </p>
+                            Let’s plan your employee transportation services in Bangalore together, contact us now to get started.                        </p>
                     </div>
 
                     <Link

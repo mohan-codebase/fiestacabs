@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const FlexiblePackages = () => {
     const listItems = [
-        "Half-day or full-day rentals",
-        "Intercity travel for destination weddings",
-        "Multiple vehicles for managing guest transportation"
+        "Hourly, daily, and monthly basis rentals",
+        "Wedding-focused rental period planning",
+        "Affordable price structures without compromising service quality"
     ];
 
     const Icon = () => (
@@ -26,9 +26,9 @@ const FlexiblePackages = () => {
                             Flexible Rental Packages for Weddings and Special Occasions
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Fiesta Smart Mobility offers flexible car rentals that suit your budget and schedule. Whether you need a car for a few hours or an entire day, we have a plan for you.
+                            Fiesta provides adaptable rental structures for wedding car rental in Chennai, allowing customers to select rental options based on event flow and duration.
                         </p>
-                        <p className="text-gray-900 font-semibold mt-2">You can choose:</p>
+                        <p className="text-gray-900 font-semibold mt-2">Package features include:</p>
 
                         <div className="space-y-4">
                             {listItems.map((item, index) => (
@@ -40,7 +40,7 @@ const FlexiblePackages = () => {
                         </div>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            Your requirements dictate our service. Just tell us what you need, and we'll create the perfect package for you.
+                            Fiesta supports car rental for wedding events, special day planning, and extended wedding schedules with consistent service standards.
                         </p>
                     </div>
 

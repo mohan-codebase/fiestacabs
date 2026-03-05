@@ -21,7 +21,7 @@ export default function ShuttleServiceDelhi() {
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
                 title="Fiesta Shuttle Service in Delhi: Making Office Commutes Effortless"
-                subtitle="Book A Shuttle For Your Team"
+                subtitle=""
                 imageSrc="/images/shuttle-service-in-delhi/unnamed-6-4.jpg"
                 ctaText="Book Corporate Shuttle in Delhi"
                 imageClassName="brightness-[0.4]"
