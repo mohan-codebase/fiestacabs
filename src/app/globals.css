@@ -8,12 +8,9 @@ html {
 @theme {
     --color-primary: #EC2028;
     --color-secondary: #fff1f1;
-    --font-sans: var(--font-poppins);
 }
 
-body {
-    font-family: var(--font-poppins);
-}
+
 
 @layer utilities {
     .max-w-standard {

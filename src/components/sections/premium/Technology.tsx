@@ -2,12 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
-import { FaCheckCircle } from "react-icons/fa";
 
 const Technology = () => {
     return (
         <section className="py-20 bg-white overflow-hidden">
-            <div className="max-w-[1440px] mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4">
                 <div className="flex flex-col lg:flex-row items-center gap-16">
                     <div className="w-full lg:w-1/2 relative h-[300px] md:h-[400px]">
                         <Image src="/images/premium-car-rentals/technology.png" alt="Technology" fill className="object-cover" />
@@ -18,7 +17,7 @@ const Technology = () => {
                         <p className="text-gray-600 mb-8 text-lg">
                             The Licensed software solution helps Fiesta Smart Mobility streamline operations by automating booking, billing, and fleet management. It provides real-time vehicle tracking, expense monitoring, and integrates with accounting systems, ensuring accuracy and efficiency.
                         </p>
-                        <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <ul className="flex flex-col gap-6">
                             {[
                                 "Streamlined booking, billing, and receipt management.",
                                 "Supplier purchase tracking and payment management.",
@@ -31,9 +30,11 @@ const Technology = () => {
                                 "Integration with Tally for accounting.",
                                 "Real-time support from customer service."
                             ].map((item, index) => (
-                                <li key={index} className="flex gap-3 items-start text-gray-700">
-                                    <FaCheckCircle className="text-[#EC2028] mt-1 shrink-0" />
-                                    <span>{item}</span>
+                                <li key={index} className="flex gap-4 items-start text-gray-700">
+                                    <div className="relative w-6 h-6 mt-1 shrink-0">
+                                        <Image src="/images/icon/tyre-icon.svg" alt="Tyre Icon" fill className="object-contain" />
+                                    </div>
+                                    <span className="text-lg leading-relaxed">{item}</span>
                                 </li>
                             ))}
                         </ul>

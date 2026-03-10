@@ -51,11 +51,11 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
     };
 
     return (
-        <div className="space-y-4">
+        <div className="space-y-4 ">
             {resolvedItems.map((item, index) => (
                 <div
                     key={item.id}
-                    className="bg-[#D32F2F] rounded-lg overflow-hidden transition-all duration-300"
+                    className="bg-red-500 rounded-lg overflow-hidden transition-all duration-300"
                 >
                     {/* Question Button */}
                     <button

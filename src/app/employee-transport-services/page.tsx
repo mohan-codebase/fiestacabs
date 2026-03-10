@@ -5,7 +5,7 @@ import Testimonials from "../../components/sections/home/Testimonials";
 import FAQ from "../../components/sections/home/FAQ";
 import BookNowButton from "../../components/common/BookNowButton";
 import GeneralEmployeeTransportForm from "../../components/sections/employee-transport/GeneralEmployeeTransportForm";
-import { run } from "node:test";
+import Milestones from "../../components/sections/home/Milestones";
 
 export const metadata = {
     title: "Employee Transport Services | Fiesta Smart Mobility",
@@ -17,28 +17,28 @@ const EmployeeTransportServicesPage = () => {
     const cityCards = [
         {
             city: "Chennai",
-            icon: "/images/employee-transport/city-chennai.png",
+            icon: "/images/services-offered/employee-transport-service/city-chennai.webp",
             description: "Covering IT parks and industrial zones with reliable, on-time shuttles.",
         },
         {
             city: "Hyderabad",
-            icon: "/images/employee-transport/city-hyderabad.png",
+            icon: "/images/services-offered/employee-transport-service/city-hyderabad.webp",
             description: "Serving HITEC City, Gachibowli, and key corporate clusters.",
         },
         {
             city: "Bangalore",
-            icon: "/images/employee-transport/city-bangalore.png",
+            icon: "/images/services-offered/employee-transport-service/city-bangalore.webp",
             description: "Connecting Whitefield, Electronic City, and major office corridors.",
         },
         {
             city: "Mumbai",
-            icon: "/images/employee-transport/city-mumbai.png",
+            icon: "/images/services-offered/employee-transport-service/city-mumbai.webp",
             description:
                 "Efficient Employee transport services across the Economic powerhouse of India.",
         },
         {
             city: "Pune",
-            icon: "/images/employee-transport/city-pune.png",
+            icon: "/images/services-offered/employee-transport-service/city-pune.webp",
             description: "Safe and punctual travel solutions for Pune’s growing industrial workforce.",
         },
     ];
@@ -172,13 +172,7 @@ const EmployeeTransportServicesPage = () => {
         },
     ];
 
-    const milestones = [
-        { value: "27+", label: "Years of experience" },
-        { value: "10,000+", label: "Trips per day" },
-        { value: "2,000+", label: "Fleet Size" },
-        { value: "40,000+", label: "Employees travelling per day" },
-        { value: "PAN", label: "India Presence" },
-    ];
+
 
     return (
         <div className="w-full">
@@ -215,33 +209,7 @@ const EmployeeTransportServicesPage = () => {
             </section>
 
             {/* Milestones */}
-            <section className="w-full pt-16">
-                <div className="max-w-[1440px] mx-auto px-4 text-center">
-                    <p className="text-[#EC2028] uppercase tracking-wider text-sm font-semibold">milestones</p>
-                    <h2 className="text-3xl md:text-4xl font-bold mt-2">Why Choose Us ?</h2>
-                </div>
-                <div className="relative w-full mt-10">
-                    <div className="absolute inset-0">
-                        <Image
-                            src="/images/employee-transport/milestones.jpg"
-                            alt="Milestones"
-                            fill
-                            style={{ objectFit: "cover" }}
-                        />
-                        <div className="absolute inset-0 bg-black/70" />
-                    </div>
-                    <div className="relative z-10 max-w-[1440px] mx-auto px-4 py-12">
-                        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-white text-center">
-                            {milestones.map((item) => (
-                                <div key={item.label}>
-                                    <div className="text-3xl md:text-4xl font-bold mb-2">{item.value}</div>
-                                    <div className="text-sm md:text-base text-white/80">{item.label}</div>
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Milestones />
 
             {/* Fiesta Employee Transport Services */}
             <section className="w-full py-16 bg-white">
@@ -292,36 +260,40 @@ const EmployeeTransportServicesPage = () => {
                     <div className="text-center mb-10">
                         <h3 className="text-2xl md:text-3xl font-bold">Employee Transport Services Across Major Cities</h3>
                         <p className="text-gray-600 mt-3">
-                            Fiesta provides corporate employee transport solutions across India’s top business hubs. With
+                            Fiesta provides corporate employee transport solutions across India&apos;s top business hubs. With
                             gate-to-gate shuttles, fixed routes, and real-time tracking, we make commuting safe and
                             stress-free for your workforce, wherever your offices are located.
                         </p>
                     </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div className="flex flex-wrap justify-center gap-6">
                         {cityCards.map((city) => (
                             <div
                                 key={city.city}
-                                className="bg-[#FFEDED] rounded-3xl border-b-4 border-red-500 p-6 text-center"
+                                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#FFEDED] rounded-3xl border-b-4 border-red-500 p-8 text-center flex flex-col items-center"
                             >
-                                <div className="w-24 h-24 mx-auto rounded-full bg-white flex items-center justify-center mb-4">
-                                    <Image
-                                        src={city.icon}
-                                        alt={city.city}
-                                        width={48}
-                                        height={48}
-                                    />
+                                <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm shrink-0">
+                                    <div className="relative w-12 h-12">
+                                        <Image
+                                            src={city.icon}
+                                            alt={city.city}
+                                            fill
+                                            className="object-contain"
+                                        />
+                                    </div>
                                 </div>
-                                <h1 className="font-semibold text-gray-900 mb-2 text-xl">
-                                    Employee Transport in {city.city}
-                                </h1>
-                                <p className="text-sm text-gray-600">{city.description}</p>
+                                <h4 className="font-semibold text-gray-900 mb-3 text-2xl">
+                                    Employee Transport in <br /> {city.city}
+                                </h4>
+                                <p className="text-sm text-gray-600 leading-relaxed max-w-[280px]">
+                                    {city.description}
+                                </p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
 
-            {/* Why choose */}
+
             <section className="w-full py-16 bg-white">
                 <div className="max-w-7xl mx-auto px-4">
                     <h3 className="text-2xl md:text-3xl font-bold text-center mb-10">
@@ -331,17 +303,16 @@ const EmployeeTransportServicesPage = () => {
                         {whyChoose.map((item) => (
                             <div
                                 key={item.text}
-                                className="border border-gray-200 rounded-3xl p-6 flex flex-col items-center text-center gap-4"
+                                className="border border-gray-200 rounded-2xl p-8 flex flex-col items-center text-center gap-5 shadow-sm"
                             >
-                                <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center text-red-600 text-xl">
-                                    <item.icon />
-                                </div>
-                                <p className="text-gray-700 text-sm leading-relaxed">{item.text}</p>
+                                <item.icon className="text-[#EC2028] text-5xl" />
+                                <p className="text-gray-600 text-sm leading-relaxed">{item.text}</p>
                             </div>
                         ))}
                     </div>
                 </div>
             </section>
+
 
             {/* Gate-to-Gate */}
             <section className="w-full py-16 bg-white">
@@ -359,9 +330,11 @@ const EmployeeTransportServicesPage = () => {
                             </p>
                             <div className="space-y-3 text-gray-700">
                                 {shuttleItems.map((item) => (
-                                    <div key={item} className="flex gap-3">
-                                        <span className="text-red-500 mt-1">•</span>
-                                        <p>{item}</p>
+                                    <div key={item} className="flex gap-3 items-start">
+                                        <div className="relative w-8 h-8 shrink-0 mt-0.5">
+                                            <Image src="/images/icon/tyre-icon.svg" alt="tyre" fill className="object-contain" />
+                                        </div>
+                                        <p className="font-semibold text-gray-900">{item}</p>
                                     </div>
                                 ))}
                             </div>
@@ -407,9 +380,9 @@ const EmployeeTransportServicesPage = () => {
                         </div>
                         <div className="space-y-6">
                             {differentiators.map((item) => (
-                                <div key={item.title} className="flex gap-4">
-                                    <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-600 font-bold">
-                                        ✓
+                                <div key={item.title} className="flex gap-4 items-start">
+                                    <div className="relative w-9 h-9 shrink-0 mt-0.5">
+                                        <Image src="/images/icon/tyre-icon.svg" alt="tyre" fill className="object-contain" />
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
@@ -429,9 +402,12 @@ const EmployeeTransportServicesPage = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-[1fr_1fr] gap-12 items-center">
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                             {keyFeatures.map((feature) => (
-                                <div key={feature.title} className="border border-gray-200 rounded-xl p-5">
-                                    <h4 className="font-semibold text-gray-900 mb-2">{feature.title}</h4>
-                                    <p className="text-sm text-gray-600">{feature.description}</p>
+                                <div key={feature.title} className="border-2 border-red-500 rounded-2xl p-6 flex flex-col items-center text-center gap-4">
+                                    <div className="relative w-14 h-14 shrink-0">
+                                        <Image src="/images/icon/tyre-icon.svg" alt="tyre" fill className="object-contain" />
+                                    </div>
+                                    <h4 className="font-semibold text-gray-900 text-base">{feature.title}</h4>
+                                    <p className="text-sm text-gray-600 leading-relaxed">{feature.description}</p>
                                 </div>
                             ))}
                         </div>
@@ -476,9 +452,9 @@ const EmployeeTransportServicesPage = () => {
                         </div>
                         <div className="space-y-6">
                             {simpleSteps.map((item) => (
-                                <div key={item.title} className="flex gap-4">
-                                    <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-600 font-bold">
-                                        ✓
+                                <div key={item.title} className="flex gap-4 items-start">
+                                    <div className="relative w-9 h-9 shrink-0 mt-0.5">
+                                        <Image src="/images/icon/tyre-icon.svg" alt="tyre" fill className="object-contain" />
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>
@@ -545,9 +521,9 @@ const EmployeeTransportServicesPage = () => {
                         </div>
                         <div className="space-y-6">
                             {additionalServices.map((item) => (
-                                <div key={item.title} className="flex gap-4">
-                                    <div className="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-600 font-bold">
-                                        ✓
+                                <div key={item.title} className="flex gap-4 items-start">
+                                    <div className="relative w-9 h-9 shrink-0 mt-0.5">
+                                        <Image src="/images/icon/tyre-icon.svg" alt="tyre" fill className="object-contain" />
                                     </div>
                                     <div>
                                         <h4 className="font-semibold text-gray-900 mb-1">{item.title}</h4>

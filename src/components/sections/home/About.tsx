@@ -4,7 +4,7 @@ import Image from "next/image";
 const About = () => {
     return (
         <section className="w-full pb-20 bg-white">
-            <div className="max-w-[1440px] mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                     {/* Left - Image with service pill tags */}

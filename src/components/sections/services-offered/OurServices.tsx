@@ -28,7 +28,7 @@ const services: ServiceItem[] = [
 
 const OurServices = () => {
     return (
-        <section id="our-services" className="max-w-[1600px] mx-auto px-4 py-12 md:py-20">
+        <section id="our-services" className="max-w-7xl mx-auto px-4 py-12 md:py-20">
             <div className="text-center mb-8 md:mb-12">
                 <p className="text-[#EC2028] text-lg md:text-xl font-semibold">Services</p>
                 <h2 className="text-[#020101] text-3xl md:text-[37px] font-semibold">Our Services</h2>

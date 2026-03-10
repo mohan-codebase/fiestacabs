@@ -97,7 +97,7 @@ const Testimonials = ({
 
     return (
         <section className="w-full py-8 md:py-20 bg-gray-50">
-            <div className="max-w-[1440px] mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     {showEyebrow && (
@@ -138,7 +138,7 @@ const Testimonials = ({
                     >
                         {testimonials.map((testimonial) => (
                             <SwiperSlide key={testimonial.id}>
-                                <div className="bg-[#FFF5F5] rounded-[40px] p-8 md:p-12 shadow-sm mb-12 border border-pink-50 max-w-6xl mx-auto">
+                                <div className="bg-[#FFF5F5] rounded-[40px] p-8 md:p-12 shadow-sm mb-12 border border-pink-50 max-w-7xl mx-auto">
                                     {/* Quote Icon */}
                                     <div className="flex justify-center mb-10">
                                         <svg width="40" height="32" viewBox="0 0 40 32" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-gray-800">

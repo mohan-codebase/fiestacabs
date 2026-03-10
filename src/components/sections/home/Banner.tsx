@@ -79,7 +79,7 @@ const Banner = () => {
 
 
                             {/* Content */}
-                            <div className="relative z-20 text-center px-4 max-w-5xl mx-auto">
+                            <div className="relative z-20 text-center px-4 max-w-7xl mx-auto">
                                 <h1 className="text-3xl md:text-5xl  font-bold mb-6 leading-tight drop-shadow-lg">
                                     {slide.title}
                                 </h1>

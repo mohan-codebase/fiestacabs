@@ -21,13 +21,13 @@ const Experience = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-transparent" />
             </div>
 
-            <div className="container mx-auto relative z-10">
-                <div className="max-w-4xl">
+            <div className="relative z-10 max-w-7xl mx-auto px-4 flex flex-col items-center justify-center">
+                <div className="w-full">
                     <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 leading-tight">
                         Reach Your Destination Safe <br className="hidden md:block" /> and on Time, Every Time
                     </h2>
 
-                    <div className="space-y-6 text-gray-200 text-lg md:text-sm leading-relaxed">
+                    <div className="space-y-10 text-gray-200 text-lg md:text-sm leading-relaxed">
                         <p>
                             Fiesta is committed to ensuring timely and reliable transportation for every customer, every time. Our fleet comprises the latest vehicles, maintained to the highest standards through regular servicing for optimal performance and efficiency. We recruit, train, and retain skilled professionals to deliver exceptional service and prioritize customer needs.
                         </p>
@@ -37,7 +37,7 @@ const Experience = () => {
                         <p>
                             Our proprietary web application equips drivers with GPS tracking, map-based navigation, and tools for managing emergency situations efficiently. By integrating a modern fleet, professional workforce, and cutting-edge technology, Fiesta delivers superior value and service.
                         </p>
-                        <p className="font-semibold text-white">
+                        <p className="text-white">
                             This strategic blend of fleet, people, and technology has positioned Fiesta as a leading name in employee transport services across India.
                         </p>
                     </div>

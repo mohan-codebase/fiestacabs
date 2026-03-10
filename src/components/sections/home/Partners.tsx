@@ -64,7 +64,7 @@ const Partners = () => {
 
     return (
         <section className="w-full py-5 md:py-10 bg-white overflow-hidden">
-            <div className="max-w-[1440px] mx-auto px-4">
+            <div className="max-w-7xl mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-16">
                     <p className="text-[#D32F2F] uppercase tracking-wider text-sm font-semibold mb-3">

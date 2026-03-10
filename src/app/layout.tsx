@@ -1,16 +1,11 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
 import "./globals.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import ContactFloatingButton from "../components/common/ContactFloatingButton";
 
-const poppinsFont = Poppins({
-  variable: "--font-poppins",
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
-  display: "swap",
-});
+
+
 
 
 export const metadata: Metadata = {
@@ -38,9 +33,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppinsFont.variable} antialiased`}
+        className="antialiased"
       >
         <ModalProvider>
           <Header />
