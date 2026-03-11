@@ -51,7 +51,7 @@ const WhyChooseFiesta = () => {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
                     {features.map((feature, index) => (
-                        <div key={index} className="bg-white border rounded-2xl p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300">
+                        <div key={index} className="bg-white border border-red-500 rounded-2xl p-8 text-center shadow-[0_4px_20px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_rgba(0,0,0,0.08)] transition-all duration-300">
                             <div className="flex justify-center mb-6">
                                 <div className="p-4 bg-red-50 rounded-full">
                                     {feature.icon}

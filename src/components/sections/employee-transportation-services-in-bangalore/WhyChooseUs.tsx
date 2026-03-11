@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import { MdOutlineCancel } from 'react-icons/md';
 
 const WhyChooseUs = () => {
     const listItems = [
@@ -40,7 +39,7 @@ const WhyChooseUs = () => {
                         <ul className="space-y-4 mb-6">
                             {listItems.map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
-                                    <MdOutlineCancel className="text-[#E31E24] w-6 h-6 flex-shrink-0 mt-0.5" style={{ transform: 'rotate(45deg)' }} />
+                                    <Image src="/images/icon/tyre-icon.svg" alt="bullet icon" width={24} height={24} className="flex-shrink-0 mt-0.5" />
                                     <span className="text-gray-700 text-lg">{item}</span>
                                 </li>
                             ))}

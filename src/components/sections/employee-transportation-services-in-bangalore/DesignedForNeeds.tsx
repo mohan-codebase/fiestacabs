@@ -1,7 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { MdOutlineCheckCircle } from 'react-icons/md';
 
 const DesignedForNeeds = () => {
     const listItems = [
@@ -26,7 +25,7 @@ const DesignedForNeeds = () => {
                         <ul className="space-y-4 mb-8">
                             {listItems.map((item, index) => (
                                 <li key={index} className="flex items-start gap-3">
-                                    <MdOutlineCheckCircle className="text-[#E31E24] w-6 h-6 flex-shrink-0 mt-0.5" />
+                                    <Image src="/images/icon/tyre-icon.svg" alt="bullet icon" width={24} height={24} className="flex-shrink-0 mt-0.5" />
                                     <span className="text-gray-700 text-lg">{item}</span>
                                 </li>
                             ))}

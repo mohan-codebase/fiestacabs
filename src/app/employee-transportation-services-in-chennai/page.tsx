@@ -1,8 +1,7 @@
 import React from "react";
 import Image from "next/image";
-import { FaCheck, FaPhoneAlt, FaCalendarAlt, FaBus, FaStar, FaLeaf, FaShieldAlt, FaUsers, FaChartLine, FaClock, FaHandHoldingUsd, FaRegFileAlt } from "react-icons/fa";
-import FAQ from "../../components/sections/home/FAQ";
-import FAQAccordion, { FAQItem } from "../../components/common/FAQAccordion";
+import { FaBus, FaStar, FaShieldAlt, FaChartLine, FaClock, FaHandHoldingUsd, FaRegFileAlt, FaUserTie } from "react-icons/fa";
+import FAQ from "../../components/sections/employee-transportation-services-in-chennai/FAQ";
 import ChennaiEmployeeTransportForm from "../../components/sections/employee-transport/ChennaiEmployeeTransportForm";
 
 export const metadata = {
@@ -43,48 +42,26 @@ const ChennaiEmployeeTransportPage = () => {
         {
             title: "Well Maintained Fleet",
             description: " Every vehicle is regularly checked, ensuring reliability and consistent performance. Maintenance is scheduled and monitored so that breakdowns are avoided, giving employees a smooth ride every time. ",
+            icon: FaBus,
         },
         {
             title: "Professional Drivers",
             description: " We employ trained and courteous drivers who understand city routes and prioritise safety. Their role is not just driving but making sure employees experience a secure and timely journey. ",
+            icon: FaUserTie,
         },
         {
             title: "Real Time Tracking",
             description: " With the use of advanced technology, our transportation services offer real time tracking of vehicles. This improves visibility, reliability, and helps HR and admin teams manage employee transportation with ease. ",
+            icon: FaClock,
         },
         {
             title: "Seamless Experience",
             description: " We focus on providing a seamless service from pick up and drop to office entry, allowing employees to have a seamless experience every day. ",
+            icon: FaHandHoldingUsd,
         },
     ];
 
-    const chennaiFaqItems: FAQItem[] = [
-        {
-            id: "1",
-            question: "What are employee transportation services?",
-            answer: "Employee transportation services are specialized shuttle and commute solutions provided by companies like Fiesta to ensure their workforce can travel between home and office safely, punctually, and comfortably.",
-        },
-        {
-            id: "2",
-            question: "Why choose Fiesta for employee transport in Chennai?",
-            answer: "Fiesta offers decades of experience, a well-maintained fleet, professional drivers, and advanced technology to navigate Chennai's traffic efficiently. We provide customized solutions tailored to your business needs.",
-        },
-        {
-            id: "3",
-            question: "Does Fiesta provide real-time tracking for employees?",
-            answer: "Yes, all our vehicles are equipped with advanced GPS systems, allowing for real-time tracking and monitoring to ensure passenger safety and on-time arrivals.",
-        },
-        {
-            id: "4",
-            question: "How can businesses get a custom quote for transportation services?",
-            answer: "You can easily get a custom quote by filling out the lead form on this page or by contacting our Chennai office directly. We'll analyze your requirements and provide a tailored solution.",
-        },
-        {
-            id: "5",
-            question: "Does Fiesta offer sustainable transport options?",
-            answer: "Yes, we are committed to sustainability. Our shared shuttle models help reduce carbon footprints by decreasing the number of individual vehicles on the road.",
-        },
-    ];
+
 
     return (
         <div className="w-full">
@@ -92,7 +69,7 @@ const ChennaiEmployeeTransportPage = () => {
             <section className="relative w-full min-h-[600px] flex items-center pt-20 pb-16 lg:py-24">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/employee-transport/hero.jpg"
+                        src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/unnamed-2.jpg"
                         alt="Employee Transportation Services in Chennai"
                         fill
                         priority
@@ -104,7 +81,7 @@ const ChennaiEmployeeTransportPage = () => {
                 <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 lg:px-8">
                     <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
                         <div className="text-white text-center lg:text-left">
-                            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+                            <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
                                 Employee Transportation Services in Chennai
                             </h1>
                             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
@@ -125,7 +102,7 @@ const ChennaiEmployeeTransportPage = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="relative h-[320px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="/images/employee-transport/fiesta-commutes.avif"
+                                src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/why-employee-transport-matters.jpg" 
                                 alt="Employee Transportation Matters"
                                 fill
                                 style={{ objectFit: "cover" }}
@@ -149,19 +126,20 @@ const ChennaiEmployeeTransportPage = () => {
             {/* Differentiators */}
             <section className="w-full py-16 bg-gray-50">
                 <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
-                    <div className="text-center max-w-3xl mx-auto mb-16">
-                        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
-                            What Makes Our Transportation Services Different
-                        </h2>
-                        <p className="text-gray-600 text-lg">
-                            We have successfully established our operations in Chennai by combining planning, advanced technology, and a people-first approach. Our transportation services are designed with optimized routes, precise schedule planning, and a well maintained fleet to serve both small and large businesses.                        </p>
-                    </div>
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="space-y-8">
+                            <div>
+                                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+                                    What Makes Our Transportation Services Different
+                                </h2>
+                                <p className="text-gray-600 text-lg">
+                                    We have successfully established our operations in Chennai by combining planning, advanced technology, and a people-first approach. Our transportation services are designed with optimized routes, precise schedule planning, and a well maintained fleet to serve both small and large businesses.
+                                </p>
+                            </div>
                             {differentiators.map((item) => (
                                 <div key={item.title} className="flex gap-5">
                                     <div className="flex-shrink-0 w-12 h-12 rounded-full bg-red-100 flex items-center justify-center text-[#EC2028]">
-                                        <FaCheck className="text-xl" />
+                                        <item.icon className="text-xl" />
                                     </div>
                                     <div>
                                         <h4 className="text-xl font-bold text-gray-900 mb-2">{item.title}</h4>
@@ -248,27 +226,24 @@ const ChennaiEmployeeTransportPage = () => {
             </section>
 
             {/* Benefits for Employees and Businesses */}
-            <section className="w-full py-20 bg-white">
+            <section className="w-full py-20 bg-gray-50">
                 <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
                     <h2 className="text-4xl font-bold text-gray-900 text-center mb-16">
                         Benefits for Employees and Businesses
                     </h2>
 
                     {/* Top Row: 3 Cards */}
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
-                        {benefits.slice(0, 3).map((benefit, index) => (
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+                        {benefits.slice(0, 3).map((benefit) => (
                             <div
                                 key={benefit.title}
-                                className={`p-8 rounded-[2rem] shadow-[0_10px_30px_rgba(0,0,0,0.08)] border transition-all duration-300 flex flex-col items-center text-center ${index === 1
-                                    ? "bg-[#FDF0F1] border-[#FAD8DA]"
-                                    : "bg-white border-gray-100 hover:shadow-xl"
-                                    }`}
+                                className="p-8 rounded-2xl border border-gray-200 bg-white flex flex-col items-center text-center"
                             >
-                                <div className="text-[#EC2028] text-5xl mb-6">
+                                <div className="text-[#EC2028] text-5xl mb-5">
                                     <benefit.icon />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">
+                                <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
+                                <p className="text-gray-500 leading-relaxed text-sm">
                                     {benefit.description}
                                 </p>
                             </div>
@@ -276,17 +251,17 @@ const ChennaiEmployeeTransportPage = () => {
                     </div>
 
                     {/* Bottom Row: 2 Cards Centered */}
-                    <div className="flex flex-col md:flex-row justify-center gap-8">
+                    <div className="flex flex-col md:flex-row justify-center gap-6">
                         {benefits.slice(3, 5).map((benefit) => (
                             <div
                                 key={benefit.title}
-                                className="p-8 rounded-[2rem] shadow-[0_10px_30px_rgba(0,0,0,0.08)] border border-gray-100 bg-white hover:shadow-xl transition-all duration-300 flex flex-col items-center text-center w-full md:max-w-[440px]"
+                                className="p-8 rounded-2xl border border-gray-200 bg-white flex flex-col items-center text-center w-full md:max-w-[400px]"
                             >
-                                <div className="text-[#EC2028] text-5xl mb-6">
+                                <div className="text-[#EC2028] text-5xl mb-5">
                                     <benefit.icon />
                                 </div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-4">{benefit.title}</h3>
-                                <p className="text-gray-600 leading-relaxed">
+                                <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
+                                <p className="text-gray-500 leading-relaxed text-sm">
                                     {benefit.description}
                                 </p>
                             </div>
@@ -354,7 +329,7 @@ const ChennaiEmployeeTransportPage = () => {
             <section className="relative w-full py-24 lg:py-32 overflow-hidden">
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/employee-transport/cta.jpg"
+                        src="/images/employee-transport/PCR.png"
                         alt="Get Started with Fiesta"
                         fill
                         className="object-cover"
@@ -388,27 +363,7 @@ const ChennaiEmployeeTransportPage = () => {
             </section>
 
             {/* FAQ Section */}
-            <section className="relative w-full py-16 mb-20">
-                <div className="max-w-[1440px] mx-auto px-4 lg:px-8">
-                    <div className="grid grid-cols-1 lg:grid-cols-[0.8fr_1.2fr] gap-12 items-start">
-                        <div>
-                            <h2 className="text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
-                            <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                                We've compiled a list of common questions specifically for our Chennai employee transportation services to help you understand how we can support your business.
-                            </p>
-                            <div className="flex items-center gap-3 text-gray-500">
-                                <div className="flex text-yellow-500">
-                                    {[...Array(5)].map((_, i) => <FaStar key={i} />)}
-                                </div>
-                                <span>Rated 4.8/5 based on 200+ clients</span>
-                            </div>
-                        </div>
-                        <div>
-                            <FAQAccordion items={chennaiFaqItems} defaultOpenIndex={0} />
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <FAQ />
         </div>
     );
 };

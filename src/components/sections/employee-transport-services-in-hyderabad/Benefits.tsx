@@ -23,7 +23,7 @@ const Benefits = () => {
                         <ul className="space-y-6">
                             {benefitsList.map((benefit, index) => (
                                 <li key={index} className="flex items-start gap-4">
-                                    <FaCheckCircle className="text-[#E31E24] w-6 h-6 flex-shrink-0 mt-1" />
+                                    <Image src='/images/icon/tyre-icon.svg' width={40} height={40} alt='icon' />
                                     <span className="text-gray-700 text-lg">{benefit}</span>
                                 </li>
                             ))}
