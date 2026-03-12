@@ -8,7 +8,7 @@ const Introduction = () => {
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="flex flex-col md:flex-row gap-12 items-start">
                     {/* Left: Image */}
-                    <div className="w-full md:w-[45%] relative h-[400px] md:h-[600px] rounded-2xl overflow-hidden shadow-lg">
+                    <div className="w-full md:w-[45%] relative h-[400px] md:h-[600px] overflow-hidden shadow-lg">
                         <Image
                             src="/images/employee-transportation-services-in-mumbai/unnamed-1-1.jpg"
                             alt="Employee Transportation Services in Mumbai"
@@ -29,10 +29,13 @@ const Introduction = () => {
 
                         <div className="space-y-6 mb-8">
                             <div className="flex items-start gap-4">
-                                <div className="text-[#E31E24] mt-1 shrink-0">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                                    </svg>
+                                <div className="mt-1 shrink-0">
+                                    <Image
+                                        src="/images/icon/tyre-icon.svg"
+                                        alt="Check"
+                                        width={24}
+                                        height={24}
+                                    />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg text-gray-900 mb-1">Bandra Kurla Complex</h3>
@@ -41,10 +44,13 @@ const Introduction = () => {
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="text-[#E31E24] mt-1 shrink-0">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                                    </svg>
+                                <div className="mt-1 shrink-0">
+                                    <Image
+                                        src="/images/icon/tyre-icon.svg"
+                                        alt="Check"
+                                        width={24}
+                                        height={24}
+                                    />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg text-gray-900 mb-1">Lower Parel</h3>
@@ -53,10 +59,13 @@ const Introduction = () => {
                             </div>
 
                             <div className="flex items-start gap-4">
-                                <div className="text-[#E31E24] mt-1 shrink-0">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
-                                    </svg>
+                                <div className="mt-1 shrink-0">
+                                    <Image
+                                        src="/images/icon/tyre-icon.svg"
+                                        alt="Check"
+                                        width={24}
+                                        height={24}
+                                    />
                                 </div>
                                 <div>
                                     <h3 className="font-bold text-lg text-gray-900 mb-1">Other Corporate Complexes</h3>

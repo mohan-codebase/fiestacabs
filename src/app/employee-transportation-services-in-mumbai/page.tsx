@@ -6,7 +6,6 @@ import WhyBusinessesTrust from "../../components/sections/employee-transportatio
 import HowWeDeliver from "../../components/sections/employee-transportation-services-in-mumbai/HowWeDeliver";
 import CTA from "../../components/sections/employee-transportation-services-in-mumbai/CTA";
 import FAQ from "../../components/sections/employee-transportation-services-in-mumbai/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
 
 export const metadata = {
     title: "Employee Transportation Services in Mumbai | Fiesta Cabs",
@@ -32,11 +31,6 @@ export default function EmployeeTransportationServicesMumbai() {
             <WhyBusinessesTrust />
 
             <CTA />
-
-            <Testimonials
-                eyebrow="TESTIMONIALS"
-                title="What our customer says"
-            />
 
             <FAQ />
 

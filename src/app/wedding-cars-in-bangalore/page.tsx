@@ -6,7 +6,7 @@ import PopularCars from '../../components/sections/wedding-cars-in-bangalore/Pop
 import LuxuryOccasions from '../../components/sections/wedding-cars-in-bangalore/LuxuryOccasions';
 import PlanningExperience from '../../components/sections/wedding-cars-in-bangalore/PlanningExperience';
 import HassleFreeCTA from '../../components/sections/wedding-cars-in-bangalore/HassleFreeCTA';
-import Testimonials from '../../components/sections/home/Testimonials';
+import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/wedding-cars-in-bangalore/FAQ';
 
 export const metadata = {

@@ -8,7 +8,7 @@ import CorporateWhatMiss from "../../components/sections/corporate/CorporateWhat
 import CorporateHowCreates from "../../components/sections/corporate/CorporateHowCreates";
 import CorporateCTA from "../../components/sections/corporate/CorporateCTA";
 import LuxuryBrands from "../../components/sections/outstation/LuxuryBrands";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 import FAQ from "../../components/sections/home/FAQ";
 import CorporateAdvantages from "../../components/sections/corporate/CorporateAdvantages";
 import CorporateOftenMiss from "../../components/sections/corporate/CorporateOftenMiss";

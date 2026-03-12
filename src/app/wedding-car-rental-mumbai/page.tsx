@@ -6,7 +6,7 @@ import WhyChooseMumbai from "../../components/sections/wedding-car-rental-mumbai
 import MakingMemorable from "../../components/sections/wedding-car-rental-mumbai/MakingMemorable";
 import HowToBookCTA from "../../components/sections/wedding-car-rental-mumbai/HowToBookCTA";
 import FAQ from "../../components/sections/wedding-car-rental-mumbai/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 
 export const metadata = {
     title: "Wedding Car Rental Mumbai | Premium Wedding Cars | Fiesta",

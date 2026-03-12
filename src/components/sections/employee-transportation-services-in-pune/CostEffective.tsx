@@ -25,10 +25,8 @@ const CostEffective = () => {
         }
     ];
 
-    const Icon = ({ num }: { num: string }) => (
-        <div className="shrink-0 mt-1 relative flex items-center justify-center w-6 h-6 rounded-full bg-[#E31E24] text-white text-xs font-bold">
-            0{num}
-        </div>
+    const Icon = () => (
+        <Image src="/images/icon/tyre-icon.svg" alt="bullet icon" width={24} height={24} className="shrink-0 mt-1" />
     );
 
     return (
@@ -36,7 +34,7 @@ const CostEffective = () => {
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="flex flex-col md:flex-row gap-12 items-start">
                     {/* Left: Image */}
-                    <div className="w-full md:w-[45%] relative h-[500px] md:h-[650px] overflow-hidden rounded-md">
+                    <div className="w-full md:w-[45%] relative h-[500px] md:h-[650px] overflow-hidden">
                         <Image
                             src="/images/employee-transportation-services-in-pune/unnamed-3-2.jpg"
                             alt="Cost Effective and Efficient Transportation Services"
@@ -58,7 +56,7 @@ const CostEffective = () => {
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4">
-                                    <Icon num={(index + 1).toString()} />
+                                    <Icon />
                                     <div>
                                         <h3 className="text-[17px] font-bold text-[#333333] mb-1">{item.title}</h3>
                                         <p className="text-[#555555] leading-relaxed text-[15px]">

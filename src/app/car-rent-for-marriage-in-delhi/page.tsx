@@ -10,7 +10,7 @@ import TipsForBooking from "../../components/sections/car-rent-for-marriage-in-d
 import SafetyComfort from "../../components/sections/car-rent-for-marriage-in-delhi/SafetyComfort";
 import MakeYourDaySpecial from "../../components/sections/car-rent-for-marriage-in-delhi/MakeYourDaySpecial";
 import ContactUsCTA from "../../components/sections/car-rent-for-marriage-in-delhi/ContactUsCTA";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 import FAQ from "../../components/sections/car-rent-for-marriage-in-delhi/FAQ";
 
 export const metadata = {

@@ -9,6 +9,7 @@ interface EmailData {
     company?: string;
     message?: string;
     formSource: string;
+    captchaToken?: string | null;
 }
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -34,9 +35,33 @@ export async function sendEmailAction(data: EmailData) {
     const company = normalizeField(data.company, 120);
     const message = normalizeField(data.message, 180);
     const formSource = normalizeField(data.formSource, 120);
+    const captchaToken = data.captchaToken;
 
     if (!name || !email || !phone || !formSource) {
         return { success: false, message: "Please fill in all required fields." };
+    }
+
+    // Verify Captcha
+    if (!captchaToken) {
+        return { success: false, message: "Please complete the CAPTCHA." };
+    }
+
+    const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY || "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
+    if (!recaptchaSecret && !process.env.RECAPTCHA_SECRET_KEY) {
+        console.error("RECAPTCHA_SECRET_KEY is missing in environment variables.");
+    } else {
+        try {
+            const response = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${captchaToken}`, {
+                method: "POST",
+            });
+            const result = await response.json();
+            if (!result.success) {
+                return { success: false, message: "CAPTCHA verification failed. Please try again." };
+            }
+        } catch (error) {
+            console.error("CAPTCHA verification error:", error);
+            // Fallback: allow submission if service is down, but log error
+        }
     }
 
     if (!EMAIL_REGEX.test(email)) {

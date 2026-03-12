@@ -27,11 +27,7 @@ const Benefits = () => {
     ];
 
     const Icon = () => (
-        <div className="shrink-0 mt-1 relative flex items-center justify-center w-6 h-6 rounded-full bg-[#E31E24] text-white">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20 6L9 17l-5-5" />
-            </svg>
-        </div>
+        <Image src="/images/icon/tyre-icon.svg" alt="bullet icon" width={24} height={24} className="shrink-0 mt-1" />
     );
 
     return (

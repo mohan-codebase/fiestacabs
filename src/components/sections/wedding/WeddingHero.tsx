@@ -1,16 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { sendEmailAction } from "../../../app/actions/emailActions";
 import BookNowButton from "../../common/BookNowButton";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const WeddingHero = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        
+        const captchaToken = recaptchaRef.current?.getValue();
+        if (!captchaToken) {
+            setSubmitStatus({ success: false, message: "Please complete the CAPTCHA." });
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus(null);
 
@@ -20,12 +29,18 @@ const WeddingHero = () => {
             email: formData.get("email") as string,
             phone: formData.get("phone") as string,
             company: formData.get("company") as string,
+            message: formData.get("message") as string,
             formSource: "Wedding Hero Form",
+            captchaToken: captchaToken,
         };
 
         const result = await sendEmailAction(data);
         setSubmitStatus(result);
         setIsSubmitting(false);
+
+        if (result.success) {
+            recaptchaRef.current?.reset();
+        }
     };
     return (
         <section className="relative w-full min-h-[600px] flex items-center justify-center pt-20 pb-16 lg:py-24">
@@ -59,7 +74,7 @@ const WeddingHero = () => {
                     </div>
 
                     {/* Right Form Content */}
-                    <div id="booking-form" className="bg-[#F8F9FA] rounded-[20px] shadow-2xl p-6 md:p-8 w-full max-w-md mx-auto lg:ml-auto">
+                    <div id="booking-form" className="bg-[#F8F9FA] rounded-[20px] shadow-2xl p-6 md:p-8 w-full max-w-[420px] mx-auto lg:ml-auto">
                         {submitStatus?.success ? (
                             <div className="py-12 text-center">
                                 <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -122,14 +137,24 @@ const WeddingHero = () => {
                                         required
                                     />
                                 </div>
-                                <div className="flex justify-between items-center border border-gray-200 bg-gray-50 rounded p-2 md:p-3 w-full mb-2 shadow-sm">
-                                    <div className="flex items-center gap-3">
-                                        <input type="checkbox" required id="robot-wedding" className="w-5 h-5 rounded border-gray-300 text-[#EC2028] focus:ring-[#EC2028] cursor-pointer" />
-                                        <label htmlFor="robot-wedding" className="text-sm text-gray-700 cursor-pointer">I'm not a robot</label>
+                                <div>
+                                    <div className="flex justify-between items-center mb-1.5">
+                                        <label className="block text-sm font-bold text-gray-800">Message</label>
+                                        <span className="text-[10px] text-gray-500">0 / 180</span>
                                     </div>
-                                    <div className="flex flex-col items-center justify-center">
-                                        <img src="/images/reCAPTCHA_icon.png" alt="reCAPTCHA" className="w-6 h-6 object-contain" />
-                                    </div>
+                                    <textarea
+                                        rows={2}
+                                        name="message"
+                                        maxLength={180}
+                                        className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors resize-none"
+                                    />
+                                </div>
+                                <div className="mb-4 overflow-hidden rounded">
+                                    <ReCAPTCHA
+                                        ref={recaptchaRef}
+                                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                                        size="normal"
+                                    />
                                 </div>
                                 <button
                                     type="submit"

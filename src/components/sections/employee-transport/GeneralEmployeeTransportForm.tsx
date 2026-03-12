@@ -1,14 +1,23 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { sendEmailAction } from "../../../app/actions/emailActions";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const GeneralEmployeeTransportForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        const captchaToken = recaptchaRef.current?.getValue();
+        if (!captchaToken) {
+            setSubmitStatus({ success: false, message: "Please complete the CAPTCHA." });
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus(null);
 
@@ -20,15 +29,20 @@ const GeneralEmployeeTransportForm = () => {
             company: formData.get("company") as string,
             message: formData.get("message") as string,
             formSource: "Employee Transport Services Page",
+            captchaToken: captchaToken,
         };
 
         const result = await sendEmailAction(data);
         setSubmitStatus(result);
         setIsSubmitting(false);
+
+        if (result.success) {
+            recaptchaRef.current?.reset();
+        }
     };
 
     return (
-        <div className="bg-white rounded-2xl shadow-xl p-5 md:p-6 lg:p-8 w-full max-w-[500px] min-h-[550px] mx-auto flex flex-col justify-center">
+        <div className="bg-white rounded-2xl shadow-xl p-5 md:p-6 lg:p-8 w-full max-w-[420px] min-h-[550px] mx-auto flex flex-col justify-center">
             {submitStatus?.success ? (
                 <div className="py-8 text-center text-gray-800">
                     <div className="w-14 h-14 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-3">
@@ -99,6 +113,13 @@ const GeneralEmployeeTransportForm = () => {
                             maxLength={180}
                             placeholder="Optional"
                             className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"
+                        />
+                    </div>
+                    <div className="mb-2.5 overflow-hidden rounded">
+                        <ReCAPTCHA
+                            ref={recaptchaRef}
+                            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                            size="normal"
                         />
                     </div>
                     <button

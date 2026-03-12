@@ -1,16 +1,25 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import { sendEmailAction } from "../../../app/actions/emailActions";
 import BookNowButton from "../../common/BookNowButton";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const Hero = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        const captchaToken = recaptchaRef.current?.getValue();
+        if (!captchaToken) {
+            setSubmitStatus({ success: false, message: "Please complete the CAPTCHA." });
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus(null);
 
@@ -22,11 +31,16 @@ const Hero = () => {
             company: formData.get("company") as string,
             message: formData.get("message") as string,
             formSource: "Shuttle Service Hero Form",
+            captchaToken: captchaToken,
         };
 
         const result = await sendEmailAction(data);
         setSubmitStatus(result);
         setIsSubmitting(false);
+
+        if (result.success) {
+            recaptchaRef.current?.reset();
+        }
     };
     return (
         <section className="relative w-full overflow-hidden">
@@ -41,8 +55,8 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-black/60" />
             </div>
             <div className="relative z-10 max-w-[1440px] mx-auto px-4 py-16">
-                <div className="grid grid-cols-1 lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
-                    <div className="text-white">
+                <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_0.7fr] gap-10 items-center">
+                    <div className="text-white pr-0 lg:pr-10">
                         <h1 className="text-3xl md:text-5xl font-bold mb-4">
                             Corporate Shuttle &amp; Employee Transport Service
                         </h1>
@@ -50,13 +64,13 @@ const Hero = () => {
                             Reliable, comfortable, gate-to-gate commuting solution for your workforce.
                         </p>
                         <BookNowButton
-                            className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow"
+                            className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow mt-4"
                         >
                             Book a Shuttle for Your Team
                         </BookNowButton>
                     </div>
 
-                    <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8">
+                    <div className="bg-white rounded-2xl shadow-2xl p-6 md:p-8 w-full max-w-[420px] mx-auto lg:ml-auto lg:mr-0">
                         {submitStatus?.success ? (
                             <div className="py-12 text-center text-gray-800">
                                 <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -65,83 +79,83 @@ const Hero = () => {
                                     </svg>
                                 </div>
                                 <h3 className="text-xl font-bold mb-2">Thank You!</h3>
-                                <p className="mb-4">Your inquiry has been received. Our team will get back to you shortly.</p>
-                                <button onClick={() => setSubmitStatus(null)} className="text-[#EC2028] font-semibold">New Inquiry</button>
+                                <p className="mb-4 text-gray-600">Your inquiry has been received. Our team will get back to you shortly.</p>
+                                <button onClick={() => setSubmitStatus(null)} className="text-[#EC2028] font-semibold hover:underline">New Inquiry</button>
                             </div>
                         ) : (
                             <form className="space-y-4" onSubmit={handleSubmit}>
                                 {submitStatus?.success === false && (
-                                    <div className="p-3 bg-red-50 border border-red-200 text-red-600 rounded text-sm">
+                                    <div className="p-3 bg-red-50 border border-red-200 text-red-600 rounded-md text-sm">
                                         {submitStatus.message}
                                     </div>
                                 )}
                                 <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                    <label className="block text-xs font-bold text-gray-800 mb-1">
                                         First Name <span className="text-red-600">*</span>
                                     </label>
                                     <input
                                         type="text"
                                         name="firstName"
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500"
+                                        className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
                                         required
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                    <label className="block text-xs font-bold text-gray-800 mb-1">
                                         Email Address <span className="text-red-600">*</span>
                                     </label>
                                     <input
                                         type="email"
                                         name="email"
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500"
+                                        className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
                                         required
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                    <label className="block text-xs font-bold text-gray-800 mb-1">
                                         Phone Number <span className="text-red-600">*</span>
                                     </label>
                                     <input
                                         type="tel"
                                         name="phone"
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500"
+                                        className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
                                         required
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">
+                                    <label className="block text-xs font-bold text-gray-800 mb-1">
                                         Company <span className="text-red-600">*</span>
                                     </label>
                                     <input
                                         type="text"
                                         name="company"
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500"
+                                        className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 text-gray-800"
                                         required
                                     />
                                 </div>
                                 <div>
-                                    <label className="block text-sm font-semibold text-gray-700 mb-1">Message</label>
-                                    <div className="text-xs text-gray-500 text-right mb-1">0 / 180</div>
+                                    <div className="flex justify-between items-center mb-1">
+                                        <label className="block text-xs font-bold text-gray-800">Message</label>
+                                        <span className="text-[10px] text-gray-500">0 / 180</span>
+                                    </div>
                                     <textarea
-                                        rows={4}
+                                        rows={3}
                                         name="message"
                                         maxLength={180}
-                                        className="w-full rounded-md border border-gray-300 px-4 py-2.5 focus:outline-none focus:ring-2 focus:ring-red-500 resize-none"
+                                        className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-red-500 resize-none text-gray-800"
                                     />
                                 </div>
-                                <div className="flex justify-between items-center border border-gray-200 bg-gray-50 rounded p-2 md:p-3 w-full mb-2 shadow-sm">
-                                    <div className="flex items-center gap-3">
-                                        <input type="checkbox" required id="robot-shuttle" className="w-5 h-5 rounded border-gray-300 text-[#EC2028] focus:ring-[#EC2028] cursor-pointer" />
-                                        <label htmlFor="robot-shuttle" className="text-sm text-gray-700 cursor-pointer">I'm not a robot</label>
-                                    </div>
-                                    <div className="flex flex-col items-center justify-center">
-                                        <img src="/images/reCAPTCHA_icon.png" alt="reCAPTCHA" className="w-6 h-6 object-contain" />
-                                    </div>
+                                <div className="mb-4 overflow-hidden rounded">
+                                    <ReCAPTCHA
+                                        ref={recaptchaRef}
+                                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                                        size="normal"
+                                    />
                                 </div>
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-semibold py-3 rounded-md flex justify-center items-center gap-2 disabled:opacity-50"
+                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold tracking-wide text-sm py-3 rounded-md flex justify-center items-center gap-2 disabled:opacity-50"
                                 >
                                     {isSubmitting ? (
                                         <>
@@ -151,7 +165,7 @@ const Hero = () => {
                                             </svg>
                                             SENDING...
                                         </>
-                                    ) : "Submit"}
+                                    ) : "SUBMIT"}
                                 </button>
                             </form>
                         )}

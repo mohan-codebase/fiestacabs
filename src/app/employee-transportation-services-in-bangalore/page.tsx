@@ -7,7 +7,7 @@ import Commitment from "../../components/sections/employee-transportation-servic
 import DesignedForNeeds from "../../components/sections/employee-transportation-services-in-bangalore/DesignedForNeeds";
 import SimpleReliable from "../../components/sections/employee-transportation-services-in-bangalore/SimpleReliable";
 import FAQ from "../../components/sections/employee-transportation-services-in-bangalore/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 
 export const metadata = {
     title: "Employee Transportation Services in Bangalore | Fiesta Cabs",

@@ -1,7 +1,8 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import { sendEmailAction } from "../../app/actions/emailActions";
+import ReCAPTCHA from "react-google-recaptcha";
 
 interface BookNowModalProps {
     isOpen: boolean;
@@ -11,9 +12,17 @@ interface BookNowModalProps {
 const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        
+        const captchaToken = recaptchaRef.current?.getValue();
+        if (!captchaToken) {
+            setSubmitStatus({ success: false, message: "Please complete the CAPTCHA." });
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus(null);
 
@@ -25,6 +34,7 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
             company: formData.get("company") as string,
             message: formData.get("message") as string,
             formSource: "Global Book Now Modal",
+            captchaToken: captchaToken,
         };
 
         const result = await sendEmailAction(data);
@@ -138,14 +148,11 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                     maxLength={180}
                                 ></textarea>
                             </div>
-                            <div className="flex justify-between items-center border border-gray-200 bg-gray-50 rounded p-2 md:p-3 w-full mb-2 shadow-sm">
-                                <div className="flex items-center gap-3">
-                                    <input type="checkbox" required id="robot-modal" className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500 cursor-pointer" />
-                                    <label htmlFor="robot-modal" className="text-sm text-gray-700 cursor-pointer">I'm not a robot</label>
-                                </div>
-                                <div className="flex flex-col items-center justify-center">
-                                    <img src="/images/reCAPTCHA_icon.png" alt="reCAPTCHA" className="w-6 h-6 object-contain" />
-                                </div>
+                            <div className="mb-4 overflow-hidden rounded">
+                                <ReCAPTCHA
+                                    ref={recaptchaRef}
+                                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                                />
                             </div>
                             <div className="pt-2">
                                 <button

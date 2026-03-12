@@ -23,12 +23,7 @@ const CommitmentSafety = () => {
     ];
 
     const Icon = () => (
-        <div className="shrink-0 mt-1">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <rect x="2" y="2" width="20" height="20" rx="4" fill="#E31E24" />
-                <path d="M7 12l3 3 7-7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
-        </div>
+        <Image src="/images/icon/tyre-icon.svg" alt="bullet icon" width={24} height={24} className="shrink-0 mt-1" />
     );
 
     return (
@@ -64,7 +59,7 @@ const CommitmentSafety = () => {
                     </div>
 
                     {/* Right: Image */}
-                    <div className="w-full md:w-[50%] relative h-[500px] md:h-[650px] overflow-hidden rounded-md">
+                    <div className="w-full md:w-[50%] relative h-[500px] md:h-[650px] overflow-hidden">
                         <Image
                             src="/images/employee-transportation-services-in-pune/unnamed-2-2.jpg"
                             alt="Commitment to Employee Safety"

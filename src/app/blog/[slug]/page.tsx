@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { blogPosts, BlogPost, ContentBlock } from "../../../data/blogPosts";
-import Testimonials from "../../../components/sections/home/Testimonials";
+import Testimonials from "../../../components/common/Testimonials";
 import FAQ from "../../../components/sections/home/FAQ";
 import FAQAccordion from "../../../components/common/FAQAccordion";
 import BookNowButton from "../../../components/common/BookNowButton";

@@ -8,7 +8,7 @@ import SeamlessPartner from "../../components/sections/employee-transport-servic
 import WhyReliable from "../../components/sections/employee-transport-services-in-hyderabad/WhyReliable";
 import Conclusion from "../../components/sections/employee-transport-services-in-hyderabad/Conclusion";
 import GetStarted from "../../components/sections/employee-transport-services-in-hyderabad/GetStarted";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 import FAQ from "../../components/sections/employee-transport-services-in-hyderabad/FAQ";
 
 export const metadata = {

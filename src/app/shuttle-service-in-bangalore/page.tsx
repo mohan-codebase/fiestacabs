@@ -10,7 +10,7 @@ import HebbalNorth from "../../components/sections/shuttle-service-in-bangalore/
 import BellandurHSR from "../../components/sections/shuttle-service-in-bangalore/BellandurHSR";
 import BuildPlan from "../../components/sections/shuttle-service-in-bangalore/BuildPlan";
 import FAQ from "../../components/sections/shuttle-service-in-bangalore/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 
 export const metadata = {
     title: "Fiesta Shuttle Service in Bangalore | Redefining Corporate Commute",

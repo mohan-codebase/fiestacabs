@@ -1,10 +1,11 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import BookNowButton from "./BookNowButton";
 import { sendEmailAction } from "../../app/actions/emailActions";
+import ReCAPTCHA from "react-google-recaptcha";
 
 interface HeroFormProps {
     title: string;
@@ -25,9 +26,17 @@ const HeroForm = ({
 }: HeroFormProps) => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+        
+        const captchaToken = recaptchaRef.current?.getValue();
+        if (!captchaToken) {
+            setSubmitStatus({ success: false, message: "Please complete the CAPTCHA." });
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus(null);
 
@@ -39,11 +48,16 @@ const HeroForm = ({
             company: formData.get("company") as string,
             message: formData.get("message") as string,
             formSource: `${title} Hero Form`,
+            captchaToken: captchaToken,
         };
 
         const result = await sendEmailAction(data);
         setSubmitStatus(result);
         setIsSubmitting(false);
+
+        if (result.success) {
+            recaptchaRef.current?.reset();
+        }
     };
 
     const shouldOpenQuoteModal = ctaText.toLowerCase().includes("free quote") || ctaLink === "#" || ctaLink === "#booking-form" || !ctaLink;
@@ -61,8 +75,8 @@ const HeroForm = ({
                 <div className="absolute inset-0 bg-black/60 md:bg-black/40 md:bg-gradient-to-r md:from-black/10 md:via-black/50 md:to-black/80" />
             </div>
             <div className="relative z-10 max-w-[1440px] mx-auto px-4 py-16">
-                <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
-                    <div className="text-white">
+                <div className="grid grid-cols-1 lg:grid-cols-[1.3fr_0.7fr] gap-10 items-center">
+                    <div className="text-white pr-0 lg:pr-10">
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4 leading-tight">{title}</h1>
                         {subtitle && <p className="text-lg text-white/90 mb-8">{subtitle}</p>}
                         {shouldOpenQuoteModal ? (
@@ -79,7 +93,7 @@ const HeroForm = ({
                         )}
                     </div>
 
-                    <div className="bg-white rounded-lg shadow-2xl p-6 md:p-8">
+                    <div className="bg-white rounded-lg shadow-2xl p-6 md:p-8 w-full max-w-[420px] mx-auto lg:ml-auto lg:mr-0">
                         {submitStatus?.success ? (
                             <div className="py-12 text-center text-gray-800">
                                 <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -105,7 +119,7 @@ const HeroForm = ({
                                     <input
                                         type="text"
                                         name="firstName"
-                                        className="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-1 focus:ring-red-500"
+                                        className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-red-500 text-gray-800"
                                         required
                                     />
                                 </div>
@@ -116,7 +130,7 @@ const HeroForm = ({
                                     <input
                                         type="email"
                                         name="email"
-                                        className="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-1 focus:ring-red-500"
+                                        className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-red-500 text-gray-800"
                                         required
                                     />
                                 </div>
@@ -127,7 +141,7 @@ const HeroForm = ({
                                     <input
                                         type="tel"
                                         name="phone"
-                                        className="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-1 focus:ring-red-500"
+                                        className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-red-500 text-gray-800"
                                         required
                                     />
                                 </div>
@@ -138,7 +152,7 @@ const HeroForm = ({
                                     <input
                                         type="text"
                                         name="company"
-                                        className="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-1 focus:ring-red-500"
+                                        className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-red-500 text-gray-800"
                                         required
                                     />
                                 </div>
@@ -151,24 +165,17 @@ const HeroForm = ({
                                         rows={3}
                                         name="message"
                                         maxLength={180}
-                                        className="w-full rounded border border-gray-300 px-3 py-2 focus:outline-none focus:ring-1 focus:ring-red-500 resize-none"
+                                        className="w-full rounded border border-gray-300 px-3 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-red-500 resize-none text-gray-800"
                                     />
                                 </div>
 
                                 {/* Captcha */}
-                                <div className="flex justify-between items-center border border-gray-200 bg-gray-50 rounded p-2 md:p-3 w-full sm:w-[300px] mb-4 shadow-sm">
-                                    <div className="flex items-center gap-3">
-                                        <input type="checkbox" required id="robot-hero" className="w-5 h-5 rounded border-gray-300 text-red-600 focus:ring-red-500 cursor-pointer" />
-                                        <label htmlFor="robot-hero" className="text-sm text-gray-700 cursor-pointer">I'm not a robot</label>
-                                    </div>
-                                    <div className="flex flex-col items-center justify-center">
-                                        <div className="w-8 h-8 relative">
-                                            <Image src="/images/reCAPTCHA_icon.png" alt="reCAPTCHA" fill className="object-contain" />
-                                        </div>
-                                        <div className="text-[8px] text-gray-500 text-center mt-1">
-                                            Privacy - Terms
-                                        </div>
-                                    </div>
+                                <div className="mb-4 overflow-hidden rounded">
+                                    <ReCAPTCHA
+                                        ref={recaptchaRef}
+                                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                                        size="normal"
+                                    />
                                 </div>
 
                                 <button
@@ -186,8 +193,6 @@ const HeroForm = ({
                                         </>
                                     ) : "SUBMIT"}
                                 </button>
-
-                                <p className="text-[10px] text-gray-400 text-center uppercase tracking-widest mt-4">Version 2.0</p>
                             </form>
                         )}
                     </div>

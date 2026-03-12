@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { FaHandshake, FaTools, FaMoneyBillWave, FaThumbsUp, FaCar, FaStar, FaCogs } from "react-icons/fa";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 import FAQ from "../../components/sections/home/FAQ";
 import BookNowButton from "../../components/common/BookNowButton";
 import GeneralEmployeeTransportForm from "../../components/sections/employee-transport/GeneralEmployeeTransportForm";

@@ -9,7 +9,7 @@ import StayUpToDate from "../../components/sections/shuttle-service-in-delhi/Sta
 import BookingKeyFeatures from "../../components/sections/shuttle-service-in-delhi/BookingKeyFeatures";
 import WhyStruggleCTA from "../../components/sections/shuttle-service-in-delhi/WhyStruggleCTA";
 import FAQ from "../../components/sections/shuttle-service-in-delhi/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 
 export const metadata = {
     title: "Fiesta Shuttle Service in Delhi | Making Office Commutes Effortless",

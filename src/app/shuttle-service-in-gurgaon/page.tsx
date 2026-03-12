@@ -10,7 +10,7 @@ import OperatingInGurgaon from "../../components/sections/shuttle-service-in-gur
 import NewEmployeeOnboarding from "../../components/sections/shuttle-service-in-gurgaon/NewEmployeeOnboarding";
 import WhyStruggleCTA from "../../components/sections/shuttle-service-in-gurgaon/WhyStruggleCTA";
 import FAQ from "../../components/sections/shuttle-service-in-gurgaon/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 
 export const metadata = {
     title: "Fiesta Shuttle Service in Gurgaon: Simplifying Your Team's Daily Commute",

@@ -10,7 +10,7 @@ import StayConnected from "../../components/sections/shuttle-services-in-hyderab
 import WhyStruggle from "../../components/sections/shuttle-services-in-hyderabad/WhyStruggle";
 import BuildPlan from "../../components/sections/shuttle-services-in-hyderabad/BuildPlan";
 import FAQ from "../../components/sections/shuttle-services-in-hyderabad/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
+import Testimonials from "../../components/common/Testimonials";
 
 export const metadata = {
     title: "Fiesta Shuttle Services in Hyderabad | Simplifying the City Commute",

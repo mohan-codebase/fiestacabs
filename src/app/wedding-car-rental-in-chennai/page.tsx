@@ -8,7 +8,7 @@ import ChauffeurDriven from '../../components/sections/wedding-car-rental-in-che
 import FlexiblePackages from '../../components/sections/wedding-car-rental-in-chennai/FlexiblePackages';
 import DecorationSupport from '../../components/sections/wedding-car-rental-in-chennai/DecorationSupport';
 import DiscountCTA from '../../components/sections/wedding-car-rental-in-chennai/DiscountCTA';
-import Testimonials from '../../components/sections/home/Testimonials';
+import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/wedding-car-rental-in-chennai/FAQ';
 
 export const metadata = {

@@ -7,7 +7,6 @@ import CostEffective from "../../components/sections/employee-transportation-ser
 import TrustedBusiness from "../../components/sections/employee-transportation-services-in-pune/TrustedBusiness";
 import Benefits from "../../components/sections/employee-transportation-services-in-pune/Benefits";
 import FAQ from "../../components/sections/employee-transportation-services-in-pune/FAQ";
-import Testimonials from "../../components/sections/home/Testimonials";
 
 export const metadata = {
     title: "Employee Transportation Services in Pune | Fiesta Cabs",
@@ -38,10 +37,6 @@ export default function EmployeeTransportationServicesPune() {
 
             <FAQ />
 
-            <Testimonials
-                eyebrow="TESTIMONIALS"
-                title="What our customer says"
-            />
 
         </div>
     );
