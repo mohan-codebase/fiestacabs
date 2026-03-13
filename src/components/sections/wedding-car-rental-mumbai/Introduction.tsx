@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../../../components/common/Button";
 
 const Introduction = () => {
     return (
@@ -29,9 +30,9 @@ const Introduction = () => {
                         </div>
 
                         <div className="pt-4">
-                            <button className="bg-[#EC2028] hover:bg-red-700 text-white font-medium py-3 px-8 rounded-md transition-colors w-max">
+                            <Button className="bg-[#EC2028] w-max">
                                 Book Now
-                            </button>
+                            </Button>
                         </div>
                     </div>
                 </div>

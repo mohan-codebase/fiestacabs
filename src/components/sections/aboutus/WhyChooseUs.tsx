@@ -1,88 +1,102 @@
 import React from "react";
 import Image from "next/image";
 
-const WhyChooseUs = () => {
-    const features = [
-        {
-            id: "01",
-            title: "Two decades of experience in innovative customer services",
-            description:
-                "Since 1998, we have consistently understood and adapted to the evolving needs of our customers, leveraging their feedback to enhance our services and deliver a consistently positive experience. This strong customer-centric approach has established Fiesta as one of the leading providers of employee transport services in the country.",
-            image: "/images/about-us/why-choose-us/01.avif",
-        },
-        {
-            id: "02",
-            title: "Customized End to End Transport Solutions for every customer need",
-            description:
-                "Fiesta can address all your transport related needs. We are happy to understand what outcomes you are looking for and design a solution for your unique requirements. Whatever your needs may be related to car renting or any other transport related logistics, we have you covered.",
-            image: "/images/about-us/why-choose-us/02.avif",
-        },
-        {
-            id: "03",
-            title: "Proactive Management team closely working with customers",
-            description:
-                "Our management team brings a unique blend of rich experience and a passion for excellence. By going the extra mile and constantly innovating, we maintain our reputation as one of the leading employee transport services in the nation.",
-            image: "/images/about-us/why-choose-us/03.avif",
-        },
-        {
-            id: "04",
-            title: "Digitalized Solutions for Real-time Tracking & Safety",
-            description:
-                "We leverage cutting-edge technology to provide real-time tracking, automated billing, and enhanced safety features. Our digital ecosystem ensures complete transparency and efficiency in every journey we manage.",
-            image: "/images/about-us/why-choose-us/04.avif",
-        },
-        {
-            id: "05",
-            title: "Sustainable & Eco-friendly Fleet Options",
-            description:
-                "Fiesta is committed to environmental responsibility. We offer a growing fleet of electric and low-emission vehicles, helping our corporate clients achieve their sustainability goals while maintaining premium transport quality.",
-            image: "/images/about-us/why-choose-us/05.avif",
-        },
-        {
-            id: "06",
-            title: "Unmatched Reliability with 24/7 Operations",
-            description:
-                "Our operations never sleep. With a dedicated control room and round-the-clock support, we ensure that your transportation needs are met with absolute reliability, regardless of the time or location.",
-            image: "/images/about-us/why-choose-us/06.avif",
-        },
-    ];
+const features = [
+    {
+        id: "01",
+        title: "Two Decades of Experience",
+        description:
+            "Since 1998, we have consistently understood and adapted to evolving customer needs, establishing Fiesta as a leading provider of employee transport services.",
+        image: "/images/about-us/why-choose-us/01.avif",
+    },
+    {
+        id: "02",
+        title: "Customized End-to-End Solutions",
+        description:
+            "We design transport solutions tailored to your unique requirements — from car rentals to complex logistics, we have you covered.",
+        image: "/images/about-us/why-choose-us/02.avif",
+    },
+    {
+        id: "03",
+        title: "Proactive Management Team",
+        description:
+            "Our leadership brings rich experience and passion for excellence, constantly innovating to maintain our reputation as a top-tier transport service.",
+        image: "/images/about-us/why-choose-us/03.avif",
+    },
+    {
+        id: "04",
+        title: "Real-time Tracking & Safety",
+        description:
+            "We leverage cutting-edge technology for real-time tracking, automated billing, and enhanced safety — ensuring full transparency in every journey.",
+        image: "/images/about-us/why-choose-us/04.avif",
+    },
+    {
+        id: "05",
+        title: "Eco-friendly Fleet Options",
+        description:
+            "We offer a growing fleet of electric and low-emission vehicles, helping our clients achieve sustainability goals without compromising on quality.",
+        image: "/images/about-us/why-choose-us/05.avif",
+    },
+    {
+        id: "06",
+        title: "24/7 Reliable Operations",
+        description:
+            "With a dedicated control room and round-the-clock support, we ensure your transportation needs are met with absolute reliability, anytime, anywhere.",
+        image: "/images/about-us/why-choose-us/06.avif",
+    },
+];
 
+const WhyChooseUs = () => {
     return (
-        <section className="w-full py-20 bg-white">
-            <div className="max-w-[1440px] mx-auto px-4">
-                <div className="mb-12">
-                    <h2 className="text-4xl md:text-5xl font-bold text-[#1A1A1A] mb-4">
-                        Why Customers Choose Us
+        <section className="w-full py-16 md:py-24 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4">
+                {/* Header */}
+                <div className="text-center mb-14">
+                    <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-red-50 rounded-full">
+                        <span className="w-2 h-2 rounded-full bg-[#EC2028]" />
+                        <span className="text-[#EC2028] font-semibold text-sm tracking-wide uppercase">Why Fiesta</span>
+                    </div>
+                    <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
+                        Why Customers <span className="text-[#EC2028]">Choose Us</span>
                     </h2>
-                    <div className="w-24 h-1 bg-red-600"></div>
+                    <p className="text-gray-500 text-lg max-w-2xl mx-auto">
+                        Six pillars that make Fiesta the most trusted name in employee mobility across India.
+                    </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {/* Cards Grid */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {features.map((feature) => (
-                        <div
+                        <article
                             key={feature.id}
-                            className="bg-white rounded-lg overflow-hidden border border-gray-100 flex flex-col h-full"
+                            className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
                         >
-                            <div className="relative h-64 w-full">
+                            {/* Image */}
+                            <div className="relative h-48 overflow-hidden">
                                 <Image
                                     src={feature.image}
                                     alt={feature.title}
                                     fill
-                                    className="object-cover"
+                                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
-                                <div className="absolute top-0 left-0 bg-[#E31E24] text-white text-xs font-bold px-2 py-1 z-10">
+                                {/* Number badge */}
+                                <div className="absolute top-4 left-4 w-9 h-9 rounded-full bg-[#EC2028] text-white text-xs font-bold flex items-center justify-center shadow-lg">
                                     {feature.id}
                                 </div>
                             </div>
-                            <div className="p-8 flex flex-col flex-grow">
-                                <h3 className="text-2xl font-bold text-[#1A1A1A] mb-6 leading-tight">
+
+                            {/* Content */}
+                            <div className="p-6 flex flex-col flex-1">
+                                <div className="w-8 h-0.5 bg-[#EC2028] mb-3" />
+                                <h3 className="text-lg font-bold text-gray-900 mb-3 leading-snug">
                                     {feature.title}
                                 </h3>
-                                <p className="text-gray-600 leading-relaxed text-[15px]">
+                                <p className="text-gray-500 text-sm leading-relaxed flex-1">
                                     {feature.description}
                                 </p>
                             </div>
-                        </div>
+                        </article>
                     ))}
                 </div>
             </div>

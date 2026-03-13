@@ -5,6 +5,7 @@ import Image from "next/image";
 import { sendEmailAction } from "../../../app/actions/emailActions";
 import BookNowButton from "../../common/BookNowButton";
 import ReCAPTCHA from "react-google-recaptcha";
+import Button from "../../../components/common/Button";
 
 const Hero = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -43,7 +44,7 @@ const Hero = () => {
         }
     };
     return (
-        <section className="relative w-full overflow-hidden">
+        <section className="relative w-full overflow-hidden min-h-[80vh] lg:min-h-[90vh] xl:min-h-screen flex items-center">
             <div className="absolute inset-0">
                 <Image
                     src="/images/shuttle-service/hero.jpg"
@@ -64,7 +65,7 @@ const Hero = () => {
                             Reliable, comfortable, gate-to-gate commuting solution for your workforce.
                         </p>
                         <BookNowButton
-                            className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow mt-4"
+                            className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow mt-4"
                         >
                             Book a Shuttle for Your Team
                         </BookNowButton>
@@ -152,11 +153,7 @@ const Hero = () => {
                                         size="normal"
                                     />
                                 </div>
-                                <button
-                                    type="submit"
-                                    disabled={isSubmitting}
-                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold tracking-wide text-sm py-3 rounded-md flex justify-center items-center gap-2 disabled:opacity-50"
-                                >
+                                <Button type="submit" disabled={isSubmitting} className="w-full bg-[#EC2028] gap-2 disabled:opacity-50">
                                     {isSubmitting ? (
                                         <>
                                             <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -166,7 +163,7 @@ const Hero = () => {
                                             SENDING...
                                         </>
                                     ) : "SUBMIT"}
-                                </button>
+                                </Button>
                             </form>
                         )}
                     </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from "../../../components/common/Button";
 
 const HowWeOperate = () => {
     return (
@@ -19,12 +20,9 @@ const HowWeOperate = () => {
                                 With trained chauffeurs and experienced drivers, every journey is managed professionally. Routes are designed to ensure smooth rides, reduced delays, and punctual schedule adherence. For visiting clients or nearby cities, our system supports round trip planning with the same focus on safety and comfort.                            </p>
                         </div>
 
-                        <Link
-                            href="/reach-us"
-                            className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-md transition-colors shadow-md text-lg"
-                        >
+                        <Button href="/reach-us" className=" bg-[#E31E24] ">
                             Book Employee Transportation in Bangalore
-                        </Link>
+                        </Button>
                     </div>
 
                     {/* Right: Image */}

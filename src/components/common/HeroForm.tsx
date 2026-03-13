@@ -6,6 +6,7 @@ import Link from "next/link";
 import BookNowButton from "./BookNowButton";
 import { sendEmailAction } from "../../app/actions/emailActions";
 import ReCAPTCHA from "react-google-recaptcha";
+import Button from "../../components/common/Button";
 
 interface HeroFormProps {
     title: string;
@@ -63,7 +64,7 @@ const HeroForm = ({
     const shouldOpenQuoteModal = ctaText.toLowerCase().includes("free quote") || ctaLink === "#" || ctaLink === "#booking-form" || !ctaLink;
 
     return (
-        <section className="relative w-full overflow-hidden">
+        <section className="relative w-full overflow-hidden min-h-[80vh] lg:min-h-[90vh] xl:min-h-screen flex items-center">
             <div className="absolute inset-0">
                 <Image
                     src={imageSrc}
@@ -80,16 +81,13 @@ const HeroForm = ({
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4 leading-tight">{title}</h1>
                         {subtitle && <p className="text-lg text-white/90 mb-8">{subtitle}</p>}
                         {shouldOpenQuoteModal ? (
-                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded shadow mt-4">
+                            <BookNowButton className="mt-4 px-8 py-3">
                                 {ctaText}
                             </BookNowButton>
                         ) : (
-                            <Link
-                                href={ctaLink}
-                                className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded shadow mt-4"
-                            >
+                            <Button href={ctaLink} className="mt-4">
                                 {ctaText}
-                            </Link>
+                            </Button>
                         )}
                     </div>
 
@@ -178,11 +176,7 @@ const HeroForm = ({
                                     />
                                 </div>
 
-                                <button
-                                    type="submit"
-                                    disabled={isSubmitting}
-                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold tracking-wide text-sm py-3 rounded disabled:opacity-50 flex justify-center items-center gap-2"
-                                >
+                                <Button type="submit" disabled={isSubmitting} className="w-full bg-[#EC2028] disabled:opacity-50 gap-2">
                                     {isSubmitting ? (
                                         <>
                                             <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -192,7 +186,7 @@ const HeroForm = ({
                                             SENDING...
                                         </>
                                     ) : "SUBMIT"}
-                                </button>
+                                </Button>
                             </form>
                         )}
                     </div>

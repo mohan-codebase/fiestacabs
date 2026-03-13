@@ -27,8 +27,8 @@ const About = () => {
 
                     {/* Right - Content */}
                     <div className="lg:pl-6 pt-10 lg:pt-0">
-                        <p className="text-[#E31E24] uppercase tracking-widest text-xs font-bold mb-4">
-                            ABOUT
+                        <p className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-[#EC2028] uppercase border border-red-100 rounded-full bg-red-50/50">
+                            About
                         </p>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 leading-snug">
                             Your trusted Partner in Employee Transport Services and Premium Car rentals

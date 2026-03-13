@@ -5,6 +5,7 @@ import Image from "next/image";
 import { sendEmailAction } from "../../../app/actions/emailActions";
 import BookNowButton from "../../common/BookNowButton";
 import ReCAPTCHA from "react-google-recaptcha";
+import Button from "../../../components/common/Button";
 
 const WeddingHero = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -156,11 +157,7 @@ const WeddingHero = () => {
                                         size="normal"
                                     />
                                 </div>
-                                <button
-                                    type="submit"
-                                    disabled={isSubmitting}
-                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3.5 rounded transition-colors text-lg mt-2 flex justify-center items-center gap-2 disabled:opacity-50"
-                                >
+                                <Button type="submit" disabled={isSubmitting} className="w-full bg-[#EC2028] rounded mt-2 gap-2 disabled:opacity-50">
                                     {isSubmitting ? (
                                         <>
                                             <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -177,7 +174,7 @@ const WeddingHero = () => {
                                             Contact Now
                                         </>
                                     )}
-                                </button>
+                                </Button>
                             </form>
                         )}
                     </div>

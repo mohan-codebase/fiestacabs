@@ -1,4 +1,4 @@
-import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 import { FaHandshake, FaTools, FaMoneyBillWave, FaThumbsUp, FaCar, FaStar, FaCogs } from "react-icons/fa";
 import Testimonials from "../../components/common/Testimonials";
@@ -19,27 +19,32 @@ const EmployeeTransportServicesPage = () => {
             city: "Chennai",
             icon: "/images/services-offered/employee-transport-service/city-chennai.webp",
             description: "Covering IT parks and industrial zones with reliable, on-time shuttles.",
+            href: "/employee-transportation-services-in-chennai",
         },
         {
             city: "Hyderabad",
             icon: "/images/services-offered/employee-transport-service/city-hyderabad.webp",
             description: "Serving HITEC City, Gachibowli, and key corporate clusters.",
+            href: "/employee-transport-services-in-hyderabad",
         },
         {
             city: "Bangalore",
             icon: "/images/services-offered/employee-transport-service/city-bangalore.webp",
             description: "Connecting Whitefield, Electronic City, and major office corridors.",
+            href: "/employee-transportation-services-in-bangalore",
         },
         {
             city: "Mumbai",
             icon: "/images/services-offered/employee-transport-service/city-mumbai.webp",
             description:
                 "Efficient Employee transport services across the Economic powerhouse of India.",
+            href: "/employee-transportation-services-in-mumbai",
         },
         {
             city: "Pune",
             icon: "/images/services-offered/employee-transport-service/city-pune.webp",
             description: "Safe and punctual travel solutions for Pune’s growing industrial workforce.",
+            href: "/employee-transportation-services-in-pune",
         },
     ];
 
@@ -177,7 +182,7 @@ const EmployeeTransportServicesPage = () => {
     return (
         <div className="w-full">
             {/* Hero */}
-            <section className="relative w-full overflow-hidden">
+            <section className="relative w-full overflow-hidden min-h-[80vh] lg:min-h-[90vh] xl:min-h-screen flex items-center">
                 <div className="absolute inset-0">
                     <Image
                         src="/images/employee-transport/hero.jpg"
@@ -198,7 +203,7 @@ const EmployeeTransportServicesPage = () => {
                                 Safe, punctual, and comfortable daily commutes for your workforce across major Indian
                                 cities.
                             </p>
-                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow">
+                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
                                 Get a Free Quote
                             </BookNowButton>
                         </div>
@@ -246,7 +251,7 @@ const EmployeeTransportServicesPage = () => {
                                 cities a dependable, scalable, and cost effective way to manage corporate commutes, from
                                 home to corporate offices and back, every single day.
                             </p>
-                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow">
+                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
                                 Get a Free Quote
                             </BookNowButton>
                         </div>
@@ -267,9 +272,10 @@ const EmployeeTransportServicesPage = () => {
                     </div>
                     <div className="flex flex-wrap justify-center gap-6">
                         {cityCards.map((city) => (
-                            <div
+                            <Link
                                 key={city.city}
-                                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#FFEDED] rounded-3xl border-b-4 border-red-500 p-8 text-center flex flex-col items-center"
+                                href={city.href}
+                                className="w-full sm:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-[#FFEDED] rounded-3xl border-b-4 border-red-500 p-8 text-center flex flex-col items-center hover:scale-[1.02] transition-transform cursor-pointer"
                             >
                                 <div className="w-24 h-24 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm shrink-0">
                                     <div className="relative w-12 h-12">
@@ -287,7 +293,7 @@ const EmployeeTransportServicesPage = () => {
                                 <p className="text-sm text-gray-600 leading-relaxed max-w-[280px]">
                                     {city.description}
                                 </p>
-                            </div>
+                            </Link>
                         ))}
                     </div>
                 </div>
@@ -339,7 +345,7 @@ const EmployeeTransportServicesPage = () => {
                                 ))}
                             </div>
                             <div className="mt-6">
-                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow">
+                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
                                     To Know More
                                 </BookNowButton>
                             </div>
@@ -578,7 +584,7 @@ const EmployeeTransportServicesPage = () => {
                                 </p>
                             </div>
                             <div className="mt-6">
-                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md shadow">
+                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
                                     Book Now
                                 </BookNowButton>
                             </div>

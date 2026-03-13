@@ -6,6 +6,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FaRegCircleDot } from "react-icons/fa6"; // Using circle dot as placeholder for wheel icon
+import Button from "../../../components/common/Button";
 
 const BookingProcess = () => {
     return (
@@ -59,12 +60,9 @@ const BookingProcess = () => {
                             </p>
                         </div>
 
-                        <Link
-                            href="#booking-form"
-                            className="inline-block bg-[#EC2028] text-white font-bold py-4 px-10 rounded-lg hover:bg-red-700 transition-colors shadow-lg hover:shadow-xl transform hover:-translate-y-1"
-                        >
+                        <Button href="#booking-form" className=" bg-[#EC2028] hover: transform hover:-translate-y-1">
                             Book Now
-                        </Link>
+                        </Button>
                     </div>
 
                     {/* Image - Right */}

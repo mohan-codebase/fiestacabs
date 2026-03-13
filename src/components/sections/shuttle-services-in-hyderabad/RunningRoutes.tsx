@@ -18,11 +18,15 @@ const RunningRoutes = () => {
     ];
 
     const Icon = () => (
-        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E31E24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="shrink-0 mt-1">
-            <circle cx="12" cy="12" r="9" />
-            <circle cx="12" cy="12" r="3" fill="#E31E24" stroke="none" />
-            <path d="M12 3v2M12 19v2M5.64 5.64l1.41 1.41M16.95 16.95l1.41 1.41M3 12h2M19 12h2M5.64 18.36l1.41-1.41M16.95 7.05l1.41-1.41" strokeWidth="1.5" />
-        </svg>
+        <div className="shrink-0 mt-1">
+            <Image
+                src="/images/icon/tyre-icon.svg"
+                alt="Tyre Icon"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+            />
+        </div>
     );
 
     return (

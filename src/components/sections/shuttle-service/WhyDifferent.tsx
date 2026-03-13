@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../../../components/common/Button";
 
 const WhyDifferent = () => {
     return (
@@ -28,12 +29,9 @@ const WhyDifferent = () => {
 
                         With Fiesta, there’s no need to juggle between public transportation options or navigate through mind-boggling traffic—all while trying to get to or from work on time.
                     </p>
-                    <Link
-                        href="/reach-us"
-                        className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md"
-                    >
+                    <Button href="/reach-us" className=" bg-[#EC2028] ">
                         Talk to Our Team
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

@@ -3,23 +3,22 @@ import Image from "next/image";
 
 const ReachUsHero = () => {
     return (
-        <section className="relative w-full h-[300px] md:h-[400px] bg-gray-900 text-white overflow-hidden">
-            {/* Background Image */}
+        <section className="relative w-full min-h-[340px] md:min-h-[660px] text-white overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/home/banner/banner-1.png" // Using banner-1 as temporary placeholder
+                    src="/images/reach-us/at-a-car-dealership-buying-a-car-1.jpg"
                     alt="Reach Us"
                     fill
-                    className="object-cover opacity-60"
+                    className="object-cover"
                     priority
                 />
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/40 z-10" />
+                <div className="absolute inset-0 bg-black/55" />
             </div>
 
-            {/* Content */}
-            <div className="relative z-20 flex items-center justify-center h-full text-center px-4">
-                <h1 className="text-4xl md:text-6xl font-bold tracking-tight">Reach Us</h1>
+            <div className="relative z-10 flex items-center justify-center min-h-[420px] md:min-h-[520px] text-center px-4">
+                <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-[1.05] text-white drop-shadow-[0_12px_30px_rgba(0,0,0,0.55)]">
+                    Reach Us
+                </h1>
             </div>
         </section>
     );

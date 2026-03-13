@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "../../../components/common/Button";
 
 const CorporateCTA = () => {
     return (
@@ -26,9 +27,9 @@ const CorporateCTA = () => {
                     Choosing the right corporate car rental service is easier when you focus on fleet quality, transparent pricing, reliability, and disciplined chauffeurs. Fiesta Smart Mobility brings all of this together with a well-maintained fleet, professional drivers, flexible rental plans, and real-time tracking for complete peace of mind.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <button className="bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-10 py-4 rounded transition-colors text-lg">
+                    <Button className="bg-[#EC2028] rounded ">
                         Book Your Corporate Car Rental Now
-                    </button>
+                    </Button>
                     
                 </div>
             </div>

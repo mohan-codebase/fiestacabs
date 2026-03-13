@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from "../../../components/common/Button";
 
 const DesignedForNeeds = () => {
     const listItems = [
@@ -36,12 +37,9 @@ const DesignedForNeeds = () => {
 
                             With Fiesta’s employee transport, both employees and clients benefit from a seamless service built on commitment, efficiency, and reliability.                        </p>
 
-                        <Link
-                            href="/reach-us"
-                            className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-md transition-colors shadow-md text-lg"
-                        >
+                        <Button href="/reach-us" className=" bg-[#E31E24] ">
                             Contact Our Team For A Comprehensive Transport Quote
-                        </Link>
+                        </Button>
                     </div>
 
                     {/* Right: Image */}

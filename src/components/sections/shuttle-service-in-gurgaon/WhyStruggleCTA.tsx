@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";
+import Button from "../../../components/common/Button";
 
 const WhyStruggleCTA = () => {
     return (
@@ -55,12 +56,9 @@ const WhyStruggleCTA = () => {
                         Let&apos;s redefine what a daily commute can feel like. One shuttle, one pick up point, one ride at a time.
                     </p>
 
-                    <Link
-                        href="/reach-us"
-                        className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded transition-colors text-[16px]"
-                    >
+                    <Button href="/reach-us" className=" bg-[#E31E24] rounded text-[16px]">
                         Book Now
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

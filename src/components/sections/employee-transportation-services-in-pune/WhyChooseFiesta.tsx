@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Button from "../../../components/common/Button";
 
 const WhyChooseFiesta = () => {
     const features = [
@@ -103,12 +104,9 @@ const WhyChooseFiesta = () => {
                 </div>
 
                 <div className="flex justify-center w-full">
-                    <Link
-                        href="/reach-us"
-                        className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded transition-colors text-[16px]"
-                    >
+                    <Button href="/reach-us" className=" bg-[#E31E24] rounded text-[16px]">
                         Book Employee Transport in Pune Today
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

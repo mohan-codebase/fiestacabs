@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from "../../../components/common/Button";
 
 const BuildPlan = () => {
     return (
@@ -44,12 +45,9 @@ const BuildPlan = () => {
                         One pickup, one shuttle, one smart ride at a time.
                     </p>
 
-                    <Link
-                        href="/reach-us"
-                        className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded transition-colors text-[16px]"
-                    >
+                    <Button href="/reach-us" className=" bg-[#E31E24] rounded text-[16px]">
                         Book Now
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

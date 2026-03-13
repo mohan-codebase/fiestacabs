@@ -23,10 +23,13 @@ const GateWorks = () => {
 
     const Icon = () => (
         <div className="shrink-0 mt-1">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
-                <rect x="2" y="2" width="20" height="20" rx="4" fill="#E31E24" />
-                <path d="M7 12l3 3 7-7" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" />
-            </svg>
+            <Image
+                src="/images/icon/tyre-icon.svg"
+                alt="Tyre Icon"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+            />
         </div>
     );
 

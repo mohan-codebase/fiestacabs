@@ -30,7 +30,7 @@ const StartToday = () => {
                         <span className="text-[#EC2028] font-bold">+91 78458 67512</span>
                     </div>
                     <BookNowButton
-                        className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-md"
+                        className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full"
                     >
                         Book Now
                     </BookNowButton>

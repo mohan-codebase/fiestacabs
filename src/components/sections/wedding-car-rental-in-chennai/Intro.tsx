@@ -25,7 +25,7 @@ const Intro = () => {
                             Fiesta is recognised for reliable luxury car rental services in Chennai, supporting weddings, corporate events, airport pickup, celebrity events, and film shootings through a structured rental system.
                         </p>
                         <div>
-                            <BookNowButton className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 px-8 rounded-md transition-colors mt-4">
+                            <BookNowButton className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-colors mt-4">
                                 Book Now
                             </BookNowButton>
                         </div>

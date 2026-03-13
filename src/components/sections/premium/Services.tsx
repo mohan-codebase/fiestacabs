@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../../../components/common/Button";
 
 const Services = () => {
     return (
@@ -23,9 +24,9 @@ const Services = () => {
                                 Our versatile fleet includes luxury, premium, standard, and MUV vehicles, giving you the flexibility to choose a ride that matches your preferences and budget. With well-maintained cars, spacious interiors, and professional drivers, we prioritize your comfort and safety every step of the way.
                             </p>
                         </div>
-                        <Link href="/services-offered" className="inline-block mt-8 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded transition-colors">
+                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] rounded ">
                             To Know More
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -43,9 +44,9 @@ const Services = () => {
                                 Our professional chauffeurs are dedicated to providing an elegant, stress-free experience, ensuring you arrive on time and in style. From the moment you step into our vehicles, comfort and luxury are our priorities.
                             </p>
                         </div>
-                        <Link href="/services-offered" className="inline-block mt-8 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded transition-colors">
+                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] rounded ">
                             To Know More
-                        </Link>
+                        </Button>
                     </div>
                     <div className="relative h-[350px] md:h-[450px]  overflow-hidden  order-1 md:order-2">
                         <Image src="/images/premium-car-rentals/weddings.jpg" alt="Weddings" fill className="object-cover" />
@@ -69,9 +70,9 @@ const Services = () => {
                                 Our fleet of luxury vehicles, including sedans, SUVs, and buses, ensures that everyone arrives on time and in style. From airport transfers to seamless venue transportation, we handle all the logistics to keep your event on track.
                             </p>
                         </div>
-                        <Link href="/services-offered" className="inline-block mt-8 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded transition-colors">
+                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] rounded ">
                             To Know More
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </section>
@@ -87,9 +88,9 @@ const Services = () => {
                             <p>
                                 We keep track of your departure time to guarantee you're picked up and dropped off promptly. With plush interiors and modern amenities, you'll enjoy a relaxing ride before or after your journey. Available 24/7, we cater to all your airport transfer needs, whether it's an early morning or late-night flight. Our service is designed to make your trip hassle-free, allowing you to focus on your travel. Trust us for an airport transfer that’s as smooth and comfortable as the flight itself.                             </p>
                         </div>
-                        <Link href="/services-offered" className="inline-block mt-8 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded transition-colors">
+                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] rounded ">
                             To Know More
-                        </Link>
+                        </Button>
                     </div>
                     <div className="relative h-[350px] md:h-[450px] overflow-hidden order-1 md:order-2">
                         <Image src="/images/premium-car-rentals/airport-transfers.avif" alt="Airport Transfers" fill className="object-cover" />

@@ -1,16 +1,26 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import Image from "next/image";
 import BookNowButton from "../../common/BookNowButton";
 import { sendEmailAction } from "../../../app/actions/emailActions";
+import ReCAPTCHA from "react-google-recaptcha";
+import Button from "../../../components/common/Button";
 
 const CorporateHero = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [submitStatus, setSubmitStatus] = useState<{ success?: boolean; message?: string } | null>(null);
+    const recaptchaRef = useRef<ReCAPTCHA>(null);
 
     const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
+
+        const captchaToken = recaptchaRef.current?.getValue();
+        if (!captchaToken) {
+            setSubmitStatus({ success: false, message: "Please complete the CAPTCHA." });
+            return;
+        }
+
         setIsSubmitting(true);
         setSubmitStatus(null);
 
@@ -22,11 +32,16 @@ const CorporateHero = () => {
             company: formData.get("company") as string,
             message: formData.get("message") as string,
             formSource: "Corporate Hero Form",
+            captchaToken: captchaToken,
         };
 
         const result = await sendEmailAction(data);
         setSubmitStatus(result);
         setIsSubmitting(false);
+
+        if (result.success) {
+            recaptchaRef.current?.reset();
+        }
     };
     return (
         <section className="relative w-full min-h-[600px] flex items-center justify-center pt-20 pb-16 lg:py-24">
@@ -127,17 +142,20 @@ const CorporateHero = () => {
                                         Message
                                     </label>
                                     <textarea
-                                        rows={3}
+                                        rows={2}
                                         name="message"
                                         maxLength={180}
                                         className="w-full rounded border border-gray-300 px-4 py-2.5 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] transition-colors resize-none"
                                     />
                                 </div>
-                                <button
-                                    type="submit"
-                                    disabled={isSubmitting}
-                                    className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3.5 rounded transition-colors text-lg mt-2 flex justify-center items-center gap-2 disabled:opacity-50"
-                                >
+                                <div className="mb-4 overflow-hidden rounded">
+                                    <ReCAPTCHA
+                                        ref={recaptchaRef}
+                                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                                        size="normal"
+                                    />
+                                </div>
+                                <Button type="submit" disabled={isSubmitting} className="w-full bg-[#EC2028] rounded mt-2 gap-2 disabled:opacity-50">
                                     {isSubmitting ? (
                                         <>
                                             <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -147,7 +165,7 @@ const CorporateHero = () => {
                                             SENDING...
                                         </>
                                     ) : "SUBMIT"}
-                                </button>
+                                </Button>
                             </form>
                         )}
                     </div>

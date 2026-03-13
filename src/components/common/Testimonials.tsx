@@ -4,6 +4,7 @@ import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay, EffectFade } from "swiper/modules";
 import { FaQuoteLeft, FaStar, FaChevronLeft, FaChevronRight } from "react-icons/fa";
+import { siteTestimonials } from "../../data/testimonials";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -27,56 +28,7 @@ interface TestimonialsProps {
     className?: string;
 }
 
-const DEFAULT_TESTIMONIALS: Testimonial[] = [
-    {
-        id: "1",
-        quote: "During the CFC senior leadership visit, Akram provided excellent support in arranging cabs, managing deployments, and ensuring smooth coordination throughout the visit.",
-        company: "Atos",
-        person: "Atos Team",
-        role: "Admin Team",
-        rating: 5,
-    },
-    {
-        id: "2",
-        quote: "Thanks for your wonderful support on arranging vehicles for BCP in CBE office due to heavy rainfall in Chennai city. Appreciate all your efforts and hard work.",
-        company: "Walmart",
-        person: "Walmart Admin Team",
-        role: "Admin Team",
-        rating: 5,
-    },
-    {
-        id: "3",
-        quote: "I would like to extend my thanks to you and the entire team for the support, and timely scheduling of our travel requirements. You and your team are prompt.",
-        company: "meyn",
-        person: "meyn",
-        role: "Corporate Client",
-        rating: 5,
-    },
-    {
-        id: "4",
-        quote: "We would like to extend sincere appreciation to you, your team and drivers for the exceptional support provided during the challenges posed by heavy traffic.",
-        company: "Wellsfargo",
-        person: "Wellsfargo Bangalore",
-        role: "Transport Desk",
-        rating: 5,
-    },
-    {
-        id: "5",
-        quote: "This is to appreciate your team in all aspects as Brand Systems has been using Fiesta Smart Mobility from last 6-7 months and we have been more than satisfied.",
-        company: "Brand Systems",
-        person: "Brand Systems",
-        role: "Event Management",
-        rating: 5,
-    },
-    {
-        id: "6",
-        quote: "We would like to thank you and your team member for excellent service to our organization. Your timely cab support was greatly appreciated.",
-        company: "Mahindra Research Valley",
-        person: "Admin Team",
-        role: "Admin Team",
-        rating: 5,
-    }
-];
+const DEFAULT_TESTIMONIALS: Testimonial[] = siteTestimonials;
 
 const Testimonials = ({
     eyebrow = "TESTIMONIALS",
@@ -85,16 +37,16 @@ const Testimonials = ({
     testimonials = DEFAULT_TESTIMONIALS,
     className = "",
 }: TestimonialsProps) => {
-    
+
     const renderStars = (rating: number) => {
         return (
-            <div className="flex gap-0.5">
+            <div className="flex gap-1">
                 {[...Array(5)].map((_, index) => (
                     <FaStar
                         key={index}
                         className={`${index < rating ? "text-yellow-400" : "text-gray-200"
                             }`}
-                        size={12}
+                        size={14}
                     />
                 ))}
             </div>
@@ -102,63 +54,78 @@ const Testimonials = ({
     };
 
     return (
-        <section className={`w-full py-12 md:py-16 bg-white ${className}`}>
-            <div className="max-w-5xl mx-auto px-4">
-                {/* Minimal Header */}
-                <div className="text-center mb-10 md:mb-12">
+        <section className={`relative w-full py-24 md:py-32 bg-white overflow-hidden ${className}`}>
+            {/* Background Decorative Elements */}
+            <div className="absolute top-0 left-0 w-64 h-64 bg-red-50/50 blur-[100px] rounded-full -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+            <div className="absolute bottom-0 right-0 w-96 h-96 bg-red-50/30 blur-[120px] rounded-full translate-x-1/3 translate-y-1/3 pointer-events-none" />
+
+            <div className="max-w-7xl mx-auto px-4 relative z-10">
+                {/* Header Section */}
+                <div className="text-center mb-16 md:mb-24">
                     {showEyebrow && (
-                        <span className="text-[#D32F2F] uppercase tracking-[0.2em] text-[10px] font-bold mb-2 block">
+                        <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-[#EC2028] uppercase border border-red-100 rounded-full bg-red-50/50">
                             {eyebrow}
                         </span>
                     )}
-                    <h2 className="text-2xl md:text-3xl font-bold text-gray-900 tracking-tight">
-                        {title}
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 tracking-tight leading-tight">
+                        {title.split(' ').slice(0, -1).join(' ')} <span className="text-[#EC2028]">{title.split(' ').slice(-1)}</span>
                     </h2>
                 </div>
 
-                <div className="relative group">
+                <div className="relative">
                     <Swiper
-                        modules={[Navigation, Pagination, Autoplay, EffectFade]}
+                        modules={[Navigation, Pagination, Autoplay]}
                         spaceBetween={30}
-                        slidesPerView={1}
+                        breakpoints={{
+                            640: { slidesPerView: 1 },
+                            768: { slidesPerView: 2 },
+                            1024: { slidesPerView: 3 },
+                        }}
+                        autoHeight={false}
                         navigation={{
                             prevEl: '.testimonial-prev',
                             nextEl: '.testimonial-next',
                         }}
-                        pagination={{ 
+                        pagination={{
                             clickable: true,
                             el: '.testimonial-pagination',
-                            bulletClass: 'swiper-pagination-bullet !w-1 !h-1 !bg-gray-300 transition-all duration-300',
-                            bulletActiveClass: 'swiper-pagination-bullet-active !w-4 !rounded-full !bg-[#D32F2F]'
+                            bulletClass: 'swiper-pagination-bullet !w-2 !h-2 !bg-gray-300 transition-all duration-300',
+                            bulletActiveClass: 'swiper-pagination-bullet-active !w-8 !rounded-full !bg-[#EC2028]'
                         }}
                         autoplay={{
-                            delay: 5000,
+                            delay: 6000,
                             disableOnInteraction: false,
                         }}
                         loop={true}
-                        effect="fade"
-                        fadeEffect={{ crossFade: true }}
-                        className="testimonials-swiper !pb-12"
+                        className="testimonials-swiper !pb-20 !px-4"
                     >
                         {testimonials.map((testimonial) => (
-                            <SwiperSlide key={testimonial.id}>
-                                <div className="bg-[#FAFAFA] rounded-2xl p-6 md:p-10 border border-gray-100 flex flex-col items-center text-center max-w-3xl mx-auto">
-                                    <FaQuoteLeft className="text-[#D32F2F]/20 text-2xl mb-6" />
-                                    
-                                    <blockquote className="text-gray-700 text-base md:text-lg font-medium leading-relaxed mb-8 italic">
-                                        "{testimonial.quote}"
-                                    </blockquote>
-
-                                    <div className="flex flex-col items-center">
-                                        <h4 className="font-bold text-gray-900 text-sm md:text-base">
-                                            {testimonial.company}
-                                        </h4>
-                                        <div className="flex items-center gap-2 mt-1">
-                                            <span className="text-gray-500 text-[12px]">
-                                                {testimonial.role}
-                                            </span>
-                                            <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
+                            <SwiperSlide key={testimonial.id} className="h-full flex">
+                                <div className="testimonials-card h-[520px] w-full bg-white/60 backdrop-blur-sm border border-gray-100 rounded-3xl p-8 md:p-10 shadow-xl shadow-gray-200/20 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 group overflow-hidden">
+                                    <div>
+                                        <div className="flex justify-between items-start mb-8">
+                                            <div className="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center group-hover:bg-[#EC2028] transition-colors duration-300">
+                                                <FaQuoteLeft className="text-[#EC2028] text-xl group-hover:text-white transition-colors duration-300" />
+                                            </div>
                                             {renderStars(testimonial.rating)}
+                                        </div>
+
+                                        <blockquote className="text-gray-700 text-[14px] md:text-[15px] leading-relaxed mb-8 font-medium">
+                                            "{testimonial.quote}"
+                                        </blockquote>
+                                    </div>
+
+                                    <div className="flex items-center gap-4 pt-6 border-t border-gray-50">
+                                        <div className="w-12 h-12 rounded-full bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center font-bold text-gray-400 uppercase">
+                                            {testimonial.company.substring(0, 1)}
+                                        </div>
+                                        <div>
+                                            <h4 className="font-bold text-gray-900 text-xs md:text-sm">
+                                                {testimonial.person || testimonial.company}
+                                            </h4>
+                                            <p className="text-[#EC2028] text-[11px] md:text-xs font-semibold">
+                                                {testimonial.company} • {testimonial.role}
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
@@ -166,18 +133,18 @@ const Testimonials = ({
                         ))}
                     </Swiper>
 
-                    {/* Compact Navigation Controls */}
-                    <div className="absolute top-1/2 -translate-y-1/2 left-0 right-0 flex justify-between z-10 pointer-events-none md:-mx-8">
-                        <button className="testimonial-prev pointer-events-auto w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-50 text-gray-400 hover:text-[#D32F2F] transition-all group/btn">
-                            <FaChevronLeft className="text-xs md:text-sm group-hover/btn:-translate-x-0.5 transition-transform" />
+                    {/* Navigation Controls */}
+                    <div className="absolute top-1/2 -translate-y-[120%] left-0 right-0 flex justify-between z-10 pointer-events-none lg:-mx-12">
+                        <button className="testimonial-prev pointer-events-auto w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border border-gray-50 text-gray-400 hover:text-[#EC2028] hover:shadow-[#EC2028]/10 transition-all group/btn">
+                            <FaChevronLeft className="text-lg group-hover/btn:-translate-x-0.5 transition-transform" />
                         </button>
-                        <button className="testimonial-next pointer-events-auto w-8 h-8 md:w-10 md:h-10 bg-white rounded-full flex items-center justify-center shadow-md border border-gray-50 text-gray-400 hover:text-[#D32F2F] transition-all group/btn">
-                            <FaChevronRight className="text-xs md:text-sm group-hover/btn:translate-x-0.5 transition-transform" />
+                        <button className="testimonial-next pointer-events-auto w-12 h-12 bg-white rounded-full flex items-center justify-center shadow-lg border border-gray-50 text-gray-400 hover:text-[#EC2028] hover:shadow-[#EC2028]/10 transition-all group/btn">
+                            <FaChevronRight className="text-lg group-hover/btn:translate-x-0.5 transition-transform" />
                         </button>
                     </div>
 
                     {/* Pagination */}
-                    <div className="testimonial-pagination absolute bottom-0 left-0 right-0 flex justify-center !pb-2"></div>
+                    <div className="testimonial-pagination absolute bottom-0 left-0 right-0 flex justify-center mt-12"></div>
                 </div>
             </div>
         </section>

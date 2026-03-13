@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from "../../../components/common/Button";
 
 const Introduction = () => {
     return (
@@ -78,12 +79,9 @@ const Introduction = () => {
                             Whether employees need daily commutes, travel seamless routes to corporate offices, or pick up and drop convenience, Fiesta ensures a smooth transition from home to office.
                         </p>
 
-                        <Link
-                            href="/reach-us"
-                            className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded-md transition-colors shadow-md text-lg"
-                        >
+                        <Button href="/reach-us" className=" bg-[#E31E24] ">
                             Get A Custom Transport Plan Now
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </div>

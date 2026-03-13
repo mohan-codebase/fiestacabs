@@ -43,7 +43,7 @@ const Banner = () => {
     ];
 
     return (
-        <section className="relative w-full h-[600px] md:h-[800px] lg:h-[800px] bg-gray-900 text-white overflow-hidden">
+        <section className="relative w-full h-[100vh] min-h-[600px] bg-gray-900 text-white overflow-hidden">
             <Swiper
                 spaceBetween={0}
                 centeredSlides={true}
@@ -97,7 +97,7 @@ const Banner = () => {
                                             }
                                         }
                                     }}
-                                    className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white font-bold py-3 px-8 rounded shadow-lg transition-transform transform cursor-pointer"
+                                    className="inline-block bg-[#D32F2F] hover:bg-[#B71C1C] text-white font-bold py-3 px-8 rounded-full shadow-lg transition-transform transform cursor-pointer"
                                 >
                                     {slide.cta}
                                 </Link>

@@ -3,6 +3,7 @@
 import React, { useState, useRef } from "react";
 import { sendEmailAction } from "../../../app/actions/emailActions";
 import ReCAPTCHA from "react-google-recaptcha";
+import Button from "../../../components/common/Button";
 
 const ChennaiEmployeeTransportForm = () => {
     const [isSubmitting, setIsSubmitting] = useState(false);
@@ -124,11 +125,7 @@ const ChennaiEmployeeTransportForm = () => {
                             size="normal"
                         />
                     </div>
-                    <button
-                        type="submit"
-                        disabled={isSubmitting}
-                        className="w-full bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 rounded transition-colors disabled:opacity-50 flex justify-center items-center gap-2"
-                    >
+                    <Button type="submit" disabled={isSubmitting} className="w-full bg-[#EC2028] rounded disabled:opacity-50 gap-2">
                         {isSubmitting ? (
                             <>
                                 <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -138,7 +135,7 @@ const ChennaiEmployeeTransportForm = () => {
                                 SENDING...
                             </>
                         ) : "SUBMIT"}
-                    </button>
+                    </Button>
                 </form>
             )}
         </div>

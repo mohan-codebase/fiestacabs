@@ -45,23 +45,18 @@ const FAQ = () => {
                 />
             </div>
 
-            <div className="max-w-[1440px] mx-auto px-4 md:px-8 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-12 items-start">
-                    {/* Left Side - Title and Description */}
-                    <div>
-                        <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-                            FAQs
-                        </h2>
-                        <p className="text-gray-200 text-lg leading-relaxed mb-6">
-                            Find answers to the most common questions about our corporate car rentals in Mumbai. To assure you of a reliable ride we are here to answer your queries right away.
-                        </p>
-                    </div>
-
-                    {/* Right Side - FAQ Accordion */}
-                    <div>
-                        <FAQAccordion items={faqs} defaultOpenIndex={0} />
-                    </div>
+            <div className="max-w-7xl mx-auto px-4 md:px-8 relative z-10">
+                {/* Top - Title and Description */}
+                <div className="text-center mb-10">
+                    <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+                        FAQs
+                    </h2>
+                    <p className="text-gray-200 text-lg leading-relaxed max-w-2xl mx-auto">
+                        Find answers to the most common questions about our corporate car rentals in Mumbai. To assure you of a reliable ride we are here to answer your queries right away.
+                    </p>
                 </div>
+                {/* Full Width Accordion */}
+                <FAQAccordion items={faqs} defaultOpenIndex={0} />
             </div>
         </section>
     );

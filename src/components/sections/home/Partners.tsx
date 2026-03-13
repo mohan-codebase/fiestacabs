@@ -63,12 +63,12 @@ const Partners = () => {
     ];
 
     return (
-        <section className="w-full py-5 md:py-10 bg-white overflow-hidden">
+        <section className="w-full py-5 md:py-5 bg-white overflow-hidden">
             <div className="max-w-7xl mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-16">
-                    <p className="text-[#D32F2F] uppercase tracking-wider text-sm font-semibold mb-3">
-                        CLIENTS
+                    <p className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-[#EC2028] uppercase border border-red-100 rounded-full bg-red-50/50">
+                        Clients
                     </p>
                     <h2 className="text-4xl md:text-4xl font-bold text-gray-900">
                         Our Partners and Supports

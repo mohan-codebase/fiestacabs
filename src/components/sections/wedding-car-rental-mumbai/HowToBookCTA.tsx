@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../../../components/common/Button";
 
 const HowToBookCTA = () => {
     const steps = [
@@ -47,9 +48,9 @@ const HowToBookCTA = () => {
                         Fiesta offers a professional car rental service in Mumbai, delivering vehicles, drivers, and experiences customised for weddings, special occasions, and memorable celebrations.
                     </p>
 
-                    <button className="bg-[#EC2028] hover:bg-red-700 text-white font-medium py-3 px-8 rounded-md transition-colors w-max">
+                    <Button className="bg-[#EC2028] w-max">
                         Book Now
-                    </button>
+                    </Button>
                 </div>
             </div>
         </section>

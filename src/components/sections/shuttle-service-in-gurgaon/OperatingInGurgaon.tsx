@@ -43,9 +43,13 @@ const OperatingInGurgaon = () => {
                             {locations.map((item, index) => (
                                 <div key={index} className="flex gap-4">
                                     <div className="flex-shrink-0 mt-1">
-                                        <div className="w-6 h-6 rounded-full border-2 border-[#EC2028] flex items-center justify-center">
-                                            <div className="w-2.5 h-2.5 bg-[#EC2028] rounded-full" />
-                                        </div>
+                                        <Image
+                                            src="/images/icon/tyre-icon.svg"
+                                            alt="Tyre Icon"
+                                            width={24}
+                                            height={24}
+                                            className="w-6 h-6"
+                                        />
                                     </div>
                                     <div>
                                         {item.title && <p className="font-bold text-gray-900 mb-1">{item.title}</p>}
@@ -56,9 +60,13 @@ const OperatingInGurgaon = () => {
 
                             <div className="flex gap-4">
                                 <div className="flex-shrink-0 mt-1">
-                                    <div className="w-6 h-6 rounded-full border-2 border-[#EC2028] flex items-center justify-center">
-                                        <div className="w-2.5 h-2.5 bg-[#EC2028] rounded-full" />
-                                    </div>
+                                    <Image
+                                        src="/images/icon/tyre-icon.svg"
+                                        alt="Tyre Icon"
+                                        width={24}
+                                        height={24}
+                                        className="w-6 h-6"
+                                    />
                                 </div>
                                 <div>
                                     <p className="font-bold text-gray-900 mb-1">Stay Up to Date</p>

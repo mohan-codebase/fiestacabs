@@ -8,6 +8,7 @@ import { useId } from "react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import Button from "./Button";
 
 interface GallerySliderProps {
     images: string[];
@@ -27,7 +28,7 @@ const GallerySlider = ({
     const nextClass = `gallery-next-${sliderId}`;
 
     return (
-        <div className="relative group w-full max-w-5xl mx-auto">
+        <div className="relative group w-full">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={10}
@@ -51,11 +52,11 @@ const GallerySlider = ({
                     pauseOnMouseEnter: pauseOnHover,
                 }}
                 loop={images.length > 2}
-                className="gallery-swiper !pb-12"
+                className="gallery-swiper !pb-10"
             >
                 {images.map((img, index) => (
                     <SwiperSlide key={index}>
-                        <div className="relative aspect-[4/3] rounded-xl overflow-hidden shadow-lg border border-gray-100">
+                        <div className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-md border border-slate-100">
                             <Image
                                 src={img}
                                 alt={`${title} ${index + 1}`}
@@ -67,31 +68,23 @@ const GallerySlider = ({
                 ))}
             </Swiper>
 
-            <button
-                type="button"
-                className={`${prevClass} absolute left-2 md:left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-12 bg-[#EC2028] text-white rounded-md shadow flex items-center justify-center transition-colors`}
-                aria-label={`Previous image in ${title}`}
-            >
+            <Button type="button" className={`${prevClass} absolute right-14 bottom-2 z-20 w-10 h-10 rounded-full bg-red text-slate-800 shadow-lg border border-slate-200`} aria-label={`Previous image in ${title}`}>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
                 </svg>
-            </button>
-            <button
-                type="button"
-                className={`${nextClass} absolute right-2 md:left-0 top-1/2 -translate-y-1/2 z-20 w-10 h-12 bg-[#EC2028] text-white rounded-md shadow flex items-center justify-center transition-colors`}
-                aria-label={`Next image in ${title}`}
-            >
+            </Button>
+            <Button type="button" className={`${nextClass} absolute right-2 bottom-2 z-20 w-10 h-10 rounded-full bg-red text-slate-800 shadow-lg border border-slate-200`} aria-label={`Next image in ${title}`}>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
                 </svg>
-            </button>
+            </Button>
 
             <style jsx global>{`
                 .gallery-swiper .swiper-pagination-bullet {
-                    background: #ec2028;
-                    opacity: 0.35;
-                    width: 8px;
-                    height: 8px;
+                    background: #0f172a;
+                    opacity: 0.25;
+                    width: 10px;
+                    height: 10px;
                     border-radius: 9999px;
                 }
                 .gallery-swiper .swiper-pagination-bullet-active {

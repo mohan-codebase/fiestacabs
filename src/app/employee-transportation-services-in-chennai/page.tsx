@@ -3,6 +3,7 @@ import Image from "next/image";
 import { FaBus, FaStar, FaShieldAlt, FaChartLine, FaClock, FaHandHoldingUsd, FaRegFileAlt, FaUserTie } from "react-icons/fa";
 import FAQ from "../../components/sections/employee-transportation-services-in-chennai/FAQ";
 import ChennaiEmployeeTransportForm from "../../components/sections/employee-transport/ChennaiEmployeeTransportForm";
+import Button from "../../components/common/Button";
 
 export const metadata = {
     title: "Employee Transportation Services in Chennai | Fiesta Smart Mobility",
@@ -86,9 +87,9 @@ const ChennaiEmployeeTransportPage = () => {
                             </h1>
                             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
                                 In a fast-paced city like Chennai, employee travel shapes energy, focus, and well-being. At Fiesta, we provide reliable employee transportation services designed to make every commute safe, comfortable, and stress-free. From daily office rides to business trips, we help organizations boost productivity and employee satisfaction by ensuring smooth, secure, and hassle-free travel every day.                            </p>
-                            <button className="bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-8 py-3 rounded text-lg transition-colors">
+                            <Button className="bg-[#EC2028] rounded ">
                                 Book Your Employee Transport Today
-                            </button>
+                            </Button>
                         </div>
 
                         <ChennaiEmployeeTransportForm />
@@ -148,9 +149,9 @@ const ChennaiEmployeeTransportPage = () => {
                                 </div>
                             ))}
                             <div className="pt-4">
-                                <button className="bg-[#EC2028] hover:bg-red-700 text-white font-bold px-8 py-3 rounded transition-colors">
+                                <Button className="bg-[#EC2028] rounded ">
                                     Get A Custom Quote Now
-                                </button>
+                                </Button>
                             </div>
                         </div>
                         <div className="relative h-[320px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
@@ -355,9 +356,9 @@ const ChennaiEmployeeTransportPage = () => {
                                 Fiesta – Your preferred partner for employee transportation services in Chennai.
                             </p>
                         </div>
-                        <button className="bg-[#EC2028] text-white px-6 py-3 rounded-lg text-xl font-bold hover:bg-[#c91b22] transition-colors duration-300 shadow-xl">
+                        <Button className="bg-[#EC2028] hover:bg-[#c91b22] duration-300 ">
                             Book Now
-                        </button>
+                        </Button>
                     </div>
                 </div>
             </section>

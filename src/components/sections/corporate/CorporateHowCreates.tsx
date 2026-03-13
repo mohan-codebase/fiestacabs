@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Button from "../../../components/common/Button";
 
 const savings = [
     "No spending on car maintenance",
@@ -48,9 +49,9 @@ const CorporateHowCreates = () => {
                         </div>
 
                         <div>
-                            <button className="bg-[#EC2028] hover:bg-red-700 text-white font-medium py-3 px-8 rounded transition-colors">
+                            <Button className="bg-[#EC2028] rounded ">
                                 Book Your Corporate Car Rental Now
-                            </button>
+                            </Button>
                         </div>
                     </div>
 

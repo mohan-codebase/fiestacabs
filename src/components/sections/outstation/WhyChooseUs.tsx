@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFileInvoiceDollar, FaTools, FaMapMarkedAlt, FaRegFileAlt, FaHeadset } from "react-icons/fa";
 import { FaStopwatch } from "react-icons/fa6";
+import Button from "../../../components/common/Button";
 
 const WhyChooseUs = () => {
     const reasons = [
@@ -81,7 +82,7 @@ const WhyChooseUs = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10 mb-10">
                             {reasons.map((reason, index) => (
                                 <div key={index} className="flex gap-4 items-start">
-                                    <div className="shrink-0 w-12 h-12 bg-[#EC2028] rounded-xl shadow-md flex items-center justify-center">
+                                    <div className="shrink-0 w-12 h-12 bg-[#EC2028] rounded-full shadow-md flex items-center justify-center">
                                         {reason.icon}
                                     </div>
                                     <div>
@@ -97,9 +98,9 @@ const WhyChooseUs = () => {
                         </div>
 
                         {/* Button */}
-                        <Link href="/reach-us" className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors text-sm">
+                        <Button href="/reach-us" className=" bg-[#EC2028] rounded ">
                             To Know More
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </div>

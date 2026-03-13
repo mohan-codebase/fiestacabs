@@ -44,7 +44,7 @@ const Experience = () => {
 
                     <div className="mt-10">
 
-                        <Button href="/reach-us" variant="primary">
+                        <Button href="/reach-us" variant="primary" className="rounded-full">
                             Contact Now
                         </Button>
                     </div>

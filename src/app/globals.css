@@ -10,6 +10,43 @@ html {
     --color-secondary: #fff1f1;
 }
 
+@layer base {
+    button,
+    [type="button"],
+    [type="submit"],
+    [type="reset"] {
+        border-radius: 9999px;
+    }
+
+    img {
+        border-radius: 20px;
+    }
+}
+
+@layer components {
+    .testimonials-swiper .swiper-slide {
+        height: auto;
+        display: flex;
+    }
+
+    .testimonials-swiper .swiper-slide > * {
+        height: 100%;
+    }
+
+    .testimonials-swiper .swiper-wrapper {
+        align-items: stretch;
+    }
+
+    .testimonials-swiper .swiper {
+        height: 100%;
+    }
+
+    .testimonials-card {
+        height: 520px;
+        gap: 1rem;
+    }
+}
+
 
 
 @layer utilities {

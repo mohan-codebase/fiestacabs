@@ -1,58 +1,25 @@
 "use client";
 
-import { useState } from "react";
-import { FaChevronDown, FaChevronUp } from "react-icons/fa";
+import FAQAccordion from "../../common/FAQAccordion";
 import { getLiveFaqsByPath } from "../../../data/liveFaqContent";
 
-const faqs = getLiveFaqsByPath("/best-car-rental-in-chennai");
-
 const FAQ = () => {
-    const [openIndex, setOpenIndex] = useState<number | null>(0);
-
-    const toggleFaq = (index: number) => {
-        setOpenIndex(openIndex === index ? null : index);
-    };
+    const liveFaqs = getLiveFaqsByPath("/best-car-rental-in-chennai");
+    const faqItems = liveFaqs.map((item, index) => ({
+        id: String(index + 1),
+        question: item.question,
+        answer: item.answer,
+    }));
 
     return (
         <section className="py-16 md:py-24 bg-gray-50">
-            <div className="max-w-3xl mx-auto px-4 md:px-8">
-                <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-                    Frequently Asked Questions
-                </h2>
-
-                <div className="space-y-4">
-                    {faqs.map((faq, index) => (
-                        <div
-                            key={index}
-                            className="bg-white rounded-lg shadow-sm border border-gray-100 overflow-hidden"
-                        >
-                            <button
-                                onClick={() => toggleFaq(index)}
-                                className="w-full px-6 py-5 text-left flex justify-between items-center focus:outline-none"
-                            >
-                                <span className="font-semibold text-gray-900 text-lg pr-4">
-                                    {faq.question}
-                                </span>
-                                <span className={`flex-shrink-0 transition-transform duration-300 ${openIndex === index ? 'text-[#E31E24]' : 'text-gray-400'}`}>
-                                    {openIndex === index ? (
-                                        <FaChevronUp className="w-5 h-5" />
-                                    ) : (
-                                        <FaChevronDown className="w-5 h-5" />
-                                    )}
-                                </span>
-                            </button>
-
-                            <div
-                                className={`overflow-hidden transition-all duration-300 ease-in-out ${openIndex === index ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-                                    }`}
-                            >
-                                <div className="px-6 pb-5 pt-0 text-[#555555] leading-relaxed">
-                                    {faq.answer}
-                                </div>
-                            </div>
-                        </div>
-                    ))}
+            <div className="max-w-7xl mx-auto px-4">
+                {/* Top - Title and Description */}
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl md:text-4xl font-bold text-[#EC2028] mb-4">Frequently Asked Questions</h2>
                 </div>
+                {/* Full Width Accordion */}
+                <FAQAccordion items={faqItems} defaultOpenIndex={0} />
             </div>
         </section>
     );

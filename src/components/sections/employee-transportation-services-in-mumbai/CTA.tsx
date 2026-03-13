@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from "../../../components/common/Button";
 
 const CTA = () => {
     return (
@@ -34,12 +35,9 @@ const CTA = () => {
                         </p>
                     </div>
 
-                    <Link
-                        href="/reach-us"
-                        className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-bold px-8 py-3 rounded transition-colors"
-                    >
+                    <Button href="/reach-us" className=" bg-[#E31E24] rounded ">
                         Get A Custom Transport Plan Now
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

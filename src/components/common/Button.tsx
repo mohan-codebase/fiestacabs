@@ -9,6 +9,7 @@ interface ButtonProps {
     size?: "sm" | "md" | "lg";
     className?: string;
     type?: "button" | "submit" | "reset";
+    disabled?: boolean;
 }
 
 const Button: React.FC<ButtonProps> = ({
@@ -19,17 +20,18 @@ const Button: React.FC<ButtonProps> = ({
     size = "md",
     className = "",
     type = "button",
+    disabled = false,
 }) => {
     // Base styles
     const baseStyles =
-        "inline-block font-semibold rounded-md transition-all duration-300 text-center";
+        "inline-block font-semibold rounded-full transition-all duration-300 text-center shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#EC2028] disabled:opacity-60 disabled:cursor-not-allowed";
 
     // Variant styles
     const variantStyles = {
-        primary: "bg-[#D32F2F] text-white hover:bg-[#B71C1C]",
-        secondary: "bg-gray-800 text-white hover:bg-gray-900",
+        primary: "bg-[#EC2028] text-white hover:bg-red-700 shadow-md",
+        secondary: "bg-gray-800 text-white hover:bg-gray-900 shadow-md",
         outline:
-            "border-2 border-[#D32F2F] text-[#D32F2F] hover:bg-[#D32F2F] hover:text-white",
+            "border-2 border-[#EC2028] text-[#EC2028] hover:bg-[#EC2028] hover:text-white",
     };
 
     // Size styles
@@ -52,7 +54,7 @@ const Button: React.FC<ButtonProps> = ({
 
     // Otherwise, render as button
     return (
-        <button type={type} onClick={onClick} className={combinedStyles}>
+        <button type={type} onClick={onClick} className={combinedStyles} disabled={disabled}>
             {children}
         </button>
     );

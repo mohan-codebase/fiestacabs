@@ -11,7 +11,7 @@ const ContactFloatingButton = () => {
         <div className="fixed bottom-8 right-8 z-50">
             <button
                 onClick={openModal}
-                className="bg-[#E51E25] text-white px-6 py-3 rounded-lg shadow-2xl hover:bg-red-700 transition-all duration-300 cursor-pointer flex items-center gap-3 group font-bold"
+                className="bg-[#E51E25] text-white px-6 py-3 rounded-full shadow-2xl hover:bg-red-700 transition-all duration-300 cursor-pointer flex items-center gap-3 group font-bold"
                 aria-label="Contact Now"
             >
                 <FaPhoneAlt size={18} className="group-hover:rotate-12 transition-transform duration-300" />

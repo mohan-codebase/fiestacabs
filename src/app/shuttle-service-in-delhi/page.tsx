@@ -22,9 +22,9 @@ export default function ShuttleServiceDelhi() {
             <HeroForm
                 title="Fiesta Shuttle Service in Delhi: Making Office Commutes Effortless"
                 subtitle=""
-                imageSrc="/images/shuttle-service-in-delhi/unnamed-6-4.jpg"
+                imageSrc="/images/shuttle-service-in-delhi/unnamed-13.jpg"
                 ctaText="Book Corporate Shuttle in Delhi"
-                imageClassName="brightness-[0.4]"
+                imageClassName=""
             />
 
             <MakingOfficeCommutesEffortless />

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from "../../../components/common/Button";
 
 const WhyBusinessesTrust = () => {
     const listItems = [
@@ -64,12 +65,9 @@ const WhyBusinessesTrust = () => {
                             ))}
                         </div>
 
-                        <Link
-                            href="/reach-us"
-                            className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-3.5 rounded transition-colors text-[15px]"
-                        >
+                        <Button href="/reach-us" className=" bg-[#E31E24] rounded text-[15px]">
                             Get A Custom Transport Plan Now
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </div>

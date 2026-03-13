@@ -23,10 +23,13 @@ const WhyReliable = () => {
 
     const Icon = () => (
         <div className="shrink-0 mt-1">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#E31E24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <circle cx="12" cy="12" r="10" />
-                <path d="M8 12l2.5 2.5L16 9" />
-            </svg>
+            <Image
+                src="/images/icon/tyre-icon.svg"
+                alt="Tyre Icon"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+            />
         </div>
     );
 

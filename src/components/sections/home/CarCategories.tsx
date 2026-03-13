@@ -66,8 +66,8 @@ const CarCategories = () => {
             <div className="max-w-7xl mx-auto px-4">
                 {/* Section Header */}
                 <div className="text-center mb-12">
-                    <p className="text-[#D32F2F] uppercase tracking-wider text-sm font-semibold mb-3">
-                        CARS
+                    <p className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-[#EC2028] uppercase border border-red-100 rounded-full bg-red-50/50">
+                        Cars
                     </p>
                     <h2 className="text-4xl md:text-4xl font-bold text-gray-900">
                         Car Categories

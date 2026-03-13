@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaStar } from "react-icons/fa";
+import Button from "../../../components/common/Button";
 
 const ContactCTA = () => {
     return (
@@ -52,12 +53,9 @@ const ContactCTA = () => {
                         </li>
                     </ul>
 
-                    <Link
-                        href="/reach-us"
-                        className="inline-block bg-[#E31E24] hover:bg-black text-white px-8 py-3 rounded text-lg font-medium transition-colors duration-300"
-                    >
+                    <Button href="/reach-us" className=" bg-[#E31E24] hover:bg-black rounded duration-300">
                         Book Now
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

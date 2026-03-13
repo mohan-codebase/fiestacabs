@@ -11,9 +11,13 @@ const SeamlessIntegration = () => {
 
     const CheckIcon = () => (
         <div className="shrink-0 mt-1">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#E31E24" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <polyline points="20 6 9 17 4 12"></polyline>
-            </svg>
+            <Image
+                src="/images/icon/tyre-icon.svg"
+                alt="Tyre Icon"
+                width={20}
+                height={20}
+                className="w-5 h-5"
+            />
         </div>
     );
 
@@ -46,16 +50,20 @@ const SeamlessIntegration = () => {
                         </p>
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                             <div className="flex items-start gap-2 text-[#555555] font-bold text-[15px]">
-                                <span className="text-[#1E3A8A]">✓</span> Monthly consolidated billing
+                                <Image src="/images/icon/tyre-icon.svg" alt="Tyre" width={16} height={16} className="mt-1" />
+                                Monthly consolidated billing
                             </div>
                             <div className="flex items-start gap-2 text-[#555555] font-bold text-[15px]">
-                                <span className="text-[#1E3A8A]">✓</span> Integration with HR attendance
+                                <Image src="/images/icon/tyre-icon.svg" alt="Tyre" width={16} height={16} className="mt-1" />
+                                Integration with HR attendance
                             </div>
                             <div className="flex items-start gap-2 text-[#555555] font-bold text-[15px]">
-                                <span className="text-[#1E3A8A]">✓</span> Custom onboarding plans
+                                <Image src="/images/icon/tyre-icon.svg" alt="Tyre" width={16} height={16} className="mt-1" />
+                                Custom onboarding plans
                             </div>
                             <div className="flex items-start gap-2 text-[#555555] font-bold text-[15px]">
-                                <span className="text-[#1E3A8A]">✓</span> Real-time ride details
+                                <Image src="/images/icon/tyre-icon.svg" alt="Tyre" width={16} height={16} className="mt-1" />
+                                Real-time ride details
                             </div>
                         </div>
                     </div>

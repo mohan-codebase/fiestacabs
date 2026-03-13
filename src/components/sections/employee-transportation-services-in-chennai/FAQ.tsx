@@ -40,10 +40,9 @@ const FAQ = () => {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    {/* Left Side - Title and Description */}
-                    <div>
-                        <h2 className="text-4xl md:text-4xl font-bold text-red-500 mb-6">
+                {/* Top - Title and Description */}
+                <div className="text-center mb-10">
+                    <h2 className="text-4xl md:text-4xl font-bold text-red-500 mb-6">
                             FAQ
                         </h2>
                         <p className="text-black text-base md:text-lg leading-relaxed">
@@ -52,13 +51,10 @@ const FAQ = () => {
                             on-time drop-offs, our team ensures a reliable, safe, and
                             convenient ride every time.
                         </p>
-                    </div>
-
-                    {/* Right Side - FAQ Accordion */}
-                    <div>
-                        <FAQAccordion items={faqItems} defaultOpenIndex={0} />
-                    </div>
                 </div>
+
+                {/* Full Width Accordion */}
+                <FAQAccordion items={faqItems} defaultOpenIndex={0} />
             </div>
         </section>
     );

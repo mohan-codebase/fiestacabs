@@ -8,7 +8,7 @@ const CTA = () => {
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/shuttle-service/start-today.jpg"
+                    src="/images/shuttle-service/female-driver-inside-of-modern-automobile-testing-brand-new-car.jpg"
                     alt="Ready to Redefine Your Commute"
                     fill
                     style={{ objectFit: "cover", objectPosition: "center" }}
@@ -52,7 +52,7 @@ const CTA = () => {
                         ))}
                     </ul>
 
-                    <BookNowButton className="w-fit bg-[#EC2028] hover:bg-red-700 text-white font-bold px-8 py-3 rounded-md transition-colors">
+                    <BookNowButton className="w-fit bg-[#EC2028] hover:bg-red-700 text-white font-bold px-8 py-3 rounded-full transition-colors">
                         Book Now
                     </BookNowButton>
                 </div>

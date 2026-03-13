@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaRegClock, FaCarSide, FaShieldAlt, FaRegThumbsUp, } from "react-icons/fa";
 import { FaCarRear } from "react-icons/fa6"; // Or use any alternative for the star car
+import Button from "../../../components/common/Button";
 
 const FleetShowcase = () => {
     const features = [
@@ -71,7 +72,7 @@ const FleetShowcase = () => {
                         <div className="space-y-5 mb-10">
                             {features.map((feature, index) => (
                                 <div key={index} className="flex gap-5 items-center">
-                                    <div className="shrink-0 w-12 h-12 bg-[#EC2028] rounded-xl flex items-center justify-center shadow-md">
+                                    <div className="shrink-0 w-12 h-12 bg-[#EC2028] rounded-full flex items-center justify-center shadow-md">
                                         {feature.icon}
                                     </div>
                                     <h4 className="font-bold text-lg text-gray-900 leading-tight">
@@ -82,9 +83,9 @@ const FleetShowcase = () => {
                         </div>
 
                         {/* Button */}
-                        <Link href="/reach-us" className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-semibold py-3 px-8 rounded transition-colors text-sm">
+                        <Button href="/reach-us" className=" bg-[#EC2028] rounded ">
                             To Know More
-                        </Link>
+                        </Button>
                     </div>
 
                 </div>

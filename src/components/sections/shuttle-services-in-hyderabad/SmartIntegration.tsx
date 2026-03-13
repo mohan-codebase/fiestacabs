@@ -10,10 +10,14 @@ const SmartIntegration = () => {
     ];
 
     const Icon = () => (
-        <div className="shrink-0 mt-1.5 flex items-center justify-center w-5 h-5 rounded-full border-2 border-[#1E3A8A] text-[#1E3A8A]">
-            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M20 6L9 17l-5-5" />
-            </svg>
+        <div className="shrink-0 mt-1">
+            <Image
+                src="/images/icon/tyre-icon.svg"
+                alt="Tyre Icon"
+                width={20}
+                height={20}
+                className="w-5 h-5"
+            />
         </div>
     );
 

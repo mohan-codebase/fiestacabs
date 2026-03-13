@@ -13,15 +13,15 @@ export interface FAQItem {
 
 interface FAQAccordionProps {
     items: FAQItem[];
-    defaultOpenIndex?: number;
+    defaultOpenIndices?: number[];
 }
 
 const FAQAccordion: React.FC<FAQAccordionProps> = ({
     items,
-    defaultOpenIndex = 0,
+    defaultOpenIndices,
 }) => {
     const pathname = usePathname();
-    const [openIndex, setOpenIndex] = useState<number | null>(defaultOpenIndex);
+    const [openIndices, setOpenIndices] = useState<number[]>([]);
 
     const resolvedItems = useMemo(() => {
         const liveItems = getLiveFaqsByPath(pathname || "/");
@@ -36,57 +36,91 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
         }));
     }, [items, pathname]);
 
-    const fallbackOpenIndex =
-        resolvedItems.length > 0
-            ? Math.min(defaultOpenIndex, resolvedItems.length - 1)
-            : null;
-
-    const activeOpenIndex =
-        openIndex !== null && openIndex < resolvedItems.length
-            ? openIndex
-            : fallbackOpenIndex;
+    // Initialize open indices
+    React.useEffect(() => {
+        if (defaultOpenIndices) {
+            setOpenIndices(defaultOpenIndices);
+        } else if (resolvedItems.length > 0) {
+            // Default: first and last open
+            setOpenIndices([0, resolvedItems.length - 1]);
+        }
+    }, [defaultOpenIndices, resolvedItems.length]);
 
     const toggleAccordion = (index: number) => {
-        setOpenIndex(activeOpenIndex === index ? null : index);
+        setOpenIndices(prev => 
+            prev.includes(index) 
+                ? prev.filter(i => i !== index) 
+                : [...prev, index]
+        );
     };
 
-    return (
-        <div className="space-y-4 ">
-            {resolvedItems.map((item, index) => (
-                <div
-                    key={item.id}
-                    className="bg-red-500 rounded-lg overflow-hidden transition-all duration-300"
-                >
-                    {/* Question Button */}
-                    <button
-                        onClick={() => toggleAccordion(index)}
-                        className="w-full flex items-center justify-between p-4 md:p-5 text-left text-white hover:bg-[#B71C1C] transition-colors duration-300"
-                    >
-                        <span className="font-semibold text-base md:text-lg pr-4">
-                            {index + 1}. {item.question}
-                        </span>
-                        <FaChevronDown
-                            className={`flex-shrink-0 transition-transform duration-300 ${activeOpenIndex === index ? "rotate-180" : ""
-                                }`}
-                            size={18}
-                        />
-                    </button>
+    const half = Math.ceil(resolvedItems.length / 2);
+    const leftItems = resolvedItems.slice(0, half);
+    const rightItems = resolvedItems.slice(half);
 
-                    {/* Answer Content */}
-                    <div
-                        className={`overflow-hidden transition-all duration-300 ${activeOpenIndex === index
-                                ? "max-h-96 opacity-100"
-                                : "max-h-0 opacity-0"
-                            }`}
-                    >
-                        <div className="p-4 md:p-5 bg-white text-gray-700 leading-relaxed">
-                            {item.answer}
+    const renderItem = (item: { id: string; question: string; answer: string }, index: number) => {
+        const isOpen = openIndices.includes(index);
+        return (
+            <div
+                key={item.id}
+                className={`group rounded-2xl transition-all duration-300 ${
+                    isOpen
+                        ? "bg-white shadow-xl shadow-red-500/5 ring-1 ring-red-500/20"
+                        : "bg-white/40 hover:bg-white/60 shadow-sm border border-gray-100"
+                }`}
+            >
+                {/* Question Button */}
+                <button
+                    onClick={() => toggleAccordion(index)}
+                    className="w-full flex items-center justify-between px-6 py-5 text-left cursor-pointer"
+                >
+                    <span className={`font-semibold text-base md:text-lg pr-8 transition-colors duration-300 ${
+                        isOpen ? "text-[#EC2028]" : "text-gray-900"
+                    }`}>
+                        {item.question}
+                    </span>
+                    <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
+                        isOpen ? "bg-[#EC2028] text-white" : "bg-gray-100 text-gray-400 group-hover:bg-gray-200"
+                    }`}>
+                        <FaChevronDown className={`text-sm transition-transform duration-300 ${
+                            isOpen ? "rotate-180" : "rotate-0"
+                        }`} />
+                    </div>
+                </button>
+
+                {/* Answer Content */}
+                <div
+                    className={`grid transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)] ${
+                        isOpen
+                            ? "grid-rows-[1fr] opacity-100"
+                            : "grid-rows-[0fr] opacity-0"
+                    }`}
+                >
+                    <div className="overflow-hidden">
+                        <div className="px-6 pb-6 pt-2 text-gray-600 text-[15px] leading-relaxed">
+                            <p className="border-t border-gray-100 pt-4">
+                                {item.answer}
+                            </p>
                         </div>
                     </div>
                 </div>
-            ))}
+            </div>
+        );
+    };
+
+    return (
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+            {/* Left Column */}
+            <div className="flex flex-col gap-4">
+                {leftItems.map((item, index) => renderItem(item, index))}
+            </div>
+            {/* Right Column */}
+            <div className="flex flex-col gap-4">
+                {rightItems.map((item, index) => renderItem(item, index + half))}
+            </div>
         </div>
     );
 };
 
 export default FAQAccordion;
+

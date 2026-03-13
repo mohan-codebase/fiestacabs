@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaPhoneAlt } from 'react-icons/fa';
+import Button from "../../../components/common/Button";
 
 const GetStarted = () => {
     return (
@@ -41,13 +42,10 @@ const GetStarted = () => {
                         </div>
                     </div>
 
-                    <Link
-                        href="/reach-us"
-                        className="inline-flex items-center justify-center gap-3 bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-md shadow-lg transition-colors text-lg"
-                    >
+                    <Button href="/reach-us" className=" gap-3 bg-[#E31E24] ">
                         <FaPhoneAlt />
                         Contact Us
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

@@ -50,7 +50,7 @@ const CTA = () => {
                     </p>
 
                     <BookNowButton
-                        className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold px-10 py-4 rounded-lg transition-all text-lg shadow-xl hover:scale-105 active:scale-95"
+                        className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold px-10 py-4 rounded-full transition-all text-lg shadow-xl hover:scale-105 active:scale-95"
                     >
                         Book Now
                     </BookNowButton>

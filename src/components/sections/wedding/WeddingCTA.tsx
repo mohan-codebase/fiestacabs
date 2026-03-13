@@ -2,6 +2,7 @@
 
 import React from "react";
 import { FaStar, FaStarHalfAlt } from "react-icons/fa";
+import Button from "../../../components/common/Button";
 
 const WeddingCTA = () => {
     return (
@@ -51,9 +52,9 @@ const WeddingCTA = () => {
                         </div>
 
                         {/* Button */}
-                        <button className="bg-[#EC2028] hover:bg-[#D11820] text-white px-8 py-3 rounded text-sm font-semibold transition-colors duration-300">
+                        <Button className="bg-[#EC2028] hover:bg-[#D11820] rounded duration-300">
                             Book Now
-                        </button>
+                        </Button>
 
                     </div>
                 </div>

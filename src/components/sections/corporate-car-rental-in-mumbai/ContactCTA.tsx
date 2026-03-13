@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Button from "../../../components/common/Button";
 
 const ContactCTA = () => {
     return (
@@ -39,12 +40,9 @@ const ContactCTA = () => {
                             </p>
                         </div>
 
-                        <Link
-                            href="/reach-us"
-                            className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-bold py-3 px-8 rounded shadow-lg transition-colors"
-                        >
+                        <Button href="/reach-us" className=" bg-[#E31E24] rounded ">
                             Book Now
-                        </Link>
+                        </Button>
                     </div>
                 </div>
             </div>

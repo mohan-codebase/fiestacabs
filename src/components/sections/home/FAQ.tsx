@@ -1,5 +1,6 @@
 import FAQAccordion, { FAQItem } from "../../common/FAQAccordion";
 import Image from "next/image";
+import BookNowButton from "../../common/BookNowButton";
 
 const FAQ = () => {
     const faqItems: FAQItem[] = [
@@ -36,39 +37,31 @@ const FAQ = () => {
     ];
 
     return (
-        <section className="relative w-full py-10 md:py-20 mb-30 overflow-hidden ">
-            {/* Background Image */}
-            <div className="absolute inset-0 z-0">
-                <Image
-                    src="/images/home/faq/faq-bg.jpg"
-                    alt="FAQ Background"
-                    fill
-                    style={{ objectFit: "cover" }}
-                    className="brightness-100 opacity-10"
-                />
-                <div className="absolute inset-0 bg-black/0" />
-            </div>
+        <section className="relative w-full py-20 px-4 md:py-12 overflow-hidden bg-white">
+            {/* Background Decorative Elements */}
+            <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-red-50/50 blur-[120px] rounded-full -translate-y-1/2 translate-x-1/2" />
+            <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-red-50/30 blur-[100px] rounded-full translate-y-1/2 -translate-x-1/2" />
 
-            <div className="max-w-7xl mx-auto px-4 relative z-10">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
-                    {/* Left Side - Title and Description */}
-                    <div>
-                        <h2 className="text-4xl md:text-4xl font-bold text-red-500 mb-6">
-                            FAQ
-                        </h2>
-                        <p className="text-black text-base md:text-lg leading-relaxed">
-                            We understand your travel needs and are here to make your
-                            journey smooth and hassle-free. From airport pickups to
-                            on-time drop-offs, our team ensures a reliable, safe, and
-                            convenient ride every time.
-                        </p>
-                    </div>
-
-                    {/* Right Side - FAQ Accordion */}
-                    <div>
-                        <FAQAccordion items={faqItems} defaultOpenIndex={0} />
-                    </div>
+            <div className="max-w-[1440px] mx-auto relative z-10">
+                {/* Header Section */}
+                <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
+                    <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-[#EC2028] uppercase border border-red-100 rounded-full bg-red-50/50">
+                        Assistance
+                    </span>
+                    <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
+                        Frequently Asked <span className="text-[#EC2028]">Questions</span>
+                    </h2>
+                    <p className="text-gray-600 text-lg md:text-xl leading-relaxed font-light">
+                        We understand your travel needs and are here to make your journey smooth and hassle-free. 
+                        Find answers to common questions about our corporate mobility solutions.
+                    </p>
                 </div>
+
+                {/* FAQ Component */}
+                <div className="mb-10">
+                    <FAQAccordion items={faqItems} />
+                </div>
+
             </div>
         </section>
     );

@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
+import Button from "../../../components/common/Button";
 
 const SimpleReliable = () => {
     return (
@@ -35,12 +36,9 @@ const SimpleReliable = () => {
                             Let’s plan your employee transportation services in Bangalore together, contact us now to get started.                        </p>
                     </div>
 
-                    <Link
-                        href="/reach-us"
-                        className="inline-block bg-[#E31E24] hover:bg-red-700 text-white font-semibold px-8 py-4 rounded-md shadow-lg transition-colors text-lg"
-                    >
+                    <Button href="/reach-us" className=" bg-[#E31E24] ">
                         Set Up An Employee Transport Program
-                    </Link>
+                    </Button>
                 </div>
             </div>
         </section>

@@ -10,24 +10,29 @@ interface OfficeInfo {
 }
 
 const OfficeCard = ({ office }: { office: OfficeInfo }) => (
-    <div className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 hover:shadow-md transition-shadow">
-        <h3 className="text-xl font-bold text-gray-800 mb-4">{office.title}</h3>
-        <p className="text-gray-600 text-sm mb-6 leading-relaxed">
+    <div className="bg-white p-7 rounded-2xl shadow-[0_12px_30px_rgba(15,23,42,0.06)] border border-slate-100 hover:-translate-y-1 hover:shadow-[0_18px_34px_rgba(15,23,42,0.1)] transition">
+        <div className="flex items-center justify-between mb-3">
+            <h3 className="text-lg font-bold text-slate-900">{office.title}</h3>
+            <span className="px-3 py-1 text-xs font-semibold bg-[#EC2028]/10 text-[#EC2028] rounded-full border border-[#EC2028]/20">
+                On map
+            </span>
+        </div>
+        <p className="text-slate-600 text-sm mb-5 leading-relaxed">
             {office.description}
         </p>
-        <div className="space-y-2 mb-6">
+        <div className="space-y-2 mb-5">
             {office.calls.map((call, idx) => (
-                <p key={idx} className="text-sm font-medium text-gray-800 flex items-center gap-2">
-                    <span className="text-red-500 font-bold">Call:</span>
-                    <Link href={`tel:${call.replace(/[^0-9+]/g, '')}`} className="hover:text-red-500 transition-colors">
+                <p key={idx} className="text-sm font-semibold text-slate-800 flex items-center gap-2">
+                    <span className="text-[#EC2028] font-bold">Call:</span>
+                    <Link href={`tel:${call.replace(/[^0-9+]/g, '')}`} className="hover:text-[#EC2028] transition-colors">
                         {call}
                     </Link>
                 </p>
             ))}
             {office.mail && (
-                <p className="text-sm font-medium text-gray-800 flex items-center gap-2">
-                    <span className="text-red-500 font-bold">Mail:</span>
-                    <Link href={`mailto:${office.mail}`} className="hover:text-red-500 transition-colors">
+                <p className="text-sm font-semibold text-slate-800 flex items-center gap-2">
+                    <span className="text-[#EC2028] font-bold">Mail:</span>
+                    <Link href={`mailto:${office.mail}`} className="hover:text-[#EC2028] transition-colors">
                         {office.mail}
                     </Link>
                 </p>
@@ -37,9 +42,10 @@ const OfficeCard = ({ office }: { office: OfficeInfo }) => (
             href={office.mapLink}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-red-500 font-bold text-sm hover:underline"
+            className="inline-flex items-center gap-2 text-sm font-semibold text-[#EC2028] hover:underline"
         >
-            Google Map Link
+            Open in Google Maps
+            <span aria-hidden>↗</span>
         </Link>
     </div>
 );
@@ -129,22 +135,25 @@ const OfficeLocations = () => {
     ];
 
     return (
-        <section className="py-20 bg-white">
-            <div className="max-w-standard mx-auto px-4">
-                {/* Main Offices Section */}
-                <div className="mb-20">
-                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Main Offices</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                        {mainOffices.map((office, idx) => (
-                            <OfficeCard key={idx} office={office} />
-                        ))}
-                    </div>
+        <section className="py-16">
+            <div className="max-w-6xl mx-auto px-4 space-y-14">
+                <div className="space-y-3 text-center">
+                    <p className="text-xs uppercase tracking-[0.28em] text-slate-500">Our offices</p>
+                    <h2 className="text-3xl md:text-4xl font-bold text-slate-900">Find us near your routes</h2>
+                    <p className="text-slate-600 text-sm md:text-base max-w-3xl mx-auto">
+                        Pan-India presence with local ops teams who know the roads, shifts, and compliance for each city.
+                    </p>
                 </div>
 
-                {/* Branch Offices Section */}
-                <div>
-                    <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Branch Offices</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    {mainOffices.map((office, idx) => (
+                        <OfficeCard key={idx} office={office} />
+                    ))}
+                </div>
+
+                <div className="space-y-3">
+                    <h3 className="text-2xl font-bold text-slate-900">Branch offices</h3>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         {branchOffices.map((office, idx) => (
                             <OfficeCard key={idx} office={office} />
                         ))}
