@@ -40,7 +40,7 @@ const Header = () => {
 
     return (
         <header className="fixed top-4 left-0 w-full z-50 px-4">
-            <div className="max-w-[1500px] mx-auto bg-white/75 backdrop-blur-md rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] px-6 py-3 flex items-center justify-between ">
+            <div className="max-w-[1500px] mx-auto bg-white/75 backdrop-blur-md rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] px-3 py-3 flex items-center justify-between ">
                 {/* Logo Section */}
                 <div className="flex items-center shrink-0">
                     {/* Placeholder for Logo if image not available, mimicking the design */}
@@ -50,7 +50,7 @@ const Header = () => {
                             alt="Fiesta Cabs Logo"
                             width={150}
                             height={50}
-                            className="h-10 w-auto object-contain rounded-lg"
+                            className="h-10 m-1 w-auto object-contain rounded-lg"
                             priority
                         />
                     </Link>

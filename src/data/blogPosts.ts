@@ -100,21 +100,31 @@ export const blogPosts: BlogPost[] = [
             { type: 'p', text: "Strong corporate employee transportation improves how teams work, travel, and connect. When companies use modern tools, safe routing, transport solutions, and clear planning, they build a steady work environment. The right partner gives smoother movement, better morale, and strong efficiency across the board." },
             { type: 'p', text: "If you want a smarter way to move your staff and improve how your workplace functions, book your corporate transport consultation today and make commuting easier for your workforce." }
         ],
-        faqs: [
+          faqs: [
             {
                 id: "1",
-                question: "How can corporate transport improve employee productivity?",
-                answer: "By reducing commute stress and ensuring on-time arrival, employees can focus better on their work.",
+                question: "Why should companies invest in structured employee transport services?",
+                answer: "Companies invest because it improves attendance, reduces delays, supports smoother workflow, and helps staff avoid travel stress that usually affects productivity every day.",
             },
             {
                 id: "2",
-                question: "What are the safety measures in corporate transportation?",
-                answer: "Real-time tracking, verified drivers, and regular vehicle maintenance are standard safety protocols.",
+                question: "How do employee shuttle services help reduce commute time?",
+                answer: "Shuttle routes run on fixed schedules with planned pickup points. With smart routing and real-time updates, travel time becomes predictable even during heavy traffic.",
             },
             {
                 id: "3",
-                question: "Can companies save costs with managed transport services?",
-                answer: "Yes, through route optimization and shared mobility, companies can significantly reduce travel overheads.",
+                question: "What features improve employee safety in transportation services?",
+                answer: "Safety increases with trained drivers, emergency support, monitoring tools, background checks, clear travel protocols, and round-the-clock support from operations teams.",
+            },
+            {
+                id: "4",
+                question: "How do transportation solutions reduce company expenses?",
+                answer: "Cost reduces through shared rides, fuel savings, lower parking usage, route optimisation, professional management, and decreased personal vehicle reimbursements across teams.",
+            },
+            {
+                id: "5",
+                question: "How does real time monitoring help transport operations?",
+                answer: "Monitoring tools track movement, measure delay patterns, improve control, and support better decision-making. This helps companies maintain steady service daily.",
             },
         ],
         testimonial: {
@@ -349,21 +359,31 @@ export const blogPosts: BlogPost[] = [
             { type: 'p', text: "Nodal point transport gives cities, companies, and growing industries a simple way to organise movement and keep every route efficient. When planners build around strong nodes, they reduce delays, save fuel, protect the environment, and make daily travel smoother. If you want to upgrade your own transport setup, start with a clear plan that maps the right nodes, routes, and timing blocks." },
             { type: 'p', text: "To design smarter movement systems and choose the right rental options for your organisation, book a consultation with Fiesta Smart Mobility and move forward with confidence." }
         ],
-        faqs: [
+       faqs: [
             {
                 id: "1",
-                question: "What is nodal point transport?",
-                answer: "A system that uses centralized nodes for pickups and drops to maximize efficiency and route consistency.",
+                question: "Why should companies invest in structured employee transport services?",
+                answer: "Companies invest because it improves attendance, reduces delays, supports smoother workflow, and helps staff avoid travel stress that usually affects productivity every day.",
             },
             {
                 id: "2",
-                question: "How does technology improve nodal transport?",
-                answer: "Digital tools help map nodes, track timings, and optimize routes to reduce fuel waste and delays.",
+                question: "How do employee shuttle services help reduce commute time?",
+                answer: "Shuttle routes run on fixed schedules with planned pickup points. With smart routing and real-time updates, travel time becomes predictable even during heavy traffic.",
             },
             {
                 id: "3",
-                question: "What regions benefit most from nodal models?",
-                answer: "Urban centers with high congestion and regions with extensive networks like the UK and Africa.",
+                question: "What features improve employee safety in transportation services?",
+                answer: "Safety increases with trained drivers, emergency support, monitoring tools, background checks, clear travel protocols, and round-the-clock support from operations teams.",
+            },
+            {
+                id: "4",
+                question: "How do transportation solutions reduce company expenses?",
+                answer: "Cost reduces through shared rides, fuel savings, lower parking usage, route optimisation, professional management, and decreased personal vehicle reimbursements across teams.",
+            },
+            {
+                id: "5",
+                question: "How does real time monitoring help transport operations?",
+                answer: "Monitoring tools track movement, measure delay patterns, improve control, and support better decision-making. This helps companies maintain steady service daily.",
             },
         ],
         testimonial: {
@@ -550,18 +570,28 @@ export const blogPosts: BlogPost[] = [
         faqs: [
             {
                 id: "1",
-                question: "What are the benefits of renting a car with a driver in Chennai?",
-                answer: "You avoid the stress of navigating traffic and finding parking, allowing you to relax or focus on work.",
+                question: "Why should companies invest in structured employee transport services?",
+                answer: "Companies invest because it improves attendance, reduces delays, supports smoother workflow, and helps staff avoid travel stress that usually affects productivity every day.",
             },
             {
                 id: "2",
-                question: "Are outstation car rental services available from Chennai?",
-                answer: "Yes, Fiesta offers reliable outstation rentals to various cities across Tamil Nadu and South India.",
+                question: "How do employee shuttle services help reduce commute time?",
+                answer: "Shuttle routes run on fixed schedules with planned pickup points. With smart routing and real-time updates, travel time becomes predictable even during heavy traffic.",
             },
             {
                 id: "3",
-                question: "Is 24/7 service available for car rentals?",
-                answer: "Yes, our services are available round-the-clock to accommodate all travel schedules.",
+                question: "What features improve employee safety in transportation services?",
+                answer: "Safety increases with trained drivers, emergency support, monitoring tools, background checks, clear travel protocols, and round-the-clock support from operations teams.",
+            },
+            {
+                id: "4",
+                question: "How do transportation solutions reduce company expenses?",
+                answer: "Cost reduces through shared rides, fuel savings, lower parking usage, route optimisation, professional management, and decreased personal vehicle reimbursements across teams.",
+            },
+            {
+                id: "5",
+                question: "How does real time monitoring help transport operations?",
+                answer: "Monitoring tools track movement, measure delay patterns, improve control, and support better decision-making. This helps companies maintain steady service daily.",
             },
         ],
         testimonial: {
@@ -693,21 +723,36 @@ export const blogPosts: BlogPost[] = [
                 text: "If you’re looking for a service that combines safety, real-time updates, and affordable parking spaces that can help you save money, Fiesta – Transport Solutions is worth exploring.."
             }
         ],
-        faqs: [
+         faqs: [
             {
                 id: "1",
-                question: "What features should I look for in a shuttle service app?",
-                answer: "Look for real-time tracking, ride alerts, secure payment options, and SOS features.",
+                question: "What is the main purpose of nodal point transport in modern planning?",
+                answer: "Nodal point transport helps planners organize movement through clear hubs so people, goods, and vehicles move without confusion. ",
             },
             {
                 id: "2",
-                question: "Is a shuttle service suitable for daily office commutes?",
-                answer: "Absolutely, it's a cost-effective and eco-friendly way to manage daily travel between home and the workplace.",
+                question: "How do ports use nodes to manage maritime movement?",
+                answer: "Ports act as large nodes where ships unload, sort, and reload cargo. This design helps maritime transport avoid bottlenecks, maintain timing, and manage container movement across international routes without heavy delays.",
             },
             {
                 id: "3",
-                question: "What types of vehicles are used for shuttle services?",
-                answer: "Depending on the group size, we use cars, vans, MUVs, and minibuses.",
+                question: "Why do railroads depend heavily on nodal stations?",
+                answer: "Railroads run smoother when trains shift direction or schedule at defined stations. Nodal stations reduce conflicts between tracks, improve routing at junctions, and allow planners to coordinate trains with more predictability and control.",
+            },
+            {
+                id: "4",
+                question: " How does nodal planning help transportation in developing countries?",
+                answer: "Developing regions benefit because nodal planning improves access to markets, education, and public services. ",
+            },
+            {
+                id: "5",
+                question: " What technology tools support nodal transport planning?",
+                answer: "Digital mapping, real-time tracking, scheduling software, and route optimization tools support nodal transport. They help planners reduce delays, update schedules instantly, and monitor movement across different links in a network.",
+            },
+            {
+                id: "6",
+                question: "Can transport services be customized for different employee locations?",
+                answer: "Yes, many providers offer route optimization and flexible pickup/drop points based on employee addresses to ensure convenience and efficiency.",
             },
         ],
         testimonial: {
@@ -920,18 +965,33 @@ export const blogPosts: BlogPost[] = [
         faqs: [
             {
                 id: "1",
-                question: "When should I book a wedding car?",
-                answer: "It's best to book several months in advance, especially during peak wedding seasons.",
+                question: "What is the main purpose of nodal point transport in modern planning?",
+                answer: "Nodal point transport helps planners organize movement through clear hubs so people, goods, and vehicles move without confusion. ",
             },
             {
                 id: "2",
-                question: "Do wedding car rentals include decorations?",
-                answer: "Some providers include basic decorations, while others may require you to arrange them separately.",
+                question: "How do ports use nodes to manage maritime movement?",
+                answer: "Ports act as large nodes where ships unload, sort, and reload cargo. This design helps maritime transport avoid bottlenecks, maintain timing, and manage container movement across international routes without heavy delays.",
             },
             {
                 id: "3",
-                question: "Can I choose a specific luxury car model for my wedding?",
-                answer: "Yes, Fiesta offers a wide range of luxury cars like Mercedes-Benz, Audi, and BMW for weddings.",
+                question: "Why do railroads depend heavily on nodal stations?",
+                answer: "Railroads run smoother when trains shift direction or schedule at defined stations. Nodal stations reduce conflicts between tracks, improve routing at junctions, and allow planners to coordinate trains with more predictability and control.",
+            },
+            {
+                id: "4",
+                question: " How does nodal planning help transportation in developing countries?",
+                answer: "Developing regions benefit because nodal planning improves access to markets, education, and public services. ",
+            },
+            {
+                id: "5",
+                question: " What technology tools support nodal transport planning?",
+                answer: "Digital mapping, real-time tracking, scheduling software, and route optimization tools support nodal transport. They help planners reduce delays, update schedules instantly, and monitor movement across different links in a network.",
+            },
+            {
+                id: "6",
+                question: "Can transport services be customized for different employee locations?",
+                answer: "Yes, many providers offer route optimization and flexible pickup/drop points based on employee addresses to ensure convenience and efficiency.",
             },
         ],
         testimonial: {
@@ -1123,18 +1183,33 @@ export const blogPosts: BlogPost[] = [
         faqs: [
             {
                 id: "1",
-                question: "How does ETS benefit employee retention?",
-                answer: "Providing a comfortable and reliable commute shows that the company values its workforce, improving loyalty.",
+                question: "What is the main purpose of nodal point transport in modern planning?",
+                answer: "Nodal point transport helps planners organize movement through clear hubs so people, goods, and vehicles move without confusion. ",
             },
             {
                 id: "2",
-                question: "What is the environmental impact of shared mobility?",
-                answer: "It reduces the number of individual vehicles on the road, significantly lowering carbon emissions.",
+                question: "How do ports use nodes to manage maritime movement?",
+                answer: "Ports act as large nodes where ships unload, sort, and reload cargo. This design helps maritime transport avoid bottlenecks, maintain timing, and manage container movement across international routes without heavy delays.",
             },
             {
                 id: "3",
-                question: "How do companies manage last-mile connectivity?",
-                answer: "Providers offer link services between public transit hubs and corporate offices to streamline the entire journey.",
+                question: "Why do railroads depend heavily on nodal stations?",
+                answer: "Railroads run smoother when trains shift direction or schedule at defined stations. Nodal stations reduce conflicts between tracks, improve routing at junctions, and allow planners to coordinate trains with more predictability and control.",
+            },
+            {
+                id: "4",
+                question: " How does nodal planning help transportation in developing countries?",
+                answer: "Developing regions benefit because nodal planning improves access to markets, education, and public services. ",
+            },
+            {
+                id: "5",
+                question: " What technology tools support nodal transport planning?",
+                answer: "Digital mapping, real-time tracking, scheduling software, and route optimization tools support nodal transport. They help planners reduce delays, update schedules instantly, and monitor movement across different links in a network.",
+            },
+            {
+                id: "6",
+                question: "Can transport services be customized for different employee locations?",
+                answer: "Yes, many providers offer route optimization and flexible pickup/drop points based on employee addresses to ensure convenience and efficiency.",
             },
         ],
         testimonial: {

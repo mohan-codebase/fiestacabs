@@ -262,24 +262,24 @@ export const LIVE_ROUTE_FAQS: Record<string, RouteFAQItem[]> = {
     ],
     "/wedding-car-rental-mumbai": [
         {
-            "question": "Which cars are popular for weddings in Mumbai?",
-            "answer": "Couples often select vintage cars like Rolls-Royce or luxury cars such as Mercedes, BMW, and Audi, depending on style, budget, and wedding theme."
+            "question": "Why should companies invest in structured employee transport services?",
+            "answer": "Companies invest because it improves attendance, reduces delays, supports smoother workflow, and helps staff avoid travel stress that usually affects productivity every day."
         },
         {
-            "question": "Can I hire a car with a professional chauffeur?",
-            "answer": "Yes. All vehicles come with experienced drivers to ensure timely arrivals, safety, and a smooth ride."
+            "question": "How do employee shuttle services help reduce commute time?",
+            "answer": "Shuttle routes run on fixed schedules with planned pickup points. With smart routing and real-time updates, travel time becomes predictable even during heavy traffic."
         },
         {
-            "question": "Can I rent a car for an extra hour or extra km?",
-            "answer": "Flexible packages accommodate additional hours or kilometres for the wedding day or transportation between venues."
+            "question": "What features improve employee safety in transportation services?",
+            "answer": "Safety increases with trained drivers, emergency support, monitoring tools, background checks, clear travel protocols, and round-the-clock support from operations teams."
         },
         {
-            "question": "Are decorations included in the rental service?",
-            "answer": "Floral decorations and other optional features are available for a dream wedding day."
+            "question": "How do transportation solutions reduce company expenses?",
+            "answer": "Cost reduces through shared rides, fuel savings, lower parking usage, route optimisation, professional management, and decreased personal vehicle reimbursements across teams."
         },
         {
-            "question": "How far in advance should I book?",
-            "answer": "Booking at least 2–3 months ahead ensures preferred vehicles and professional chauffeur service for an unforgettable experience."
+            "question": "How does real time monitoring help transport operations?",
+            "answer": "Monitoring tools track movement, measure delay patterns, improve control, and support better decision-making. This helps companies maintain steady service daily."
         }
     ],
     "/employee-transportation-services-in-mumbai": [
@@ -372,24 +372,24 @@ export const LIVE_ROUTE_FAQS: Record<string, RouteFAQItem[]> = {
     ],
     "/corporate-car-rental-in-mumbai": [
         {
-            "question": "How can Mumbai’s traffic chaos be managed to ensure timely corporate pick-ups?",
-            "answer": "Fiesta ensures your corporate need is met with live tracking , early morning pick-ups , and expert route planning. All our drivers are trained to navigate Mumbai’s peak-hour jams, helping employees travel stress-free . With Fiesta, hassle-free transfers and client transport are always on time."
+            "question": "Why should companies invest in structured employee transport services?",
+            "answer": "Companies invest because it improves attendance, reduces delays, supports smoother workflow, and helps staff avoid travel stress that usually affects productivity every day."
         },
         {
-            "question": "Do corporate rentals in Mumbai offer consistently comfortable vehicles for high-profile client rides?",
-            "answer": "With Fiesta, your premium car hire for high-profile clients ensures smooth rides across Mumbai, ideal for corporate events and client transport. Every vehicle in our fleet is maintained for premium comfort, so employees and clients feel valued. Our standardized fleet keeps your travel professional and stress-free ."
+            "question": "How do employee shuttle services help reduce commute time?",
+            "answer": "Shuttle routes run on fixed schedules with planned pickup points. With smart routing and real-time updates, travel time becomes predictable even during heavy traffic."
         },
         {
-            "question": "How do corporate rental services handle last-minute bookings during Mumbai’s surge hours?",
-            "answer": "Fiesta makes business travel seamless, offering instant bookings through our inquiry form . Even during Mumbai’s surge hours, all our drivers are ready to ensure timely pick-ups for office or airport transfers. Live tracking and flexible dispatch mean you travel stress-free , with same-day bookings."
+            "question": "What features improve employee safety in transportation services?",
+            "answer": "Safety increases with trained drivers, emergency support, monitoring tools, background checks, clear travel protocols, and round-the-clock support from operations teams."
         },
         {
-            "question": "Is there flexibility for part-day, weekend, or late-night corporate rentals in Mumbai?",
-            "answer": "Fiesta provides flexible options customised to your corporate needs, whether it’s early morning, late-night, or weekend travel. Our rental cars are available for multi-shift or part-day usage , ensuring employees never miss any meetings."
+            "question": "How do transportation solutions reduce company expenses?",
+            "answer": "Cost reduces through shared rides, fuel savings, lower parking usage, route optimisation, professional management, and decreased personal vehicle reimbursements across teams."
         },
         {
-            "question": "Do Mumbai corporate rentals offer cost optimization for multi-office transfers?",
-            "answer": "Fiesta helps businesses cut travel costs across major metro cities with optimized multi-office routes and pooled rides. Our premium car hire and rental cars offer premium service while keeping budgets in check . With hassle-free airport transfers and structured corporate plans, our clients report measurable cost savings."
+            "question": "How does real time monitoring help transport operations?",
+            "answer": "Monitoring tools track movement, measure delay patterns, improve control, and support better decision-making. This helps companies maintain steady service daily."
         }
     ],
     "/shuttle-service-in-delhi": [

@@ -5,7 +5,7 @@ import LuxuryAvailable from "../../components/sections/wedding-car-rental-mumbai
 import WhyChooseMumbai from "../../components/sections/wedding-car-rental-mumbai/WhyChooseMumbai";
 import MakingMemorable from "../../components/sections/wedding-car-rental-mumbai/MakingMemorable";
 import HowToBookCTA from "../../components/sections/wedding-car-rental-mumbai/HowToBookCTA";
-import FAQ from "../../components/sections/wedding-car-rental-mumbai/FAQ";
+import FAQ from "../../components/sections/home/FAQ";
 import Testimonials from "../../components/common/Testimonials";
 
 export const metadata = {
@@ -29,7 +29,12 @@ export default function WeddingCarRentalMumbai() {
             <MakingMemorable />
             <HowToBookCTA />
             <Testimonials eyebrow="TESTIMONIALS" title="What our customer says" />
-            <FAQ />
+            <FAQ 
+                badge="FAQs"
+                title="Frequently Asked"
+                darkTitle="Questions"
+                description="Find answers to common questions about our wedding car rental services in Mumbai. We ensure every detail is handled professionally to make your day special."
+            />
         </main>
     );
 }

@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 import { FaGopuram, FaLandmark, FaBuilding, FaArchway, FaCity } from "react-icons/fa6";
 
 const Cities = () => {
@@ -8,27 +9,32 @@ const Cities = () => {
         {
             name: "Outstation Cabs in Chennai",
             desc: "Comfortable intercity rides from Chennai to Pondicherry, Bangalore, Vellore, and more.",
-            icon: <FaGopuram />
+            icon: <FaGopuram />,
+            link: "/outstation-cabs-in-chennai"
         },
         {
             name: "Outstation Cabs in Hyderabad",
             desc: "Travel hassle-free from Hyderabad to Vijayawada, Warangal, and other popular routes.",
-            icon: <FaLandmark />
+            icon: <FaLandmark />,
+            link: "/outstation-cabs-in-hyderabad"
         },
         {
             name: "Outstation Cabs in Bangalore",
             desc: "Safe and timely rides from Bangalore to Mysore, Coorg, Chikmagalur, and beyond.",
-            icon: <FaBuilding />
+            icon: <FaBuilding />,
+            link: "/outstation-cabs-in-bangalore"
         },
         {
             name: "Outstation Cabs in Delhi",
             desc: "Convenient cab services from Delhi to Jaipur, Agra, Chandigarh, and nearby states.",
-            icon: <FaArchway />
+            icon: <FaArchway />,
+            link: "/outstation-cabs-in-delhi"
         },
         {
             name: "Outstation Cabs in Gurgaon",
             desc: "Reliable outstation taxis from Gurgaon to Manesar, Neemrana, Jaipur, and more.",
-            icon: <FaCity />
+            icon: <FaCity />,
+            link: "/outstation-cabs-in-gurgaon"
         }
     ];
 
@@ -46,8 +52,9 @@ const Cities = () => {
 
                 <div className="flex flex-wrap justify-center gap-6">
                     {cities.map((city, index) => (
-                        <div
+                        <Link
                             key={index}
+                            href={city.link}
                             className="bg-red-50 p-8 rounded-2xl shadow-sm border-b-4 border-red-500 hover:shadow-xl transition-all duration-300 group flex flex-col items-center text-center w-full md:w-[calc(33.333%-16px)] lg:w-[calc(30%-16px)] min-h-[300px]"
                         >
                             <div className="bg-white text-gray-700 w-24 h-24 rounded-full flex items-center justify-center text-4xl mb-6 shadow-sm group-hover:scale-110 transition-transform duration-300">
@@ -55,7 +62,7 @@ const Cities = () => {
                             </div>
                             <h4 className="text-xl font-bold mb-4 text-gray-900">{city.name}</h4>
                             <p className="text-gray-600 text-sm leading-relaxed">{city.desc}</p>
-                        </div>
+                        </Link>
                     ))}
                 </div>
             </div>

@@ -1,10 +1,15 @@
 import HeroForm from "../../common/HeroForm";
 
-const Hero = () => {
+interface HeroProps {
+    title?: string;
+    subtitle?: string;
+}
+
+const Hero = ({ title, subtitle }: HeroProps) => {
     return (
         <HeroForm
-            title="Outstation Cab & Intercity Rides Across India"
-            subtitle="Outstation Cab from Chennai / Delhi / Bangalore…"
+            title={title || "Outstation Cab & Intercity Rides Across India"}
+            subtitle={subtitle || "Outstation Cab from Chennai / Delhi / Bangalore…"}
             imageSrc="/images/services-offered/premium-car-rentals/outstation-rides/banner.jpg"
             ctaText="Book Your Outstation Ride Now"
             ctaLink="#booking-form"

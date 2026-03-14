@@ -2,8 +2,16 @@ import FAQAccordion, { FAQItem } from "../../common/FAQAccordion";
 import Image from "next/image";
 import BookNowButton from "../../common/BookNowButton";
 
-const FAQ = () => {
-    const faqItems: FAQItem[] = [
+interface FAQProps {
+    items?: FAQItem[];
+    badge?: string;
+    title?: string;
+    darkTitle?: string;
+    description?: string;
+}
+
+const FAQ = ({ items, badge, title, darkTitle, description }: FAQProps) => {
+    const defaultFaqItems: FAQItem[] = [
         {
             id: "1",
             question: "Do you offer electric vehicle (EV) transportation?",
@@ -36,6 +44,8 @@ const FAQ = () => {
         },
     ];
 
+    const faqItems = items || defaultFaqItems;
+
     return (
         <section className="relative w-full py-20 px-4 md:py-12 overflow-hidden bg-white">
             {/* Background Decorative Elements */}
@@ -46,14 +56,13 @@ const FAQ = () => {
                 {/* Header Section */}
                 <div className="max-w-3xl mx-auto text-center mb-16 md:mb-24">
                     <span className="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-[0.2em] text-[#EC2028] uppercase border border-red-100 rounded-full bg-red-50/50">
-                        Assistance
+                        {badge || "Assistance"}
                     </span>
                     <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-8 tracking-tight">
-                        Frequently Asked <span className="text-[#EC2028]">Questions</span>
+                        {title || "Frequently Asked"} <span className="text-[#EC2028]">{darkTitle || "Questions"}</span>
                     </h2>
                     <p className="text-gray-600 text-lg md:text-xl leading-relaxed font-light">
-                        We understand your travel needs and are here to make your journey smooth and hassle-free. 
-                        Find answers to common questions about our corporate mobility solutions.
+                        {description || "We understand your travel needs and are here to make your journey smooth and hassle-free. Find answers to common questions about our corporate mobility solutions."}
                     </p>
                 </div>
 
