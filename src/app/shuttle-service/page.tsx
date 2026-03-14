@@ -14,6 +14,11 @@ export const metadata = {
     title: "Shuttle Service | Fiesta Smart Mobility",
     description:
         "Corporate shuttle and employee transport service with gate-to-gate commuting, fixed schedules, and safe daily rides.",
+    openGraph: {
+        title: "Shuttle Service | Fiesta Smart Mobility",
+        description: "Corporate shuttle and employee transport service with gate-to-gate commuting, fixed schedules, and safe daily rides.",
+        images: ["/images/logo/logo.png"],
+    },
 };
 
 const ShuttleServicePage = () => {

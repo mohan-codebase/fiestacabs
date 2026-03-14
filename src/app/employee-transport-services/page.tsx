@@ -11,6 +11,11 @@ export const metadata = {
     title: "Employee Transport Services | Fiesta Smart Mobility",
     description:
         "Best Employee Transport Services — safe, punctual, and comfortable daily commutes across major Indian cities.",
+    openGraph: {
+        title: "Employee Transport Services | Fiesta Smart Mobility",
+        description: "Best Employee Transport Services — safe, punctual, and comfortable daily commutes across major Indian cities.",
+        images: ["/images/employee-transport/hero.jpg"],
+    },
 };
 
 const EmployeeTransportServicesPage = () => {

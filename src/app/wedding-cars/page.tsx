@@ -17,6 +17,11 @@ export const metadata = {
     title: "Luxury Wedding Car Rentals | Fiesta Smart Mobility",
     description:
         "Make your special day unforgettable with our premium fleet of luxury cars for weddings. Professional chauffeurs and pristine vehicles.",
+    openGraph: {
+        title: "Luxury Wedding Car Rentals | Fiesta Smart Mobility",
+        description: "Make your special day unforgettable with our premium fleet of luxury cars for weddings. Professional chauffeurs and pristine vehicles.",
+        images: ["/images/logo/logo.png"],
+    },
 };
 
 const WeddingCarsPage = () => {

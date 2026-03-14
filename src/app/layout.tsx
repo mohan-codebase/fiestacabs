@@ -10,10 +10,24 @@ import ScrollToTop from "../components/common/ScrollToTop";
 
 
 export const metadata: Metadata = {
-  title: "Expert Employee Transport Services | Fiesta Smart Mobility",
-  description: "Fiesta Cabs",
+  title: {
+    default: "Expert Employee Transport Services | Fiesta Smart Mobility",
+    template: "%s - Fiesta Cabs",
+  },
+  description: "Fiesta Smart Mobility offers secure, employee transport services and premium car rental solutions across India. Experience punctual and eco-friendly commutes",
   metadataBase: new URL("https://fiestacabs.com"),
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   openGraph: {
+    title: "Expert Employee Transport Services | Fiesta Smart Mobility",
+    description: "Fiesta Smart Mobility offers secure, employee transport services and premium car rental solutions across India. Experience punctual and eco-friendly commutes",
+    url: "https://fiestacabs.com",
+    siteName: "Fiesta Smart Mobility",
     images: [
       {
         url: "/opengraph-image.png",
@@ -22,6 +36,15 @@ export const metadata: Metadata = {
         alt: "Fiesta Smart Mobility",
       },
     ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Expert Employee Transport Services | Fiesta Smart Mobility",
+    description: "Fiesta Smart Mobility offers secure, employee transport services and premium car rental solutions across India. Experience punctual and eco-friendly commutes",
+    site: "@fiestamobility",
+    images: ["/opengraph-image.png"],
   },
 };
 

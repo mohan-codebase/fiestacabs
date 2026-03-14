@@ -11,7 +11,7 @@ import FAQ from "../components/sections/home/FAQ";
 export const metadata = {
   title: "Fiesta Smart Mobility | Employee Transport & Premium Car Rentals",
   description:
-    "Fiesta Smart Mobility provides employee transport, shuttle services, wedding cars, and premium car rentals across major Indian cities.",
+    "Fiesta Smart Mobility offers secure, employee transport services and premium car rental solutions across India. Experience punctual and eco-friendly commutes",
 };
 
 export default function Home() {
