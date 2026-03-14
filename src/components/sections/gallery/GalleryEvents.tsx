@@ -2,7 +2,16 @@
 
 import GallerySlider from "../../common/GallerySlider";
 
-const events = [
+interface GalleryEvent {
+    title: string;
+    subtitle: string;
+    description: string;
+    images: string[];
+    showDots: boolean;
+    pauseOnHover?: boolean;
+}
+
+const events: GalleryEvent[] = [
     {
         title: "Grand Unveiling: Introducing Our All-New Electric Vehicle",
         subtitle: "The Future of Smart Mobility Begins Now!",

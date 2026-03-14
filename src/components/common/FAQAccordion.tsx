@@ -13,11 +13,13 @@ export interface FAQItem {
 
 interface FAQAccordionProps {
     items: FAQItem[];
+    defaultOpenIndex?: number;
     defaultOpenIndices?: number[];
 }
 
 const FAQAccordion: React.FC<FAQAccordionProps> = ({
     items,
+    defaultOpenIndex,
     defaultOpenIndices,
 }) => {
     const pathname = usePathname();
@@ -40,11 +42,13 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
     React.useEffect(() => {
         if (defaultOpenIndices) {
             setOpenIndices(defaultOpenIndices);
+        } else if (typeof defaultOpenIndex === 'number') {
+            setOpenIndices([defaultOpenIndex]);
         } else if (resolvedItems.length > 0) {
             // Default: first and last open
             setOpenIndices([0, resolvedItems.length - 1]);
         }
-    }, [defaultOpenIndices, resolvedItems.length]);
+    }, [defaultOpenIndices, defaultOpenIndex, resolvedItems.length]);
 
     const toggleAccordion = (index: number) => {
         setOpenIndices(prev => 
