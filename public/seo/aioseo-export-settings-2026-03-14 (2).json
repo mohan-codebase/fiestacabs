@@ -1,0 +1,1102 @@
+{
+    "settings": {
+        "webmasterTools": {
+            "google": "",
+            "bing": "",
+            "yandex": "",
+            "baidu": "",
+            "pinterest": "",
+            "microsoftClarityProjectId": "",
+            "norton": "",
+            "miscellaneousVerification": ""
+        },
+        "rssContent": {
+            "before": "",
+            "after": "&lt;p&gt;The post #post_link first appeared on #site_link.&lt;/p&gt;"
+        },
+        "advanced": {
+            "truSeo": true,
+            "headlineAnalyzer": true,
+            "seoAnalysis": true,
+            "dashboardWidgets": [
+                "seoSetup",
+                "seoOverview",
+                "seoNews",
+                "seoChecklist"
+            ],
+            "announcements": true,
+            "postTypes": {
+                "all": true,
+                "included": [
+                    "post",
+                    "page",
+                    "product"
+                ]
+            },
+            "taxonomies": {
+                "all": true,
+                "included": [
+                    "category",
+                    "post_tag",
+                    "product_cat",
+                    "product_tag"
+                ]
+            },
+            "uninstall": false,
+            "emailSummary": {
+                "enable": false,
+                "recipients": [
+                    {
+                        "email": "prasanakanthan@gmail.com",
+                        "frequency": "monthly"
+                    }
+                ]
+            },
+            "usageTracking": false
+        },
+        "searchAppearance": {
+            "global": {
+                "separator": "&#45;",
+                "siteTitle": "#site_title #separator_sa #tagline",
+                "metaDescription": "#tagline",
+                "keywords": "",
+                "schema": {
+                    "websiteName": "#site_title",
+                    "websiteAlternateName": "",
+                    "siteRepresents": "organization",
+                    "person": "",
+                    "organizationName": "#site_title",
+                    "organizationDescription": "#tagline",
+                    "organizationLogo": "",
+                    "personName": "",
+                    "personLogo": "",
+                    "phone": "",
+                    "email": "",
+                    "foundingDate": "",
+                    "numberOfEmployees": {
+                        "isRange": false,
+                        "from": 0,
+                        "to": 0,
+                        "number": 0
+                    }
+                }
+            },
+            "advanced": {
+                "globalRobotsMeta": {
+                    "default": true,
+                    "noindex": false,
+                    "nofollow": false,
+                    "noindexPaginated": true,
+                    "nofollowPaginated": true,
+                    "noindexFeed": true,
+                    "noarchive": false,
+                    "noimageindex": false,
+                    "notranslate": false,
+                    "nosnippet": false,
+                    "noodp": false,
+                    "maxSnippet": -1,
+                    "maxVideoPreview": -1,
+                    "maxImagePreview": "large"
+                },
+                "noIndexEmptyCat": true,
+                "removeStopWords": false,
+                "useKeywords": false,
+                "keywordsLooking": true,
+                "useCategoriesForMetaKeywords": false,
+                "useTagsForMetaKeywords": false,
+                "dynamicallyGenerateKeywords": false,
+                "pagedFormat": "#separator_sa Page #page_number",
+                "runShortcodes": false,
+                "crawlCleanup": {
+                    "enable": false,
+                    "feeds": {
+                        "global": true,
+                        "globalComments": false,
+                        "staticBlogPage": true,
+                        "authors": true,
+                        "postComments": false,
+                        "search": false,
+                        "attachments": false,
+                        "archives": {
+                            "all": false,
+                            "included": []
+                        },
+                        "taxonomies": {
+                            "all": false,
+                            "included": [
+                                "category"
+                            ]
+                        },
+                        "atom": false,
+                        "rdf": false,
+                        "paginated": false
+                    }
+                },
+                "unwantedBots": {
+                    "all": false,
+                    "settings": {
+                        "googleAdsBot": false,
+                        "openAiGptBot": false,
+                        "commonCrawlCcBot": false,
+                        "googleGeminiVertexAiBots": false
+                    }
+                },
+                "searchCleanup": {
+                    "enable": false,
+                    "settings": {
+                        "maxAllowedNumberOfChars": 50,
+                        "emojisAndSymbols": false,
+                        "commonPatterns": false,
+                        "redirectPrettyUrls": false,
+                        "preventCrawling": false
+                    }
+                },
+                "blockArgs": {
+                    "enable": false,
+                    "optimizeUtmParameters": false,
+                    "logsRetention": "{\"label\":\"1 week\",\"value\":\"week\"}"
+                },
+                "removeCategoryBase": false
+            },
+            "archives": {
+                "author": {
+                    "show": true,
+                    "title": "#author_name #separator_sa #site_title",
+                    "metaDescription": "#author_bio",
+                    "advanced": {
+                        "robotsMeta": {
+                            "default": true,
+                            "noindex": false,
+                            "nofollow": false,
+                            "noarchive": false,
+                            "noimageindex": false,
+                            "notranslate": false,
+                            "nosnippet": false,
+                            "noodp": false,
+                            "maxSnippet": -1,
+                            "maxVideoPreview": -1,
+                            "maxImagePreview": "large"
+                        },
+                        "showDateInGooglePreview": true,
+                        "showPostThumbnailInSearch": true,
+                        "showMetaBox": true,
+                        "keywords": ""
+                    }
+                },
+                "date": {
+                    "show": true,
+                    "title": "#archive_date #separator_sa #site_title",
+                    "metaDescription": "",
+                    "advanced": {
+                        "robotsMeta": {
+                            "default": true,
+                            "noindex": false,
+                            "nofollow": false,
+                            "noarchive": false,
+                            "noimageindex": false,
+                            "notranslate": false,
+                            "nosnippet": false,
+                            "noodp": false,
+                            "maxSnippet": -1,
+                            "maxVideoPreview": -1,
+                            "maxImagePreview": "large"
+                        },
+                        "showDateInGooglePreview": true,
+                        "showPostThumbnailInSearch": true,
+                        "showMetaBox": true,
+                        "keywords": ""
+                    }
+                },
+                "search": {
+                    "show": false,
+                    "title": "#search_term #separator_sa #site_title",
+                    "metaDescription": "",
+                    "advanced": {
+                        "robotsMeta": {
+                            "default": false,
+                            "noindex": true,
+                            "nofollow": false,
+                            "noarchive": false,
+                            "noimageindex": false,
+                            "notranslate": false,
+                            "nosnippet": false,
+                            "noodp": false,
+                            "maxSnippet": -1,
+                            "maxVideoPreview": -1,
+                            "maxImagePreview": "large"
+                        },
+                        "showDateInGooglePreview": true,
+                        "showPostThumbnailInSearch": true,
+                        "showMetaBox": true,
+                        "keywords": ""
+                    }
+                }
+            }
+        },
+        "dynamic": {
+            "searchAppearance": {
+                "postTypes": {
+                    "post": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_excerpt",
+                        "schemaType": "Article",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "page": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "attachment": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#attachment_caption",
+                        "schemaType": "ItemPage",
+                        "webPageType": "ItemPage",
+                        "articleType": "BlogPosting",
+                        "customFields": "",
+                        "redirectAttachmentUrls": "attachment"
+                    },
+                    "e-floating-buttons": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_excerpt",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "elementskit_content": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "elementskit_template": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "elementskit_widget": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "jkit-header": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "jkit-footer": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "jkit-template": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "templately_library": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "elementor-hf": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "rometheme_template": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "romethemeform_form": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    },
+                    "romethemeform_entry": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true,
+                            "bulkEditing": "enabled"
+                        },
+                        "title": "#post_title #separator_sa #site_title",
+                        "metaDescription": "#post_content",
+                        "schemaType": "WebPage",
+                        "webPageType": "WebPage",
+                        "articleType": "BlogPosting",
+                        "customFields": ""
+                    }
+                },
+                "taxonomies": {
+                    "category": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true
+                        },
+                        "title": "#taxonomy_title #separator_sa #site_title",
+                        "metaDescription": "#taxonomy_description"
+                    },
+                    "post_tag": {
+                        "show": true,
+                        "advanced": {
+                            "robotsMeta": {
+                                "default": true,
+                                "noindex": false,
+                                "nofollow": false,
+                                "noarchive": false,
+                                "noimageindex": false,
+                                "notranslate": false,
+                                "nosnippet": false,
+                                "noodp": false,
+                                "maxSnippet": -1,
+                                "maxVideoPreview": -1,
+                                "maxImagePreview": "large"
+                            },
+                            "showDateInGooglePreview": true,
+                            "showPostThumbnailInSearch": true,
+                            "showMetaBox": true
+                        },
+                        "title": "#taxonomy_title #separator_sa #site_title",
+                        "metaDescription": "#taxonomy_description"
+                    }
+                },
+                "archives": []
+            },
+            "social": {
+                "facebook": {
+                    "general": {
+                        "postTypes": {
+                            "post": {
+                                "objectType": "article"
+                            },
+                            "page": {
+                                "objectType": "article"
+                            },
+                            "attachment": {
+                                "objectType": "article"
+                            },
+                            "e-floating-buttons": {
+                                "objectType": "article"
+                            },
+                            "elementskit_content": {
+                                "objectType": "article"
+                            },
+                            "elementskit_template": {
+                                "objectType": "article"
+                            },
+                            "elementskit_widget": {
+                                "objectType": "article"
+                            },
+                            "jkit-header": {
+                                "objectType": "article"
+                            },
+                            "jkit-footer": {
+                                "objectType": "article"
+                            },
+                            "jkit-template": {
+                                "objectType": "article"
+                            },
+                            "templately_library": {
+                                "objectType": "article"
+                            },
+                            "elementor-hf": {
+                                "objectType": "article"
+                            },
+                            "rometheme_template": {
+                                "objectType": "article"
+                            },
+                            "romethemeform_form": {
+                                "objectType": "article"
+                            },
+                            "romethemeform_entry": {
+                                "objectType": "article"
+                            }
+                        }
+                    }
+                }
+            },
+            "sitemap": {
+                "priority": {
+                    "postTypes": {
+                        "post": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "page": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "attachment": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "e-floating-buttons": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "elementskit_content": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "elementskit_template": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "elementskit_widget": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "jkit-header": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "jkit-footer": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "jkit-template": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "templately_library": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "elementor-hf": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "rometheme_template": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "romethemeform_form": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "romethemeform_entry": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        }
+                    },
+                    "taxonomies": {
+                        "category": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "post_tag": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        }
+                    }
+                }
+            }
+        },
+        "deprecated": {
+            "searchAppearance": {
+                "global": {
+                    "descriptionFormat": "",
+                    "schema": {
+                        "enableSchemaMarkup": true
+                    }
+                },
+                "advanced": {
+                    "autogenerateDescriptions": true,
+                    "runShortcodesInDescription": true,
+                    "useContentForAutogeneratedDescriptions": false,
+                    "excludePosts": [],
+                    "excludeTerms": [],
+                    "noPaginationForCanonical": true
+                }
+            },
+            "sitemap": {
+                "general": {
+                    "advancedSettings": {
+                        "dynamic": true
+                    }
+                }
+            },
+            "breadcrumbs": {
+                "enable": true
+            }
+        },
+        "social": {
+            "profiles": {
+                "sameUsername": {
+                    "enable": false,
+                    "username": "",
+                    "included": [
+                        "facebookPageUrl",
+                        "twitterUrl",
+                        "tiktokUrl",
+                        "pinterestUrl",
+                        "instagramUrl",
+                        "youtubeUrl",
+                        "linkedinUrl"
+                    ]
+                },
+                "urls": {
+                    "facebookPageUrl": "",
+                    "twitterUrl": "",
+                    "instagramUrl": "",
+                    "tiktokUrl": "",
+                    "pinterestUrl": "",
+                    "youtubeUrl": "",
+                    "linkedinUrl": "",
+                    "tumblrUrl": "",
+                    "yelpPageUrl": "",
+                    "soundCloudUrl": "",
+                    "wikipediaUrl": "",
+                    "myspaceUrl": "",
+                    "googlePlacesUrl": "",
+                    "wordPressUrl": "",
+                    "blueskyUrl": "",
+                    "threadsUrl": ""
+                },
+                "additionalUrls": ""
+            },
+            "facebook": {
+                "general": {
+                    "enable": true,
+                    "defaultImageSourcePosts": "content",
+                    "customFieldImagePosts": "",
+                    "defaultImagePosts": "http://fiestacabs.com/wp-content/uploads/2025/07/Screenshot-2025-07-31-150858.png",
+                    "defaultImagePostsWidth": 0,
+                    "defaultImagePostsHeight": 0,
+                    "showAuthor": true,
+                    "siteName": "#site_title #separator_sa #tagline"
+                },
+                "homePage": {
+                    "image": "",
+                    "title": "",
+                    "description": "",
+                    "imageWidth": 0,
+                    "imageHeight": 0,
+                    "objectType": "website"
+                },
+                "advanced": {
+                    "enable": true,
+                    "adminId": "",
+                    "appId": "",
+                    "authorUrl": "",
+                    "generateArticleTags": false,
+                    "useKeywordsInTags": true,
+                    "useCategoriesInTags": true,
+                    "usePostTagsInTags": true
+                }
+            },
+            "twitter": {
+                "general": {
+                    "enable": true,
+                    "useOgData": false,
+                    "defaultCardType": "summary_large_image",
+                    "defaultImageSourcePosts": "default",
+                    "customFieldImagePosts": "",
+                    "defaultImagePosts": "",
+                    "showAuthor": true,
+                    "additionalData": false
+                },
+                "homePage": {
+                    "image": "",
+                    "title": "",
+                    "description": "",
+                    "cardType": "summary"
+                }
+            }
+        },
+        "sitemap": {
+            "general": {
+                "enable": true,
+                "filename": "sitemap",
+                "indexes": true,
+                "linksPerIndex": 1000,
+                "postTypes": {
+                    "all": true,
+                    "included": [
+                        "post",
+                        "page",
+                        "attachment",
+                        "product"
+                    ]
+                },
+                "taxonomies": {
+                    "all": true,
+                    "included": [
+                        "category",
+                        "post_tag",
+                        "product_cat",
+                        "product_tag"
+                    ]
+                },
+                "author": false,
+                "date": false,
+                "additionalPages": {
+                    "enable": false,
+                    "pages": []
+                },
+                "advancedSettings": {
+                    "enable": false,
+                    "excludeImages": false,
+                    "excludePosts": [],
+                    "excludeTerms": [],
+                    "priority": {
+                        "homePage": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "postTypes": {
+                            "grouped": true,
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "taxonomies": {
+                            "grouped": true,
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "archive": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        },
+                        "author": {
+                            "priority": "{\"label\":\"default\",\"value\":\"default\"}",
+                            "frequency": "{\"label\":\"default\",\"value\":\"default\"}"
+                        }
+                    }
+                }
+            },
+            "rss": {
+                "enable": true,
+                "linksPerIndex": 50,
+                "postTypes": {
+                    "all": true,
+                    "included": [
+                        "post",
+                        "page",
+                        "product"
+                    ]
+                }
+            },
+            "html": {
+                "enable": true,
+                "pageUrl": "",
+                "postTypes": {
+                    "all": true,
+                    "included": [
+                        "post",
+                        "page",
+                        "product"
+                    ]
+                },
+                "taxonomies": {
+                    "all": true,
+                    "included": [
+                        "category",
+                        "post_tag",
+                        "product_cat",
+                        "product_tag"
+                    ]
+                },
+                "sortOrder": "publish_date",
+                "sortDirection": "asc",
+                "publicationDate": true,
+                "compactArchives": false,
+                "advancedSettings": {
+                    "enable": false,
+                    "nofollowLinks": false,
+                    "excludePosts": [],
+                    "excludeTerms": []
+                }
+            },
+            "llms": {
+                "enable": false,
+                "convertToMd": false,
+                "advancedSettings": {
+                    "title": "#site_title",
+                    "description": "#tagline",
+                    "linksPerPostTax": 1000,
+                    "postTypes": {
+                        "all": true,
+                        "included": [
+                            "post",
+                            "page",
+                            "product"
+                        ]
+                    },
+                    "taxonomies": {
+                        "all": true,
+                        "included": []
+                    },
+                    "excludePosts": [],
+                    "excludeTerms": []
+                }
+            }
+        },
+        "tools": {
+            "robots": {
+                "enable": false,
+                "rules": [],
+                "robotsDetected": true
+            }
+        },
+        "breadcrumbs": {
+            "separator": "&raquo;",
+            "homepageLink": true,
+            "homepageLabel": "Home",
+            "breadcrumbPrefix": "",
+            "archiveFormat": "Archives for #breadcrumb_archive_post_type_name",
+            "searchResultFormat": "Search Results for '#breadcrumb_search_string'",
+            "errorFormat404": "404 - Page Not Found",
+            "showCurrentItem": true,
+            "linkCurrentItem": false,
+            "categoryFullHierarchy": false,
+            "showBlogHome": false
+        }
+    }
+}
