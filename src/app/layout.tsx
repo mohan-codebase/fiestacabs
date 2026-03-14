@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
 import ContactFloatingButton from "../components/common/ContactFloatingButton";
+import ScrollToTop from "../components/common/ScrollToTop";
 
 
 
@@ -44,6 +45,7 @@ export default function RootLayout({
           </main>
           <Footer />
           <ContactFloatingButton />
+          <ScrollToTop />
           <GlobalModal />
         </ModalProvider>
       </body>

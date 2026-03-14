@@ -53,7 +53,7 @@ const WhyChooseUs = () => {
                 {/* Header */}
                 <div className="text-center mb-14">
                     <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-red-50 rounded-full">
-                        <span className="w-2 h-2 rounded-full bg-[#EC2028]" />
+                        <span className="w-2 h-2 rounded-full bg-[#EC2028] btn-animated" />
                         <span className="text-[#EC2028] font-semibold text-sm tracking-wide uppercase">Why Fiesta</span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
@@ -81,14 +81,14 @@ const WhyChooseUs = () => {
                                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                                 />
                                 {/* Number badge */}
-                                <div className="absolute top-4 left-4 w-9 h-9 rounded-full bg-[#EC2028] text-white text-xs font-bold flex items-center justify-center shadow-lg">
+                                <div className="absolute top-4 left-4 w-9 h-9 rounded-full bg-[#EC2028] btn-animated text-white text-xs font-bold flex items-center justify-center shadow-lg">
                                     {feature.id}
                                 </div>
                             </div>
 
                             {/* Content */}
                             <div className="p-6 flex flex-col flex-1">
-                                <div className="w-8 h-0.5 bg-[#EC2028] mb-3" />
+                                <div className="w-8 h-0.5 bg-[#EC2028] btn-animated mb-3" />
                                 <h3 className="text-lg font-bold text-gray-900 mb-3 leading-snug">
                                     {feature.title}
                                 </h3>

@@ -72,7 +72,7 @@ const FleetShowcase = () => {
                         <div className="space-y-5 mb-10">
                             {features.map((feature, index) => (
                                 <div key={index} className="flex gap-5 items-center">
-                                    <div className="shrink-0 w-12 h-12 bg-[#EC2028] rounded-full flex items-center justify-center shadow-md">
+                                    <div className="shrink-0 w-12 h-12 bg-[#EC2028] btn-animated rounded-full flex items-center justify-center shadow-md">
                                         {feature.icon}
                                     </div>
                                     <h4 className="font-bold text-lg text-gray-900 leading-tight">
@@ -83,7 +83,7 @@ const FleetShowcase = () => {
                         </div>
 
                         {/* Button */}
-                        <Button href="/reach-us" className=" bg-[#EC2028] rounded ">
+                        <Button href="/reach-us" className=" bg-[#EC2028] btn-animated rounded ">
                             To Know More
                         </Button>
                     </div>

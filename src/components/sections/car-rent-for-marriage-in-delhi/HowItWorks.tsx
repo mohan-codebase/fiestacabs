@@ -41,7 +41,7 @@ const HowItWorks = () => {
                         <div className="space-y-6">
                             {steps.map((item, index) => (
                                 <div key={index} className="flex gap-4 items-start">
-                                    <div className="shrink-0 w-10 h-10 rounded-full bg-[#EC2028] flex items-center justify-center text-white font-bold text-sm">
+                                    <div className="shrink-0 w-10 h-10 rounded-full bg-[#EC2028] btn-animated flex items-center justify-center text-white font-bold text-sm">
                                         {item.step}
                                     </div>
                                     <div>

@@ -53,7 +53,7 @@ const DiscountCTA = () => {
                     </div>
 
                     <div className="pt-6">
-                        <BookNowButton className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full transition-colors duration-300 text-lg">
+                        <BookNowButton className="inline-block bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-bold py-4 px-10 rounded-full transition-colors duration-300 text-lg">
                             Book Now
                         </BookNowButton>
                     </div>

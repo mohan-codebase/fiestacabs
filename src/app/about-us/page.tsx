@@ -13,7 +13,7 @@ export const metadata = {
 };
 
 const stats = [
-    { value: "27+", label: "Years of Excellence" },
+    { value: "28+", label: "Years of Excellence" },
     { value: "300+", label: "Team Members" },
     { value: "₹1.2B", label: "Annual Turnover" },
     { value: "2000+", label: "Partner Vehicles" },
@@ -86,13 +86,13 @@ export default function AboutUs() {
                         {/* Content */}
                         <div>
                             <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-red-50 rounded-full">
-                                <span className="w-2 h-2 rounded-full bg-[#EC2028]" />
+                                <span className="w-2 h-2 rounded-full bg-[#EC2028] btn-animated" />
                                 <span className="text-[#EC2028] font-semibold text-sm tracking-wide uppercase">About</span>
                             </div>
                             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-5 leading-tight">
                                 Fiesta, A Name to Remember in Employee Transport Services
                             </h2>
-                            <div className="w-12 h-1 bg-[#EC2028] rounded-full mb-6" />
+                            <div className="w-12 h-1 bg-[#EC2028] btn-animated rounded-full mb-6" />
                             <p className="text-gray-600 leading-relaxed mb-4 text-[15px]">
 
                                 Fiesta Smart Mobility Private Limited
@@ -145,7 +145,7 @@ export default function AboutUs() {
                     {/* Header */}
                     <div className="text-center mb-14">
                         <div className="inline-flex items-center gap-2 mb-4 px-4 py-1.5 bg-red-50 rounded-full">
-                            <span className="w-2 h-2 rounded-full bg-[#EC2028]" />
+                            <span className="w-2 h-2 rounded-full bg-[#EC2028] btn-animated" />
                             <span className="text-[#EC2028] font-semibold text-sm tracking-wide uppercase">Leadership</span>
                         </div>
                         <h2 className="text-3xl md:text-5xl font-bold text-gray-900">

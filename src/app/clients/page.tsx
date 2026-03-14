@@ -97,7 +97,7 @@ export default function ClientsPage() {
             {/* Category quick links */}
             <section className="max-w-6xl mx-auto px-4 py-10">
                 <div className="flex flex-wrap gap-3">
-                    <Link href="#Mainit" className="px-4 py-2 rounded-full bg-[#EC2028] text-white text-sm font-semibold hover:bg-[#c51c24] transition-colors">
+                    <Link href="#Mainit" className="px-4 py-2 rounded-full bg-[#EC2028] btn-animated text-white text-sm font-semibold hover:bg-[#c51c24] transition-colors">
                         IT & Digital
                     </Link>
                     <Link href="#Manu" className="px-4 py-2 rounded-full bg-white text-slate-900 text-sm font-semibold border border-slate-200 shadow-sm hover:border-[#EC2028] transition-colors">

@@ -52,7 +52,7 @@ const CTA = () => {
                         ))}
                     </ul>
 
-                    <BookNowButton className="w-fit bg-[#EC2028] hover:bg-red-700 text-white font-bold px-8 py-3 rounded-full transition-colors">
+                    <BookNowButton className="w-fit bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-bold px-8 py-3 rounded-full transition-colors">
                         Book Now
                     </BookNowButton>
                 </div>

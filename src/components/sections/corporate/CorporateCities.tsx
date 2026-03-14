@@ -1,8 +1,10 @@
 import React from "react";
+import Link from "next/link";
 
 const cities = [
     {
         name: "Corporate Car Rental in Chennai",
+        href: "/best-car-rental-in-chennai",
         description:
             "Offering premium cars, trained chauffeurs, and timely service for client meetings, airport transfers, corporate events, and everyday business travel across Chennai's top IT and commercial zones.",
         icon: (
@@ -21,6 +23,7 @@ const cities = [
     },
     {
         name: "Corporate Car Rental in Mumbai",
+        href: "/corporate-car-rental-in-mumbai",
         description:
             "Supporting Mumbai's fast-paced corporate ecosystem with well-maintained vehicles, flexible rentals, on-time pickups, and seamless travel across major business districts.",
         icon: (
@@ -39,6 +42,7 @@ const cities = [
     },
     {
         name: "Corporate Car Rental in Bangalore",
+        href: "/corporate-car-rental-in-bangalore",
         description:
             "Ensuring smooth business travel across Whitefield, Electronic City, Outer Ring Road, and major IT hubs with premium fleets, disciplined drivers, and reliable corporate travel management.",
         icon: (
@@ -75,17 +79,24 @@ const CorporateCities = () => {
                 {/* City Cards */}
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                     {cities.map((city) => (
-                        <div
+                        <Link
+                            href={city.href || "#"}
                             key={city.name}
-                            className="bg-rose-50 rounded-2xl p-8 flex flex-col items-center text-center border-b-4 border-[#EC2028] shadow-sm"
+                            className="bg-rose-50 rounded-2xl p-8 flex flex-col items-center text-center border-b-4 border-[#EC2028] shadow-sm hover:-translate-y-2 hover:shadow-lg transition-all duration-300 group"
                         >
                             {/* Icon circle */}
-                            <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm text-gray-700">
+                            <div className="w-20 h-20 rounded-full bg-white flex items-center justify-center mb-6 shadow-sm text-gray-700 group-hover:scale-110 transition-transform duration-300">
                                 {city.icon}
                             </div>
-                            <h3 className="text-xl font-bold text-gray-900 mb-4">{city.name}</h3>
+                            <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-[#EC2028] transition-colors">{city.name}</h3>
                             <p className="text-gray-600 leading-relaxed text-[15px]">{city.description}</p>
-                        </div>
+                            <span className="mt-6 text-[#EC2028] font-semibold flex items-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                Learn More
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                                </svg>
+                            </span>
+                        </Link>
                     ))}
                 </div>
             </div>

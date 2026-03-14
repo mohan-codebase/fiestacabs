@@ -16,7 +16,7 @@ const ClientCategory = ({ id, title, clients }: ClientCategoryProps) => {
         <section id={id} className="border-t border-slate-200 py-14 bg-white">
             <div className="mx-auto max-w-6xl px-4">
                 <div className="flex items-center gap-3 mb-8">
-                    <span className="w-1.5 h-8 rounded-full bg-[#EC2028]" />
+                    <span className="w-1.5 h-8 rounded-full bg-[#EC2028] btn-animated" />
                     <h2 className="text-2xl md:text-3xl font-bold text-slate-900">{title}</h2>
                 </div>
 

@@ -24,7 +24,7 @@ const Services = () => {
                                 Our versatile fleet includes luxury, premium, standard, and MUV vehicles, giving you the flexibility to choose a ride that matches your preferences and budget. With well-maintained cars, spacious interiors, and professional drivers, we prioritize your comfort and safety every step of the way.
                             </p>
                         </div>
-                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] rounded ">
+                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] btn-animated rounded ">
                             To Know More
                         </Button>
                     </div>
@@ -44,7 +44,7 @@ const Services = () => {
                                 Our professional chauffeurs are dedicated to providing an elegant, stress-free experience, ensuring you arrive on time and in style. From the moment you step into our vehicles, comfort and luxury are our priorities.
                             </p>
                         </div>
-                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] rounded ">
+                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] btn-animated rounded ">
                             To Know More
                         </Button>
                     </div>
@@ -70,7 +70,7 @@ const Services = () => {
                                 Our fleet of luxury vehicles, including sedans, SUVs, and buses, ensures that everyone arrives on time and in style. From airport transfers to seamless venue transportation, we handle all the logistics to keep your event on track.
                             </p>
                         </div>
-                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] rounded ">
+                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] btn-animated rounded ">
                             To Know More
                         </Button>
                     </div>
@@ -88,7 +88,7 @@ const Services = () => {
                             <p>
                                 We keep track of your departure time to guarantee you're picked up and dropped off promptly. With plush interiors and modern amenities, you'll enjoy a relaxing ride before or after your journey. Available 24/7, we cater to all your airport transfer needs, whether it's an early morning or late-night flight. Our service is designed to make your trip hassle-free, allowing you to focus on your travel. Trust us for an airport transfer that’s as smooth and comfortable as the flight itself.                             </p>
                         </div>
-                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] rounded ">
+                        <Button href="/services-offered" className=" mt-8 bg-[#EC2028] btn-animated rounded ">
                             To Know More
                         </Button>
                     </div>

@@ -182,7 +182,7 @@ const EmployeeTransportServicesPage = () => {
     return (
         <div className="w-full">
             {/* Hero */}
-            <section className="relative w-full overflow-hidden min-h-[80vh] lg:min-h-[90vh] xl:min-h-screen flex items-center">
+            <section className="relative w-full overflow-hidden h-[80vh] lg:h-[100vh] min-h-[650px] flex items-center">
                 <div className="absolute inset-0">
                     <Image
                         src="/images/employee-transport/hero.jpg"
@@ -193,7 +193,7 @@ const EmployeeTransportServicesPage = () => {
                     />
                     <div className="absolute inset-0 bg-black/60" />
                 </div>
-                <div className="relative z-10 max-w-[1440px] mx-auto px-4 py-16">
+                <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 lg:px-8 pt-24 lg:pt-32 pb-16">
                     <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
                         <div className="text-white">
                             <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -203,7 +203,7 @@ const EmployeeTransportServicesPage = () => {
                                 Safe, punctual, and comfortable daily commutes for your workforce across major Indian
                                 cities.
                             </p>
-                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
+                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
                                 Get a Free Quote
                             </BookNowButton>
                         </div>
@@ -251,7 +251,7 @@ const EmployeeTransportServicesPage = () => {
                                 cities a dependable, scalable, and cost effective way to manage corporate commutes, from
                                 home to corporate offices and back, every single day.
                             </p>
-                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
+                            <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
                                 Get a Free Quote
                             </BookNowButton>
                         </div>
@@ -345,7 +345,7 @@ const EmployeeTransportServicesPage = () => {
                                 ))}
                             </div>
                             <div className="mt-6">
-                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
+                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
                                     To Know More
                                 </BookNowButton>
                             </div>
@@ -584,7 +584,7 @@ const EmployeeTransportServicesPage = () => {
                                 </p>
                             </div>
                             <div className="mt-6">
-                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
+                                <BookNowButton className="inline-flex items-center justify-center bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full shadow">
                                     Book Now
                                 </BookNowButton>
                             </div>

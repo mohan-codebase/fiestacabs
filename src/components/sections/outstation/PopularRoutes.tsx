@@ -19,7 +19,7 @@ const PopularRoutes = () => {
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
                         Explore Popular Outstation Routes We Cover
                     </h2>
-                    <div className="w-24 h-1 bg-[#EC2028] mb-6"></div>
+                    <div className="w-24 h-1 bg-[#EC2028] btn-animated mb-6"></div>
                     <p className="text-gray-600 leading-relaxed max-w-4xl">
                         Some journeys are business. Some are bonding. Either way, we cover all major outstation cab routes for your teams, guests, friends and executives.
                     </p>
@@ -58,7 +58,7 @@ const PopularRoutes = () => {
                         Whether you&apos;re booking a road trip, airport drop or interstate cab, we have vehicle availability across most regions in India. Companies in manufacturing, IT, retail, and pharma all use our cab services for reliable travel with family or professional contacts.
                     </p>
                 </div>
-                <div className="w-24 h-1 bg-[#EC2028]"></div>
+                <div className="w-24 h-1 bg-[#EC2028] btn-animated"></div>
             </div>
         </section>
     );

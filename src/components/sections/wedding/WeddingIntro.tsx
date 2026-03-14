@@ -3,6 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../../../components/common/Button";
+import BookNowButton from "../../common/BookNowButton";
 
 const WeddingIntro = () => {
     return (
@@ -35,9 +36,9 @@ const WeddingIntro = () => {
                         </div>
 
                         <div>
-                            <Button className="bg-[#EC2028] rounded ">
+                            <BookNowButton className="bg-[#EC2028] btn-animated rounded ">
                                 Book Now
-                            </Button>
+                            </BookNowButton>
                         </div>
                     </div>
 

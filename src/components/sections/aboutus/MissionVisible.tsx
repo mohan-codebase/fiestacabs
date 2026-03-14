@@ -8,7 +8,7 @@ const MissionVisible = () => {
                 {/* Section label */}
                 <div className="text-center mb-12">
                     <div className="inline-flex items-center gap-2 mb-3 px-4 py-1.5 bg-red-50 rounded-full">
-                        <span className="w-2 h-2 rounded-full bg-[#EC2028]" />
+                        <span className="w-2 h-2 rounded-full bg-[#EC2028] btn-animated" />
                         <span className="text-[#EC2028] font-semibold text-sm tracking-wide uppercase">Our Purpose</span>
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
@@ -32,7 +32,7 @@ const MissionVisible = () => {
                             <div className="flex items-center gap-3 mb-4">
                                 <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Our Vision</h3>
                             </div>
-                            <div className="w-10 h-0.5 bg-[#EC2028] mb-5" />
+                            <div className="w-10 h-0.5 bg-[#EC2028] btn-animated mb-5" />
                             <p className="text-gray-600 leading-relaxed text-lg">
                                 To become a fully automated best-in-class, end-to-end travel and transport
                                 solutions organization with pan India presence.
@@ -43,7 +43,7 @@ const MissionVisible = () => {
                     </div>
 
                     {/* Mission Card */}
-                    <div className="relative bg-[#EC2028] rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
+                    <div className="relative bg-[#EC2028] btn-animated rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-shadow duration-300 group">
                         <div className="p-8 md:p-12">
                             {/* Icon */}
                             <div className="w-14 h-14 rounded-2xl bg-white/20 flex items-center justify-center mb-6">

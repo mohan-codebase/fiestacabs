@@ -4,6 +4,7 @@ import { FaBus, FaStar, FaShieldAlt, FaChartLine, FaClock, FaHandHoldingUsd, FaR
 import FAQ from "../../components/sections/employee-transportation-services-in-chennai/FAQ";
 import ChennaiEmployeeTransportForm from "../../components/sections/employee-transport/ChennaiEmployeeTransportForm";
 import Button from "../../components/common/Button";
+import BookNowButton from "@/src/components/common/BookNowButton";
 
 export const metadata = {
     title: "Employee Transportation Services in Chennai | Fiesta Smart Mobility",
@@ -67,7 +68,7 @@ const ChennaiEmployeeTransportPage = () => {
     return (
         <div className="w-full">
             {/* Hero Section */}
-            <section className="relative w-full min-h-[600px] flex items-center pt-20 pb-16 lg:py-24">
+            <section className="relative w-full h-[80vh] lg:h-[100vh] min-h-[650px] flex items-center">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/unnamed-2.jpg"
@@ -79,7 +80,7 @@ const ChennaiEmployeeTransportPage = () => {
                     <div className="absolute inset-0 bg-black/60" />
                 </div>
 
-                <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 lg:px-8">
+                <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 lg:px-8 pt-24 lg:pt-32 pb-16">
                     <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
                         <div className="text-white text-center lg:text-left">
                             <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-6 leading-tight">
@@ -87,9 +88,9 @@ const ChennaiEmployeeTransportPage = () => {
                             </h1>
                             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto lg:mx-0">
                                 In a fast-paced city like Chennai, employee travel shapes energy, focus, and well-being. At Fiesta, we provide reliable employee transportation services designed to make every commute safe, comfortable, and stress-free. From daily office rides to business trips, we help organizations boost productivity and employee satisfaction by ensuring smooth, secure, and hassle-free travel every day.                            </p>
-                            <Button className="bg-[#EC2028] rounded ">
+                            <BookNowButton className="bg-[#EC2028] btn-animated rounded ">
                                 Book Your Employee Transport Today
-                            </Button>
+                            </BookNowButton>
                         </div>
 
                         <ChennaiEmployeeTransportForm />
@@ -103,7 +104,7 @@ const ChennaiEmployeeTransportPage = () => {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                         <div className="relative h-[320px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-xl">
                             <Image
-                                src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/why-employee-transport-matters.jpg" 
+                                src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/why-employee-transport-matters.jpg"
                                 alt="Employee Transportation Matters"
                                 fill
                                 style={{ objectFit: "cover" }}
@@ -149,9 +150,9 @@ const ChennaiEmployeeTransportPage = () => {
                                 </div>
                             ))}
                             <div className="pt-4">
-                                <Button className="bg-[#EC2028] rounded ">
+                                <BookNowButton className="bg-[#EC2028] btn-animated rounded ">
                                     Get A Custom Quote Now
-                                </Button>
+                                </BookNowButton>
                             </div>
                         </div>
                         <div className="relative h-[320px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden shadow-xl">
@@ -183,7 +184,7 @@ const ChennaiEmployeeTransportPage = () => {
                                 <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                                     Serving Multiple Locations in Chennai
                                 </h2>
-                                <div className="w-24 h-1 bg-[#EC2028] mb-6" />
+                                <div className="w-24 h-1 bg-[#EC2028] btn-animated mb-6" />
                                 <div className="space-y-4 text-gray-600 leading-relaxed text-lg">
                                     <p>
                                         Our employee transportation services in Chennai are structured to cover multiple locations across the city. From IT corridors like Tidel Park to manufacturing clusters and businesses spread across suburbs, we ensure employees have reliable access to their workplaces.
@@ -356,9 +357,9 @@ const ChennaiEmployeeTransportPage = () => {
                                 Fiesta – Your preferred partner for employee transportation services in Chennai.
                             </p>
                         </div>
-                        <Button className="bg-[#EC2028] hover:bg-[#c91b22] duration-300 ">
+                        <BookNowButton className="bg-[#EC2028] btn-animated hover:bg-[#c91b22] duration-300 ">
                             Book Now
-                        </Button>
+                        </BookNowButton>
                     </div>
                 </div>
             </section>

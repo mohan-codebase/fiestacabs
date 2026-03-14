@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Hero = () => {
     return (
-        <section className="relative flex min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] items-center justify-center overflow-hidden">
+        <section className="relative w-full h-[80vh] lg:h-[100vh] min-h-[600px] flex items-center justify-center overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -17,11 +17,11 @@ const Hero = () => {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-6 lg:px-8 text-left">
+            <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 lg:px-8 pt-24 lg:pt-32 pb-16 text-left">
                 <div className="max-w-2xl">
                     {/* Eyebrow */}
                     <div className="flex items-center gap-3 mb-4">
-                        <span className="h-[3px] w-10 bg-[#EC2028] rounded-full" />
+                        <span className="h-[3px] w-10 bg-[#EC2028] btn-animated rounded-full" />
                         <span className="text-[#EC2028] font-semibold text-sm uppercase tracking-widest">
                             Since 1998
                         </span>
@@ -31,7 +31,7 @@ const Hero = () => {
                     </h1>
                     <p className="text-gray-300 text-lg md:text-xl leading-relaxed">
                         From a single car rental venture to a pan-India smart mobility leader —
-                        27 years of growth, trust, and innovation.
+                        28 years of growth, trust, and innovation.
                     </p>
                 </div>
             </div>

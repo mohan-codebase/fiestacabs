@@ -464,7 +464,7 @@ export default async function BlogPostPage({ params }: PageProps) {
               <div className="flex flex-wrap gap-3">
                 <Link
                   href="/reach-us"
-                  className="px-5 py-3 rounded-full bg-[#EC2028] text-white font-semibold shadow-sm hover:bg-[#c51c24] transition-colors"
+                  className="px-5 py-3 rounded-full bg-[#EC2028] btn-animated text-white font-semibold shadow-sm hover:bg-[#c51c24] transition-colors"
                 >
                   Talk to operations
                 </Link>

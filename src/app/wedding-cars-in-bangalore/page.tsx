@@ -19,9 +19,9 @@ export default function WeddingCarsInBangalore() {
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
                 title="Wedding Cars in Bangalore"
-                subtitle="Book Your Wedding Car Now"
+                subtitle="Celebrate your big day with Fiesta’s chauffeur-driven car rentals in Pune, offering elegant wedding entrances, smooth guest transfers, and complete peace of mind."
                 imageSrc="/images/wedding-cars-in-bangalore/unnamed-6-1.jpg"
-                ctaText="Book Now"
+                ctaText="Book Your Wedding Car Now"
                 imageClassName="brightness-[0.4]"
             />
 

@@ -25,7 +25,7 @@ const GalleryHero = () => {
                     </p>
                     <div className="flex flex-wrap gap-3 text-sm text-slate-100/90">
                         <span className="px-4 py-2 rounded-full border border-white/20 bg-white/10">Electric fleet launch</span>
-                        <span className="px-4 py-2 rounded-full border border-white/20 bg-white/10">25+ years milestones</span>
+                        <span className="px-4 py-2 rounded-full border border-white/20 bg-white/10">28+ years milestones</span>
                         <span className="px-4 py-2 rounded-full border border-white/20 bg-white/10">Team culture</span>
                     </div>
                 </div>

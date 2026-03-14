@@ -35,7 +35,7 @@ const events: GalleryEvent[] = [
     },
     {
         title: "25th Anniversary Client Meet at Westin",
-        subtitle: "Celebrating 25+ years of reliable movement",
+        subtitle: "Celebrating 28+ years of reliable movement",
         description:
             "A thank-you evening for the partners and teams who keep our commuters moving—captured at The Westin.",
         images: [

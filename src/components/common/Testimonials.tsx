@@ -90,7 +90,7 @@ const Testimonials = ({
                             clickable: true,
                             el: '.testimonial-pagination',
                             bulletClass: 'swiper-pagination-bullet !w-2 !h-2 !bg-gray-300 transition-all duration-300',
-                            bulletActiveClass: 'swiper-pagination-bullet-active !w-8 !rounded-full !bg-[#EC2028]'
+                            bulletActiveClass: 'swiper-pagination-bullet-active !w-8 !rounded-full !bg-[#EC2028] btn-animated'
                         }}
                         autoplay={{
                             delay: 6000,
@@ -104,7 +104,7 @@ const Testimonials = ({
                                 <div className="testimonials-card h-[520px] w-full bg-white/60 backdrop-blur-sm border border-gray-100 rounded-3xl p-8 md:p-10 shadow-xl shadow-gray-200/20 flex flex-col justify-between transition-all duration-300 hover:shadow-2xl hover:-translate-y-1 group overflow-hidden">
                                     <div>
                                         <div className="flex justify-between items-start mb-8">
-                                            <div className="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center group-hover:bg-[#EC2028] transition-colors duration-300">
+                                            <div className="w-12 h-12 bg-red-50 rounded-2xl flex items-center justify-center group-hover:bg-[#EC2028] btn-animated transition-colors duration-300">
                                                 <FaQuoteLeft className="text-[#EC2028] text-xl group-hover:text-white transition-colors duration-300" />
                                             </div>
                                             {renderStars(testimonial.rating)}

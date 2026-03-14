@@ -50,7 +50,7 @@ const Header = () => {
                             alt="Fiesta Cabs Logo"
                             width={150}
                             height={50}
-                            className="h-10 m-1 w-auto object-contain rounded-lg"
+                            className="h-10 m-1 w-auto object-contain rounded-full"
                             priority
                         />
                     </Link>
@@ -71,7 +71,6 @@ const Header = () => {
                             <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path></svg>
                         </Link>
                         <div className="absolute left-0 mt-2 w-48 bg-white text-gray-800 rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 transform origin-top-left z-50">
-                            <Link href="/about-us" className="block px-4 py-2 hover:bg-gray-100">About Us</Link>
                             <Link
                                 href="/about-us#leaders"
                                 className="block px-4 py-2 hover:bg-gray-100"
@@ -136,7 +135,7 @@ const Header = () => {
 
                 {/* CTA Button */}
                 <div className="hidden lg:block shrink-0">
-                    <Button onClick={openModal} className="bg-[#EC2028] ">
+                    <Button onClick={openModal} className="bg-[#EC2028] btn-animated ">
                         Book Appointment
                     </Button>
                 </div>
@@ -274,7 +273,7 @@ const Header = () => {
                                 toggleMobileMenu();
                                 openModal();
                             }}
-                            className="bg-[#EC2028] hover:bg-red-700 text-white px-5 py-3 rounded-full shadow transition-colors font-bold text-center mt-4 w-full"
+                            className="bg-[#EC2028] btn-animated hover:bg-red-700 text-white px-5 py-3 rounded-full shadow transition-colors font-bold text-center mt-4 w-full"
                         >
                             Book Appointment
                         </button>

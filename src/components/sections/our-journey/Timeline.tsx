@@ -131,7 +131,7 @@ const Timeline = () => {
                     <span className="text-[#EC2028] font-semibold text-sm tracking-wide uppercase">Milestones</span>
                 </div>
                 <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-4">
-                    27 Years of <span className="text-[#EC2028]">Excellence</span>
+                    28 Years of <span className="text-[#EC2028]">Excellence</span>
                 </h2>
                 <p className="text-gray-500 text-lg leading-relaxed">
                     Every milestone tells the story of our commitment to smarter, safer, and more reliable mobility.

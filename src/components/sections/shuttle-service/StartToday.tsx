@@ -25,15 +25,19 @@ const StartToday = () => {
                         </p>
 
                     </div>
-                    <div className="inline-flex items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 mb-5">
-                        <span className="font-semibold text-gray-800">Call Us For Your Next Ride</span>
-                        <span className="text-[#EC2028] font-bold">+91 78458 67512</span>
+                    <div className="flex flex-col items-center gap-3">
+                        <div className="inline-flex items-center gap-3 rounded-xl border border-red-200 bg-red-50 px-4 py-3 mb-5">
+                            <span className="font-semibold text-gray-800">Call Us For Your Next Ride</span>
+                            <span className="text-[#EC2028] font-bold">+91 78458 67512</span>
+                        </div>
+                        <BookNowButton
+                            className="inline-flex items-center justify-center bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full"
+                        >
+                            Book Now
+                        </BookNowButton>
                     </div>
-                    <BookNowButton
-                        className="inline-flex items-center justify-center bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full"
-                    >
-                        Book Now
-                    </BookNowButton>
+
+
                 </div>
                 <div className="relative h-[420px] md:h-[600px] rounded-md overflow-hidden">
                     <Image

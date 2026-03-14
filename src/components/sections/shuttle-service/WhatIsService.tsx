@@ -29,7 +29,7 @@ const WhatIsService = () => {
                             Whether you’re managing a small team or a large corporate workforce, Fiesta offers fully customizable transport services that enhance employee convenience, boost punctuality, and reduce absenteeism—all while providing unmatched comfort and safety.
                         </p>
                     </div>
-                    <BookNowButton className="inline-flex items-center justify-center mt-6 bg-[#EC2028] hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full">
+                    <BookNowButton className="inline-flex items-center justify-center mt-6 bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-semibold px-6 py-3 rounded-full">
                         Book Now
                     </BookNowButton>
                 </div>

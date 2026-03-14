@@ -39,7 +39,7 @@ const About = () => {
 
                         <div className="space-y-4 text-gray-600 leading-relaxed text-[15px]">
                             <p>
-                                With <strong>27 years of excellence</strong>, Fiesta Smart Mobility Private Limited is a leading provider of integrated transportation solutions for the corporate sector.
+                                With <strong>28 years of excellence</strong>, Fiesta Smart Mobility Private Limited is a leading provider of integrated transportation solutions for the corporate sector.
                             </p>
                             <p>
                                 Established in 1998 in Chennai, we have expanded to achieve a pan-India presence with a dedicated team of <strong>300+ employees nationwide.</strong>

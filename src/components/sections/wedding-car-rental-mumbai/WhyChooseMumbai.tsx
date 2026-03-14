@@ -63,9 +63,9 @@ const WhyChooseMumbai = () => {
                     </h2>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="flex flex-wrap justify-center gap-6">
                     {reasons.map((reason, index) => (
-                        <div key={index} className="bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-md transition-shadow">
+                        <div key={index} className="w-full md:w-[calc(50%-12px)] lg:w-[calc(33.333%-16px)] bg-white p-8 rounded-xl shadow-sm border border-gray-100 flex flex-col items-center text-center group hover:shadow-md transition-shadow">
                             <div className="w-16 h-16 rounded-full bg-red-50 flex items-center justify-center mb-6 text-[#EC2028]">
                                 {reason.icon}
                             </div>

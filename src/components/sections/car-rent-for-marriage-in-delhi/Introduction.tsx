@@ -31,7 +31,7 @@ const Introduction = () => {
                             Whether you are looking for a wedding car rental for your grand entry, pre wedding photoshoot, or to escort your guests, we make sure your ride matches the elegance, grace, and joy of the occasion.
                         </p>
                         <div>
-                            <BookNowButton className="inline-block bg-[#EC2028] hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-colors mt-2">
+                            <BookNowButton className="inline-block bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-bold py-3 px-8 rounded-full transition-colors mt-2">
                                 Book Now
                             </BookNowButton>
                         </div>

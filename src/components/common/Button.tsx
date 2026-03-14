@@ -24,14 +24,14 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
     // Base styles
     const baseStyles =
-        "inline-block font-semibold rounded-full transition-all duration-300 text-center shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#EC2028] disabled:opacity-60 disabled:cursor-not-allowed";
+        "relative overflow-hidden isolation-isolate inline-block font-semibold rounded-full transition-all duration-300 text-center shadow-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#EC2028] disabled:opacity-60 disabled:cursor-not-allowed";
 
     // Variant styles
     const variantStyles = {
-        primary: "bg-[#EC2028] text-white hover:bg-red-700 shadow-md",
+        primary: "bg-[#EC2028] btn-animated text-white hover:bg-red-700 shadow-md",
         secondary: "bg-gray-800 text-white hover:bg-gray-900 shadow-md",
         outline:
-            "border-2 border-[#EC2028] text-[#EC2028] hover:bg-[#EC2028] hover:text-white",
+            "border-2 border-[#EC2028] text-[#EC2028] hover:bg-[#EC2028] btn-animated hover:text-white",
     };
 
     // Size styles
@@ -47,7 +47,9 @@ const Button: React.FC<ButtonProps> = ({
     if (href) {
         return (
             <Link href={href} className={combinedStyles}>
-                {children}
+                <span className="relative z-10 flex items-center justify-center gap-2">
+                    {children}
+                </span>
             </Link>
         );
     }
@@ -55,7 +57,9 @@ const Button: React.FC<ButtonProps> = ({
     // Otherwise, render as button
     return (
         <button type={type} onClick={onClick} className={combinedStyles} disabled={disabled}>
-            {children}
+            <span className="relative z-10 flex items-center justify-center gap-2">
+                {children}
+            </span>
         </button>
     );
 };

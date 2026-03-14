@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../../../components/common/Button";
+import BookNowButton from "../../common/BookNowButton";
 
 const Introduction = () => {
     return (
@@ -30,9 +31,9 @@ const Introduction = () => {
                         </div>
 
                         <div className="pt-4">
-                            <Button className="bg-[#EC2028] w-max">
+                            <BookNowButton className="bg-[#EC2028] btn-animated w-max">
                                 Book Now
-                            </Button>
+                            </BookNowButton>
                         </div>
                     </div>
                 </div>

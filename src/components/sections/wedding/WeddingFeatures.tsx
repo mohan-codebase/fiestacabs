@@ -151,7 +151,7 @@ const WeddingFeatures = () => {
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2 leading-tight">
                             Flexible Rental Plans for Every Wedding Style
                         </h2>
-                        <div className="w-16 h-1 bg-[#EC2028] mb-8"></div>
+                        <div className="w-16 h-1 bg-[#EC2028] btn-animated mb-8"></div>
 
                         <div className="space-y-6 text-gray-700 text-[15px] leading-relaxed mb-8">
                             <p>

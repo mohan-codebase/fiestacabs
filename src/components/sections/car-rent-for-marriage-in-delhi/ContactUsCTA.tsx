@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Button from "../../../components/common/Button";
+import BookNowButton from "../../common/BookNowButton";
 
 const ContactUsCTA = () => {
     return (
@@ -54,9 +55,9 @@ const ContactUsCTA = () => {
                         Fiesta – The car rental service that turns your special day into a beautiful journey.
                     </p>
 
-                    <Button className="bg-[#EC2028] w-max">
+                    <BookNowButton className="bg-[#EC2028] btn-animated w-max">
                         Book Now
-                    </Button>
+                    </BookNowButton>
                 </div>
             </div>
         </section>

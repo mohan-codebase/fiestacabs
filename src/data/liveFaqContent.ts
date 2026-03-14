@@ -15,7 +15,7 @@ export const LIVE_ROUTE_FAQS: Record<string, RouteFAQItem[]> = {
         },
         {
             "question": "What makes your service stand out from competitors?",
-            "answer": "With over 25 years of industry experience, a diverse vehicle fleet, professional drivers, and a strong focus on safety and punctuality, we offer unmatched reliability and comfort."
+            "answer": "With over 28 years of industry experience, a diverse vehicle fleet, professional drivers, and a strong focus on safety and punctuality, we offer unmatched reliability and comfort."
         },
         {
             "question": "How do you handle last-minute transport requests or schedule changes?",
@@ -179,7 +179,7 @@ export const LIVE_ROUTE_FAQS: Record<string, RouteFAQItem[]> = {
         },
         {
             "question": "What makes your service stand out from competitors?",
-            "answer": "With over 25 years of industry experience, a diverse vehicle fleet, professional drivers, and a strong focus on safety and punctuality, we offer unmatched reliability and comfort."
+            "answer": "With over 28 years of industry experience, a diverse vehicle fleet, professional drivers, and a strong focus on safety and punctuality, we offer unmatched reliability and comfort."
         },
         {
             "question": "How do you handle last-minute transport requests or schedule changes?",
@@ -372,24 +372,24 @@ export const LIVE_ROUTE_FAQS: Record<string, RouteFAQItem[]> = {
     ],
     "/corporate-car-rental-in-mumbai": [
         {
-            "question": "Why should companies invest in structured employee transport services?",
-            "answer": "Companies invest because it improves attendance, reduces delays, supports smoother workflow, and helps staff avoid travel stress that usually affects productivity every day."
+            "question": "Which cars are popular for weddings in Mumbai?",
+            "answer": "Couples often select vintage cars like Rolls-Royce or luxury cars such as Mercedes, BMW, and Audi, depending on style, budget, and wedding theme."
         },
         {
-            "question": "How do employee shuttle services help reduce commute time?",
-            "answer": "Shuttle routes run on fixed schedules with planned pickup points. With smart routing and real-time updates, travel time becomes predictable even during heavy traffic."
+            "question": "Can I hire a car with a professional chauffeur?",
+            "answer": "Yes. All vehicles come with experienced drivers to ensure timely arrivals, safety, and a smooth ride."
         },
         {
-            "question": "What features improve employee safety in transportation services?",
-            "answer": "Safety increases with trained drivers, emergency support, monitoring tools, background checks, clear travel protocols, and round-the-clock support from operations teams."
+            "question": "Can I rent a car for an extra hour or extra km?",
+            "answer": "Flexible packages accommodate additional hours or kilometres for the wedding day or transportation between venues."
         },
         {
-            "question": "How do transportation solutions reduce company expenses?",
-            "answer": "Cost reduces through shared rides, fuel savings, lower parking usage, route optimisation, professional management, and decreased personal vehicle reimbursements across teams."
+            "question": "Are decorations included in the rental service?",
+            "answer": "Floral decorations and other optional features are available for a dream wedding day."
         },
         {
-            "question": "How does real time monitoring help transport operations?",
-            "answer": "Monitoring tools track movement, measure delay patterns, improve control, and support better decision-making. This helps companies maintain steady service daily."
+            "question": "How far in advance should I book?",
+            "answer": "Booking at least 2–3 months ahead ensures preferred vehicles and professional chauffeur service for an unforgettable experience."
         }
     ],
     "/shuttle-service-in-delhi": [
@@ -491,7 +491,7 @@ export const LIVE_ROUTE_FAQS: Record<string, RouteFAQItem[]> = {
         },
         {
             "question": "What makes your service stand out from competitors?",
-            "answer": "With over 25 years of industry experience, a diverse vehicle fleet, professional drivers, and a strong focus on safety and punctuality, we offer unmatched reliability and comfort."
+            "answer": "With over 28 years of industry experience, a diverse vehicle fleet, professional drivers, and a strong focus on safety and punctuality, we offer unmatched reliability and comfort."
         },
         {
             "question": "How do you handle last-minute transport requests or schedule changes?",

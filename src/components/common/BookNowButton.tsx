@@ -13,12 +13,12 @@ const BookNowButton = ({ children, className, variant = "primary" }: BookNowButt
     const { openModal } = useModal();
 
     const baseStyles =
-        "inline-flex items-center justify-center rounded-full font-semibold px-6 py-3 transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#EC2028] disabled:opacity-60 disabled:cursor-not-allowed";
+        "relative overflow-hidden isolation-isolate inline-flex items-center justify-center rounded-full font-semibold px-6 py-3 transition-all duration-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#EC2028] disabled:opacity-60 disabled:cursor-not-allowed";
 
     const variantStyles: Record<NonNullable<BookNowButtonProps["variant"]>, string> = {
-        primary: "bg-[#EC2028] text-white shadow-md hover:bg-red-700",
+        primary: "bg-[#EC2028] btn-animated text-white shadow-md hover:bg-red-700",
         outline: "border border-slate-300 text-slate-900 bg-white hover:bg-slate-100",
-        ghost: "bg-transparent text-[#EC2028] hover:bg-[#EC2028]/10",
+        ghost: "bg-transparent text-[#EC2028] hover:bg-[#EC2028] btn-animated/10",
     };
 
     return (
@@ -27,7 +27,9 @@ const BookNowButton = ({ children, className, variant = "primary" }: BookNowButt
             onClick={openModal}
             className={`${baseStyles} ${variantStyles[variant]} ${className || ""}`.trim()}
         >
-            {children}
+            <span className="relative z-10 flex items-center justify-center gap-2">
+                {children}
+            </span>
         </button>
     );
 };

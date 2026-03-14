@@ -12,7 +12,7 @@ const Technology = () => {
                         <Image src="/images/premium-car-rentals/technology.png" alt="Technology" fill className="object-cover" />
                     </div>
                     <div className="w-full lg:w-1/2">
-                        <span className="bg-[#EC2028] text-white px-4 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Technology Travel Solutions</span>
+                        <span className="bg-[#EC2028] btn-animated text-white px-4 py-1 rounded-full text-sm font-semibold mb-4 inline-block">Technology Travel Solutions</span>
                         <h2 className="text-3xl md:text-5xl font-bold mb-8 text-gray-900 leading-tight">Technology</h2>
                         <p className="text-gray-600 mb-8 text-lg">
                             The Licensed software solution helps Fiesta Smart Mobility streamline operations by automating booking, billing, and fleet management. It provides real-time vehicle tracking, expense monitoring, and integrates with accounting systems, ensuring accuracy and efficiency.

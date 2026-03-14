@@ -17,7 +17,7 @@ const CTA = () => {
                     Turn every trip into a statement of comfort and class. With Fiesta’s premium car rentals, you get more than just a ride — you get luxury, safety, and a seamless travel experience.
                     <br></br><br></br>
                     Whether it’s a business meeting, airport transfer, or special occasion, our top-tier fleet and professional chauffeurs ensure you always arrive in style.                </p>
-                <BookNowButton className="bg-[#EC2028] hover:bg-red-700 text-white font-bold px-12 py-4 rounded-full text-lg transition-all shadow-xl">
+                <BookNowButton className="bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-bold px-12 py-4 rounded-full text-lg transition-all shadow-xl">
                     Book your luxury ride today and travel the Fiesta way.
                 </BookNowButton>
             </div>

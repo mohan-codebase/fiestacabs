@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Button from "../../../components/common/Button";
+import BookNowButton from "../../common/BookNowButton";
 
 const ContactCTA = () => {
     return (
@@ -40,9 +41,9 @@ const ContactCTA = () => {
                             </p>
                         </div>
 
-                        <Button href="/reach-us" className=" bg-[#E31E24] rounded ">
+                        <BookNowButton className=" bg-[#E31E24] rounded ">
                             Book Now
-                        </Button>
+                        </BookNowButton>
                     </div>
                 </div>
             </div>

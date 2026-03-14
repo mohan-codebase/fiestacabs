@@ -27,7 +27,7 @@ const Experience = () => {
                         Reach Your Destination Safe <br className="hidden md:block" /> and on Time, Every Time
                     </h2>
 
-                    <div className="space-y-10 text-gray-200 text-lg md:text-sm leading-relaxed">
+                    <div className="space-y-10 text-gray-200 text-lg md:text-md leading-relaxed">
                         <p>
                             Fiesta is committed to ensuring timely and reliable transportation for every customer, every time. Our fleet comprises the latest vehicles, maintained to the highest standards through regular servicing for optimal performance and efficiency. We recruit, train, and retain skilled professionals to deliver exceptional service and prioritize customer needs.
                         </p>

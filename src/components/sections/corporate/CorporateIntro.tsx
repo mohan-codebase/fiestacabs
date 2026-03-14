@@ -39,7 +39,7 @@ const CorporateIntro = () => {
                         </div>
 
                         <div>
-                            <BookNowButton className="bg-[#EC2028] hover:bg-red-700 text-white font-medium py-3 px-8 rounded transition-colors">
+                            <BookNowButton className="bg-[#EC2028] btn-animated hover:bg-red-700 text-white font-medium py-3 px-8 rounded transition-colors">
                                 Get A Free Quote
                             </BookNowButton>
                         </div>

@@ -77,12 +77,12 @@ const Milestones: React.FC<MilestonesProps> = ({
     title = "Why Choose Us ?",
 }) => {
     return (
-        <section className="bg-white text-[#0f172a]">
+        <section id="milestones" className="bg-white text-[#0f172a]">
             <div className="max-w-6xl mx-auto px-4 py-16 md:py-20 space-y-10">
                 {(eyebrow || title) && (
                     <div className="text-center space-y-3">
                         {eyebrow && (
-                            <span className="inline-flex px-4 py-2 rounded-full bg-[#EC2028]/10 border border-[#EC2028]/30 text-xs font-semibold tracking-[0.3em] uppercase text-[#EC2028]">
+                            <span className="inline-flex px-4 py-2 rounded-full border border-[#EC2028]/30 text-xs font-semibold tracking-[0.3em] uppercase text-[#EC2028]">
                                 {eyebrow}
                             </span>
                         )}
@@ -94,7 +94,7 @@ const Milestones: React.FC<MilestonesProps> = ({
                     </div>
                 )}
 
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-7">
+                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-5 md:gap-7">
                     {items.map((milestone, index) => (
                         <div
                             key={`${milestone.label}-${index}`}

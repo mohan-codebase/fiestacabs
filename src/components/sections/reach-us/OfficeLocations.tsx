@@ -13,7 +13,7 @@ const OfficeCard = ({ office }: { office: OfficeInfo }) => (
     <div className="bg-white p-7 rounded-2xl shadow-[0_12px_30px_rgba(15,23,42,0.06)] border border-slate-100 hover:-translate-y-1 hover:shadow-[0_18px_34px_rgba(15,23,42,0.1)] transition">
         <div className="flex items-center justify-between mb-3">
             <h3 className="text-lg font-bold text-slate-900">{office.title}</h3>
-            <span className="px-3 py-1 text-xs font-semibold bg-[#EC2028]/10 text-[#EC2028] rounded-full border border-[#EC2028]/20">
+            <span className="px-3 py-1 text-xs font-semibold  btn-animated/10 text-[#EC2028] rounded-full border border-[#EC2028]/20">
                 On map
             </span>
         </div>

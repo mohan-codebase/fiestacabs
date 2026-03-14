@@ -7,6 +7,7 @@ import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
 import { FaRegCircleDot } from "react-icons/fa6"; // Using circle dot as placeholder for wheel icon
 import Button from "../../../components/common/Button";
+import BookNowButton from "../../common/BookNowButton";
 
 const BookingProcess = () => {
     return (
@@ -19,7 +20,7 @@ const BookingProcess = () => {
                         <h2 className="text-3xl md:text-5xl font-bold text-gray-900 mb-6 leading-tight">
                             Easy 3-Step Booking Process for Your Ride
                         </h2>
-                        <div className="w-24 h-1 bg-[#EC2028] mb-8"></div>
+                        <div className="w-24 h-1 bg-[#EC2028] btn-animated mb-8"></div>
 
                         <p className="text-gray-600 text-lg mb-8 leading-relaxed">
                             Booking with us won’t need 10 clicks or a follow-up call. Companies can use our platform or contact our support to book outstation cabs easily.
@@ -60,9 +61,9 @@ const BookingProcess = () => {
                             </p>
                         </div>
 
-                        <Button href="#booking-form" className=" bg-[#EC2028] hover: transform hover:-translate-y-1">
+                        <BookNowButton className=" bg-[#EC2028] btn-animated hover: transform hover:-translate-y-1">
                             Book Now
-                        </Button>
+                        </BookNowButton>
                     </div>
 
                     {/* Image - Right */}

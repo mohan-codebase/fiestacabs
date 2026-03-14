@@ -29,7 +29,7 @@ const WhyDifferent = () => {
 
                         With Fiesta, there’s no need to juggle between public transportation options or navigate through mind-boggling traffic—all while trying to get to or from work on time.
                     </p>
-                    <Button href="/reach-us" className=" bg-[#EC2028] ">
+                    <Button href="/reach-us" className=" bg-[#EC2028] btn-animated ">
                         Talk to Our Team
                     </Button>
                 </div>

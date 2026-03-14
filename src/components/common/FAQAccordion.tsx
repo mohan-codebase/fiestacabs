@@ -84,7 +84,7 @@ const FAQAccordion: React.FC<FAQAccordionProps> = ({
                         {item.question}
                     </span>
                     <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center transition-all duration-300 ${
-                        isOpen ? "bg-[#EC2028] text-white" : "bg-gray-100 text-gray-400 group-hover:bg-gray-200"
+                        isOpen ? "bg-[#EC2028] btn-animated text-white" : "bg-gray-100 text-gray-400 group-hover:bg-gray-200"
                     }`}>
                         <FaChevronDown className={`text-sm transition-transform duration-300 ${
                             isOpen ? "rotate-180" : "rotate-0"

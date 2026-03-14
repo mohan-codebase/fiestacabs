@@ -27,7 +27,7 @@ const CarCategories = () => {
             icon: "/images/home/car-categories/standard.png",
             image: "/images/home/car-categories/standard.png",
             description:
-                "Fiesta's standard car services deliver reliable and cost-effective transportation solutions without compromising on quality. Ideal for daily commuting and well-suited for employee transport services, our fleet of well-maintained vehicles ensures comfort, safety, and punctuality. Whether for work commutes, personal errands, or family travel, Fiesta offers a seamless travel experience backed by professional service and exceptional value.free ride at great value.",
+                "Fiesta's standard car services deliver reliable and cost-effective transportation solutions without compromising on quality. Ideal for daily commuting and well-suited for employee transport services, our fleet of well-maintained vehicles ensures comfort, safety, and punctuality. Whether for work commutes, personal errands, or family travel, Fiesta offers a seamless travel experience backed by professional service and exceptional value. Free ride at great value.",
         },
         {
             id: "premium",
@@ -75,7 +75,7 @@ const CarCategories = () => {
                 </div>
 
                 {/* Category Tabs */}
-                <div className="flex flex-wrap justify-center gap-8 mb-16">
+                <div className="flex flex-nowrap md:flex-wrap justify-start md:justify-center gap-8 mb-16 overflow-x-auto pb-4 hide-scrollbar">
                     {categories.map((category) => (
                         <button
                             key={category.id}
