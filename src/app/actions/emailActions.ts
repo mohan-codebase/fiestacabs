@@ -42,25 +42,27 @@ export async function sendEmailAction(data: EmailData) {
     }
 
     // Verify Captcha
-    if (!captchaToken) {
-        return { success: false, message: "Please complete the CAPTCHA." };
-    }
+    if (process.env.NODE_ENV !== "development") {
+        if (!captchaToken) {
+            return { success: false, message: "Please complete the CAPTCHA." };
+        }
 
-    const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY || "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
-    if (!recaptchaSecret && !process.env.RECAPTCHA_SECRET_KEY) {
-        console.error("RECAPTCHA_SECRET_KEY is missing in environment variables.");
-    } else {
-        try {
-            const response = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${captchaToken}`, {
-                method: "POST",
-            });
-            const result = await response.json();
-            if (!result.success) {
-                return { success: false, message: "CAPTCHA verification failed. Please try again." };
+        const recaptchaSecret = process.env.RECAPTCHA_SECRET_KEY || "6LeIxAcTAAAAAGG-vFI1TnRWxMZNFuojJ4WifJWe";
+        if (!recaptchaSecret && !process.env.RECAPTCHA_SECRET_KEY) {
+            console.error("RECAPTCHA_SECRET_KEY is missing in environment variables.");
+        } else {
+            try {
+                const response = await fetch(`https://www.google.com/recaptcha/api/siteverify?secret=${recaptchaSecret}&response=${captchaToken}`, {
+                    method: "POST",
+                });
+                const result = await response.json();
+                if (!result.success) {
+                    return { success: false, message: "CAPTCHA verification failed. Please try again." };
+                }
+            } catch (error) {
+                console.error("CAPTCHA verification error:", error);
+                // Fallback: allow submission if service is down, but log error
             }
-        } catch (error) {
-            console.error("CAPTCHA verification error:", error);
-            // Fallback: allow submission if service is down, but log error
         }
     }
 

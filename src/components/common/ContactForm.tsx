@@ -28,7 +28,7 @@ const ContactForm = ({
         e.preventDefault();
 
         const captchaToken = recaptchaRef.current?.getValue();
-        if (!captchaToken) {
+        if (process.env.NODE_ENV !== "development" && !captchaToken) {
             setSubmitStatus({ success: false, message: "Please complete the CAPTCHA." });
             return;
         }
@@ -132,13 +132,15 @@ const ContactForm = ({
                             className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028] resize-none"
                         />
                     </div>
-                    <div className="mb-4 overflow-hidden rounded">
-                        <ReCAPTCHA
-                            ref={recaptchaRef}
-                            sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
-                            size="normal"
-                        />
-                    </div>
+                    {process.env.NODE_ENV !== "development" && (
+                        <div className="mb-4 overflow-hidden rounded">
+                            <ReCAPTCHA
+                                ref={recaptchaRef}
+                                sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                                size="normal"
+                            />
+                        </div>
+                    )}
                     <Button type="submit" disabled={isSubmitting} className="w-full bg-[#EC2028] btn-animated rounded disabled:opacity-50 gap-2">
                         {isSubmitting ? (
                             <>

@@ -18,7 +18,7 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
         e.preventDefault();
         
         const captchaToken = recaptchaRef.current?.getValue();
-        if (!captchaToken) {
+        if (process.env.NODE_ENV !== "development" && !captchaToken) {
             setSubmitStatus({ success: false, message: "Please complete the CAPTCHA." });
             return;
         }
@@ -148,12 +148,14 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                     maxLength={180}
                                 ></textarea>
                             </div>
-                            <div className="mb-4 overflow-hidden rounded">
-                                <ReCAPTCHA
-                                    ref={recaptchaRef}
-                                    sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
-                                />
-                            </div>
+                            {process.env.NODE_ENV !== "development" && (
+                                <div className="mb-4 overflow-hidden rounded">
+                                    <ReCAPTCHA
+                                        ref={recaptchaRef}
+                                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
+                                    />
+                                </div>
+                            )}
                             <div className="pt-2">
                                 <button
                                     type="submit"
