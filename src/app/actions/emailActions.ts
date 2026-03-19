@@ -3,10 +3,13 @@
 import nodemailer from "nodemailer";
 
 interface EmailData {
-    name: string;
+    firstName: string;
+    lastName: string;
     email: string;
     phone: string;
-    company?: string;
+    streetAddress: string;
+    city: string;
+    state: string;
     message?: string;
     formSource: string;
     captchaToken?: string | null;
@@ -29,15 +32,18 @@ const escapeHtml = (value: string) =>
 export async function sendEmailAction(data: EmailData) {
     "use server";
 
-    const name = normalizeField(data.name, 80);
+    const firstName = normalizeField(data.firstName, 80);
+    const lastName = normalizeField(data.lastName, 80);
     const email = normalizeField(data.email, 120);
     const phone = normalizeField(data.phone, 20);
-    const company = normalizeField(data.company, 120);
+    const streetAddress = normalizeField(data.streetAddress, 150);
+    const city = normalizeField(data.city, 80);
+    const state = normalizeField(data.state, 80);
     const message = normalizeField(data.message, 180);
     const formSource = normalizeField(data.formSource, 120);
     const captchaToken = data.captchaToken;
 
-    if (!name || !email || !phone || !formSource) {
+    if (!firstName || !lastName || !email || !phone || !streetAddress || !city || !state || !formSource) {
         return { success: false, message: "Please fill in all required fields." };
     }
 
@@ -86,10 +92,13 @@ export async function sendEmailAction(data: EmailData) {
         return { success: false, message: "Email service is not configured. Please try again later." };
     }
 
-    const safeName = escapeHtml(name);
+    const safeFirstName = escapeHtml(firstName);
+    const safeLastName = escapeHtml(lastName);
     const safeEmail = escapeHtml(email);
     const safePhone = escapeHtml(phone);
-    const safeCompany = escapeHtml(company || "N/A");
+    const safeStreetAddress = escapeHtml(streetAddress);
+    const safeCity = escapeHtml(city);
+    const safeState = escapeHtml(state);
     const safeMessage = escapeHtml(message || "No message provided.");
     const safeFormSource = escapeHtml(formSource);
 
@@ -108,12 +117,15 @@ export async function sendEmailAction(data: EmailData) {
             from: `"${siteName} - Form" <${smtpUser}>`,
             to: contactEmailTo,
             replyTo: email,
-            subject: `New Lead from ${formSource}: ${name}`,
+            subject: `New Lead from ${formSource}: ${firstName} - ${lastName}`,
             text: `
-                Name: ${name}
+                Full Name: ${firstName}
+                Company Name: ${lastName}
                 Email: ${email}
                 Phone: ${phone}
-                Company: ${company || "N/A"}
+                Street Address: ${streetAddress}
+                City: ${city}
+                State: ${state}
                 Source Form: ${formSource}
                 
                 Message:
@@ -139,8 +151,12 @@ export async function sendEmailAction(data: EmailData) {
                             </h3>
                             <table style="width: 100%; border-collapse: collapse;">
                                 <tr>
-                                    <td style="padding: 8px 0; color: #666; width: 120px; font-weight: 600;">Name:</td>
-                                    <td style="padding: 8px 0; color: #333;">${safeName}</td>
+                                    <td style="padding: 8px 0; color: #666; width: 140px; font-weight: 600;">Full Name:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeFirstName}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Company Name:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeLastName}</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 8px 0; color: #666; font-weight: 600;">Email:</td>
@@ -151,8 +167,16 @@ export async function sendEmailAction(data: EmailData) {
                                     <td style="padding: 8px 0;"><a href="tel:${safePhone}" style="color: #EC2028; text-decoration: none;">${safePhone}</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Company:</td>
-                                    <td style="padding: 8px 0; color: #333;">${safeCompany}</td>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Street Address:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeStreetAddress}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">City:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeCity}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">State:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeState}</td>
                                 </tr>
                             </table>
                         </div>
@@ -173,6 +197,51 @@ export async function sendEmailAction(data: EmailData) {
                 </div>
             `,
         });
+
+        // Store in Google Sheets if URL is provided
+        const googleScriptUrl = process.env.GOOGLE_SCRIPT_URL;
+        if (googleScriptUrl) {
+            try {
+                // Map data precisely to the user's specific Google Sheet columns
+                const sheetData = {
+                    "name-1": safeFirstName,        // First Name
+                    "phone-1": safePhone,          // phone
+                    "name-2": safeLastName,         // name
+                    "email-1": safeEmail,          // email
+                    "address-1-street_address": safeStreetAddress, 
+                    "address-1-city": safeCity,      
+                    "address-1-state": safeState,     
+                    
+                    "timestamp": new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
+                    "source": safeFormSource,
+                    "message": safeMessage
+                };
+
+                const formBody = new URLSearchParams(sheetData);
+
+                const response = await fetch(googleScriptUrl, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/x-www-form-urlencoded",
+                    },
+                    body: formBody.toString(),
+                });
+                
+                const responseText = await response.text();
+                console.log(`Google Sheets integration status: ${response.status} ${response.statusText}`);
+                console.log(`Google Sheets response body: ${responseText.substring(0, 200)}`);
+                
+                if (!response.ok) {
+                    console.error("Failed to send data to Google Sheets (non-200 response)");
+                } else {
+                    console.log("Form data successfully sent to Google Sheets.");
+                }
+            } catch (sheetError) {
+                console.error("Error storing data in Google Sheets:", sheetError);
+            }
+        } else {
+            console.warn("GOOGLE_SCRIPT_URL is not configured. Form data was not stored in Google Sheets.");
+        }
 
         return { success: true, message: "Email sent successfully!" };
     } catch (error) {

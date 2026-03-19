@@ -28,10 +28,13 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
 
         const formData = new FormData(e.currentTarget);
         const data = {
-            name: formData.get("firstName") as string,
+            firstName: formData.get("firstName") as string,
+            lastName: formData.get("lastName") as string,
             email: formData.get("email") as string,
             phone: formData.get("phone") as string,
-            company: formData.get("company") as string,
+            streetAddress: formData.get("streetAddress") as string,
+            city: formData.get("city") as string,
+            state: formData.get("state") as string,
             message: formData.get("message") as string,
             formSource: "Global Book Now Modal",
             captchaToken: captchaToken,
@@ -74,7 +77,7 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                 {/* Modal Form */}
                 <div className="px-8 pb-8 overflow-y-auto custom-scrollbar">
                     {submitStatus?.success ? (
-                        <div className="py-12 text-center">
+                        <div className="py-12 text-center text-gray-800">
                             <div className="w-16 h-16 bg-green-100 text-green-600 rounded-full flex items-center justify-center mx-auto mb-4">
                                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M5 13l4 4L19 7"></path>
@@ -90,49 +93,92 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                     {submitStatus.message}
                                 </div>
                             )}
+                            
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-800 mb-1">
+                                        Full Name *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="firstName"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-800 mb-1">
+                                        Company Name *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="lastName"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                        required
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-800 mb-1">
+                                        Email Address *
+                                    </label>
+                                    <input
+                                        type="email"
+                                        name="email"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-800 mb-1">
+                                        Phone Number *
+                                    </label>
+                                    <input
+                                        type="tel"
+                                        name="phone"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                        required
+                                    />
+                                </div>
+                            </div>
+
                             <div>
                                 <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                    First Name *
+                                    Street Address *
                                 </label>
                                 <input
                                     type="text"
-                                    name="firstName"
+                                    name="streetAddress"
                                     className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
                                     required
                                 />
                             </div>
-                            <div>
-                                <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                    Email Address *
-                                </label>
-                                <input
-                                    type="email"
-                                    name="email"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                    Phone Number *
-                                </label>
-                                <input
-                                    type="tel"
-                                    name="phone"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
-                                    required
-                                />
-                            </div>
-                            <div>
-                                <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                    Company *
-                                </label>
-                                <input
-                                    type="text"
-                                    name="company"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
-                                    required
-                                />
+
+                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-800 mb-1">
+                                        City *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="city"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                        required
+                                    />
+                                </div>
+                                <div>
+                                    <label className="block text-sm font-semibold text-gray-800 mb-1">
+                                        State *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="state"
+                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                        required
+                                    />
+                                </div>
                             </div>
                             <div>
                                 <div className="flex justify-between items-end mb-1">

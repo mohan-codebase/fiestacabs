@@ -38,10 +38,13 @@ const ContactForm = ({
 
         const formData = new FormData(e.currentTarget);
         const data = {
-            name: formData.get("firstName") as string,
+            firstName: formData.get("firstName") as string,
+            lastName: formData.get("lastName") as string,
             email: formData.get("email") as string,
             phone: formData.get("phone") as string,
-            company: formData.get("company") as string,
+            streetAddress: formData.get("streetAddress") as string,
+            city: formData.get("city") as string,
+            state: formData.get("state") as string,
             message: formData.get("message") as string,
             formSource: formSource,
             captchaToken: captchaToken,
@@ -53,6 +56,7 @@ const ContactForm = ({
 
         if (result.success) {
             recaptchaRef.current?.reset();
+            (e.target as HTMLFormElement).reset();
         }
     };
 
@@ -77,49 +81,92 @@ const ContactForm = ({
                             {submitStatus.message}
                         </div>
                     )}
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                Full Name <span className="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                name="firstName"
+                                className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                Company Name <span className="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                name="lastName"
+                                className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                Email Address <span className="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="email"
+                                name="email"
+                                className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                Phone Number <span className="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="tel"
+                                name="phone"
+                                className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
+                                required
+                            />
+                        </div>
+                    </div>
+
                     <div>
                         <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                            First Name <span className="text-red-600">*</span>
+                            Street Address <span className="text-red-600">*</span>
                         </label>
                         <input
                             type="text"
-                            name="firstName"
+                            name="streetAddress"
                             className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
                             required
                         />
                     </div>
-                    <div>
-                        <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                            Email Address <span className="text-red-600">*</span>
-                        </label>
-                        <input
-                            type="email"
-                            name="email"
-                            className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                            Phone Number <span className="text-red-600">*</span>
-                        </label>
-                        <input
-                            type="tel"
-                            name="phone"
-                            className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                            required
-                        />
-                    </div>
-                    <div>
-                        <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                            Company <span className="text-red-600">*</span>
-                        </label>
-                        <input
-                            type="text"
-                            name="company"
-                            className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                            required
-                        />
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                City <span className="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                name="city"
+                                className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                                State <span className="text-red-600">*</span>
+                            </label>
+                            <input
+                                type="text"
+                                name="state"
+                                className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
+                                required
+                            />
+                        </div>
                     </div>
                     <div>
                         <label className="block text-sm font-bold text-gray-800 mb-1.5">
