@@ -11,7 +11,7 @@ const Footer = () => {
                 {/* Background Image inside the card */}
                 <div className="absolute inset-0 z-0">
                     <Image
-                        src="/images/home/footer/footer.png"
+                        src="/images/home/footer/footer.jpg"
                         alt="Footer Background"
                         fill
                         className="object-cover opacity-10"

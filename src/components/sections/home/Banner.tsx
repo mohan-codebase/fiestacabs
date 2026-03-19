@@ -14,7 +14,7 @@ const Banner = () => {
     const slides = [
         {
             id: 1,
-            image: "/images/home/banner/banner-1.png", // Placeholder - you might need to add a real image or use a color
+            image: "/images/home/banner/banner-1.jpg", // Placeholder - you might need to add a real image or use a color
             title: "Drive the Future with Electric Mobility.",
             subtitle:
                 "Fiesta Smart Mobility leads the EV revolution with zero-emission, tech-enabled employee transport for a clean, connected, carbon-free future.",
@@ -24,7 +24,7 @@ const Banner = () => {
         // Add more slides here if needed
         {
             id: 2,
-            image: "/images/home/banner/banner-2.png", // Placeholder
+            image: "/images/home/banner/banner-2.jpg", // Placeholder
             title: "Renting a car - Made Easy Safe and Simple",
             subtitle:
                 "Just Rent, Rent is our Responsibility . Relax and Reach your Destination safe with guaranteed comfort.",
