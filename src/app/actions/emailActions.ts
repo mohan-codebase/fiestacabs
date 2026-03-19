@@ -120,16 +120,56 @@ export async function sendEmailAction(data: EmailData) {
                 ${message || "No message provided."}
             `,
             html: `
-                <div style="font-family: sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee;">
-                    <h2 style="color: #E51E25;">New Lead from ${safeFormSource}</h2>
-                    <p><strong>Name:</strong> ${safeName}</p>
-                    <p><strong>Email:</strong> ${safeEmail}</p>
-                    <p><strong>Phone:</strong> ${safePhone}</p>
-                    <p><strong>Company:</strong> ${safeCompany}</p>
-                    <p><strong>Source Form:</strong> ${safeFormSource}</p>
-                    <hr />
-                    <p><strong>Message:</strong></p>
-                    <p>${safeMessage}</p>
+                <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border: 1px solid #eee;">
+                    <!-- Header -->
+                    <div style="background-color: #EC2028; padding: 30px 20px; text-align: center;">
+                        <h1 style="color: #ffffff; margin: 0; font-size: 24px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px;">
+                            New Lead Captured
+                        </h1>
+                        <p style="color: rgba(255,255,255,0.9); margin: 10px 0 0 0; font-size: 14px;">
+                            From ${safeFormSource}
+                        </p>
+                    </div>
+
+                    <!-- Content -->
+                    <div style="padding: 30px 40px;">
+                        <div style="margin-bottom: 25px;">
+                            <h3 style="color: #333; border-bottom: 2px solid #EC2028; padding-bottom: 8px; margin-bottom: 15px; font-size: 18px;">
+                                Prospect Details
+                            </h3>
+                            <table style="width: 100%; border-collapse: collapse;">
+                                <tr>
+                                    <td style="padding: 8px 0; color: #666; width: 120px; font-weight: 600;">Name:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeName}</td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Email:</td>
+                                    <td style="padding: 8px 0;"><a href="mailto:${safeEmail}" style="color: #EC2028; text-decoration: none;">${safeEmail}</a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Phone:</td>
+                                    <td style="padding: 8px 0;"><a href="tel:${safePhone}" style="color: #EC2028; text-decoration: none;">${safePhone}</a></td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Company:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeCompany}</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <div style="margin-top: 30px; background-color: #f9f9f9; padding: 20px; border-radius: 8px; border-left: 4px solid #EC2028;">
+                            <h3 style="color: #333; margin-top: 0; font-size: 16px; margin-bottom: 10px;">Message:</h3>
+                            <p style="color: #444; margin: 0; line-height: 1.6; font-style: italic;">
+                                "${safeMessage}"
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div style="background-color: #f4f4f4; padding: 20px; text-align: center; color: #888; font-size: 12px;">
+                        <p style="margin: 0;">This inquiry was sent from the <strong>${siteName}</strong> website.</p>
+                        <p style="margin: 5px 0 0 0;">&copy; ${new Date().getFullYear()} ${siteName}. All rights reserved.</p>
+                    </div>
                 </div>
             `,
         });
