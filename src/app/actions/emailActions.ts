@@ -3,13 +3,11 @@
 import nodemailer from "nodemailer";
 
 interface EmailData {
-    firstName: string;
-    lastName: string;
+    name: string;
     email: string;
     phone: string;
-    streetAddress: string;
-    city: string;
-    state: string;
+    location: string;
+    company: string;
     message?: string;
     formSource: string;
     captchaToken?: string | null;
@@ -32,18 +30,16 @@ const escapeHtml = (value: string) =>
 export async function sendEmailAction(data: EmailData) {
     "use server";
 
-    const firstName = normalizeField(data.firstName, 80);
-    const lastName = normalizeField(data.lastName, 80);
+    const name = normalizeField(data.name, 80);
+    const company = normalizeField(data.company, 80);
     const email = normalizeField(data.email, 120);
     const phone = normalizeField(data.phone, 20);
-    const streetAddress = normalizeField(data.streetAddress, 150);
-    const city = normalizeField(data.city, 80);
-    const state = normalizeField(data.state, 80);
+    const location = normalizeField(data.location, 150);
     const message = normalizeField(data.message, 180);
     const formSource = normalizeField(data.formSource, 120);
     const captchaToken = data.captchaToken;
 
-    if (!firstName || !lastName || !email || !phone || !streetAddress || !city || !state || !formSource) {
+    if (!name || !email || !phone || !location || !company || !formSource) {
         return { success: false, message: "Please fill in all required fields." };
     }
 
@@ -92,13 +88,11 @@ export async function sendEmailAction(data: EmailData) {
         return { success: false, message: "Email service is not configured. Please try again later." };
     }
 
-    const safeFirstName = escapeHtml(firstName);
-    const safeLastName = escapeHtml(lastName);
+    const safeName = escapeHtml(name);
+    const safeCompany = escapeHtml(company);
     const safeEmail = escapeHtml(email);
     const safePhone = escapeHtml(phone);
-    const safeStreetAddress = escapeHtml(streetAddress);
-    const safeCity = escapeHtml(city);
-    const safeState = escapeHtml(state);
+    const safeLocation = escapeHtml(location);
     const safeMessage = escapeHtml(message || "No message provided.");
     const safeFormSource = escapeHtml(formSource);
 
@@ -117,19 +111,17 @@ export async function sendEmailAction(data: EmailData) {
             from: `"${siteName} - Form" <${smtpUser}>`,
             to: contactEmailTo,
             replyTo: email,
-            subject: `New Lead from ${formSource}: ${firstName} - ${lastName}`,
+            subject: `New Lead from ${formSource}: ${safeName} - ${safeCompany}`,
             text: `
-                Full Name: ${firstName}
-                Company Name: ${lastName}
-                Email: ${email}
-                Phone: ${phone}
-                Street Address: ${streetAddress}
-                City: ${city}
-                State: ${state}
-                Source Form: ${formSource}
+                Name: ${safeName}
+                Company: ${safeCompany}
+                Email: ${safeEmail}
+                Phone: ${safePhone}
+                Location: ${safeLocation}
+                Source Form: ${safeFormSource}
                 
                 Message:
-                ${message || "No message provided."}
+                ${safeMessage}
             `,
             html: `
                 <div style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1); border: 1px solid #eee;">
@@ -151,12 +143,12 @@ export async function sendEmailAction(data: EmailData) {
                             </h3>
                             <table style="width: 100%; border-collapse: collapse;">
                                 <tr>
-                                    <td style="padding: 8px 0; color: #666; width: 140px; font-weight: 600;">Full Name:</td>
-                                    <td style="padding: 8px 0; color: #333;">${safeFirstName}</td>
+                                    <td style="padding: 8px 0; color: #666; width: 140px; font-weight: 600;">Name:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeName}</td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Company Name:</td>
-                                    <td style="padding: 8px 0; color: #333;">${safeLastName}</td>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Company:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeCompany}</td>
                                 </tr>
                                 <tr>
                                     <td style="padding: 8px 0; color: #666; font-weight: 600;">Email:</td>
@@ -167,16 +159,8 @@ export async function sendEmailAction(data: EmailData) {
                                     <td style="padding: 8px 0;"><a href="tel:${safePhone}" style="color: #EC2028; text-decoration: none;">${safePhone}</a></td>
                                 </tr>
                                 <tr>
-                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Street Address:</td>
-                                    <td style="padding: 8px 0; color: #333;">${safeStreetAddress}</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">City:</td>
-                                    <td style="padding: 8px 0; color: #333;">${safeCity}</td>
-                                </tr>
-                                <tr>
-                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">State:</td>
-                                    <td style="padding: 8px 0; color: #333;">${safeState}</td>
+                                    <td style="padding: 8px 0; color: #666; font-weight: 600;">Location:</td>
+                                    <td style="padding: 8px 0; color: #333;">${safeLocation}</td>
                                 </tr>
                             </table>
                         </div>
@@ -204,13 +188,13 @@ export async function sendEmailAction(data: EmailData) {
             try {
                 // Map data precisely to the user's specific Google Sheet columns
                 const sheetData = {
-                    "name-1": safeFirstName,        // First Name
+                    "name-1": safeName,        // First Name
                     "phone-1": safePhone,          // phone
-                    "name-2": safeLastName,         // name
+                    "name-2": safeCompany,         // name
                     "email-1": safeEmail,          // email
-                    "address-1-street_address": safeStreetAddress, 
-                    "address-1-city": safeCity,      
-                    "address-1-state": safeState,     
+                    "address-1-street_address": safeLocation, 
+                    "address-1-city": "",      
+                    "address-1-state": "",     
                     
                     "timestamp": new Date().toLocaleString("en-IN", { timeZone: "Asia/Kolkata" }),
                     "source": safeFormSource,

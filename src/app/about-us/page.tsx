@@ -93,31 +93,17 @@ export default function AboutUs() {
                                 Fiesta, A Name to Remember in Employee Transport Services
                             </h2>
                             <div className="w-12 h-1 bg-[#EC2028] btn-animated rounded-full mb-6" />
-                            <p className="text-gray-600 leading-relaxed mb-4 text-[15px]">
-
-                                Fiesta Smart Mobility Private Limited
-                            </p>
-                            <p className="text-gray-600 leading-relaxed mb-4 text-[15px]">
-
-                                With 28 years of excellence, Fiesta Smart Mobility Private Limited is a leading provider of integrated employee transport services for the corporate sector.
-                            </p>
-                            <p className="text-gray-600 leading-relaxed mb-4 text-[15px]">
-
-                                Established in 1998 in Chennai, we have expanded to achieve a pan-India presence and a dedicated team of 300+ employees nationwide.
-                            </p>
-                            <p className="text-gray-600 leading-relaxed mb-4 text-[15px]">
-
-                                Our core services include Employee Transport Solutions and Premium Car Rentals, designed to meet the unique needs of businesses.
-
-                                Recognized as one of the Best employee transport servicesBest employee transport servicesBest employee transport services, Fiesta has achieved a 1.2 billion rupee turnover, a testament to our commitment to quality and customer satisfaction.
-
-                                To align with sustainability goals, we are actively investing in Electric Vehicles (EVs) to cater to the evolving transportation needs of organizations.
-                            </p>
-                            <p className="text-gray-600 leading-relaxed mb-8 text-[15px]">
-                                Recognized as one of India&apos;s best employee transport services with a ₹1.2 billion turnover,
-                                we are actively investing in Electric Vehicles to align with sustainability goals and meet
-                                the evolving transportation needs of modern organizations.
-                            </p>
+                            <div className="space-y-4 text-gray-600 leading-relaxed text-[15px] mb-8">
+                                <p>
+                                    With <strong>28 years of excellence</strong>, Fiesta Smart Mobility Private Limited is a leading provider of integrated employee transport services for the corporate sector. Established in 1998 in Chennai, we have expanded to achieve a pan-India presence with a dedicated team of <strong>300+ employees nationwide.</strong>
+                                </p>
+                                <p>
+                                    Our core services include <strong>Employee Transport Solutions and Premium Car Rentals</strong>, designed to meet the unique needs of modern businesses. Recognized as one of India&apos;s best employee transport services providers, Fiesta has achieved a <strong>₹1.2 billion turnover</strong>—a testament to our commitment to quality and customer satisfaction.
+                                </p>
+                                <p>
+                                    To align with sustainability goals, we are actively investing in <strong>Electric Vehicles (EVs)</strong> to cater to the evolving transportation needs of modern organizations.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
@@ -153,11 +139,11 @@ export default function AboutUs() {
                         </h2>
                     </div>
 
-                    <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
+                    <div className="flex flex-row overflow-x-auto gap-6 sm:snap-x sm:snap-mandatory pb-4 hide-scrollbar justify-start md:justify-center">
                         {leaders.map((leader) => (
                             <div
                                 key={leader.id}
-                                className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col"
+                                className="min-w-[200px] md:min-w-[240px] w-full max-w-[240px] group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col snap-center shrink-0"
                             >
                                 {/* Photo */}
                                 <div className="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden">

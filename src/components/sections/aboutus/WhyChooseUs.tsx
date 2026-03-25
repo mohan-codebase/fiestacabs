@@ -48,7 +48,7 @@ const features = [
 
 const WhyChooseUs = () => {
     return (
-        <section className="w-full py-16 md:py-24 bg-gray-50">
+        <section id="why-fiesta" className="w-full py-16 md:py-24 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4">
                 {/* Header */}
                 <div className="text-center mb-14">

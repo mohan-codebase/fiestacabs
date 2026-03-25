@@ -1,5 +1,5 @@
-import Hero from "../../components/sections/our-journey/Hero";
 import Timeline from "../../components/sections/our-journey/Timeline";
+import PageHero from "../../components/common/PageHero";
 
 export const metadata = {
     title: "Our Journey | Fiesta Smart Mobility",
@@ -10,7 +10,11 @@ export const metadata = {
 const OurJourneyPage = () => {
     return (
         <div className="bg-white min-h-screen">
-            <Hero />
+            <PageHero 
+                title="Our Journey" 
+                backgroundImage="/images/our-journey/live/hero.jpg" 
+                height="lg"
+            />
             <Timeline />
         </div>
     );

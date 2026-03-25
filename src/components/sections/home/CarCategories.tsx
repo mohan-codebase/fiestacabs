@@ -102,7 +102,7 @@ const CarCategories = () => {
                                 {category.name}
                             </span>
                             {activeCategory === category.id && (
-                                <div className="w-full h-1 bg-[#D32F2F] rounded-full" />
+                                <div className="w-full h-1 bg-[#EC2028] rounded-full" />
                             )}
                         </button>
                     ))}

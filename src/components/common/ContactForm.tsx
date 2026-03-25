@@ -16,7 +16,7 @@ interface ContactFormProps {
 const ContactForm = ({
     formSource,
     title = "Get A Custom Quote",
-    buttonText = "SUBMIT",
+    buttonText = "Share Your Requirement",
     containerClassName = "bg-white rounded-xl shadow-2xl p-6 md:p-8 w-full max-w-[420px] mx-auto lg:ml-auto",
     compact = false,
 }: ContactFormProps) => {
@@ -38,13 +38,11 @@ const ContactForm = ({
 
         const formData = new FormData(e.currentTarget);
         const data = {
-            firstName: formData.get("firstName") as string || "",
-            lastName: formData.get("lastName") as string || "",
+            name: formData.get("name") as string || "",
+            company: formData.get("company") as string || "",
             email: formData.get("email") as string || "",
             phone: formData.get("phone") as string || "",
-            streetAddress: formData.get("streetAddress") as string || "",
-            city: formData.get("city") as string || "",
-            state: formData.get("state") as string || "",
+            location: formData.get("location") as string || "",
             message: formData.get("message") as string || "",
             formSource: formSource || "Contact Form",
             captchaToken: captchaToken || null,
@@ -82,35 +80,22 @@ const ContactForm = ({
                         </div>
                     )}
                     
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div>
-                            <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                Full Name <span className="text-red-600">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                name="firstName"
-                                className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                                required
-                            />
-                        </div>
-                        <div>
-                            <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                Company Name <span className="text-red-600">*</span>
-                            </label>
-                            <input
-                                type="text"
-                                name="lastName"
-                                className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                                required
-                            />
-                        </div>
+                    <div>
+                        <label className="block text-sm font-bold text-gray-800 mb-1.5">
+                            Name <span className="text-red-600">*</span>
+                        </label>
+                        <input
+                            type="text"
+                            name="name"
+                            className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
+                            required
+                        />
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                Email Address <span className="text-red-600">*</span>
+                                Email Id <span className="text-red-600">*</span>
                             </label>
                             <input
                                 type="email"
@@ -132,42 +117,31 @@ const ContactForm = ({
                         </div>
                     </div>
 
-                    <div>
-                        <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                            Street Address <span className="text-red-600">*</span>
-                        </label>
-                        <input
-                            type="text"
-                            name="streetAddress"
-                            className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
-                            required
-                        />
-                    </div>
-
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div>
                             <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                City <span className="text-red-600">*</span>
+                                Location <span className="text-red-600">*</span>
                             </label>
                             <input
                                 type="text"
-                                name="city"
+                                name="location"
                                 className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
                                 required
                             />
                         </div>
                         <div>
                             <label className="block text-sm font-bold text-gray-800 mb-1.5">
-                                State <span className="text-red-600">*</span>
+                                Company <span className="text-red-600">*</span>
                             </label>
                             <input
                                 type="text"
-                                name="state"
+                                name="company"
                                 className="w-full rounded border border-gray-300 px-4 py-2 bg-white focus:outline-none focus:border-[#EC2028] focus:ring-1 focus:ring-[#EC2028]"
                                 required
                             />
                         </div>
                     </div>
+
                     <div>
                         <label className="block text-sm font-bold text-gray-800 mb-1.5">
                             Message

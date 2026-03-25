@@ -12,16 +12,16 @@ type ServiceItem = {
 
 const services: ServiceItem[] = [
     {
-        title: "Employee Transport Solutions",
+        title: "Employee Transport Services",
         description:
-            "Fiesta Smart Mobility ventured into this highly competitive business domain in the year 2001 by providing..",
+            "Fiesta Smart Mobility ventured into this highly competitive business domain in the year 2001 by providing. Sub-services: Cab Service, Bus Service, Shuttle Service.",
         image: "/images/services-offered/employee-transport.jpg",
         href: "/employee-transport-services",
     },
     {
-        title: "Premium Car rentals",
+        title: "Premium Car Rental Services",
         description:
-            "Our vehicles are equipped with plush interiors, creating the perfect atmosphere for your special day.",
+            "Our vehicles are equipped with plush interiors, creating the perfect atmosphere for your special day. Sub-services: Airport Transport Service.",
         image: "/images/services-offered/premium-rentals.jpg",
         href: "/premium-car-rentals",
     },

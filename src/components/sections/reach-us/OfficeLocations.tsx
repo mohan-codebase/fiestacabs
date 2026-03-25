@@ -38,15 +38,17 @@ const OfficeCard = ({ office }: { office: OfficeInfo }) => (
                 </p>
             )}
         </div>
-        <Link
-            href={office.mapLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 text-sm font-semibold text-[#EC2028] hover:underline"
-        >
-            Open in Google Maps
-            <span aria-hidden>↗</span>
-        </Link>
+        <div className="mt-4 rounded-lg overflow-hidden h-40 border border-slate-200">
+            <iframe
+                title={`Map of ${office.title}`}
+                width="100%"
+                height="100%"
+                frameBorder="0"
+                style={{ border: 0 }}
+                src={`https://maps.google.com/maps?q=${encodeURIComponent(office.description)}&t=&z=13&ie=UTF8&iwloc=&output=embed`}
+                allowFullScreen
+            ></iframe>
+        </div>
     </div>
 );
 

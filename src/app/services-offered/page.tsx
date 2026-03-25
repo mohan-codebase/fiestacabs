@@ -1,5 +1,5 @@
 import Testimonials from "../../components/common/Testimonials";
-import Hero from "../../components/sections/services-offered/Hero";
+import PageHero from "../../components/common/PageHero";
 import OurServices from "../../components/sections/services-offered/OurServices";
 
 export const metadata = {
@@ -11,7 +11,11 @@ export const metadata = {
 const ServicesOfferedPage = () => {
     return (
         <div className="w-full bg-white">
-            <Hero />
+            <PageHero 
+                title="Services Offered" 
+                backgroundImage="/images/services-offered/hero.jpeg" 
+                height="lg"
+            />
             <OurServices />
             <Testimonials eyebrow="Testimonials" title="What our customer says" showEyebrow />
         </div>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import ClientCategory from "../../components/sections/clients/ClientCategory";
 import Button from "../../components/common/Button";
 import Image from "next/image";
+import PageHero from "../../components/common/PageHero";
 
 export const metadata = {
     title: "Clients - Fiesta Smart Mobility",
@@ -77,22 +78,11 @@ const bankingClients = [
 export default function ClientsPage() {
     return (
         <main className="bg-[#f7f7f9]">
-            {/* Hero - keep simple like current design */}
-            <section className="relative overflow-hidden">
-                <Image
-                    src="/images/clients/live/hero-bg.jpg"
-                    alt="Clients"
-                    fill
-                    priority
-                    className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/55" />
-                <div className="relative z-10 flex min-h-[420px] md:min-h-[520px] items-center justify-center px-4">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white drop-shadow-[0_10px_28px_rgba(0,0,0,0.55)]">
-                        Clients
-                    </h1>
-                </div>
-            </section>
+            <PageHero
+                title="Clients"
+                backgroundImage="/images/clients/live/hero-bg.jpg"
+                height="md"
+            />
 
             {/* Category quick links */}
             <section className="max-w-6xl mx-auto px-4 py-10">

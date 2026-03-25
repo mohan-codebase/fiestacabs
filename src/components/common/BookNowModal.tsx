@@ -28,13 +28,11 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
 
         const formData = new FormData(e.currentTarget);
         const data = {
-            firstName: formData.get("firstName") as string || "",
-            lastName: formData.get("lastName") as string || "",
+            name: formData.get("name") as string || "",
+            company: formData.get("company") as string || "",
             email: formData.get("email") as string || "",
             phone: formData.get("phone") as string || "",
-            streetAddress: formData.get("streetAddress") as string || "",
-            city: formData.get("city") as string || "",
-            state: formData.get("state") as string || "",
+            location: formData.get("location") as string || "",
             message: formData.get("message") as string || "",
             formSource: "Global Book Now Modal",
             captchaToken: captchaToken || null,
@@ -94,35 +92,22 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                 </div>
                             )}
                             
-                            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                        Full Name *
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="firstName"
-                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
-                                        required
-                                    />
-                                </div>
-                                <div>
-                                    <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                        Company Name *
-                                    </label>
-                                    <input
-                                        type="text"
-                                        name="lastName"
-                                        className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
-                                        required
-                                    />
-                                </div>
+                            <div>
+                                <label className="block text-sm font-semibold text-gray-800 mb-1">
+                                    Name *
+                                </label>
+                                <input
+                                    type="text"
+                                    name="name"
+                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
+                                    required
+                                />
                             </div>
 
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                        Email Address *
+                                        Email Id *
                                     </label>
                                     <input
                                         type="email"
@@ -144,42 +129,31 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                 </div>
                             </div>
 
-                            <div>
-                                <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                    Street Address *
-                                </label>
-                                <input
-                                    type="text"
-                                    name="streetAddress"
-                                    className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
-                                    required
-                                />
-                            </div>
-
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                 <div>
                                     <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                        City *
+                                        Location *
                                     </label>
                                     <input
                                         type="text"
-                                        name="city"
+                                        name="location"
                                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
                                         required
                                     />
                                 </div>
                                 <div>
                                     <label className="block text-sm font-semibold text-gray-800 mb-1">
-                                        State *
+                                        Company *
                                     </label>
                                     <input
                                         type="text"
-                                        name="state"
+                                        name="company"
                                         className="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-gray-400"
                                         required
                                     />
                                 </div>
                             </div>
+
                             <div>
                                 <div className="flex justify-between items-end mb-1">
                                     <label className="block text-sm font-semibold text-gray-800">
@@ -195,7 +169,7 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                 ></textarea>
                             </div>
                             {process.env.NODE_ENV !== "development" && (
-                                <div className="mb-4 overflow-hidden rounded">
+                                <div className="mb-4 overflow-hidden rounded text-center flex justify-center">
                                     <ReCAPTCHA
                                         ref={recaptchaRef}
                                         sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"}
@@ -206,7 +180,7 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className="w-full bg-[#E51E25] hover:bg-[#c91820] text-white font-bold py-3 px-4 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
+                                    className="w-full bg-[#EC2028] btn-animated text-white font-bold py-3 px-4 rounded-full transition-colors disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2"
                                 >
                                     {isSubmitting ? (
                                         <>
@@ -216,7 +190,7 @@ const BookNowModal: React.FC<BookNowModalProps> = ({ isOpen, onClose }) => {
                                             </svg>
                                             SENDING...
                                         </>
-                                    ) : "SUBMIT"}
+                                    ) : "SHARE YOUR REQUIREMENT"}
                                 </button>
                             </div>
                         </form>

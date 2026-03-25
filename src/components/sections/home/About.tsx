@@ -10,7 +10,7 @@ const About = () => {
                     {/* Left - Image with service pill tags */}
                     <div className="relative flex justify-center">
                         {/* Decorative red circle background */}
-                        <div className="absolute top-0 right-0 w-48 h-48 md:w-64 md:h-64 bg-[#E31E24] rounded-full opacity-10 -z-0" />
+                        <div className="absolute top-0 right-0 w-48 h-48 md:w-64 md:h-64 bg-[#EC2028] rounded-full opacity-10 -z-0" />
 
                         <div className="relative w-full max-w-[480px]">
                             {/* Main image */}

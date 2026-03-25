@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 import { blogPosts } from "../../data/blogPosts";
-
+import PageHero from "../../components/common/PageHero";
 export const metadata = {
   title: "Blog | Fiesta Smart Mobility",
   description: "Blogs",
@@ -27,23 +27,11 @@ export default function BlogPage() {
 
   return (
     <div className="bg-[#efefef] text-slate-900">
-      {/* Keep existing hero unchanged */}
-      <section className="relative min-h-[260px] md:min-h-[520px] overflow-hidden">
-        <Image
-          src="/images/blog/hero.jpeg"
-          alt="Blogs"
-          fill
-          priority
-          sizes="100vw"
-          className="object-cover object-bottom"
-        />
-        <div className="absolute inset-0 bg-black/40" />
-        <div className="relative z-10 flex min-h-[260px] md:min-h-[420px] items-center justify-center px-4">
-          <h1 className="text-white text-5xl md:text-[58px] font-bold leading-none">
-            Blogs
-          </h1>
-        </div>
-      </section>
+      <PageHero
+        title="Blogs"
+        backgroundImage="/images/blog/hero.jpeg"
+        height="md"
+      />
 
       {/* Card grid */}
       <section className="relative bg-[#efefef]">

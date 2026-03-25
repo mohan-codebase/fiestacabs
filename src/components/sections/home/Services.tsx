@@ -14,17 +14,17 @@ const Services = () => {
     const services: Service[] = [
         {
             id: "premium-car-rentals",
-            title: "Premium Car rentals",
+            title: "Premium Car Rental Services",
             description:
-                "Our vehicles are equipped with plush interiors, creating the perfect atmosphere for your special day.",
+                "Our vehicles are equipped with plush interiors, creating the perfect atmosphere for your special day. Sub-services: Airport Transport Service.",
             image: "/images/home/our-services/premium-car-rentals.jpg",
             link: "/premium-car-rentals",
         },
         {
             id: "employee-transport",
-            title: "Employee Transport Solutions",
+            title: "Employee Transport Services",
             description:
-                "Fiesta Smart Mobility ventured into this highly competitive business domain in the year 2001 by providing...",
+                "Fiesta Smart Mobility ventured into this highly competitive business domain in the year 2001 by providing. Sub-services: Cab Service, Bus Service, Shuttle Service.",
             image: "/images/home/our-services/employee-transport-solutions.jpg",
             link: "/employee-transport-services",
         },
