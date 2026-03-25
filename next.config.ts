@@ -1,6 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  serverExternalPackages: ["nodemailer"],
+  experimental: {
+    serverActions: {
+      allowedOrigins: ["fiestacabs.com", "www.fiestacabs.com", "*.fiestacabs.com", "https://fiestacabs.com"],
+    },
+  },
   images: {
     remotePatterns: [
       {

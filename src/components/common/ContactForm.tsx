@@ -38,16 +38,16 @@ const ContactForm = ({
 
         const formData = new FormData(e.currentTarget);
         const data = {
-            firstName: formData.get("firstName") as string,
-            lastName: formData.get("lastName") as string,
-            email: formData.get("email") as string,
-            phone: formData.get("phone") as string,
-            streetAddress: formData.get("streetAddress") as string,
-            city: formData.get("city") as string,
-            state: formData.get("state") as string,
-            message: formData.get("message") as string,
-            formSource: formSource,
-            captchaToken: captchaToken,
+            firstName: formData.get("firstName") as string || "",
+            lastName: formData.get("lastName") as string || "",
+            email: formData.get("email") as string || "",
+            phone: formData.get("phone") as string || "",
+            streetAddress: formData.get("streetAddress") as string || "",
+            city: formData.get("city") as string || "",
+            state: formData.get("state") as string || "",
+            message: formData.get("message") as string || "",
+            formSource: formSource || "Contact Form",
+            captchaToken: captchaToken || null,
         };
 
         const result = await sendEmailAction(data);
