@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   serverExternalPackages: ["nodemailer"],
   experimental: {
     serverActions: {
-      allowedOrigins: ["fiestacabs.com", "www.fiestacabs.com", "*.fiestacabs.com", "https://fiestacabs.com"],
+      allowedOrigins: ["fiestacabs.com", "www.fiestacabs.com", "*.fiestacabs.com"],
     },
   },
   images: {
