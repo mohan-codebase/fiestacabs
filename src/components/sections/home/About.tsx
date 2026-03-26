@@ -37,7 +37,7 @@ const About = () => {
                             Fiesta Smart Mobility Private Limited
                         </p>
 
-                        <div className="space-y-4 text-gray-600 leading-relaxed text-[15px]">
+                        <div className="space-y-4 leading-relaxed text-[15px]">
                             <p>
                                 With <strong>28 years of excellence</strong>, Fiesta Smart Mobility Private Limited is a leading provider of integrated transportation solutions for the corporate sector.
                             </p>

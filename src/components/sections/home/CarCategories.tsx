@@ -79,6 +79,7 @@ const CarCategories = () => {
                     {categories.map((category) => (
                         <button
                             key={category.id}
+                            onMouseEnter={() => setActiveCategory(category.id)}
                             onClick={() => setActiveCategory(category.id)}
                             className={`flex flex-col items-center gap-3 transition-all duration-300 ${activeCategory === category.id
                                 ? "opacity-100"

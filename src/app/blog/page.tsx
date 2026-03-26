@@ -29,7 +29,7 @@ export default function BlogPage() {
     <div className="bg-[#efefef] text-slate-900">
       <PageHero
         title="Blogs"
-        backgroundImage="/images/blog/hero.jpeg"
+        backgroundImage="/images/blog/hero-1.jpeg"
         height="md"
       />
 

@@ -24,13 +24,13 @@ const Footer = () => {
                         <div>
                             <div className="mb-6 flex items-center justify-start">
                                 <Link href="/" className="flex items-center gap-2">
-                                    <Image
+                                    {/* <Image
                                         src="/images/logo/logo.png"
                                         alt="Fiesta Cabs Logo"
                                         width={140}
                                         height={50}
                                         className="h-10 w-auto object-contain"
-                                    />
+                                    /> */}
                                 </Link>
                             </div>
                             <p className="text-gray-600 text-sm leading-relaxed mb-6">

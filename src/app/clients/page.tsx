@@ -80,7 +80,7 @@ export default function ClientsPage() {
         <main className="bg-[#f7f7f9]">
             <PageHero
                 title="Clients"
-                backgroundImage="/images/clients/live/hero-bg.jpg"
+                backgroundImage="/images/clients/hero.jpeg"
                 height="md"
             />
 
