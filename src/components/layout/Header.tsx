@@ -50,7 +50,7 @@ const Header = () => {
                             alt="Fiesta Cabs Logo"
                             width={150}
                             height={50}
-                            className="h-10 m-1 w-auto object-contain rounded-full"
+                            className="h-10 m-1 w-auto object-contain rounded"
                             priority
                         />
                     </Link>

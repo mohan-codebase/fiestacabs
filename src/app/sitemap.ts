@@ -32,12 +32,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/outstation-cabs-in-hyderabad",
     "/shuttle-services-in-hyderabad",
     "/employee-transport-services-in-hyderabad",
+    "/wedding-car-rental-in-hyderabad",
     "/outstation-cabs-in-delhi",
     "/shuttle-service-in-delhi",
     "/car-rent-for-marriage-in-delhi",
     "/outstation-cabs-in-gurgaon",
     "/shuttle-service-in-gurgaon",
     "/employee-transportation-services-in-pune",
+    "/corporate-shuttle-service-in-pune",
     "/corporate-car-rental-service",
   ];
 

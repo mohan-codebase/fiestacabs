@@ -71,10 +71,10 @@ export default function AboutUs() {
 
             {/* ── Company Overview ── */}
             <section className="w-full py-16 md:py-24 bg-white">
-                <div className="max-w-7xl mx-auto px-4">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-14 items-center">
                         {/* Image */}
-                        <div className="relative h-[420px] md:h-[540px] rounded-3xl overflow-hidden shadow-xl">
+                        <div className="relative h-[300px] sm:h-[400px] md:h-[500px] lg:h-[540px] rounded-3xl overflow-hidden shadow-xl">
                             <Image
                                 src="/images/about-us/about-us.png"
                                 alt="Fiesta Smart Mobility"
@@ -93,15 +93,15 @@ export default function AboutUs() {
                                 Fiesta, A Name to Remember in Employee Transport Services
                             </h2>
                             <div className="w-12 h-1 bg-[#EC2028] btn-animated rounded-full mb-6" />
-                            <div className="space-y-4 text-gray-600 leading-relaxed text-[15px] mb-8">
+                            <div className="space-y-4 leading-relaxed text-sm md:text-[15px] mb-8 text-gray-700">
                                 <p>
-                                    With <strong>28 years of excellence</strong>, Fiesta Smart Mobility Private Limited is a leading provider of integrated employee transport services for the corporate sector. Established in 1998 in Chennai, we have expanded to achieve a pan-India presence with a dedicated team of <strong>300+ employees nationwide.</strong>
+                                    With <strong className="text-gray-900">28 years of excellence</strong>, Fiesta Smart Mobility Private Limited is a leading provider of integrated employee transport services for the corporate sector. Established in 1998 in Chennai, we have expanded to achieve a pan-India presence with a dedicated team of <strong className="text-gray-900">300+ employees nationwide.</strong>
                                 </p>
                                 <p>
-                                    Our core services include <strong>Employee Transport Solutions and Premium Car Rentals</strong>, designed to meet the unique needs of modern businesses. Recognized as one of India&apos;s best employee transport services providers, Fiesta has achieved a <strong>₹1.2 billion turnover</strong>—a testament to our commitment to quality and customer satisfaction.
+                                    Our core services include <strong className="text-gray-900">Employee Transport Solutions and Premium Car Rentals</strong>, designed to meet the unique needs of modern businesses. Recognized as one of India&apos;s best employee transport services providers, Fiesta has achieved a <strong className="text-gray-900">₹1.2 billion turnover</strong>—a testament to our commitment to quality and customer satisfaction.
                                 </p>
                                 <p>
-                                    To align with sustainability goals, we are actively investing in <strong>Electric Vehicles (EVs)</strong> to cater to the evolving transportation needs of modern organizations.
+                                    To align with sustainability goals, we are actively investing in <strong className="text-[#EC2028]">Electric Vehicles (EVs)</strong> to cater to the evolving transportation needs of modern organizations.
                                 </p>
                             </div>
                         </div>
@@ -114,8 +114,8 @@ export default function AboutUs() {
                                 key={stat.label}
                                 className="text-center bg-gray-50 rounded-2xl py-8 px-4 border border-gray-100"
                             >
-                                <div className="text-3xl md:text-4xl font-extrabold text-[#EC2028] mb-1">{stat.value}</div>
-                                <div className="text-gray-500 text-sm font-medium">{stat.label}</div>
+                                <div className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#EC2028] mb-1">{stat.value}</div>
+                                <div className="text-gray-400 text-[11px] md:text-sm font-semibold uppercase tracking-wider">{stat.label}</div>
                             </div>
                         ))}
                     </div>
@@ -134,31 +134,34 @@ export default function AboutUs() {
                             <span className="w-2 h-2 rounded-full bg-[#EC2028] btn-animated" />
                             <span className="text-[#EC2028] font-semibold text-sm tracking-wide uppercase">Leadership</span>
                         </div>
-                        <h2 className="text-3xl md:text-5xl font-bold text-gray-900">
+                        <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 tracking-tight">
                             Meet Our <span className="text-[#EC2028]">Leaders</span>
                         </h2>
                     </div>
 
-                    <div className="flex flex-row overflow-x-auto gap-6 sm:snap-x sm:snap-mandatory pb-4 hide-scrollbar justify-start md:justify-center">
+                    <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 md:gap-6 px-2 md:px-4">
                         {leaders.map((leader) => (
                             <div
                                 key={leader.id}
-                                className="min-w-[200px] md:min-w-[240px] w-full max-w-[240px] group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl transition-all duration-300 flex flex-col snap-center shrink-0"
+                                className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col border border-gray-100"
                             >
                                 {/* Photo */}
-                                <div className="relative w-full aspect-[3/4] bg-gray-100 overflow-hidden">
+                                <div className="relative w-full aspect-[3/4] bg-gray-50 overflow-hidden">
                                     <Image
                                         src={leader.image}
                                         alt={leader.name}
                                         fill
-                                        className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                                        className="object-cover object-top group-hover:scale-110 transition-transform duration-700"
                                     />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                 </div>
 
                                 {/* Info */}
-                                <div className="px-3 pt-3 pb-4 text-center border-t-4 border-[#EC2028]">
-                                    <h3 className="text-[13px] font-bold text-gray-900 leading-snug mb-1">{leader.name}</h3>
-                                    <p className="text-[11px] text-gray-500 leading-tight">{leader.position}</p>
+                                <div className="px-3 py-4 text-center border-t-4 border-[#EC2028]">
+                                    <h3 className="text-xs md:text-[14px] font-bold text-gray-900 leading-tight mb-1 group-hover:text-[#EC2028] transition-colors">
+                                        {leader.name}
+                                    </h3>
+                                    <p className="text-[10px] md:text-[11px] text-gray-500 font-medium">{leader.position}</p>
                                 </div>
                             </div>
                         ))}

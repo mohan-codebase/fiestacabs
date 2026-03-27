@@ -1,0 +1,47 @@
+import React from 'react';
+import HeroForm from '../../components/common/HeroForm';
+import Intro from '../../components/sections/wedding-car-rental-in-hyderabad/Intro';
+import LuxuryFleet from '../../components/sections/wedding-car-rental-in-hyderabad/LuxuryFleet';
+import BusLimo from '../../components/sections/wedding-car-rental-in-hyderabad/BusLimo';
+import ServiceStandards from '../../components/sections/wedding-car-rental-in-hyderabad/ServiceStandards';
+import WeddingPlanning from '../../components/sections/wedding-car-rental-in-hyderabad/WeddingPlanning';
+import BookingExperience from '../../components/sections/wedding-car-rental-in-hyderabad/BookingExperience';
+import WhyChoose from '../../components/sections/wedding-car-rental-in-hyderabad/WhyChoose';
+import HyderabadCTA from '../../components/sections/wedding-car-rental-in-hyderabad/HyderabadCTA';
+import Testimonials from '../../components/common/Testimonials';
+import FAQ from '../../components/sections/wedding-car-rental-in-hyderabad/FAQ';
+
+export const metadata = {
+    title: "Hyderabad Wedding Cars - Luxury Rentals by Fiesta",
+    description: "Fiesta, a trusted partner in wedding car rental services, offers luxury wedding cars, classic and vintage cars, premium SUVs, and guest bus rentals in Hyderabad.",
+};
+
+export default function WeddingCarRentalHyderabad() {
+    return (
+        <div className="w-full bg-white">
+            <HeroForm
+                title="Hyderabad Wedding Cars - Luxury Rentals by Fiesta"
+                subtitle="Elegance, reliability, and refined presentation for your special day."
+                imageSrc="/images/wedding-car-rental-in-chennai/unnamed.jpg"
+                ctaText="Book Now"
+                imageClassName="brightness-[0.4]"
+            />
+
+            <Intro />
+            <LuxuryFleet />
+            <BusLimo />
+            <ServiceStandards />
+            <WeddingPlanning />
+            <BookingExperience />
+            <WhyChoose />
+            <HyderabadCTA />
+
+            <Testimonials
+                eyebrow="TESTIMONIALS"
+                title="What our customer says"
+            />
+
+            <FAQ />
+        </div>
+    );
+}

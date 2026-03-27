@@ -40,7 +40,7 @@ const WeddingCities = () => {
                     <circle cx="43" cy="10" r="2" />
                 </svg>
             ),
-            link: "/shuttle-services-in-hyderabad"
+            link: "/wedding-car-rental-in-hyderabad"
         },
         {
             name: "Wedding Cars in\nBangalore",

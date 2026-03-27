@@ -545,6 +545,50 @@ export const LIVE_ROUTE_FAQS: Record<string, RouteFAQItem[]> = {
             "question": "Why choose Fiesta for employee transportation services in Chennai?",
             "answer": "Fiesta offers reliable, cost effective, and well maintained fleet with real time tracking for employees."
         }
+    ],
+    "/wedding-car-rental-in-hyderabad": [
+        {
+            "question": "What types of cars are available for weddings in Hyderabad?",
+            "answer": "Luxury sedans, premium SUVs, vintage cars, convertible cars, and exotic vehicles meet the diverse desires of customers."
+        },
+        {
+            "question": "Are the cars well-maintained and air-conditioned?",
+            "answer": "Yes. All vehicles are meticulously maintained, fully air-conditioned, and equipped with the latest features for comfort and safety."
+        },
+        {
+            "question": "Are decorations included with the Hyderabad wedding cars?",
+            "answer": "Yes. Decorated cars create a grand entrance, leaving a lasting impression on customers and wedding guests."
+        },
+        {
+            "question": "How do I know Fiesta is a reliable service provider?",
+            "answer": "Fiesta is among the leading providers in Hyderabad, with a loyal customer base, positive feedback, and commitment to exceptional service."
+        },
+        {
+            "question": "Do you offer bus rental service for transporting guests?",
+            "answer": "Yes. Best bus rental service options, including both AC and non-AC buses, ensure safe and comfortable guest transportation."
+        }
+    ],
+    "/corporate-shuttle-service-in-pune": [
+        {
+            "question": "How can we manage employees' daily travel without the stress of driving?",
+            "answer": "We specialise in connecting residential areas with business hubs and IT parks. Our shuttle services are designed to improve employee satisfaction and reduce commute-related fatigue during daily travel."
+        },
+        {
+            "question": "Are your employee transport services available at affordable prices?",
+            "answer": "Yes, we provide shared, point-to-point transportation at affordable prices to ensure cost-effectiveness. We are committed to offering top-tier service that makes professional commuting accessible throughout Pune."
+        },
+        {
+            "question": "How do we know where the shuttle is located?",
+            "answer": "Our corporate shuttle services in Pune are equipped with GPS for real-time tracking and live tracking. The tracking services ensure timely arrivals, efficient routing, and complete visibility during employee commutes."
+        },
+        {
+            "question": "Can your services be customised for company's specific needs or shifts?",
+            "answer": "Yes, we offer flexible scheduling to accommodate varying employee shifts and operational requirements. You can contact us or fill out our web form to arrange tailored transport solutions."
+        },
+        {
+            "question": "What is your main service option for airport transfers in Pune?",
+            "answer": "For airport transfers, we provide air-conditioned buses ranging from 17-seater to 50-seater vehicles, based on your group size and specific requirements."
+        }
     ]
 };
 

@@ -1,0 +1,80 @@
+import React from 'react';
+import Image from 'next/image';
+
+const DiverseFleet = () => {
+    const listItems = [
+        {
+            title: "17-seater minibuses",
+            desc: "Ideal for smaller teams or specialized residential pickups."
+        },
+        {
+            title: "30 to 50-seater buses",
+            desc: "Designed for larger employee groups and key corporate routes."
+        },
+        {
+            title: "Modern amenities",
+            desc: "Spacious seating and features for a comfortable, professional ride."
+        },
+        {
+            title: "GPS & Real-time monitoring",
+            desc: "Enhanced security and punctuality for every vehicle in our fleet."
+        }
+    ];
+
+    const Icon = () => (
+        <div className="shrink-0 mt-1">
+            <Image
+                src="/images/icon/tyre-icon.svg"
+                alt="Tyre Icon"
+                width={24}
+                height={24}
+                className="w-6 h-6"
+            />
+        </div>
+    );
+
+    return (
+        <section className="w-full py-16 md:py-24 bg-white">
+            <div className="max-w-[1440px] mx-auto px-4">
+                <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
+                    <div className="w-full md:w-[50%] md:pr-4 flex flex-col justify-center">
+                        <h2 className="text-3xl lg:text-[38px] font-bold text-[#2A2A2A] mb-6 leading-[1.2] tracking-tight">
+                            Diverse Fleet for Corporate Transportation
+                        </h2>
+
+                        <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
+                            We operate a diverse fleet of vehicles maintained to high safety and reliability standards to meet different corporate commuting requirements in Pune.
+                        </p>
+
+                        <div className="space-y-6">
+                            {listItems.map((item, index) => (
+                                <div key={index} className="flex items-start gap-4">
+                                    <Icon />
+                                    <div>
+                                        <h3 className="text-xl font-bold text-[#2A2A2A] mb-2 leading-tight">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-[#555555] text-[15px] leading-relaxed">
+                                            {item.desc}
+                                        </p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                        <Image
+                            src="/images/shuttle-service-in-bangalore/unnamed-7-7.jpg"
+                            alt="Diverse Fleet for Pune Corporate Transport"
+                            fill
+                            style={{ objectFit: "cover", objectPosition: "center" }}
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+    );
+};
+
+export default DiverseFleet;
