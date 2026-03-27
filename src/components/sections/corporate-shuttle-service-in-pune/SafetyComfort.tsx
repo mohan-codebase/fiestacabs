@@ -39,7 +39,7 @@ const SafetyComfort = () => {
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
                     <div className="w-full md:w-[45%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/shuttle-service-in-bangalore/unnamed-8-7.jpg"
+                            src="/images/shuttle-service-in-bangalore/unnamed-8-1.jpg"
                             alt="Employee Safety and Comfort in Pune"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

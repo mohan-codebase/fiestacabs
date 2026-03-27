@@ -44,6 +44,13 @@ const cityCards: CityCard[] = [
         icon: "/images/shuttle-service/city-gurgaon.png",
         href: "/shuttle-service-in-gurgaon",
     },
+    {
+        city: "Shuttle Service in Pune",
+        description:
+            "Fiesta offers dependable shuttle services in Pune, connecting residential hubs with IT parks like Hinjewadi and Magarpatta.",
+        icon: "/images/shuttle-service/city-bangalore.png",
+        href: "/corporate-shuttle-service-in-pune",
+    },
 ];
 
 const PanIndiaServices = () => {
