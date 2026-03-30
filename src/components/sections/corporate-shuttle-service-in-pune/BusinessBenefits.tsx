@@ -2,23 +2,12 @@ import React from 'react';
 import Image from 'next/image';
 
 const BusinessBenefits = () => {
-    const listItems = [
-        {
-            title: "Reduced transportation costs",
-            desc: "More affordable than individual commuting options."
-        },
-        {
-            title: "Enhanced employee productivity",
-            desc: "Reducing commute fatigue allows for better work performance."
-        },
-        {
-            title: "Flexible scheduling",
-            desc: "Customised routes and timings to meet corporate needs."
-        },
-        {
-            title: "Ride reports and analytics",
-            desc: "Data-driven insights for better planning and efficiency."
-        }
+    const listItems: string[] = [
+        "Reduced transportation costs compared to individual commuting options",
+        "Reliable daily commute solutions for employees",
+        "Enhanced employee productivity by reducing commute fatigue",
+        "Flexible scheduling customised to corporate needs",
+        "Detailed ride reports and analytics for better planning and operational efficiency"
     ];
 
     const Icon = () => (
@@ -50,24 +39,19 @@ const BusinessBenefits = () => {
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4">
                                     <Icon />
-                                    <div>
-                                        <h3 className="text-xl font-bold text-[#2A2A2A] mb-2 leading-tight">
-                                            {item.title}
-                                        </h3>
-                                        <p className="text-[#555555] text-[15px] leading-relaxed">
-                                            {item.desc}
-                                        </p>
-                                    </div>
+                                    <p className="text-[#555555] text-[15px] leading-relaxed">
+                                        {item}
+                                    </p>
                                 </div>
                             ))}
                         </div>
-                        
+
                         <p className="text-[#555555] text-[16px] leading-relaxed mt-8 font-medium italic">
                             Fiesta is a trusted partner for companies seeking dependable employee transport solutions.
                         </p>
                     </div>
 
-                    <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                    <div className="w-full md:w-[50%] relative min-h-[700px] md:min-h-full overflow-hidden rounded-md">
                         <Image
                             src="/images/shuttle-service-in-bangalore/unnamed-9-1.jpg"
                             alt="Business Benefits of Pune Corporate Shuttle"

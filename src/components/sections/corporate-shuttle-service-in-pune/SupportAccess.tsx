@@ -26,7 +26,7 @@ const SupportAccess = () => {
 
                     {/* LEFT IMAGE */}
 
-                     <div className="w-full md:w-[45%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                     <div className="w-full md:w-[45%] relative min-h-[700px] md:min-h-full overflow-hidden rounded-md">
                         <Image
                             src="/images/employee-transportation-services-in-pune/unnamed-1-2.jpg"
                             alt="Dedicated Support and Easy Access"

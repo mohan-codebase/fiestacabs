@@ -59,6 +59,7 @@ const TechFeatures = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     );
 };
