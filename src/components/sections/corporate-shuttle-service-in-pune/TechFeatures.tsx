@@ -3,19 +3,10 @@ import Image from 'next/image';
 
 const TechFeatures = () => {
     const listItems = [
-        {
-            title: "Live tracking & GPS-enabled shuttles",
-            desc: "Monitor arrival and departure times in real-time."
-        },
-        {
-            title: "Real-time route optimisation",
-            desc: "Avoid traffic congestion during peak hours automatically."
-        },
-        {
-            title: "Dedicated online support",
-            desc: "Manage schedules and track rides through our secure platform for managers and employees."
-        }
-    ];
+  "Live tracking and GPS-enabled shuttles to monitor arrival and departure times",
+  "Real-time route optimisation to avoid traffic congestion during peak hours",
+  "Dedicated online support for employees and corporate managers to manage schedules and track rides"
+];
 
     const Icon = () => (
         <div className="shrink-0 mt-1">
@@ -38,8 +29,7 @@ const TechFeatures = () => {
                             src="/images/shuttle-service-in-bangalore/unnamed-4-7.jpg"
                             alt="Technology-Driven Shuttle Features Pune"
                             fill
-                            style={{ objectFit: "cover", objectPosition: "center" }}
-                        />
+                            style={{ objectFit: "cover", objectPosition: "center" }}/>
                     </div>
 
                     <div className="w-full md:w-[55%] md:pl-8 flex flex-col justify-center">
@@ -51,24 +41,25 @@ const TechFeatures = () => {
                             Fiesta Smart Mobility Services leverages modern technology to make corporate commuting efficient, transparent, and stress-free.
                         </p>
 
+                        <h2 className="text-2xl font-bold text-[#2A2A2A] mb-6">
+                            Key Features Include:
+                        </h2>
+
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4">
                                     <Icon />
-                                    <div>
-                                        <h3 className="text-xl font-bold text-[#2A2A2A] mb-2 leading-tight">
-                                            {item.title}
-                                        </h3>
-                                        <p className="text-[#555555] text-[15px] leading-relaxed">
-                                            {item.desc}
-                                        </p>
-                                    </div>
+                                    <p className="text-[#555555] text-[15px] leading-relaxed">
+                                        {item}
+                                    </p>
                                 </div>
                             ))}
                         </div>
+                        
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     );
 };

@@ -3,11 +3,24 @@ import Image from 'next/image';
 
 const DiverseFleet = () => {
     const listItems = [
-        "17-seater minibuses for smaller teams or residential pickups",
-        "30 to 50-seater buses for larger employee groups",
-        "Spacious seating and modern amenities for a comfortable ride",
-        "GPS tracking and real-time monitoring for enhanced security and punctuality"
+        {
+            title: "Sedans & SUVs",
+            desc: "Ideal for executive travel and small employee groups requiring comfort and style."
+        },
+        {
+            title: "Mini Vans & Tempo Travellers",
+            desc: "Perfect for smaller teams needing quick transfers and flexible mobility."
+        },
+        {
+            title: "Standard & Spacious Buses",
+            desc: "Optimized for high-volume routes in IT parks and industrial zones for maximum efficiency."
+        },
+        {
+            title: "Luxury Vans & Premium Coaches",
+            desc: "Designed for executives and senior management, featuring high-end interiors and amenities."
+        }
     ];
+
     const Icon = () => (
         <div className="shrink-0 mt-1">
             <Image
@@ -26,31 +39,38 @@ const DiverseFleet = () => {
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
                     <div className="w-full md:w-[50%] md:pr-4 flex flex-col justify-center">
                         <h2 className="text-3xl lg:text-[38px] font-bold text-[#2A2A2A] mb-6 leading-[1.2] tracking-tight">
-                            Diverse Fleet for Corporate Transportation
+                            A Fleet Designed for Every Requirement
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            We operate a diverse fleet of vehicles maintained to high safety and reliability standards to meet different corporate commuting requirements in Pune.
+                            Our diversified fleet undergoes strict maintenance schedules to guarantee safety, hygiene, and reliability for all corporate needs in Chennai.
                         </p>
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4">
                                     <Icon />
-                                    <p className="text-[#555555] text-[15px] leading-relaxed">
-                                        {item}
-                                    </p>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-[#2A2A2A] mb-2 leading-tight">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-[#555555] text-[15px] leading-relaxed">
+                                            {item.desc}
+                                        </p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
+                        
                         <p className="text-[#555555] text-[16px] leading-relaxed mt-8 font-medium">
-                            All vehicles are maintained to high safety and reliability standards, ensuring accessibility and comfort for every passenger.                        </p>
+                            Providing a cost-effective alternative to individual reimbursements while reducing traffic congestion and environmental impact.
+                        </p>
                     </div>
 
                     <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/shuttle-service-in-bangalore/unnamed-7-3.jpg"
-                            alt="Diverse Fleet for Pune Corporate Transport"
+                            src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/serving-multiple-locations.jpg"
+                            alt="Diverse Fleet for Chennai Corporate Transport"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}
                         />

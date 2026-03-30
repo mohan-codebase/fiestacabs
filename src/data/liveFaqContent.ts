@@ -589,6 +589,50 @@ export const LIVE_ROUTE_FAQS: Record<string, RouteFAQItem[]> = {
             "question": "What is your main service option for airport transfers in Pune?",
             "answer": "For airport transfers, we provide air-conditioned buses ranging from 17-seater to 50-seater vehicles, based on your group size and specific requirements."
         }
+    ],
+    "/shuttle-services-in-chennai": [
+        {
+            "question": "What makes Fiesta the best employee transportation services provider in Chennai?",
+            "answer": "We offer the best employee transportation services by combining a diverse fleet, from mini vans for small teams to luxury buses, with verified drivers and 24/7 support. Our focus is on providing a hassle-free and dependable travel experience that beats the city's unpredictable traffic."
+        },
+        {
+            "question": "How do your employee shuttle services handle daily commutes to IT hubs?",
+            "answer": "To manage the long travel times in Chennai, we plan the routes with convenient pick-up points near employee homes. Our corporate commutes utilize GPS-enabled vehicles, allowing for real-time tracking so you can stay informed and avoid unnecessary waits."
+        },
+        {
+            "question": "Can you provide transportation services in Chennai for small teams or intercity meetings?",
+            "answer": "Yes! For smaller groups or intercity meetings, we use tempo travellers and mini vans that offer quick transfers and convenience. These are ideal for business trips or office shifts with a lower employee count requiring flexible drop-off and pick-up options."
+        },
+        {
+            "question": "How does Fiesta ensure a safe and secure journey for all employees?",
+            "answer": "We ensure safe travels by using verified drivers, well-maintained vehicles, and emergency alerts. With real-time tracking, both employers and staff can monitor the journey to ensure everyone reaches their office or home securely."
+        },
+        {
+            "question": "Are these corporate shuttle services more cost-effective than daily app-based cabs?",
+            "answer": "Absolutely! While app-based cabs have varied pricing, our employee transportation services charge a fixed per-employee monthly fee. The shuttle services are a much more cost-effective and hassle-free alternative for a daily commute compared to individual reimbursements."
+        }
+    ],
+    "/shuttle-services-in-mumbai": [
+        {
+            "question": "How can corporate professionals book a shuttle from home to the office?",
+            "answer": "Corporate professionals can use the Fiesta app to submit a booking, select their destination, and confirm pickup from home. The app helps people book easily and reduce daily commute stress."
+        },
+        {
+            "question": "How do I find and select my drop-off points for my destination?",
+            "answer": "You can find and select nearby drop-off points directly in the Fiesta app to choose the most convenient destination and manage travel across the city with less stress."
+        },
+        {
+            "question": "Can corporate professionals track their shuttle in real time?",
+            "answer": "Yes, corporate professionals can use the Fiesta app with GPS tracking to see the real-time shuttle location to plan better and reach their destination on time."
+        },
+        {
+            "question": "How can people submit and manage shuttle bookings easily?",
+            "answer": "People can submit, book, and manage their shuttle rides using the Fiesta app. Corporate professionals can select routes, track vehicles, and reach their destination with less stress."
+        },
+        {
+            "question": "What should I do if I can't see a route near my house?",
+            "answer": "If you can't find a stop near your home, you can submit a route request directly by contacting our team. We are constantly expanding across the country and use feedback from people like you to add new destinations for corporate professionals."
+        }
     ]
 };
 

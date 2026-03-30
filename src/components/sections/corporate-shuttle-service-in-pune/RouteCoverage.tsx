@@ -3,22 +3,9 @@ import Image from 'next/image';
 
 const RouteCoverage = () => {
     const listItems = [
-        {
-            title: "IT Parks & Corporate Hubs",
-            desc: "Serving Hinjewadi, Magarpatta, and other key business centers."
-        },
-        {
-            title: "High-density Residential Areas",
-            desc: "Pickups and drops across Pune and surrounding suburbs."
-        },
-        {
-            title: "Key Transport Points",
-            desc: "Convenient connections to airports and major bus stations."
-        },
-        {
-            title: "Customized Route Flexibility",
-            desc: "Tailored routes to meet unique corporate requirements."
-        }
+        "Major IT parks and corporate office hubs",
+        "Residential areas with high employee density",
+        "Key transport points, including bus stations and airports"
     ];
 
     const Icon = () => (
@@ -52,24 +39,22 @@ const RouteCoverage = () => {
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            Fiesta Smart Mobility Services covers Pune city and the surrounding suburbs, for maximum convenience and efficiency.
-                        </p>
+                            Fiesta Smart Mobility Services covers Pune city and the surrounding suburbs, connecting:                        </p>
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4">
                                     <Icon />
-                                    <div>
-                                        <h3 className="text-xl font-bold text-[#2A2A2A] mb-2 leading-tight">
-                                            {item.title}
-                                        </h3>
-                                        <p className="text-[#555555] text-[15px] leading-relaxed">
-                                            {item.desc}
-                                        </p>
-                                    </div>
+                                    <p className="text-[#555555] text-[15px] leading-relaxed">
+                                        {item}
+                                    </p>
                                 </div>
                             ))}
                         </div>
+                        
+                        <p className="text-[#555555] text-[16px] leading-relaxed mt-8 font-medium">
+                           We also provide customised routes to meet unique corporate requirements, ensuring maximum convenience and efficiency.                      </p>
+
                     </div>
                 </div>
             </div>

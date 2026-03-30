@@ -1,12 +1,24 @@
 import React from 'react';
 import Image from 'next/image';
 
-const SafetyComfort = () => {
+const TechEnabledRides = () => {
     const listItems = [
-        "Professional drivers with verified backgrounds",
-        "Real-time ride tracking for all trips",
-        "Comfortable, spacious seating and well-equipped vehicles",
-        "Safe boarding and alighting procedures at office and residential locations"
+        {
+            title: "Real-time GPS Tracking",
+            desc: "Allows employees and management to stay informed about commute status in real-time."
+        },
+        {
+            title: "Centralized Route Planning",
+            desc: "Proactive trip monitoring to avoid peak-hour traffic and optimize travel times."
+        },
+        {
+            title: "24/7 Customer Support",
+            desc: "All-time dedicated support for instant issue resolution and passenger assistance."
+        },
+        {
+            title: "Live Communication Updates",
+            desc: "Seamless updates for employees and operations teams for complete transparency."
+        }
     ];
 
     const Icon = () => (
@@ -27,8 +39,8 @@ const SafetyComfort = () => {
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
                     <div className="w-full md:w-[45%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/shuttle-service-in-bangalore/unnamed-8-1.jpg"
-                            alt="Employee Safety and Comfort in Pune"
+                            src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/what-makes-our-services-different.jpg"
+                            alt="Technology-Enabled Rides in Chennai"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}
                         />
@@ -36,28 +48,28 @@ const SafetyComfort = () => {
 
                     <div className="w-full md:w-[55%] md:pl-8 flex flex-col justify-center">
                         <h2 className="text-3xl lg:text-[38px] font-bold text-[#2A2A2A] mb-6 leading-[1.2] tracking-tight">
-                            Employee Safety and Comfort
+                            Technology-Enabled Rides
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            At Fiesta Smart Mobility Services, employee safety and comfort are top priorities.</p>
-
-                        <h2 className="text-2xl font-bold text-[#2A2A2A] mb-6">
-                            Our Safety and Comfort Measures Include:
-                        </h2>
+                            Every shuttle is equipped with advanced operational technology to monitor rides and maintain complete control over employee commutes.
+                        </p>
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex items-start gap-4">
                                     <Icon />
-                                    <p className="text-[#555555] text-[15px] leading-relaxed">
-                                        {item}
-                                    </p>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-[#2A2A2A] mb-2 leading-tight">
+                                            {item.title}
+                                        </h3>
+                                        <p className="text-[#555555] text-[15px] leading-relaxed">
+                                            {item.desc}
+                                        </p>
+                                    </div>
                                 </div>
                             ))}
                         </div>
-                        <p className="text-[#555555] text-[16px] leading-relaxed mt-8 font-medium">
-                            These measures ensure employees arrive on time, relaxed, and focused, improving overall job satisfaction and well-being.                        </p>
                     </div>
                 </div>
             </div>
@@ -65,4 +77,4 @@ const SafetyComfort = () => {
     );
 };
 
-export default SafetyComfort;
+export default TechEnabledRides;

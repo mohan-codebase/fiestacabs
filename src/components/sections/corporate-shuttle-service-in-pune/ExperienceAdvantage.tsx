@@ -22,8 +22,7 @@ const ExperienceAdvantage = () => {
                     </h2>
 
                     <p className="text-white/90 text-lg leading-relaxed">
-                        Fiesta Smart Mobility Services offers a reliable, secure, and comfortable corporate commuting solution to Pune’s growing transportation demands. Improve employee satisfaction, streamline daily travel, and reduce congestion with our shuttle services, suitable for businesses of all sizes.
-                    </p>
+                        Fiesta Smart Mobility Services offers a reliable, secure, and comfortable corporate commuting solution Pune'sne’s growing transportation demands. Improve employee satisfaction, streamline daily travel, and reduce congestion with our shuttle services, suitable for businesses of all sizes.                    </p>
 
                     <div className="pt-6">
                         <BookNowButton className="inline-block bg-[#fd6454] btn-animated hover:bg-red-600 text-white font-bold py-4 px-10 rounded-full transition-colors duration-300 text-lg">

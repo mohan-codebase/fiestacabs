@@ -2,24 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 const SustainabilitySupport = () => {
-    const listItems = [
-        {
-            title: "Shared transportation benefits",
-            desc: "Reducing traffic congestion and lowering carbon emissions."
-        },
-        {
-            title: "Sustainability goals",
-            desc: "Helping companies achieve green targets through real-time route optimization."
-        },
-        {
-            title: "Quick-access schedules",
-            desc: "Employees can check ride status and routes through our live app."
-        },
-        {
-            title: "Dedicated customer support",
-            desc: "Fast resolution of issues to ensure smooth, uninterrupted operations."
-        }
-    ];
+
 
     const Icon = () => (
         <div className="shrink-0 mt-1">
@@ -43,24 +26,8 @@ const SustainabilitySupport = () => {
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            Our shuttle services combine technology, professional drivers, and a modern fleet to deliver top-tier corporate shuttle services that support both business efficiency and environmental goals.
-                        </p>
+                            Our shuttle services support sustainability by reducing traffic congestion and lowering carbon emissions through shared transportation. With real-time route optimisation, Fiesta helps companies achieve sustainability goals while maintaining cost-effective employee transport.                        </p>
 
-                        <div className="space-y-6">
-                            {listItems.map((item, index) => (
-                                <div key={index} className="flex items-start gap-4">
-                                    <Icon />
-                                    <div>
-                                        <h3 className="text-xl font-bold text-[#2A2A2A] mb-2 leading-tight">
-                                            {item.title}
-                                        </h3>
-                                        <p className="text-[#555555] text-[15px] leading-relaxed">
-                                            {item.desc}
-                                        </p>
-                                    </div>
-                                </div>
-                            ))}
-                        </div>
                     </div>
 
                     <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">

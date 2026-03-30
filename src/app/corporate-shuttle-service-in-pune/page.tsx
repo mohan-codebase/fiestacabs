@@ -11,6 +11,7 @@ import SustainabilitySupport from '../../components/sections/corporate-shuttle-s
 import ExperienceAdvantage from '../../components/sections/corporate-shuttle-service-in-pune/ExperienceAdvantage';
 import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/corporate-shuttle-service-in-pune/FAQ';
+import SupportAccess from '@/src/components/sections/corporate-shuttle-service-in-pune/SupportAccess';
 
 export const metadata = {
     title: "Reliable Corporate Shuttle Service in Pune | Fiesta Smart Mobility",
@@ -36,6 +37,7 @@ export default function CorporateShuttlePune() {
             <BusinessBenefits />
             <RouteCoverage />
             <SustainabilitySupport />
+            <SupportAccess />
             <ExperienceAdvantage />
 
             <Testimonials
