@@ -8,7 +8,7 @@ const Intro = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
                     <div className="relative min-h-[300px] md:min-h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
                         <Image
-                            src="/images/wedding-car-rental-in-chennai/unnamed-1.jpg"
+                            src="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.40 PM.jpeg"
                             alt="Hyderabad Wedding Cars - Luxury Rentals by Fiesta"
                             fill
                             className="object-cover"

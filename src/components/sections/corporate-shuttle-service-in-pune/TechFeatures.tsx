@@ -29,7 +29,11 @@ const TechFeatures = () => {
                             src="/images/shuttle-service-in-bangalore/unnamed-4-7.jpg"
                             alt="Technology-Driven Shuttle Features Pune"
                             fill
+<<<<<<< Updated upstream
                             style={{ objectFit: "cover", objectPosition: "center" }} />
+=======
+                            style={{ objectFit: "cover", objectPosition: "center" }}/>
+>>>>>>> Stashed changes
                     </div>
 
                     <div className="w-full md:w-[55%] md:pl-8 flex flex-col justify-center">
@@ -59,6 +63,7 @@ const TechFeatures = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </section>
     );
 };

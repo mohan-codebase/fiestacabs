@@ -25,7 +25,7 @@ const WhyChoose = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
                     <div className="relative min-h-[400px] md:min-h-[500px] w-full overflow-hidden">
                         <Image
-                            src="/images/wedding-car-rental-in-chennai/unnamed-2.jpg"
+                            src="/images/wedding-car-rental-in-hyderabad/7.jpg"
                             alt="Why Choose Fiesta for Hyderabad Wedding Car Rentals?"
                             fill
                             className="object-cover"

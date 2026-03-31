@@ -47,7 +47,7 @@ const ServiceStandards = () => {
 
                     <div className="relative min-h-[400px] md:min-h-[500px] w-full overflow-hidden order-1 md:order-2">
                         <Image
-                            src="/images/wedding-car-rental-in-chennai/unnamed-7.jpg"
+                            src="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.39 PM (1).jpeg"
                             alt="Service Standards and Fleet Quality in Hyderabad"
                             fill
                             className="object-cover"

@@ -24,7 +24,7 @@ const HyderabadCTA = () => {
         <section className="relative py-24 overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/wedding-car-rental-in-chennai/unnamed-8.jpg"
+                    src="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.38 PM.jpeg"
                     alt="Choose Fiesta for Wedding Car Rental Services in Hyderabad"
                     fill
                     className="object-cover"

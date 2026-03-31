@@ -24,7 +24,7 @@ const WeddingPlanning = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
                     <div className="relative min-h-[400px] md:min-h-[500px] w-full overflow-hidden">
                         <Image
-                            src="/images/wedding-car-rental-in-chennai/unnamed-8.jpg"
+                            src="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.39 PM.jpeg"
                             alt="Planning a Wedding Car Experience in Hyderabad"
                             fill
                             className="object-cover"
