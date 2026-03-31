@@ -49,7 +49,7 @@ const DiverseFleet = () => {
 
                     <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/shuttle-service-in-bangalore/unnamed-7-3.jpg"
+                            src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.25.jpeg"
                             alt="Diverse Fleet for Pune Corporate Transport"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

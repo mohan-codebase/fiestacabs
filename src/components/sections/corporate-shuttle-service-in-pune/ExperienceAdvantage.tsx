@@ -7,7 +7,7 @@ const ExperienceAdvantage = () => {
         <section className="relative py-24 overflow-hidden">
             <div className="absolute inset-0 z-0">
                 <Image
-                    src="/images/shuttle-service-in-bangalore/unnamed-12.jpg"
+                    src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.24.jpeg"
                     alt="Experience the Fiesta Advantage in Pune"
                     fill
                     className="object-cover"

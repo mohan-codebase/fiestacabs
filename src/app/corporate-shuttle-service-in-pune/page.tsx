@@ -24,7 +24,7 @@ export default function CorporateShuttlePune() {
             <HeroForm
                 title="Reliable Corporate Shuttle Service in Pune"
                 subtitle="Efficient, technology-driven, and employee-friendly transport solutions for modern workplaces."
-                imageSrc="/images/shuttle-service-in-bangalore/unnamed-12.jpg"
+                imageSrc="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.26 (3).jpeg"
                 ctaText="Book Pune Shuttle Service"
                 imageClassName="brightness-[0.4]"
             />

@@ -22,9 +22,9 @@ export default function WeddingCarRentalHyderabad() {
             <HeroForm
                 title="Hyderabad Wedding Cars - Luxury Rentals by Fiesta"
                 subtitle="Elegance, reliability, and refined presentation for your special day."
-                imageSrc="/images/wedding-car-rental-in-chennai/unnamed.jpg"
+                imageSrc="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.40 PM.jpeg"
                 ctaText="Book Now"
-                imageClassName="brightness-[0.4]"
+                imageClassName="brightness-[0.9]"
             />
 
             <Intro />

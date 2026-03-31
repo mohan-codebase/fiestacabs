@@ -4,9 +4,9 @@ const BookingExperience = () => {
     const listItems = [
         "Clear package explanations with competitive rates",
         "Reliable coordination from confirmation to completion",
-        "Trained drivers ensuring excellent service delivery",
-        "Transparent billing and best deal options",
-        "Booking assistance for stress-free planning"
+        "Excellent service delivery, supported by helpful and trained drivers",
+        "Transparent billing, best deals, and affordable car rental experiences",
+        "Travel desks and booking assistance ensure stress-free planning"
     ];
 
     const Icon = () => (
@@ -28,8 +28,7 @@ const BookingExperience = () => {
                             Booking and Customer Experience
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Booking through Fiesta follows a structured and professional process for maximum customer satisfaction.
-                        </p>
+Booking through Fiesta follows a structured and professional process:                        </p>
                         
                         <div className="space-y-4">
                             {listItems.map((item, index) => (

@@ -3,9 +3,9 @@ import Image from "next/image";
 const ServiceStandards = () => {
     const listItems = [
         "Vehicles meticulously maintained for safety and style",
-        "Professional drivers with a polite attitude and trained skills",
-        "Moderate package options and competitive quotes for best value",
-        "Time service guarantees alignment with wedding schedules",
+        "Professional drivers with a polite attitude, trained drivers, and professionals who understand each couple’s requirements",
+        "Moderate package options and a competitive quote ensure the best luxury cars at an affordable price.",
+        "Time service guarantees alignment with wedding schedules and venue logistics.",
         "Helpful drivers ensure every customer enjoys a stress-free journey"
     ];
 
@@ -28,8 +28,7 @@ const ServiceStandards = () => {
                             Service Standards and Fleet Quality
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Fiesta maintains exceptional service, providing luxurious cars with disciplined operations for every special occasion.
-                        </p>
+Fiesta maintains exceptional service, providing luxurious cars with disciplined operations:                        </p>
                         
                         <div className="space-y-4">
                             {listItems.map((item, index) => (
@@ -40,9 +39,6 @@ const ServiceStandards = () => {
                             ))}
                         </div>
 
-                        <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            Our quote system ensures the best luxury cars at an affordable price while maintaining premium quality.
-                        </p>
                     </div>
 
                     <div className="relative min-h-[400px] md:min-h-[500px] w-full overflow-hidden order-1 md:order-2">

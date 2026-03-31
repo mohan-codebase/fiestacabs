@@ -4,9 +4,9 @@ const WhyChoose = () => {
     const listItems = [
         "Leading providers of luxury wedding car rental in Hyderabad",
         "Wide selection of luxury cars, royal cars, and bus rental services",
-        "Packages customised to customers' desires and timely service",
-        "Professional drivers with a polite attitude",
-        "Moderate package and competitive quote options"
+        "Packages customised to customers’ desires, timely service, and great luxury cars",
+        "Professional drivers with a polite attitude ensure every wedding entrance is seamless",
+        "Moderate package and competitive quote options for affordable car rental experiences"
     ];
 
     const Icon = () => (
@@ -35,10 +35,10 @@ const WhyChoose = () => {
                         <h2 className="text-3xl md:text-[32px] font-bold text-gray-900 leading-tight">
                             Why Choose Fiesta for Hyderabad Wedding Car Rentals?
                         </h2>
-                        <p className="text-[#555555] text-[15px] leading-[1.7]">
+                        {/* <p className="text-[#555555] text-[15px] leading-[1.7]">
                             We offer a vast collection of luxurious cars and modern ultra-luxury cars for every special occasion.
                         </p>
-                        
+                         */}
                         <div className="space-y-4">
                             {listItems.map((item, index) => (
                                 <div key={index} className="flex gap-4 items-start">
@@ -48,9 +48,6 @@ const WhyChoose = () => {
                             ))}
                         </div>
 
-                        <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            Fiesta remains a trusted choice for those who value prestige, quality, and attention to detail.
-                        </p>
                     </div>
                 </div>
             </div>

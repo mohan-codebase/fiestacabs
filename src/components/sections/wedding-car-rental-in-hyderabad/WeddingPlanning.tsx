@@ -2,10 +2,10 @@ import Image from "next/image";
 
 const WeddingPlanning = () => {
     const listItems = [
-        "Luxury and vintage cars add a unique touch for weddings",
+        "Luxury and vintage cars add a unique touch and elegance to wedding doli moments",
         "Premium SUVs suit family movement and venue logistics",
         "Bus rentals support guest comfort and coordinated arrivals",
-        "Vehicle inspection before confirmation ensures quality"
+        "Vehicle inspection before confirmation ensures quality, safety, and peace of mind"
     ];
 
     const Icon = () => (
@@ -35,8 +35,7 @@ const WeddingPlanning = () => {
                             Planning a Wedding Car Experience in Hyderabad
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Choosing the right wedding car enhances style, comfort, and memorable moments for every customer.
-                        </p>
+Choosing the right wedding car enhances style, comfort, and memorable moments:                        </p>
                         
                         <div className="space-y-4">
                             {listItems.map((item, index) => (

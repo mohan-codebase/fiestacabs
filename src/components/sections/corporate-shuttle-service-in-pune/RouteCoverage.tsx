@@ -26,7 +26,7 @@ const RouteCoverage = () => {
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
                     <div className="w-full md:w-[45%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/shuttle-service-in-bangalore/unnamed-2-7.jpg"
+                            src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.24 (2).jpeg"
                             alt="Route Coverage and Flexibility in Pune"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

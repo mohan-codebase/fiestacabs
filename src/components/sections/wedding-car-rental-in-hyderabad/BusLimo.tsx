@@ -2,10 +2,9 @@ import Image from "next/image";
 
 const BusLimo = () => {
     const listItems = [
-        "Large bus category both AC and non-AC",
-        "Options for family members, wedding guests, or corporate groups",
-        "Suitable for local movement, outstation travel, or business trips",
-        "Coordinated arrivals at wedding venues with consistent detailing"
+        "Large bus category options, both AC and non-AC, for wedding guests, family members, or corporate event transfers",
+        "Suitable for local movement, outstation travel, or a business trip",
+        "Enables coordinated arrivals at wedding venues, ensuring every detail receives attention",
     ];
 
     const Icon = () => (
@@ -35,7 +34,7 @@ const BusLimo = () => {
                             Bus Rental Services for Wedding Guests
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Fiesta also provides the best bus rental service in Hyderabad, complementing luxury car rentals and providing a full transportation collection for every special day.
+                            Fiesta also provides the best bus rental service in Hyderabad, complementing luxury car rentals:
                         </p>
                         
                         <div className="space-y-4">
@@ -48,8 +47,7 @@ const BusLimo = () => {
                         </div>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            This bus rental service ensures that cars in Hyderabad and bus rentals together offer comprehensive travel solutions.
-                        </p>
+This bus rental service ensures that cars in Hyderabad and bus rentals together offer a huge collection for every special day.                        </p>
                     </div>
                 </div>
             </div>

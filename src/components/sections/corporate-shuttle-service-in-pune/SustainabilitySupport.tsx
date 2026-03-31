@@ -32,7 +32,7 @@ const SustainabilitySupport = () => {
 
                     <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/shuttle-service-in-bangalore/unnamed-5-4.jpg"
+                            src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.24 (1).jpeg"
                             alt="Sustainability and Dedicated Support in Pune"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

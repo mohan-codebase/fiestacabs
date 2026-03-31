@@ -8,7 +8,7 @@ const Intro = () => {
                 <div className="flex flex-col md:flex-row gap-12 items-center">
                     <div className="w-full md:w-[45%] relative h-[450px] md:h-[550px] overflow-hidden rounded-md">
                         <Image
-                            src="/images/shuttle-service-in-bangalore/unnamed-1-7.jpg"
+                            src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.26 (2).jpeg"
                             alt="Reliable Corporate Shuttle Service in Pune"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

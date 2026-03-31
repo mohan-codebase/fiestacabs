@@ -3,20 +3,20 @@ import Image from "next/image";
 const LuxuryFleet = () => {
     const listItems = [
         {
-            title: "Luxury Sedans",
-            desc: " featuring Mercedes-Benz and other premium mid-size and full-size vehicles."
+            title: "Luxury Sedans : ",
+            desc: " Mercedes-Benz, Mercedes-Benz C, and other latest vehicles within the premium mid-size and premium full-size luxury categories."
         },
         {
-            title: "Premium SUVs",
-            desc: " including Toyota Fortuner and Innova Hycross for family and guest comfort."
+            title: "Premium SUVs : ",
+            desc: "Toyota Fortuner and Innova Hycross for family and wedding guests, ensuring unmatched comfort and spacious interiors."
         },
         {
-            title: "Classic & Vintage Cars",
-            desc: " featuring Rolls-Royce and royal cars for a refined wedding doli experience."
+            title: "Classic and Vintage Cars :",
+            desc: "Rolls-Royce and royal cars create a refined wedding doli experience, ideal for photographs that fascinate individuals."
         },
         {
-            title: "Convertible Cars",
-            desc: " offering a dream car feel for a unique and memorable wedding entrance."
+            title: "Convertible Cars : ",
+            desc: "Convertible Cars and select models offer a dream car feel for a unique wedding entrance."
         }
     ];
 
@@ -37,12 +37,11 @@ const LuxuryFleet = () => {
                    
                     <div className="flex flex-col justify-center space-y-6 order-2 md:order-1">
                         <h2 className="text-3xl md:text-[32px] font-bold text-gray-900 leading-tight">
-                            Luxury, Classic, and Vintage Wedding Cars
+Luxury, Classic, and Vintage Wedding Cars
                         </h2>
                         <p className="text-[#555555] text-[15px] leading-[1.7]">
-                            Fiesta provides a curated fleet of luxury cars designed to suit every special occasion and wedding day requirement in Hyderabad.
-                        </p>
-                        <p className="text-[#555555] text-[15px] leading-[1.7]">Available luxury cars include:</p>
+Fiesta provides a curated fleet of luxury cars designed to suit every special occasion and wedding day requirement:                        </p>
+                        <p className="text-[#555555] text-[15px] leading-[1.7]"></p>
 
                         <div className="space-y-4">
                             {listItems.map((item, index) => (
@@ -56,7 +55,7 @@ const LuxuryFleet = () => {
                         </div>
 
                         <p className="text-[#555555] text-[15px] leading-[1.7] pt-2">
-                            Every decorated car arrives perfectly, supporting timely service and leaving a lasting impression on customers and wedding guests.
+                           Every decorated car arrives perfectly, supporting timely service and leaving a lasting impression on customers and guests. The fleet includes modern ultra-luxury cars for couples desiring elegance and prestige.
                         </p>
                     </div>
 

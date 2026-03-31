@@ -55,7 +55,7 @@ const Solutions = () => {
 
                     <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/shuttle-service-in-bangalore/unnamed-3-7.jpg"
+                            src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.26 (1).jpeg"
                             alt="Corporate Shuttle Solutions in Pune"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}
