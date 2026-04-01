@@ -5,11 +5,11 @@ const Benefits = () => {
     const listItems = [
         {
             title: "Reliable Commute",
-            desc: "Fixed pickup points and schedules guarantee punctual arrivals for every shift."
+            desc: "Fixed pickup points and schedules guarantee punctual arrivals."
         },
         {
             title: "Enhanced Safety",
-            desc: "GPS tracking, professional drivers, and well-maintained buses provide complete assurance."
+            desc: "GPS tracking, professional drivers, and well-maintained buses provide assurance."
         },
         {
             title: "Cost-Efficiency",
@@ -21,7 +21,7 @@ const Benefits = () => {
         },
         {
             title: "Operational Ease",
-            desc: "Route mapping, vehicle scheduling, and bookings are managed centrally for maximum control."
+            desc: "Route mapping, vehicle scheduling, and bookings are managed centrally."
         }
     ];
 
@@ -45,10 +45,6 @@ const Benefits = () => {
                         <h2 className="text-3xl lg:text-[38px] font-bold text-[#2A2A2A] mb-6 leading-[1.2] tracking-tight">
                             Benefits for Corporates and Employees
                         </h2>
-
-                        <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            A structured transport system in Mumbai provides predictability, safety, and a better workforce energy, essential for high-performance workplaces.
-                        </p>
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (

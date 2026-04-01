@@ -24,8 +24,7 @@ const Intro = () => {
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-6">
-                            Fiesta Smart Mobility Services delivers reliable and technology-driven shuttle services across Mumbai. Designed for corporate offices, business campuses, and urban commuters, our services provide structured pickup and drop-off points while reducing commute costs, improving safety, and ensuring a comfortable experience for passengers.
-                        </p>
+Fiesta Smart Mobility Services delivers reliable and technology-driven shuttle services across Mumbai. Designed for corporate offices, business campuses, and urban commuters, our services provide structured pickup and drop-off points while reducing commute costs, improving safety, and ensuring a comfortable experience for passengers.                        </p>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-6 font-medium text-[#2A2A2A]">
                             Importance of Shuttle Services in Mumbai

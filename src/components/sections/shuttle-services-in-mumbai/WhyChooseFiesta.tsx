@@ -4,32 +4,32 @@ import Image from 'next/image';
 const WhyChooseFiesta = () => {
     const listItems = [
         {
-            title: "Built for Mumbai's Ecosystem",
-            desc: "Routes aligned with major commercial corridors, residential clusters, and transit access points."
+            title: "Built for Mumbai's Business Ecosystem",
+            desc: "Shuttle routes are planned to align with major commercial corridors, residential clusters, and transit access points. Service planning reflects real travel behavior across the city, helping organizations maintain consistent workforce movement across peak and non-peak hours."
         },
         {
-            title: "Data-Driven Optimization",
-            desc: "Trip data and passenger demand are used to refine routes, reduce travel time, and improve reliability."
+            title: "Data-Driven Route Optimization",
+            desc: "Trip data, passenger demand, and pickup density are used to refine routes and schedules. Continuous route evaluation supports reduced travel time, improved bus utilization, and better trip reliability."
         },
         {
-            title: "Centralized Control",
-            desc: "Structured visibility into trip activity, passenger usage, and route performance for transport managers."
+            title: "Centralized Control and Reporting",
+            desc: "Corporate transport managers receive structured visibility into trip activity, passenger usage, and route performance. Consolidated reporting supports budget planning, compliance tracking, and operational reviews."
         },
         {
-            title: "Passenger Experience",
-            desc: "Mobile access for managing bookings, receiving trip notifications, and tracking shuttle movement in real-time."
+            title: "Passenger Experience and Engagement",
+            desc: "Mobile access allows passengers to manage bookings, receive trip notifications, and track shuttle movement. The email & chat communication and account-level access provide clarity and accountability for every trip."
         },
         {
-            title: "Compliance & Safety",
-            desc: "Vehicles operate under defined safety protocols with trained drivers, GPS monitoring, and routine inspections."
+            title: "Compliance, Safety, and Operational Standards",
+            desc: "Vehicles operate under defined safety protocols with trained drivers, GPS monitoring, and routine inspections. Operational governance supports consistent service delivery across routes and shifts."
         },
         {
-            title: "Scalable Programs",
-            desc: "Service expands with your workforce growth, new office locations, and changing shift structures effortlessly."
+            title: "Scalable for Growing Organizations",
+            desc: "Fiesta shuttle programs expand with workforce growth, new office locations, and changing shift structures. Fleet allocation and route capacity can be adjusted to match evolving business needs."
         },
         {
             title: "Measurable Business Value",
-            desc: "Supports employee attendance, improves predictability, and reduces reliance on high-cost travel options."
+            desc: "Organizations benefit from structured transportation that supports employee attendance, improves operational predictability, and strengthens workforce engagement. Shuttle programs also reduce reliance on high-cost travel options and exposure to fluctuating market pricing."
         }
     ];
 

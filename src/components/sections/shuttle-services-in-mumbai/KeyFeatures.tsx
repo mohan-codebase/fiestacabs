@@ -5,19 +5,19 @@ const KeyFeatures = () => {
     const listItems = [
         {
             title: "Smart Route Design",
-            desc: "Routes planned across residential areas, business hubs, and transit points to connect the city efficiently."
+            desc: " Routes are planned across residential areas, business hubs, and transit points to connect the city."
         },
         {
             title: "Transparent Billing",
-            desc: "Monthly corporate invoices sent via email with simple, transparent payment options."
+            desc: "Monthly corporate invoices sent via email with simple payment options."
         },
         {
             title: "Safety and Comfort",
-            desc: "Air-conditioned buses, verified drivers, and live GPS monitoring for complete peace of mind."
+            desc: "Air-conditioned buses, verified drivers, and live GPS monitoring."
         },
         {
             title: "Corporate Integration",
-            desc: "Compatibility with HR, attendance, and employee management systems for smooth onboarding."
+            desc: "Compatibility with HR, attendance, and employee management systems for a smooth onboarding process."
         }
     ];
 
@@ -50,10 +50,6 @@ const KeyFeatures = () => {
                         <h2 className="text-3xl lg:text-[38px] font-bold text-[#2A2A2A] mb-6 leading-[1.2] tracking-tight">
                             Key Features of Fiesta Shuttle Services
                         </h2>
-
-                        <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            Every Fiesta Shuttle ride in Mumbai is backed by intelligent planning and technology that makes corporate travel transparent and efficient.
-                        </p>
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
