@@ -24,15 +24,14 @@ const Intro = () => {
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-6">
-                            Fiesta Smart Mobility Services delivers professional, technology-driven, and reliable shuttle services in Chennai, explicitly designed to meet the employee transportation needs of corporate organizations.
-                        </p>
+Fiesta Smart Mobility Services delivers professional, technology-driven, and reliable shuttle services in Chennai, explicitly designed to meet the employee transportation needs of corporate organizations. As Chennai's IT corridors, industrial hubs, and commercial zones continue to expand, dependable workforce mobility has become essential for maintaining productivity and operational continuity. With the city's traffic congestion and unpredictable travel times, providing smooth, stress-free commutes directly enhances employee satisfaction and retention.                        </p>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-6">
-                            As Chennai's IT corridors, industrial hubs, and commercial zones continue to expand, dependable workforce mobility has become essential for maintaining productivity and operational continuity.
+                           Corporate Employee Transportation
                         </p>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed">
-                            With the city's traffic congestion and unpredictable travel times, providing smooth, stress-free commutes directly enhances employee satisfaction and retention.
+                         We provide end-to-end corporate shuttle solutions, expertly handling complex routes, variable shift schedules, and high employee volumes. Our services cover major business hubs, including TIDEL Park, OMR, Guindy, Ambattur, and Porur. Each commute is planned to ensure punctuality, safety, and optimal travel time, supporting corporate operations seamlessly.
                         </p>
                     </div>
                 </div>

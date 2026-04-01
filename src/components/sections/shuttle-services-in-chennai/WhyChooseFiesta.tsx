@@ -5,23 +5,23 @@ const WhyChooseFiesta = () => {
     const listItems = [
         {
             title: "Hyper-Local Expertise",
-            desc: "Understanding Chennai's pulse, from monsoon challenges on OMR to peak-hour bottlenecks in Guindy, keeping your workforce moving efficiently."
+            desc: "We don't just drive in Chennai; we understand its pulse. From monsoon challenges on OMR to peak-hour bottlenecks in Guindy, our routing intelligence is built on years of local experience to keep your workforce moving efficiently."
         },
         {
             title: "Scalability on Demand",
-            desc: "From single minivans to a fleet of 50-seater buses, we scale operations seamlessly to match your growing headcount."
+            desc: "Whether you are a startup requiring a single minivan or a multinational corporation needing a fleet of 50-seater buses, Fiesta scales its operations seamlessly to match your growing headcount. Every company has distinct travel needs, and we provide customised solutions aligned to workforce requirements."
         },
         {
             title: "Uncompromising Compliance",
-            desc: "All services adhere to statutory transport regulations, ensuring your corporate social responsibility and safety standards are always met."
+            desc: "We take the burden of risk off your shoulders. All our services adhere to statutory transport regulations, ensuring your corporate social responsibility and safety standards are always met."
         },
         {
             title: "Comfort and Productivity",
-            desc: "Air-conditioned, well-maintained vehicles ensure employees arrive refreshed, reducing stress and enhancing daily productivity."
+            desc: "By providing air-conditioned, well-maintained vehicles, we ensure employees arrive refreshed, reducing stress and enhancing productivity. Shuttle services enhance work-life balance by shortening commute times, improving employee comfort, and helping them stay sharper throughout the day."
         },
         {
             title: "Data-Driven Cost Savings",
-            desc: "Continuous performance analysis to identify redundant paths and re-optimize routes, significantly reducing transportation overhead."
+            desc: "Through continuous performance analysis, we identify redundant paths and underutilized seats, allowing us to re-optimize routes and reduce transportation overhead. Shared mobility solutions further help lower environmental impact and traffic congestion."
         }
     ];
 
@@ -45,10 +45,10 @@ const WhyChooseFiesta = () => {
                         <h2 className="text-3xl lg:text-[38px] font-bold text-[#2A2A2A] mb-6 leading-[1.2] tracking-tight">
                             Why Choose Fiesta?
                         </h2>
-
+{/* 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
                             We bring local expertise and scalable solutions to the Chennai corporate transport landscape, focusing on compliance, comfort, and cost-efficiency.
-                        </p>
+                        </p> */}
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (

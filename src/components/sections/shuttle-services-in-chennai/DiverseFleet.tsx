@@ -5,15 +5,15 @@ const DiverseFleet = () => {
     const listItems = [
         {
             title: "Sedans & SUVs",
-            desc: "Ideal for executive travel and small employee groups requiring comfort and style."
+            desc: "Ideal for executive travel and small employee groups."
         },
         {
             title: "Mini Vans & Tempo Travellers",
-            desc: "Perfect for smaller teams needing quick transfers and flexible mobility."
+            desc: "Perfect for smaller teams needing quick transfers."
         },
         {
             title: "Standard & Spacious Buses",
-            desc: "Optimized for high-volume routes in IT parks and industrial zones for maximum efficiency."
+            desc: "Optimized for high-volume routes in IT parks and industrial zones."
         },
         {
             title: "Luxury Vans & Premium Coaches",
@@ -43,8 +43,7 @@ const DiverseFleet = () => {
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            Our diversified fleet undergoes strict maintenance schedules to guarantee safety, hygiene, and reliability for all corporate needs in Chennai.
-                        </p>
+Our diversified fleet undergoes strict maintenance schedules to guarantee safety, hygiene, and reliability. We offer:                        </p>
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
@@ -63,8 +62,7 @@ const DiverseFleet = () => {
                         </div>
                         
                         <p className="text-[#555555] text-[16px] leading-relaxed mt-8 font-medium">
-                            Providing a cost-effective alternative to individual reimbursements while reducing traffic congestion and environmental impact.
-                        </p>
+These fleet options provide a cost-effective alternative to individual reimbursements, while shared transportation reduces traffic congestion, lowers environmental impact, and promotes a positive corporate culture.                        </p>
                     </div>
 
                     <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">

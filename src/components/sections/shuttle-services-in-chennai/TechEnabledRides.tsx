@@ -5,19 +5,19 @@ const TechEnabledRides = () => {
     const listItems = [
         {
             title: "Real-time GPS Tracking",
-            desc: "Allows employees and management to stay informed about commute status in real-time."
+            desc: "Real-time GPS tracking allows employees and management to stay informed about commute status."
         },
         {
             title: "Centralized Route Planning",
-            desc: "Proactive trip monitoring to avoid peak-hour traffic and optimize travel times."
+            desc: "Centralized route planning and proactive trip monitoring to avoid peak-hour traffic."
         },
         {
             title: "24/7 Customer Support",
-            desc: "All-time dedicated support for instant issue resolution and passenger assistance."
+            desc: "All-time customer support for instant issue resolution."
         },
         {
             title: "Live Communication Updates",
-            desc: "Seamless updates for employees and operations teams for complete transparency."
+            desc: "Live communication updates for employees and operations teams."
         }
     ];
 
@@ -52,8 +52,7 @@ const TechEnabledRides = () => {
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            Every shuttle is equipped with advanced operational technology to monitor rides and maintain complete control over employee commutes.
-                        </p>
+Every shuttle is equipped with advanced operational technology to monitor rides and maintain complete control over employee commutes. Key features include:                        </p>
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (

@@ -4,20 +4,20 @@ import Image from 'next/image';
 const SafetyDriverExcellence = () => {
     const listItems = [
         {
-            title: "Verification & Training",
-            desc: "Comprehensive driver verification and ongoing professional training for all staff."
+            title: "Comprehensive driver verification and ongoing professional training.",
+            desc: ""
         },
         {
-            title: "Emergency Response",
-            desc: "Coordinated systems and protocols to handle any situation with passenger safety first."
+            title: "Coordinated emergency response systems.",
+            desc: ""
         },
         {
-            title: "Fleet Maintenance",
-            desc: "Regular maintenance and strict monitoring to ensure vehicle reliability and top performance."
+            title: "Regular fleet maintenance and operational monitoring.",
+            desc: ""
         },
         {
-            title: "Route Familiarity",
-            desc: "Structured assignments ensuring drivers are thoroughly familiar with Chennai's geography."
+            title: "Structured route assignments to ensure driver familiarity.",
+            desc: ""
         }
     ];
 
@@ -52,8 +52,7 @@ const SafetyDriverExcellence = () => {
                         </h2>
 
                         <p className="text-[#555555] text-[16px] leading-relaxed mb-8">
-                            Our experienced drivers are thoroughly familiar with Chennai's geography and adhere to strict safety protocols for every single journey.
-                        </p>
+Our experienced drivers are thoroughly familiar with Chennai's geography and adhere to strict safety protocols, including:                        </p>
 
                         <div className="space-y-6">
                             {listItems.map((item, index) => (
@@ -72,8 +71,7 @@ const SafetyDriverExcellence = () => {
                         </div>
                         
                         <p className="text-[#555555] text-[16px] leading-relaxed mt-8 font-medium">
-                            Safety is a top priority with GPS-enabled vehicles, emergency alerts, and rigorous protocols to guarantee secure travel for all.
-                        </p>
+Safety is a top priority, with GPS-enabled vehicles, emergency alerts, and rigorous protocols to guarantee secure travel for employees.                        </p>
                     </div>
                 </div>
             </div>
