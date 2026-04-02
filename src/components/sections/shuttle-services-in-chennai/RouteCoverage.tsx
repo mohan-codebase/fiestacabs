@@ -37,9 +37,9 @@ const RouteCoverage = () => {
         <section className="w-full py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
-                    <div className="w-full md:w-[45%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                    <div className="w-full md:w-[45%] relative min-h-[300px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/unnamed-2.jpg"
+                            src="/images/shuttle-services-in-chennai/WhatsApp Image 2026-04-01 at 18.43.02.jpeg"
                             alt="Route Coverage in Chennai"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

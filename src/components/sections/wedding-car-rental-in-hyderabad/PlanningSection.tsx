@@ -37,7 +37,7 @@ const PlanningSection = () => {
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
                     {planningTips.map((tip, idx) => (
-                        <div key={idx} className="relative group rounded-3xl overflow-hidden min-h-[440px] shadow-lg flex flex-col justify-end">
+                        <div key={idx} className="relative group rounded-3xl overflow-hidden min-h-[250px] md:min-h-[440px] shadow-lg flex flex-col justify-end">
                             <Image
                                 src={tip.image}
                                 alt={tip.title}

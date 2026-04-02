@@ -50,7 +50,7 @@ const BusRentals = () => {
                         </div>
                     </div>
                     
-                    <div className="order-1 lg:order-2 grid grid-cols-2 gap-4 h-[500px] md:h-[600px]">
+                    <div className="order-1 lg:order-2 grid grid-cols-2 gap-4 min-h-[250px] h-[300px] md:h-[500px] lg:h-[600px]">
                         <div className="relative h-full rounded-2xl overflow-hidden shadow-2xl mt-12 group">
                             <Image
                                 src="/images/wedding-car-rental-in-chennai/unnamed-6.jpg"

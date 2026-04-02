@@ -6,7 +6,7 @@ const Intro = () => {
         <section className="w-full py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="flex flex-col md:flex-row gap-12 items-center">
-                    <div className="w-full md:w-[45%] relative h-[450px] md:h-[550px] overflow-hidden rounded-md">
+                    <div className="w-full md:w-[45%] relative h-[250px] md:h-[450px] lg:h-[550px] overflow-hidden rounded-md">
                         <Image
                             src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.26 (2).jpeg"
                             alt="Reliable Corporate Shuttle Service in Pune"

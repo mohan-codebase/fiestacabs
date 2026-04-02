@@ -37,9 +37,9 @@ const KeyFeatures = () => {
         <section className="w-full py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
-                    <div className="w-full md:w-[45%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                    <div className="w-full md:w-[45%] relative min-h-[300px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/employee-transportation-services-in-mumbai/unnamed-4-1.jpg"
+                            src="/images/shuttle-services-in-mumbai/WhatsApp Image 2026-04-01 at 18.51.19 (1).jpeg"
                             alt="Key Features of Fiesta Shuttle Mumbai"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

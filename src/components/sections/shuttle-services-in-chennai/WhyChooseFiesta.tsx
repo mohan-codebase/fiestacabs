@@ -67,9 +67,9 @@ const WhyChooseFiesta = () => {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-[45%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                    <div className="w-full md:w-[45%] relative min-h-[300px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/employee-transport/difference.png"
+                            src="/images/shuttle-services-in-chennai/WhatsApp Image 2026-04-01 at 18.42.46.jpeg"
                             alt="Why Choose Fiesta for Chennai Shuttle"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

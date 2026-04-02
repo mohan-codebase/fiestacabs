@@ -63,9 +63,9 @@ const Benefits = () => {
                         </div>
                     </div>
 
-                    <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                    <div className="w-full md:w-[50%] relative min-h-[300px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/employee-transportation-services-in-mumbai/unnamed-1-1.jpg"
+                            src="/images/shuttle-services-in-mumbai/WhatsApp Image 2026-04-01 at 18.51.19 (3).jpeg"
                             alt="Benefits of Mumbai Shuttle Services"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

@@ -6,9 +6,9 @@ const Intro = () => {
         <section className="w-full py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="flex flex-col md:flex-row gap-12 items-center">
-                    <div className="w-full md:w-[45%] relative h-[450px] md:h-[550px] overflow-hidden rounded-md">
+                    <div className="w-full md:w-[45%] relative h-[250px] md:h-[450px] lg:h-[550px] overflow-hidden rounded-md">
                         <Image
-                            src="/images/employee-transportation-services-in-mumbai/unnamed-5.jpg"
+                            src="/images/shuttle-services-in-mumbai/WhatsApp Image 2026-04-01 at 18.51.19 (2).jpeg"
                             alt="Shuttle Service in Mumbai for Corporate Professionals"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

@@ -51,7 +51,7 @@ const BusinessBenefits = () => {
                         </p>
                     </div>
 
-                    <div className="w-full md:w-[50%] relative min-h-[700px] md:min-h-full overflow-hidden rounded-md">
+                    <div className="w-full md:w-[50%] relative min-h-[300px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
                         <Image
                             src="/images/shuttle-service-in-bangalore/unnamed-9-1.jpg"
                             alt="Business Benefits of Pune Corporate Shuttle"

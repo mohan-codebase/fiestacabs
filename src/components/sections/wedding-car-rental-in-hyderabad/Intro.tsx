@@ -6,7 +6,7 @@ const Intro = () => {
         <section className="py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
-                    <div className="relative min-h-[300px] md:min-h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
+                    <div className="relative min-h-[200px] md:min-h-[300px] lg:min-h-[400px] w-full overflow-hidden rounded-2xl shadow-xl">
                         <Image
                             src="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.39 PM (4).jpeg"
                             alt="Hyderabad Wedding Cars - Luxury Rentals by Fiesta"

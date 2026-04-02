@@ -23,7 +23,7 @@ const WhyChoose = () => {
         <section className="py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4 md:px-8">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
-                    <div className="relative min-h-[400px] md:min-h-[500px] w-full overflow-hidden">
+                    <div className="relative min-h-[300px] md:min-h-[500px] w-full overflow-hidden">
                         <Image
                             src="/images/wedding-car-rental-in-hyderabad/7.jpg"
                             alt="Why Choose Fiesta for Hyderabad Wedding Car Rentals?"

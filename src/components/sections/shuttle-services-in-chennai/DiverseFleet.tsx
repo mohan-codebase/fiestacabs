@@ -65,9 +65,9 @@ Our diversified fleet undergoes strict maintenance schedules to guarantee safety
 These fleet options provide a cost-effective alternative to individual reimbursements, while shared transportation reduces traffic congestion, lowers environmental impact, and promotes a positive corporate culture.                        </p>
                     </div>
 
-                    <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                    <div className="w-full md:w-[50%] relative min-h-[250px] md:min-h-[250px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
                         <Image
-                            src="/images/services-offered/employee-transport-service/employee-transport-in-chennai/serving-multiple-locations.jpg"
+                            src="/images/shuttle-services-in-chennai/WhatsApp Image 2026-04-01 at 18.42.47 (1).jpeg"
                             alt="Diverse Fleet for Chennai Corporate Transport"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

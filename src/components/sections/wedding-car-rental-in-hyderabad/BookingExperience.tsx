@@ -44,7 +44,7 @@ Booking through Fiesta follows a structured and professional process:           
                         </p>
                     </div>
 
-                    <div className="relative min-h-[400px] md:min-h-[500px] w-full overflow-hidden order-1 md:order-2">
+                    <div className="relative min-h-[300px] md:min-h-[500px] w-full overflow-hidden order-1 md:order-2">
                         <Image
                             src="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.38 PM (1).jpeg"
                             alt="Booking and Customer Experience in Hyderabad"

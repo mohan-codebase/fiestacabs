@@ -18,7 +18,7 @@ export default function ShuttleServicesMumbai() {
             <HeroForm
                 title="Shuttle Service in Mumbai for Corporate Professionals"
                 subtitle="Reliable, technology-driven, and structured commutes for Mumbai's bustling business districts."
-                imageSrc="/images/employee-transportation-services-in-mumbai/unnamed-2-1.jpg"
+                imageSrc="/images/shuttle-services-in-mumbai/WhatsApp Image 2026-04-01 at 18.51.19 (4).jpeg"
                 ctaText="Book Mumbai Shuttle"
                 imageClassName="brightness-[0.4]"
             />

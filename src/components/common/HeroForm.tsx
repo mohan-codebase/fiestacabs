@@ -27,7 +27,7 @@ const HeroForm = ({
     const shouldOpenQuoteModal = ctaText.toLowerCase().includes("free quote") || ctaLink === "#" || ctaLink === "#booking-form" || !ctaLink;
 
     return (
-        <section className="relative w-full overflow-hidden h-[80vh] lg:h-[100vh] min-h-[650px] flex items-center">
+        <section className="relative w-full overflow-visible min-h-screen lg:h-screen flex items-center pt-0">
             <div className="absolute inset-0">
                 <Image
                     src={imageSrc}
@@ -38,7 +38,7 @@ const HeroForm = ({
                 />
                 <div className="absolute inset-0 bg-black/60 md:bg-black/40 md:bg-gradient-to-r md:from-black/10 md:via-black/50 md:to-black/80" />
             </div>
-            <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 lg:px-8 pt-24 lg:pt-32 pb-16">
+            <div className="relative z-10 w-full max-w-[1440px] mx-auto px-4 lg:px-8 pt-32 lg:pt-32 pb-16">
                 <div className="grid grid-cols-1 lg:grid-cols-[1.1fr_0.9fr] gap-12 items-center">
                     <div className="text-white pr-0 lg:pr-10">
                         <h1 className="text-4xl md:text-5xl lg:text-5xl font-bold mb-4 leading-tight">{title}</h1>

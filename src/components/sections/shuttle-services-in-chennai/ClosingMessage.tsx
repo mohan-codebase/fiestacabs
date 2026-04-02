@@ -2,7 +2,7 @@ import React from 'react';
 
 const ClosingMessage = () => {
     return (
-        <section className="w-full py-20 bg-[#f8f9fa]">
+        <section className="w-full py-20 bg-[url('/images/shuttle-services-in-chennai/WhatsApp Image 2026-04-01 at 18.42.46.jpeg')]">
             <div className="max-w-[1000px] mx-auto px-4 text-center">
                 <div className="mb-8">
                     <span className="text-[#fd6454] font-bold text-4xl mb-4 block italic">"</span>

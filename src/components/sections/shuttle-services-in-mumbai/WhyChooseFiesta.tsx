@@ -58,9 +58,9 @@ const WhyChooseFiesta = () => {
                 </div>
 
                 <div className="flex flex-col lg:flex-row gap-12 items-start">
-                    <div className="w-full lg:w-[40%] relative min-h-[400px] lg:min-h-[600px] rounded-md overflow-hidden">
+                    <div className="w-full lg:w-[40%] relative min-h-[250px] md:min-h-[400px] lg:min-h-[600px] rounded-md overflow-hidden">
                         <Image
-                            src="/images/employee-transportation-services-in-mumbai/unnamed-3-1.jpg"
+                            src="/images/shuttle-services-in-mumbai/WhatsApp Image 2026-04-01 at 18.51.19.jpeg"
                             alt="Why Choose Fiesta Mumbai"
                             fill
                             style={{ objectFit: "cover", objectPosition: "center" }}

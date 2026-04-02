@@ -30,7 +30,7 @@ const SustainabilitySupport = () => {
 
                     </div>
 
-                    <div className="w-full md:w-[50%] relative min-h-[500px] md:min-h-full overflow-hidden rounded-md">
+                    <div className="w-full md:w-[50%] relative min-h-[250px] md:min-h-[250px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
                         <Image
                             src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.24 (1).jpeg"
                             alt="Sustainability and Dedicated Support in Pune"
