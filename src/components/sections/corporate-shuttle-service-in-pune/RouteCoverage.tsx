@@ -23,7 +23,7 @@ const RouteCoverage = () => {
     return (
         <section className="w-full py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4">
-                <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
+                <div className="flex flex-col-reverse md:flex-row gap-12 lg:gap-20 items-stretch">
                     <div className="w-full md:w-[45%] relative min-h-[300px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
                         <Image
                             src="/images/corporate-shuttle-service-in-pune/WhatsApp Image 2026-03-30 at 13.16.24 (2).jpeg"

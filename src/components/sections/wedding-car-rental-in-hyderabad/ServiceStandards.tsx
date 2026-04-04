@@ -22,7 +22,7 @@ const ServiceStandards = () => {
     return (
         <section className="py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4 md:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-20 items-stretch">
+                <div className="flex flex-col-reverse md:flex-row gap-12 lg:gap-20 items-stretch">
                     <div className="flex flex-col justify-center space-y-6 order-2 md:order-1">
                         <h2 className="text-3xl md:text-[32px] font-bold text-gray-900 leading-tight">
                             Service Standards and Fleet Quality

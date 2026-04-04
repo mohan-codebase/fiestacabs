@@ -37,14 +37,7 @@ const TechEnabledRides = () => {
         <section className="w-full py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4">
                 <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
-                    <div className="w-full md:w-[45%] relative min-h-[300px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
-                        <Image
-                            src="/images/shuttle-services-in-chennai/WhatsApp Image 2026-04-01 at 18.42.47 (2).jpeg"
-                            alt="Technology-Enabled Rides in Chennai"
-                            fill
-                            style={{ objectFit: "cover", objectPosition: "center" }}
-                        />
-                    </div>
+                  
 
                     <div className="w-full md:w-[55%] md:pl-8 flex flex-col justify-center">
                         <h2 className="text-3xl lg:text-[38px] font-bold text-[#2A2A2A] mb-6 leading-[1.2] tracking-tight">
@@ -69,6 +62,15 @@ Every shuttle is equipped with advanced operational technology to monitor rides 
                                 </div>
                             ))}
                         </div>
+                    </div>
+
+                      <div className="w-full md:w-[45%] relative min-h-[300px] md:min-h-[500px] lg:min-h-full overflow-hidden rounded-md">
+                        <Image
+                            src="/images/shuttle-services-in-chennai/WhatsApp Image 2026-04-01 at 18.42.47 (2).jpeg"
+                            alt="Technology-Enabled Rides in Chennai"
+                            fill
+                            style={{ objectFit: "cover", objectPosition: "center" }}
+                        />
                     </div>
                 </div>
             </div>

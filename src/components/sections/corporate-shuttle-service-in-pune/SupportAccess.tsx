@@ -22,7 +22,7 @@ const SupportAccess = () => {
     return (
         <section className="w-full py-16 md:py-24 bg-white">
             <div className="max-w-[1440px] mx-auto px-4">
-                <div className="flex flex-col md:flex-row gap-12 lg:gap-20 items-stretch">
+                <div className="flex flex-col-reverse md:flex-row gap-12 lg:gap-20 items-stretch">
 
                     {/* LEFT IMAGE */}
 
