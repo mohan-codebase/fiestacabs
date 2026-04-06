@@ -40,7 +40,7 @@ const WeddingCities = () => {
                     <circle cx="43" cy="10" r="2" />
                 </svg>
             ),
-            link: "/wedding-car-rental-in-hyderabad"
+            link: "/wedding-cars-in-hyderabad"
         },
         {
             name: "Wedding Cars in\nBangalore",
@@ -76,24 +76,24 @@ const WeddingCities = () => {
             ),
             link: "/car-rent-for-marriage-in-delhi"
         },
-        {
-            name: "Wedding Cars in\nGurgaon",
-            desc: "Whether it's Cyber City or Udyog Vihar, Fiesta's wedding car rentals in Gurgaon make every bridal entry truly memorable with luxury vehicles and on-time arrivals.",
-            icon: (
-                <svg viewBox="0 0 64 64" fill="none" className="w-12 h-12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
-                    {/* Modern Building style icon */}
-                    <rect x="12" y="20" width="12" height="36" />
-                    <rect x="24" y="12" width="16" height="44" />
-                    <rect x="40" y="28" width="12" height="28" />
-                    <line x1="8" y1="56" x2="56" y2="56" />
-                    <rect x="14" y="24" width="8" height="4" />
-                    <rect x="14" y="32" width="8" height="4" />
-                    <rect x="26" y="16" width="12" height="4" />
-                    <rect x="26" y="24" width="12" height="4" />
-                </svg>
-            ),
-            link: "/shuttle-service-in-gurgaon"
-        },
+        // {
+        //     name: "Wedding Cars in\nGurgaon",
+        //     desc: "Whether it's Cyber City or Udyog Vihar, Fiesta's wedding car rentals in Gurgaon make every bridal entry truly memorable with luxury vehicles and on-time arrivals.",
+        //     icon: (
+        //         <svg viewBox="0 0 64 64" fill="none" className="w-12 h-12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+        //             {/* Modern Building style icon */}
+        //             <rect x="12" y="20" width="12" height="36" />
+        //             <rect x="24" y="12" width="16" height="44" />
+        //             <rect x="40" y="28" width="12" height="28" />
+        //             <line x1="8" y1="56" x2="56" y2="56" />
+        //             <rect x="14" y="24" width="8" height="4" />
+        //             <rect x="14" y="32" width="8" height="4" />
+        //             <rect x="26" y="16" width="12" height="4" />
+        //             <rect x="26" y="24" width="12" height="4" />
+        //         </svg>
+        //     ),
+        //     link: "/shuttle-service-in-gurgaon"
+        // },
         {
             name: "Wedding Cars in\nMumbai",
             desc: "Whether it's anywhere in Mumbai or its surrounding areas, Fiesta's car rental services in Mumbai ensure a smooth and stylish ride with well-maintained vehicles and on-time service.",

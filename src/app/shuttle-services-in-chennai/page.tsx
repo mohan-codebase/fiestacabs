@@ -20,7 +20,7 @@ export default function ShuttleServicesChennai() {
     return (
         <div className="w-full bg-[#f8f9fa]">
             <HeroForm
-                title="Your Trusted Partner for Corporate Shuttle Services in Chennai"
+                title="Corporate Shuttle Services in Chennai"
                 subtitle="Professional, technology-driven, and reliable commutes for Chennai's IT hubs and industrial zones."
                 imageSrc="/images/shuttle-services-in-chennai/WhatsApp Image 2026-04-01 at 18.42.47 (4).jpeg"
                 ctaText="Book Chennai Shuttle"

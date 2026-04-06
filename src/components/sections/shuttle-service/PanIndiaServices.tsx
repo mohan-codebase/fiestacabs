@@ -14,7 +14,7 @@ const cityCards: CityCard[] = [
         description:
             "Fiesta's shuttle buses in Chennai serve key corporate zones like OMR, Guindy, and Taramani with reliable gate-to-gate connectivity.",
         icon: "/images/shuttle-service/city-chennai.png",
-        href: "/employee-transportation-services-in-chennai",
+        href: "/shuttle-services-in-chennai",
     },
     {
         city: "Shuttle Service in Hyderabad",
@@ -49,8 +49,16 @@ const cityCards: CityCard[] = [
         description:
             "Fiesta offers dependable shuttle services in Pune, connecting residential hubs with IT parks like Hinjewadi and Magarpatta.",
         icon: "/images/shuttle-service/city-bangalore.png",
-        href: "/corporate-shuttle-service-in-pune",
+        href: "/shutle-services-in-pune",
     },
+    {
+        city: "Shuttle Service in Mumbai",
+        description:
+            "Fiesta offers dependable shuttle services in Mumbai, connecting residential hubs with IT parks like Hinjewadi and Magarpatta.",
+        icon: "/images/shuttle-service/city-bangalore.png",
+        href: "/shuttle-services-in-mumbai",
+    },
+    
 ];
 
 const PanIndiaServices = () => {

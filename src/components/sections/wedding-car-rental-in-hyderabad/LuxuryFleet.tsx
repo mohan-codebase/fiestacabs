@@ -35,15 +35,6 @@ const LuxuryFleet = () => {
             <div className="max-w-[1440px] mx-auto px-4 md:px-8">
                 <div className="flex flex-col-reverse md:flex-row gap-12 lg:gap-20 items-stretch">
                    
-                    <div className="relative min-h-[300px] md:min-h-[500px] w-full md:w-1/2 overflow-hidden rounded-md">
-                        <Image
-                            src="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.39 PM (3).jpeg"
-                            alt="Luxury Wedding Cars Available with Fiesta in Hyderabad"
-                            fill
-                            className="object-cover"
-                        />
-                    </div>
-
                     <div className="flex flex-col justify-center space-y-6 w-full md:w-1/2">
                         <h2 className="text-3xl md:text-[32px] font-bold text-gray-900 leading-tight">
                             Luxury, Classic, and Vintage Wedding Cars
@@ -67,6 +58,16 @@ const LuxuryFleet = () => {
                              Every decorated car arrives perfectly, supporting timely service and leaving a lasting impression on customers and guests. The fleet includes modern ultra-luxury cars for couples desiring elegance and prestige.
                         </p>
                     </div>
+                    <div className="relative min-h-[300px] md:min-h-[500px] w-full md:w-1/2 overflow-hidden rounded-md">
+                        <Image
+                            src="/images/wedding-car-rental-in-hyderabad/WhatsApp Image 2026-03-30 at 2.43.39 PM (3).jpeg"
+                            alt="Luxury Wedding Cars Available with Fiesta in Hyderabad"
+                            fill
+                            className="object-cover"
+                        />
+                    </div>
+
+                    
                 </div>
             </div>
         </section>
