@@ -57,7 +57,13 @@ const Footer = () => {
                                 <li><Link href="/about-us" className="text-gray-600 hover:text-[#EC2028] transition-colors font-medium">About Us</Link></li>
                                 <li><Link href="/clients" className="text-gray-600 hover:text-[#EC2028] transition-colors font-medium">Clients</Link></li>
                                 <li><Link href="/gallery" className="text-gray-600 hover:text-[#EC2028] transition-colors font-medium">Gallery</Link></li>
+                                <li><Link href="/careers" className="text-gray-600 hover:text-[#EC2028] transition-colors font-medium">Careers</Link></li>
+
                                 <li><Link href="/reach-us" className="text-gray-600 hover:text-[#EC2028] transition-colors font-medium">Reach us</Link></li>
+                                <li><Link href="/privacy-policy" className="text-gray-600 hover:text-[#EC2028] transition-colors font-medium">Privacy Policy</Link></li>
+                                <li><Link href="/terms-and-conditions" className="text-gray-600 hover:text-[#EC2028] transition-colors font-medium">Terms & Conditions</Link></li>
+
+
                             </ul>
                         </div>
 
@@ -116,12 +122,16 @@ const Footer = () => {
 
                     <div className="border-t border-gray-100 pt-8 mt-4 flex flex-col md:flex-row justify-between items-center text-sm">
                         <div className="flex items-center gap-2 mb-4 md:mb-0">
-                        <div className="flex items-center gap-2 mb-4 md:mb-0">
+                            <div className="flex items-center gap-2 mb-4 md:mb-0">
+                            </div>
                         </div>
+                        <div className="text-gray-500 font-medium text-center md:text-left flex flex-col md:flex-row gap-4 items-center">
+                            <span>Copyright © {new Date().getFullYear()}. Fiesta Smart Mobility Private Limited.</span>
+                            <Link href="/privacy-policy" className="hover:text-[#EC2028] transition-colors">Privacy Policy</Link>
+                            <Link href="/terms-and-conditions" className="hover:text-[#EC2028] transition-colors">Terms & Conditions</Link>
+
                         </div>
-                        <div className="text-gray-500 font-medium text-center md:text-left">
-                            Copyright © {new Date().getFullYear()}. Fiesta Smart Mobility Private Limited.
-                        </div>
+
                     </div>
                 </div>
             </div>

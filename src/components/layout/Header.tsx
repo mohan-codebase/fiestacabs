@@ -39,8 +39,9 @@ const Header = () => {
     };
 
     return (
-        <header className="fixed top-4 left-0 w-full z-50 px-4">
-            <div className="max-w-[1500px] mx-auto bg-white/75 backdrop-blur-md rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.08)] px-3 py-3 flex items-center justify-between ">
+        <header className="fixed top-6 left-0 w-full z-50 px-4 md:px-8">
+            <div className="max-w-7xl mx-auto bg-white rounded-full shadow-2xl px-6 py-2.5 flex items-center justify-between border border-gray-100">
+
                 {/* Logo Section */}
                 <div className="flex items-center shrink-0">
                     {/* Placeholder for Logo if image not available, mimicking the design */}
