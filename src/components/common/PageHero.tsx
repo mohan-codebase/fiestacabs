@@ -22,27 +22,30 @@ const PageHero: React.FC<PageHeroProps> = ({
 
     return (
         <section
-            className={`relative ${heightClasses[height]} flex items-center justify-center`}
+            className={`relative ${heightClasses[height]} flex items-center justify-center overflow-hidden`}
         >
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50 z-10" />
-
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
                     src={backgroundImage}
                     alt={title}
                     fill
-                    style={{ objectFit: "cover" }}
+                    className="object-cover"
                     priority
                 />
             </div>
 
+            {/* Cinematic Overlay - Darker and more centered for text readability */}
+            <div className="absolute inset-0 bg-black/60 z-10" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-black/40 z-10" />
+
             {/* Content */}
-            <div className="relative z-20 text-center text-white px-4">
-                <h1 className="text-5xl md:text-6xl font-bold mb-4">{title}</h1>
+            <div className="relative z-20 text-center text-white px-4 max-w-5xl mx-auto">
+                <h1 className="text-6xl md:text-8xl font-black mb-4 tracking-tight drop-shadow-2xl">
+                    {title}
+                </h1>
                 {subtitle && (
-                    <p className="text-lg md:text-xl max-w-2xl mx-auto">
+                    <p className="text-xl md:text-2xl font-medium text-white/90 max-w-2xl mx-auto drop-shadow-lg">
                         {subtitle}
                     </p>
                 )}
