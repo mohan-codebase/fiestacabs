@@ -71,4 +71,13 @@ export const siteTestimonials: TestimonialItem[] = [
         role: "Corporate Client",
         rating: 5,
     },
+    {
+        id: "tagit",
+        quote:
+            "The Toyota Vellfire service arranged in Mumbai was excellent. The vehicle was well-maintained, the driver was courteous and professional, and the service was punctual. The overall travel experience was smooth and comfortable. We appreciate the consistent coordination and look forward to continued service at this standard.",
+        company: "Tagit",
+        person: "Tagit",
+        role: "Admin Manager",
+        rating: 5,
+    },
 ];
