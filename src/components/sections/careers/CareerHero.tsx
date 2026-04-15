@@ -11,7 +11,7 @@ interface CareerHeroProps {
 
 const CareerHero = ({ title, subtitle, imageSrc }: CareerHeroProps) => {
     return (
-        <section className="relative w-full min-h-screen flex items-center justify-center overflow-hidden">
+        <section className="relative w-full h-[500px] md:h-[600px] flex items-center justify-center overflow-hidden">
             {/* Background Image */}
             <div className="absolute inset-0">
                 <Image
@@ -25,7 +25,7 @@ const CareerHero = ({ title, subtitle, imageSrc }: CareerHeroProps) => {
             </div>
 
             {/* Content */}
-            <div className="relative z-10 w-full max-w-5xl mx-auto px-4 text-center text-white pt-32 pb-20">
+            <div className="relative z-10 w-full max-w-5xl mx-auto px-4 text-center text-white pt-20">
                 <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-6 leading-tight tracking-tight px-2">
                     {title}
                 </h1>
