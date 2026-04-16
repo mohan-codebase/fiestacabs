@@ -202,6 +202,20 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
     },
 };
 
-export const getMetadata = (route: string): PageMetadata => {
-    return PAGE_METADATA[route] || PAGE_METADATA["/"];
+export const getMetadata = (route: string) => {
+    const data = PAGE_METADATA[route] || PAGE_METADATA["/"];
+    
+    return {
+        title: data.title,
+        description: data.description,
+        keywords: data.keywords,
+        openGraph: {
+            title: data.title,
+            description: data.description,
+        },
+        twitter: {
+            title: data.title,
+            description: data.description,
+        }
+    };
 };
