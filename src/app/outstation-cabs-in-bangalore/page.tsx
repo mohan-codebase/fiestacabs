@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import FAQ from "../../components/sections/home/FAQ";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";
@@ -12,10 +13,7 @@ import SafetyComfort from "../../components/sections/outstation/SafetyComfort";
 import Offers from "../../components/sections/outstation/Offers";
 import CTA from "../../components/sections/outstation/CTA";
 
-export const metadata = {
-    title: "Outstation Cabs in Bangalore | Fiesta Smart Mobility",
-    description: "Safe and timely outstation cabs in Bangalore for intercity travel. Professional chauffeurs and comfortable rides to Mysore, Coorg, and beyond.",
-};
+export const metadata = getMetadata("/outstation-cabs-in-bangalore");
 
 const BangaloreOutstationPage = () => {
     return (

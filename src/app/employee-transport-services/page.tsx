@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import Link from "next/link";
 import Image from "next/image";
 import { FaHandshake, FaTools, FaMoneyBillWave, FaThumbsUp, FaCar, FaStar, FaCogs } from "react-icons/fa";
@@ -7,16 +8,7 @@ import BookNowButton from "../../components/common/BookNowButton";
 import GeneralEmployeeTransportForm from "../../components/sections/employee-transport/GeneralEmployeeTransportForm";
 import Milestones from "../../components/sections/home/Milestones";
 
-export const metadata = {
-    title: "Employee Transport Services | Fiesta Smart Mobility",
-    description:
-        "Best Employee Transport Services — safe, punctual, and comfortable daily commutes across major Indian cities.",
-    openGraph: {
-        title: "Employee Transport Services | Fiesta Smart Mobility",
-        description: "Best Employee Transport Services — safe, punctual, and comfortable daily commutes across major Indian cities.",
-        images: ["/images/employee-transport/hero.jpg"],
-    },
-};
+export const metadata = getMetadata("/employee-transport-services");
 
 const EmployeeTransportServicesPage = () => {
     const cityCards = [

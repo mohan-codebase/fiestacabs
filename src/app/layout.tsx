@@ -15,6 +15,7 @@ export const metadata: Metadata = {
     template: "%s - Fiesta Cabs",
   },
   description: "Fiesta Smart Mobility offers secure, employee transport services and premium car rental solutions across India. Experience punctual and eco-friendly commutes",
+  keywords: ["employee transport services", "corporate car rental", "shuttle service India", "premium car rentals", "staff transportation", "mobility solutions", "Fiesta Smart Mobility", "intercity cabs", "wedding car rental"],
   metadataBase: new URL("https://fiestacabs.com"),
   alternates: {
     canonical: "/",

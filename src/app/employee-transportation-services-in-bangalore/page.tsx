@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import WhyChooseUs from "../../components/sections/employee-transportation-services-in-bangalore/WhyChooseUs";
@@ -9,10 +10,7 @@ import SimpleReliable from "../../components/sections/employee-transportation-se
 import FAQ from "../../components/sections/employee-transportation-services-in-bangalore/FAQ";
 import Testimonials from "../../components/common/Testimonials";
 
-export const metadata = {
-    title: "Employee Transportation Services in Bangalore | Fiesta Cabs",
-    description: "Looking for dependable employee transportation services in Bangalore? Fiesta Cabs provides secure, prompt, and comfortable employee transportation.",
-};
+export const metadata = getMetadata("/employee-transportation-services-in-bangalore");
 
 export default function EmployeeTransportationServicesBangalore() {
     return (

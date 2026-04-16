@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import RedefiningCommute from "../../components/sections/shuttle-services-in-hyderabad/RedefiningCommute";
@@ -12,10 +13,7 @@ import BuildPlan from "../../components/sections/shuttle-services-in-hyderabad/B
 import FAQ from "../../components/sections/shuttle-services-in-hyderabad/FAQ";
 import Testimonials from "../../components/common/Testimonials";
 
-export const metadata = {
-    title: "Fiesta Shuttle Services in Hyderabad | Simplifying the City Commute",
-    description: "Fiesta Shuttle Service in Hyderabad: Redefining the Corporate Commute. Reliable, gate-to-gate corporate shuttle services designed for productivity and punctuality.",
-};
+export const metadata = getMetadata("/shuttle-services-in-hyderabad");
 
 export default function ShuttleServicesHyderabad() {
     return (

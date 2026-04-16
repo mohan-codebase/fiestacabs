@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import React from 'react';
 import HeroForm from '../../components/common/HeroForm';
 import Intro from '../../components/sections/shuttle-services-in-mumbai/Intro';
@@ -7,10 +8,7 @@ import WhyChooseFiesta from '../../components/sections/shuttle-services-in-mumba
 import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/shuttle-services-in-mumbai/FAQ';
 
-export const metadata = {
-    title: "Shuttle Service in Mumbai for Corporate Professionals | Fiesta Smart Mobility",
-    description: "Fiesta Smart Mobility delivers reliable and technology-driven shuttle services across Mumbai, designed for corporate offices, business campuses, and urban commuters.",
-};
+export const metadata = getMetadata("/shuttle-services-in-mumbai");
 
 export default function ShuttleServicesMumbai() {
     return (

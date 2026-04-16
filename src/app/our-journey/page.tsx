@@ -1,11 +1,8 @@
+import { getMetadata } from "../data/metadata";
 import Timeline from "../../components/sections/our-journey/Timeline";
 import PageHero from "../../components/common/PageHero";
 
-export const metadata = {
-    title: "Our Journey | Fiesta Smart Mobility",
-    description:
-        "Explore Fiesta Smart Mobility's journey, milestones, and growth in employee transport and mobility solutions.",
-};
+export const metadata = getMetadata("/our-journey");
 
 const OurJourneyPage = () => {
     return (

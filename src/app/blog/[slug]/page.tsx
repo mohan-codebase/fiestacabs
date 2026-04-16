@@ -36,6 +36,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} | Fiesta Blog`,
     description: post.excerpt,
+    keywords: `${post.title.toLowerCase().split(' ').join(', ')}, mobility insights, transport guides, fiesta cabs blog`,
     openGraph: {
       title: post.title,
       description: post.excerpt,

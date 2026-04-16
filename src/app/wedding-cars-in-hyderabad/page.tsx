@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import React from 'react';
 import HeroForm from '../../components/common/HeroForm';
 import Intro from '../../components/sections/wedding-car-rental-in-hyderabad/Intro';
@@ -11,10 +12,7 @@ import HyderabadCTA from '../../components/sections/wedding-car-rental-in-hydera
 import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/wedding-car-rental-in-hyderabad/FAQ';
 
-export const metadata = {
-    title: "Hyderabad Wedding Cars - Luxury Rentals by Fiesta",
-    description: "Fiesta, a trusted partner in wedding car rental services, offers luxury wedding cars, classic and vintage cars, premium SUVs, and guest bus rentals in Hyderabad.",
-};
+export const metadata = getMetadata("/wedding-cars-in-hyderabad");
 
 export default function WeddingCarRentalHyderabad() {
     return (

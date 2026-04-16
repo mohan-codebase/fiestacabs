@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import React from 'react';
 import HeroForm from '../../components/common/HeroForm';
 import Intro from '../../components/sections/shuttle-services-in-chennai/Intro';
@@ -11,10 +12,7 @@ import ClosingMessage from '../../components/sections/shuttle-services-in-chenna
 import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/shuttle-services-in-chennai/FAQ';
 
-export const metadata = {
-    title: "Corporate Shuttle Services in Chennai | Fiesta Smart Mobility",
-    description: "Fiesta Smart Mobility delivers professional, technology-driven, and reliable shuttle services in Chennai, designed for corporate organizations and IT corridors.",
-};
+export const metadata = getMetadata("/shuttle-services-in-chennai");
 
 export default function ShuttleServicesChennai() {
     return (

@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import Introduction from "../../components/sections/employee-transport-services-in-hyderabad/Introduction";
@@ -11,10 +12,7 @@ import GetStarted from "../../components/sections/employee-transport-services-in
 import Testimonials from "../../components/common/Testimonials";
 import FAQ from "../../components/sections/employee-transport-services-in-hyderabad/FAQ";
 
-export const metadata = {
-    title: "Employee Transport Services in Hyderabad | Fiesta Cabs",
-    description: "Looking for dependable employee transport services in Hyderabad? Fiesta Cabs provides secure, prompt, and comfortable employee transportation with 24/7 support.",
-};
+export const metadata = getMetadata("/employee-transport-services-in-hyderabad");
 
 export default function EmployeeTransportServices() {
     return (

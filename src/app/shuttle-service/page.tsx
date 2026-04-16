@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import Link from "next/link";
 import FAQ from "../../components/sections/home/FAQ";
 import Hero from "../../components/sections/shuttle-service/Hero";
@@ -10,16 +11,7 @@ import StartToday from "../../components/sections/shuttle-service/StartToday";
 import WhyDifferent from "../../components/sections/shuttle-service/WhyDifferent";
 import CTA from "../../components/sections/shuttle-service/CTA";
 
-export const metadata = {
-    title: "Shuttle Service | Fiesta Smart Mobility",
-    description:
-        "Corporate shuttle and employee transport service with gate-to-gate commuting, fixed schedules, and safe daily rides.",
-    openGraph: {
-        title: "Shuttle Service | Fiesta Smart Mobility",
-        description: "Corporate shuttle and employee transport service with gate-to-gate commuting, fixed schedules, and safe daily rides.",
-        images: ["/images/logo/logo.png"],
-    },
-};
+export const metadata = getMetadata("/shuttle-service");
 
 const ShuttleServicePage = () => {
     return (

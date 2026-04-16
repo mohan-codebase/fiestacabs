@@ -1,12 +1,10 @@
+import { getMetadata } from "../data/metadata";
 import Image from "next/image";
 import Link from "next/link";
 
 import { blogPosts } from "../../data/blogPosts";
 import PageHero from "../../components/common/PageHero";
-export const metadata = {
-  title: "Blog | Fiesta Smart Mobility",
-  description: "Blogs",
-};
+export const metadata = getMetadata("/blog");
 
 type CardPost = {
   title: string;

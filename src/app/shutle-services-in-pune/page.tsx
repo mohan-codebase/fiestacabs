@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import React from 'react';
 import HeroForm from '../../components/common/HeroForm';
 import Intro from '../../components/sections/corporate-shuttle-service-in-pune/Intro';
@@ -13,10 +14,7 @@ import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/corporate-shuttle-service-in-pune/FAQ';
 import SupportAccess from '@/src/components/sections/corporate-shuttle-service-in-pune/SupportAccess';
 
-export const metadata = {
-    title: "Reliable Corporate Shuttle Service in Pune | Fiesta Smart Mobility",
-    description: "Fiesta Smart Mobility provides reliable and efficient corporate shuttle services in Pune, designed for businesses and employees seeking a seamless commuting experience.",
-};
+export const metadata = getMetadata("/shutle-services-in-pune");
 
 export default function CorporateShuttlePune() {
     return (

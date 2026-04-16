@@ -1,3 +1,4 @@
+import { getMetadata } from "../data/metadata";
 import React from 'react';
 import type { Metadata } from 'next';
 import HeroForm from "../../components/common/HeroForm";
@@ -17,10 +18,7 @@ import ComprehensiveService from "../../components/sections/best-car-rental-in-c
 import ContactCTA from "../../components/sections/best-car-rental-in-chennai/ContactCTA";
 import FAQ from "../../components/sections/best-car-rental-in-chennai/FAQ";
 
-export const metadata: Metadata = {
-    title: 'Best Car Rental in Chennai with Driver | Fiesta Cabs',
-    description: 'Looking for the best car rental in Chennai with driver? Fiesta Cabs offers reliable, affordable, and outstation car rental services. Book your comfortable ride today!',
-};
+export const metadata = getMetadata("/best-car-rental-in-chennai");
 
 export default function BestCarRentalChennaiPage() {
     return (
