@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import CorporateHero from "../../components/sections/corporate/CorporateHero";
 import CorporateIntro from "../../components/sections/corporate/CorporateIntro";

@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import React from 'react';
 import HeroForm from '../../components/common/HeroForm';
 import WeddingInStyle from '../../components/sections/wedding-cars-in-bangalore/WeddingInStyle';

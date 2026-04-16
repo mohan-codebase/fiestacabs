@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import Introduction from "../../components/sections/employee-transport-services-in-hyderabad/Introduction";

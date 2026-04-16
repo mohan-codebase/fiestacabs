@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import Link from "next/link";
 import Image from "next/image";
 import { FaHandshake, FaTools, FaMoneyBillWave, FaThumbsUp, FaCar, FaStar, FaCogs } from "react-icons/fa";

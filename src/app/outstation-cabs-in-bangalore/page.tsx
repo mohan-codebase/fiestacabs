@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import FAQ from "../../components/sections/home/FAQ";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";

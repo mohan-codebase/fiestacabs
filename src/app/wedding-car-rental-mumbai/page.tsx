@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import HeroForm from "../../components/common/HeroForm";
 import Introduction from "../../components/sections/wedding-car-rental-mumbai/Introduction";
 import PopularOptions from "../../components/sections/wedding-car-rental-mumbai/PopularOptions";

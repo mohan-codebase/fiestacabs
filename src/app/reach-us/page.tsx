@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import ReachUsHero from "../../components/sections/reach-us/ReachUsHero";
 import ContactFormSection from "../../components/sections/reach-us/ContactFormSection";
 import OfficeLocations from "../../components/sections/reach-us/OfficeLocations";

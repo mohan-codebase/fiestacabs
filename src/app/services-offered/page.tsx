@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import Testimonials from "../../components/common/Testimonials";
 import PageHero from "../../components/common/PageHero";
 import OurServices from "../../components/sections/services-offered/OurServices";

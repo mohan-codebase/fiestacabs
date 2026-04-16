@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import Timeline from "../../components/sections/our-journey/Timeline";
 import PageHero from "../../components/common/PageHero";
 

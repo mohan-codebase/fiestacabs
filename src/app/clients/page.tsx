@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import Link from "next/link";
 import ClientCategory from "../../components/sections/clients/ClientCategory";
 import Button from "../../components/common/Button";

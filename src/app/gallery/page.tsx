@@ -1,4 +1,4 @@
-import { getMetadata } from "../data/metadata";
+import { getMetadata } from "@/src/data/metadata";
 import GalleryHero from "../../components/sections/gallery/GalleryHero";
 import GalleryEvents from "../../components/sections/gallery/GalleryEvents";
 
