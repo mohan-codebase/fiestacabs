@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import Image from "next/image";
 import { FaBus, FaStar, FaShieldAlt, FaChartLine, FaClock, FaHandHoldingUsd, FaRegFileAlt, FaUserTie } from "react-icons/fa";
@@ -6,10 +7,7 @@ import ChennaiEmployeeTransportForm from "../../components/sections/employee-tra
 import Button from "../../components/common/Button";
 import BookNowButton from "@/src/components/common/BookNowButton";
 
-export const metadata = {
-    title: "Employee Transportation Services in Chennai | Fiesta Smart Mobility",
-    description: "Reliable, safe, and efficient employee transportation services in Chennai. Custom shuttle solutions for businesses and IT parks.",
-};
+export const metadata = getMetadata("/employee-transportation-services-in-chennai");
 
 const ChennaiEmployeeTransportPage = () => {
     const benefits = [

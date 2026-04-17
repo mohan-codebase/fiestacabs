@@ -1,12 +1,9 @@
+import { getMetadata } from "@/src/data/metadata";
 import Testimonials from "../../components/common/Testimonials";
 import PageHero from "../../components/common/PageHero";
 import OurServices from "../../components/sections/services-offered/OurServices";
 
-export const metadata = {
-    title: "Services Offered | Fiesta Smart Mobility",
-    description:
-        "Explore Fiesta Smart Mobility services including employee transport solutions and premium car rentals.",
-};
+export const metadata = getMetadata("/services-offered");
 
 const ServicesOfferedPage = () => {
     return (

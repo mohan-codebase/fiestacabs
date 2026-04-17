@@ -1,10 +1,8 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import PageHero from "../../components/common/PageHero";
 
-export const metadata = {
-    title: "Privacy Policy - Fiesta Smart Mobility",
-    description: "Our privacy policy outlines how we handle your personal information and ensure your data security while using Fiesta Smart Mobility services.",
-};
+export const metadata = getMetadata("/privacy-policy");
 
 export default function PrivacyPolicy() {
     return (

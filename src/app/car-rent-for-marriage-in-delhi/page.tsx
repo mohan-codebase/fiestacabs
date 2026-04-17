@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import Introduction from "../../components/sections/car-rent-for-marriage-in-delhi/Introduction";
@@ -13,10 +14,7 @@ import ContactUsCTA from "../../components/sections/car-rent-for-marriage-in-del
 import Testimonials from "../../components/common/Testimonials";
 import FAQ from "../../components/sections/car-rent-for-marriage-in-delhi/FAQ";
 
-export const metadata = {
-    title: "Car Rent for Marriage in Delhi – Make Your Wedding Day Memorable with Fiesta",
-    description: "Celebrate your big day in style with Fiesta's chauffeur-driven car rentals in Delhi NCR. From grand entrances to guest transfers, we deliver elegance, punctuality and peace of mind.",
-};
+export const metadata = getMetadata("/car-rent-for-marriage-in-delhi");
 
 export default function CarRentForMarriageInDelhi() {
     return (

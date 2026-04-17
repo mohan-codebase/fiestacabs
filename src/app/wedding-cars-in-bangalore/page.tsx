@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from 'react';
 import HeroForm from '../../components/common/HeroForm';
 import WeddingInStyle from '../../components/sections/wedding-cars-in-bangalore/WeddingInStyle';
@@ -9,10 +10,7 @@ import HassleFreeCTA from '../../components/sections/wedding-cars-in-bangalore/H
 import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/wedding-cars-in-bangalore/FAQ';
 
-export const metadata = {
-    title: "Wedding Cars in Bangalore – Arrive in Style on Your Special Day - Fiesta Smart Mobility Private Limited",
-    description: "Celebrate your big day with Fiesta's chauffeur-driven car rentals in Bangalore, offering elegant wedding entrances, smooth guest transfers, and complete peace of mind.",
-};
+export const metadata = getMetadata("/wedding-cars-in-bangalore");
 
 export default function WeddingCarsInBangalore() {
     return (

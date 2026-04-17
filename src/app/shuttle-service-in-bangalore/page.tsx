@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import RedefiningCommute from "../../components/sections/shuttle-service-in-bangalore/RedefiningCommute";
@@ -12,10 +13,7 @@ import BuildPlan from "../../components/sections/shuttle-service-in-bangalore/Bu
 import FAQ from "../../components/sections/shuttle-service-in-bangalore/FAQ";
 import Testimonials from "../../components/common/Testimonials";
 
-export const metadata = {
-    title: "Fiesta Shuttle Service in Bangalore | Redefining Corporate Commute",
-    description: "Fiesta Shuttle Service in Bangalore: Redefining the Corporate Commute. Reliable, gate-to-gate corporate shuttle services across Whitefield, Electronic City, and more.",
-};
+export const metadata = getMetadata("/shuttle-service-in-bangalore");
 
 export default function ShuttleServiceBangalore() {
     return (

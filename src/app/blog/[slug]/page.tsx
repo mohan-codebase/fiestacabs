@@ -22,8 +22,30 @@ export async function generateStaticParams() {
   }));
 }
 
+import { PAGE_METADATA } from "@/src/data/metadata";
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;
+  const fullPath = `/blog/${slug}`;
+  
+  // Check if there is a manual override in central metadata.ts
+  if (PAGE_METADATA[fullPath]) {
+      const data = PAGE_METADATA[fullPath];
+      return {
+          title: data.title,
+          description: data.description,
+          keywords: data.keywords,
+          openGraph: {
+              title: data.title,
+              description: data.description,
+          },
+          twitter: {
+              title: data.title,
+              description: data.description,
+          }
+      };
+  }
+
   const post = blogPosts.find((p: BlogPost) => p.slug === slug);
 
   if (!post) {
@@ -36,6 +58,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   return {
     title: `${post.title} | Fiesta Blog`,
     description: post.excerpt,
+    keywords: `${post.title.toLowerCase().split(' ').join(', ')}, mobility insights, transport guides, fiesta cabs blog`,
     openGraph: {
       title: post.title,
       description: post.excerpt,

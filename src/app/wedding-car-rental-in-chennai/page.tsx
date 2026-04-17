@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from 'react';
 import HeroForm from '../../components/common/HeroForm';
 import Intro from '../../components/sections/wedding-car-rental-in-chennai/Intro';
@@ -11,10 +12,7 @@ import DiscountCTA from '../../components/sections/wedding-car-rental-in-chennai
 import Testimonials from '../../components/common/Testimonials';
 import FAQ from '../../components/sections/wedding-car-rental-in-chennai/FAQ';
 
-export const metadata = {
-    title: "Wedding Car Rental in Chennai for Style, Class and Comfort",
-    description: "Make your special day memorable with our luxury wedding car rentals in Chennai.",
-};
+export const metadata = getMetadata("/wedding-car-rental-in-chennai");
 
 export default function WeddingCarRentalChennai() {
     return (

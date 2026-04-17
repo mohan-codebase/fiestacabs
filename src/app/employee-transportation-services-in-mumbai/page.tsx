@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import Introduction from "../../components/sections/employee-transportation-services-in-mumbai/Introduction";
@@ -7,10 +8,7 @@ import HowWeDeliver from "../../components/sections/employee-transportation-serv
 import CTA from "../../components/sections/employee-transportation-services-in-mumbai/CTA";
 import FAQ from "../../components/sections/employee-transportation-services-in-mumbai/FAQ";
 
-export const metadata = {
-    title: "Employee Transportation Services in Mumbai | Fiesta Cabs",
-    description: "Looking for dependable employee transportation services in Mumbai? Fiesta Cabs provides secure, prompt, and comfortable employee transportation.",
-};
+export const metadata = getMetadata("/employee-transportation-services-in-mumbai");
 
 export default function EmployeeTransportationServicesMumbai() {
     return (

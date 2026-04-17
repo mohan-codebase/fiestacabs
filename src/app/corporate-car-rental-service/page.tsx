@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import CorporateHero from "../../components/sections/corporate/CorporateHero";
 import CorporateIntro from "../../components/sections/corporate/CorporateIntro";
@@ -14,11 +15,7 @@ import CorporateAdvantages from "../../components/sections/corporate/CorporateAd
 import CorporateOftenMiss from "../../components/sections/corporate/CorporateOftenMiss";
 import CorporateFleetTable from "../../components/sections/corporate/CorporateFleetTable";
 
-export const metadata = {
-    title: "Best Corporate Car Rental Service | Fiesta Smart Mobility",
-    description:
-        "Discover how to pick a reliable, cost-efficient, and professional corporate car rental service that meets your company's travel needs.",
-};
+export const metadata = getMetadata("/corporate-car-rental-service");
 
 const CorporateCarRentalPage = () => {
     return (

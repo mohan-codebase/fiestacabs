@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import HeroForm from "../../components/common/HeroForm";
 import Introduction from "../../components/sections/wedding-car-rental-mumbai/Introduction";
 import PopularOptions from "../../components/sections/wedding-car-rental-mumbai/PopularOptions";
@@ -8,10 +9,7 @@ import HowToBookCTA from "../../components/sections/wedding-car-rental-mumbai/Ho
 import FAQ from "../../components/sections/home/FAQ";
 import Testimonials from "../../components/common/Testimonials";
 
-export const metadata = {
-    title: "Wedding Car Rental Mumbai | Premium Wedding Cars | Fiesta",
-    description: "Book luxury and premium wedding cars in Mumbai. Reliable, professional chauffeur-driven car rental for your special day.",
-};
+export const metadata = getMetadata("/wedding-car-rental-mumbai");
 
 export default function WeddingCarRentalMumbai() {
     return (

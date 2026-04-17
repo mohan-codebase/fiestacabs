@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import FAQ from "../../components/sections/home/FAQ";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";
@@ -12,10 +13,7 @@ import SafetyComfort from "../../components/sections/outstation/SafetyComfort";
 import Offers from "../../components/sections/outstation/Offers";
 import CTA from "../../components/sections/outstation/CTA";
 
-export const metadata = {
-    title: "Outstation Cabs in Chennai | Fiesta Smart Mobility",
-    description: "Book reliable outstation cabs in Chennai for intercity travel. Professional chauffeurs, safe vehicles, and transparent fares to Pondicherry, Bangalore, and more.",
-};
+export const metadata = getMetadata("/outstation-cabs-in-chennai");
 
 const ChennaiOutstationPage = () => {
     return (

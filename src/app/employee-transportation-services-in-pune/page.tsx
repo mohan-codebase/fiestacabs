@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import Introduction from "../../components/sections/employee-transportation-services-in-pune/Introduction";
@@ -8,10 +9,7 @@ import TrustedBusiness from "../../components/sections/employee-transportation-s
 import Benefits from "../../components/sections/employee-transportation-services-in-pune/Benefits";
 import FAQ from "../../components/sections/employee-transportation-services-in-pune/FAQ";
 
-export const metadata = {
-    title: "Employee Transportation Services in Pune | Fiesta Cabs",
-    description: "Employee Transportation Services in Pune. Discover Fiesta's safe, reliable, and comfortable travel solutions for the modern workforce.",
-};
+export const metadata = getMetadata("/employee-transportation-services-in-pune");
 
 export default function EmployeeTransportationServicesPune() {
     return (

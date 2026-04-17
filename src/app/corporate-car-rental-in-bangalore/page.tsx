@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from 'react';
 import type { Metadata } from 'next';
 import HeroForm from "../../components/common/HeroForm";
@@ -12,10 +13,7 @@ import SafetyProfessionalism from "../../components/sections/corporate-car-renta
 import ContactCTA from "../../components/sections/corporate-car-rental-in-bangalore/ContactCTA";
 import FAQ from "../../components/sections/corporate-car-rental-in-bangalore/FAQ";
 
-export const metadata: Metadata = {
-    title: 'Corporate Car Rental in Bangalore: Business Essentials | Fiesta Cabs',
-    description: 'Looking for reliable corporate car rental in Bangalore? Fiesta offers tailored mobility solutions, premium fleets, and long-term transport contracts for modern enterprises.',
-};
+export const metadata = getMetadata("/corporate-car-rental-in-bangalore");
 
 export default function CorporateCarRentalBangalorePage() {
     return (

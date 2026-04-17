@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import Image from "next/image";
 import Button from "../../components/common/Button";
@@ -6,11 +7,7 @@ import WhyChooseUs from "../../components/sections/aboutus/WhyChooseUs";
 import MissionVisible from "../../components/sections/aboutus/MissionVisible";
 import Cta from "../../components/sections/aboutus/Cta";
 
-export const metadata = {
-    title: "About Us - Fiesta Smart Mobility",
-    description:
-        "Learn about Fiesta Smart Mobility, our mission, leadership team, and why customers choose us for their transportation needs.",
-};
+export const metadata = getMetadata("/about-us");
 
 const stats = [
     { value: "28+", label: "Years of Excellence" },

@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import CareerHero from "../../components/sections/careers/CareerHero";
 import WhyJoin from "../../components/sections/careers/WhyJoin";
@@ -6,10 +7,7 @@ import HomeMilestones from "../../components/sections/home/Milestones";
 import CareerCTA from "../../components/sections/careers/CareerCTA";
 import Partners from "../../components/sections/home/Partners";
 
-export const metadata = {
-    title: "Careers - Join Our Team | Fiesta Smart Mobility",
-    description: "Explore career opportunities at Fiesta Smart Mobility. Join 300+ professionals in shaping the future of integrated transport services in India.",
-};
+export const metadata = getMetadata("/careers");
 
 export default function Careers() {
     return (

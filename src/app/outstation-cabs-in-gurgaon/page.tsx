@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import FAQ from "../../components/sections/home/FAQ";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";
@@ -12,10 +13,7 @@ import SafetyComfort from "../../components/sections/outstation/SafetyComfort";
 import Offers from "../../components/sections/outstation/Offers";
 import CTA from "../../components/sections/outstation/CTA";
 
-export const metadata = {
-    title: "Outstation Cabs in Gurgaon | Fiesta Smart Mobility",
-    description: "Reliable outstation taxis in Gurgaon for intercity travel. Professional chauffeurs and comfortable rides to Manesar, Neemrana, Jaipur, and more.",
-};
+export const metadata = getMetadata("/outstation-cabs-in-gurgaon");
 
 const GurgaonOutstationPage = () => {
     return (

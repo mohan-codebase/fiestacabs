@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import type { Metadata } from 'next';
 import HeroForm from '../../components/common/HeroForm';
 import Introduction from '../../components/sections/corporate-car-rental-in-mumbai/Introduction';
@@ -9,10 +10,7 @@ import OutstationTravel from '../../components/sections/corporate-car-rental-in-
 import ContactCTA from '../../components/sections/corporate-car-rental-in-mumbai/ContactCTA';
 import FAQ from '../../components/sections/home/FAQ';
 
-export const metadata: Metadata = {
-    title: 'Corporate Car Rental in Mumbai | Corporate Cabs Mumbai',
-    description: 'Looking for reliable corporate car rental in Mumbai? Fiesta Cabs offers premium cars, minivans & buses for business travel & corporate events. Book now!',
-};
+export const metadata = getMetadata("/corporate-car-rental-in-mumbai");
 
 export default function CorporateCarRentalMumbaiPage() {
     const mumbaiFaqs = [

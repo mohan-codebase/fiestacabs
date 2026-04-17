@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import WeddingHero from "../../components/sections/wedding/WeddingHero";
 import Milestones from "../../components/sections/wedding/Milestones";
@@ -13,16 +14,7 @@ import LuxuryBrands from "../../components/sections/outstation/LuxuryBrands";
 import WeddingCTA from "../../components/sections/wedding/WeddingCTA";
 import FAQ from "../../components/sections/home/FAQ";
 
-export const metadata = {
-    title: "Luxury Wedding Car Rentals | Fiesta Smart Mobility",
-    description:
-        "Make your special day unforgettable with our premium fleet of luxury cars for weddings. Professional chauffeurs and pristine vehicles.",
-    openGraph: {
-        title: "Luxury Wedding Car Rentals | Fiesta Smart Mobility",
-        description: "Make your special day unforgettable with our premium fleet of luxury cars for weddings. Professional chauffeurs and pristine vehicles.",
-        images: ["/images/logo/logo.png"],
-    },
-};
+export const metadata = getMetadata("/wedding-cars");
 
 const WeddingCarsPage = () => {
     return (

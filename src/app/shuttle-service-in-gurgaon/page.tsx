@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import SimplifyingTeamCommute from "../../components/sections/shuttle-service-in-gurgaon/SimplifyingTeamCommute";
@@ -12,11 +13,7 @@ import WhyStruggleCTA from "../../components/sections/shuttle-service-in-gurgaon
 import FAQ from "../../components/sections/shuttle-service-in-gurgaon/FAQ";
 import Testimonials from "../../components/common/Testimonials";
 
-export const metadata = {
-    title: "Fiesta Shuttle Service in Gurgaon: Simplifying Your Team's Daily Commute",
-    description:
-        "Fiesta Shuttle Service in Gurgaon - Simplifying Your Team's Daily Commute. Reliable, gate-to-gate corporate shuttle services across Gurgaon business hubs.",
-};
+export const metadata = getMetadata("/shuttle-service-in-gurgaon");
 
 export default function ShuttleServiceGurgaon() {
     return (

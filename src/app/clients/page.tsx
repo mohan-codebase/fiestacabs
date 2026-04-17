@@ -1,14 +1,11 @@
+import { getMetadata } from "@/src/data/metadata";
 import Link from "next/link";
 import ClientCategory from "../../components/sections/clients/ClientCategory";
 import Button from "../../components/common/Button";
 import Image from "next/image";
 import PageHero from "../../components/common/PageHero";
 
-export const metadata = {
-    title: "Clients - Fiesta Smart Mobility",
-    description:
-        "Fiesta Smart Mobility is proud to serve a diverse range of clients across various industries including IT, Manufacturing, Education, and Banking.",
-};
+export const metadata = getMetadata("/clients");
 
 const itClients = [
     { name: "RITTAL", image: "/images/clients/it/rittal.png" },

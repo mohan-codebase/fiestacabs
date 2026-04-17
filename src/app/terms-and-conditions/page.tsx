@@ -1,10 +1,8 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import PageHero from "../../components/common/PageHero";
 
-export const metadata = {
-    title: "Terms & Conditions - Fiesta Smart Mobility",
-    description: "Read the terms and conditions for using Fiesta Smart Mobility services. Understand our booking policies, user responsibilities, and service agreements.",
-};
+export const metadata = getMetadata("/terms-and-conditions");
 
 export default function TermsAndConditions() {
     return (

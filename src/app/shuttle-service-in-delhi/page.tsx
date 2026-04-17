@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import HeroForm from "../../components/common/HeroForm";
 import MakingOfficeCommutesEffortless from "../../components/sections/shuttle-service-in-delhi/MakingOfficeCommutesEffortless";
@@ -11,10 +12,7 @@ import WhyStruggleCTA from "../../components/sections/shuttle-service-in-delhi/W
 import FAQ from "../../components/sections/shuttle-service-in-delhi/FAQ";
 import Testimonials from "../../components/common/Testimonials";
 
-export const metadata = {
-    title: "Fiesta Shuttle Service in Delhi | Making Office Commutes Effortless",
-    description: "Fiesta Shuttle Service in Delhi: Making Office Commutes Effortless. Reliable, gate-to-gate corporate shuttle services across Connaught Place, Nehru Place, and more.",
-};
+export const metadata = getMetadata("/shuttle-service-in-delhi");
 
 export default function ShuttleServiceDelhi() {
     return (

@@ -1,3 +1,4 @@
+import { getMetadata } from "@/src/data/metadata";
 import FAQ from "../../components/sections/home/FAQ";
 import Hero from "../../components/sections/outstation/Hero";
 import VehicleSelection from "../../components/sections/outstation/VehicleSelection";
@@ -12,11 +13,7 @@ import SafetyComfort from "../../components/sections/outstation/SafetyComfort";
 import Offers from "../../components/sections/outstation/Offers";
 import CTA from "../../components/sections/outstation/CTA";
 
-export const metadata = {
-    title: "Outstation Rides | Fiesta Smart Mobility",
-    description:
-        "Travel between cities with Fiesta outstation rides featuring professional chauffeurs, safe vehicles, and transparent fares.",
-};
+export const metadata = getMetadata("/outstation-rides");
 
 const OutstationRidesPage = () => {
     return (
