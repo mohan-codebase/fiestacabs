@@ -1,11 +1,13 @@
 import { getMetadata } from "@/src/data/metadata";
 import React from "react";
 import CareerHero from "../../components/sections/careers/CareerHero";
+import WhoWeAre from "../../components/sections/careers/WhoWeAre";
 import WhyJoin from "../../components/sections/careers/WhyJoin";
+import WorkLife from "../../components/sections/careers/WorkLife";
+import EmployeeBenefits from "../../components/sections/careers/EmployeeBenefits";
 import OpenPositions from "../../components/sections/careers/OpenPositions";
-import HomeMilestones from "../../components/sections/home/Milestones";
+import HiringProcess from "../../components/sections/careers/HiringProcess";
 import CareerCTA from "../../components/sections/careers/CareerCTA";
-import Partners from "../../components/sections/home/Partners";
 
 export const metadata = getMetadata("/careers");
 
@@ -13,26 +15,26 @@ export default function Careers() {
     return (
         <div className="w-full bg-white">
             <CareerHero
-                title="Build Your Career with Fiesta Smart Mobility"
-                subtitle="Join a trusted name in employee transport services with over 28 years of excellence. At Fiesta, we offer rewarding career opportunities across India in a fast-growing, technology-driven mobility ecosystem. Be part of a team that values reliability, innovation, and people-first service."
+                title="Build the Future of Employee Transportation"
+                subtitle="At Fiesta Cabs, we provide a tech-enabled, reliable employee transportation network for businesses. If you are seeking growth in a dynamic, operations-driven environment and want to help businesses thrive, you are in the right place."
                 imageSrc="/images/careers/hero-career.jpeg"
             />
 
-            {/* Milestones Section */}
-            <HomeMilestones />
+            <WhoWeAre />
 
             <WhyJoin />
+
+            <WorkLife />
+
+            <EmployeeBenefits />
 
             <div id="open-positions">
                 <OpenPositions />
             </div>
 
+            <HiringProcess />
 
-            {/* Career CTA Section */}
             <CareerCTA />
-
-            <Partners />
         </div>
     );
 }
-
