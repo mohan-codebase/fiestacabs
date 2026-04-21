@@ -62,7 +62,7 @@ const HiringProcess = () => {
                                 Apply Now
                             </Link>
                             <span className="text-gray-500 text-sm">
-                                Or send resume to: <a href="mailto:careers@fiestacabs.com" className="text-black font-bold hover:underline">careers@fiestacabs.com</a>
+                                Or send resume to: <a href="hr_executive@fiestaindia.net" className="text-black font-bold hover:underline">hr_executive@fiestaindia.net</a>
                             </span>
                         </div>
                     </div>

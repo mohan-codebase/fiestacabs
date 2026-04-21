@@ -29,7 +29,7 @@ export default function Careers() {
             <EmployeeBenefits />
 
             <div id="open-positions">
-                <OpenPositions />
+                {/* <OpenPositions /> */}
             </div>
 
             <HiringProcess />
