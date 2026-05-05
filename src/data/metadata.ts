@@ -247,13 +247,28 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
         description: "Looking for the best car rental in Chennai with driver? Fiesta Cabs offers reliable, affordable outstation and city car rental services. Book your ride today!",
         keywords: "Car Rental in Chennai"
     },
-    
-    
+    "/blog/office-pickup-and-drop-service-in-delhi": {
+        title: "Office Pickup and Drop Service in Delhi | Fiesta Smart Mobility",
+        description: "Reliable office pickup and drop service in Delhi NCR. Fixed routes, verified drivers, no surge pricing. For corporate employees and working professionals. Book today.",
+        keywords: "Office Pickup and Drop Service in Delhi"
+    },
+    "/blog/office-pickup-and-drop-service-in-gurgaon": {
+        title: "Office Pickup and Drop Service in Gurgaon | Fiesta Smart Mobility",
+        description: "Structured office pickup and drop service in Gurgaon for corporate clients and working professionals. Fixed routes, verified drivers, no surge pricing. Monthly plans available.",
+        keywords: "Office Pickup and Drop Service in Gurgaon"
+    },
+    "/blog/daily-office-pickup-and-drop-service-in-bangalore": {
+        title: "Daily Office Pickup and Drop Service in Bangalore | Fiesta Smart Mobility",
+        description: "Reliable daily office pickup and drop service in Bangalore for corporate clients and working professionals. Fixed routes, verified drivers, transparent pricing. Monthly plans available.",
+        keywords: "Daily Office Pickup and Drop Service in Bangalore"
+    },
+
+
 };
 
 export const getMetadata = (route: string) => {
     const data = PAGE_METADATA[route] || PAGE_METADATA["/"];
-    
+
     return {
         title: data.title,
         description: data.description,

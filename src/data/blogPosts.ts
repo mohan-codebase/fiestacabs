@@ -100,7 +100,7 @@ export const blogPosts: BlogPost[] = [
             { type: 'p', text: "Strong corporate employee transportation improves how teams work, travel, and connect. When companies use modern tools, safe routing, transport solutions, and clear planning, they build a steady work environment. The right partner gives smoother movement, better morale, and strong efficiency across the board." },
             { type: 'p', text: "If you want a smarter way to move your staff and improve how your workplace functions, book your corporate transport consultation today and make commuting easier for your workforce." }
         ],
-          faqs: [
+        faqs: [
             {
                 id: "1",
                 question: "Why should companies invest in structured employee transport services?",
@@ -359,7 +359,7 @@ export const blogPosts: BlogPost[] = [
             { type: 'p', text: "Nodal point transport gives cities, companies, and growing industries a simple way to organise movement and keep every route efficient. When planners build around strong nodes, they reduce delays, save fuel, protect the environment, and make daily travel smoother. If you want to upgrade your own transport setup, start with a clear plan that maps the right nodes, routes, and timing blocks." },
             { type: 'p', text: "To design smarter movement systems and choose the right rental options for your organisation, book a consultation with Fiesta Smart Mobility and move forward with confidence." }
         ],
-       faqs: [
+        faqs: [
             {
                 id: "1",
                 question: "Why should companies invest in structured employee transport services?",
@@ -723,7 +723,7 @@ export const blogPosts: BlogPost[] = [
                 text: "If you’re looking for a service that combines safety, real-time updates, and affordable parking spaces that can help you save money, Fiesta – Transport Solutions is worth exploring.."
             }
         ],
-         faqs: [
+        faqs: [
             {
                 id: "1",
                 question: "What is the main purpose of nodal point transport in modern planning?",
@@ -1210,6 +1210,570 @@ export const blogPosts: BlogPost[] = [
                 id: "6",
                 question: "Can transport services be customized for different employee locations?",
                 answer: "Yes, many providers offer route optimization and flexible pickup/drop points based on employee addresses to ensure convenience and efficiency.",
+            },
+        ],
+        testimonial: {
+            quote: "Hi Akram, During the CFC senior leadership visit, Akram provided excellent support in arranging cabs, managing deployments, and ensuring smooth coordination throughout the visit. He was efficiently handled last-minute changes and ensured that all vehicles were clean and well-maintained. Thanks for your efforts contributed to the successful execution of transportation arrangements during the visit.",
+            company: "Atos",
+            person: "Atos Team",
+            role: "Admin Team",
+            rating: 5,
+        }
+    },
+
+    // 8
+    {
+        slug: "office-pickup-and-drop-service-in-delhi",
+        title: "Office Pickup and Drop Service in Delhi | Fiesta Smart Mobility",
+        date: "May 4, 2026",
+        image: "/images/blog/office-pickup-and-drop-service-in-delhi/delhi-office-cab.png",
+        bannerImage: "/images/blog/office-pickup-and-drop-service-in-delhi/delhi-ncr-corridor.png",
+        excerpt: "Reliable office pickup and drop service in Delhi NCR. Fixed routes, verified drivers, no surge pricing. For corporate employees and working professionals. Book today.",
+        content: [
+            { type: 'h5', text: "Key Takeaways" },
+            {
+                type: 'ul', items: [
+                    "Fiesta's office pickup and drop service in Delhi runs on fixed daily routes, removing the need for daily cab bookings.",
+                    "No surge pricing, no cancellations, no availability anxiety. One fixed monthly fare.",
+                    "Available for individual working professionals and corporate employees across Delhi NCR.",
+                    "Covers major corridors: Dwarka to Gurgaon, Rohini to Connaught Place, Noida, Ghaziabad, Faridabad, and more.",
+                    "Getting started takes under 10 minutes. Share your pickup location, drop location, and shift timings."
+                ]
+            },
+
+            { type: 'h5', text: "Introduction: The Daily Commute Problem in Delhi NCR" },
+            { type: 'p', text: "Commuting in Delhi is genuinely hard." },
+            { type: 'p', text: "Traffic near ITO, AIIMS, and Dhaula Kuan routinely turns a 12-kilometre trip into a 75-minute ordeal. App-based cab rides layer surge pricing on top of that, hitting hardest during rain, public holidays, and the 8 to 9 AM rush." },
+            { type: 'p', text: "Many working professionals budget a fixed amount for travel expenses each month. The actual bill lands 40 to 60 percent higher." },
+            { type: 'p', text: "The problem is not just cost. It is reliability. A driver cancellation at 7:50 AM affects your entire workday. For corporate employees with fixed login times, everyday travel uncertainty is an operational problem, not just an inconvenience." },
+            { type: 'p', text: "Fiesta Smart Mobility's office pickup and drop service in Delhi removes that uncertainty entirely. Fixed schedule. Same route. Same driver. A monthly plan that is settled before your month begins." },
+            { type: 'image', src: "/images/blog/office-pickup-and-drop-service-in-delhi/delhi-office-cab.png", alt: "Fiesta office cab at Delhi residential society gate", caption: "Your office cab arrives at your doorstep at the same time every working day." },
+
+            { type: 'h5', text: "What Is an Office Pickup and Drop Service?" },
+            { type: 'p', text: "It is a pre-scheduled cab arrangement." },
+            { type: 'p', text: "Your vehicle arrives at your doorstep at a fixed time every working day. It takes you to your office. It brings you back. No booking required each morning. No exposure to surge pricing." },
+            { type: 'p', text: "You subscribe on a monthly basis or quarterly cycle. Fiesta has run this model for corporate clients and individual working professionals across Delhi NCR since 1998." },
+            { type: 'p', text: "Both one-way and two-way commutes are covered. You can pre book starting from the 1st of the upcoming month, or arrange a mid-month start at pro-rated pricing." },
+
+            { type: 'h5', text: "How It Works: 4 Steps to Start" },
+            { type: 'h6', text: "Step 1: Share your details" },
+            { type: 'p', text: "Pickup location, drop location, shift timings, working days, vehicle preference. Takes five minutes." },
+            { type: 'h6', text: "Step 2: Receive your plan" },
+            { type: 'p', text: "Within 24 to 48 hours, you get a route plan with vehicle type, shared or exclusive format, and monthly fare. No hidden charges." },
+            { type: 'h6', text: "Step 3: Driver assigned" },
+            { type: 'p', text: "Once confirmed, a driver and vehicle are allocated to your route. You receive the driver's details and a live tracking link before day one." },
+            { type: 'h6', text: "Step 4: Commute without managing logistics" },
+            { type: 'p', text: "Your cab arrives at the agreed time. Billing runs monthly. Changes are handled through your Fiesta account manager." },
+
+            { type: 'h5', text: "Types of Office Cab Service Available in Delhi" },
+            { type: 'image', src: "/images/blog/office-pickup-and-drop-service-in-delhi/office-arrival-delhi.png", alt: "Corporate employees arriving at Delhi office via Fiesta cabs", caption: "Structured employee transport ensures timely arrivals across Delhi NCR." },
+
+            { type: 'h6', text: "Individual Monthly and Quarterly Plans" },
+            { type: 'p', text: "A single working professional can subscribe to a fixed cab service between two points, say Rajouri Garden to DLF Phase 3, for a monthly fee." },
+            { type: 'p', text: "Plans cover 22 to 26 working days. Pricing is locked in at the time of booking. Rain, traffic, and Delhi's festival calendar do not change what you pay." },
+            { type: 'p', text: "Many professionals switching from daily cab rides to a monthly plan reduce their travel expenses by 30 to 45 percent." },
+
+            { type: 'h6', text: "Corporate Employee Transport" },
+            { type: 'p', text: "Corporate clients with offices in Gurgaon Cyber City, Noida Sector 62, Connaught Place, Nehru Place, and Okhla use Fiesta to manage structured employee transport at scale." },
+            { type: 'p', text: "Routes are built across residential hubs: Dwarka, Rohini, Indirapuram, Mayur Vihar, and Vaishali. Corporate employees get fixed pickup points, predefined boarding times, and vehicle IDs shared in advance." },
+            { type: 'p', text: "Fiesta provides a central transport contact for your admin team and a consolidated monthly invoice for finance." },
+
+            { type: 'h6', text: "Ride Sharing and Carpool Options" },
+            { type: 'p', text: "Employees living along the same corridor share a cab, splitting the fare. A route like Saket to Gurgaon or Janakpuri to Noida typically serves three to four employees, cutting individual travel expenses by 40 to 60 percent compared to solo cab rides." },
+            { type: 'p', text: "Despite the shared format, you still get a pre-assigned seat, a fixed departure time, and a professional driver on a known schedule. None of which public transport can match for convenience and security." },
+
+            { type: 'h6', text: "Night Shift and Early Morning Office Cabs" },
+            { type: 'p', text: "Standard app-based cab rides are unreliable and often unsafe between 8 PM and 7 AM." },
+            { type: 'p', text: "Fiesta runs dedicated night-shift office commutes with experienced drivers, GPS-tracked routes, women-first drop sequencing, and mandatory check-in calls during 11 PM to 5 AM windows." },
+            { type: 'p', text: "Many corporate clients make this employer-paid as part of their duty-of-care obligations. Fiesta's contracts are structured to meet standard corporate security requirements." },
+
+            { type: 'h5', text: "Benefits of Fiesta's Office Pickup and Drop Service in Delhi" },
+
+            { type: 'h6', text: "Predictable, Affordable Rates" },
+            { type: 'p', text: "A working professional commuting from Dwarka to Gurgaon Cyber City on daily app cabs spends Rs. 15,000 to Rs. 20,000 per month. Fares spike during rain or peak hours with no warning." },
+            { type: 'p', text: "A Fiesta fixed plan for the same route costs significantly less. Affordable rates are locked in at booking. No surge pricing. No hidden charges. One transparent monthly invoice." },
+
+            { type: 'h6', text: "Same Driver, Every Day" },
+            { type: 'p', text: "Friendly drivers who cover the same route daily build genuine familiarity with their passengers. This matters for early morning pickups, late evening drops, and anyone traveling alone at night." },
+            { type: 'p', text: "Every driver on Fiesta's network is background-verified. Professional drivers operate GPS-tracked vehicles and are reachable through Fiesta's operations team at all times." },
+
+            { type: 'h6', text: "The Right Vehicle for Every Route" },
+            { type: 'p', text: "Within-city New Delhi routes use sedans and hatchbacks. Longer corridors use SUVs or Toyota Innova vehicles, the standard for maximum comfort on extended daily travel. Luxury cars are available for senior executive commutes." },
+            { type: 'p', text: "Toyota Innova remains the preferred choice for routes like Ghaziabad to Noida or Dwarka to Gurgaon, covering distance, legroom, and ride quality." },
+            {
+                type: 'table',
+                headers: ["Vehicle Type", "Best For", "Comfort Level", "Route Example"],
+                rows: [
+                    ["Sedan / Hatchback", "Short within-city routes", "High", "Rohini to Connaught Place"],
+                    ["SUV / Toyota Innova", "Long cross-city corridors", "Premium", "Dwarka to Gurgaon Cyber City"],
+                    ["Luxury Car", "Senior executive commutes", "Ultra-premium", "South Delhi to Golf Course Road"],
+                    ["Tempo Traveller", "Groups of 9+ employees", "Spacious", "Indirapuram to Noida Sector 62"]
+                ]
+            },
+
+            { type: 'h6', text: "No Surge Pricing" },
+            { type: 'p', text: "Ever." },
+            { type: 'p', text: "Your fare is agreed when you pre book. It does not change based on demand, weather, or what is happening in the city that morning." },
+
+            { type: 'h6', text: "Travel Comfortably, Not Just Efficiently" },
+            { type: 'image', src: "/images/blog/office-pickup-and-drop-service-in-delhi/comfortable-commute.png", alt: "Professional working on laptop during comfortable cab commute", caption: "Fiesta turns your daily commute into productive, stress-free time." },
+            { type: 'p', text: "Sitting in a pre-booked, air-conditioned vehicle with a driver you know changes the quality of your commute. Many professionals use this time to travel comfortably, catch up on emails, or simply arrive in a better state than they would after navigating public transport." },
+
+            { type: 'h5', text: "Coverage: Office Commute Corridors in Delhi NCR" },
+            { type: 'image', src: "/images/blog/office-pickup-and-drop-service-in-delhi/delhi-coverage-map.png", alt: "Delhi NCR office commute corridor coverage map", caption: "Fiesta covers all major Delhi NCR corridors — Dwarka, Gurgaon, Noida, Rohini, Faridabad, and beyond." },
+            { type: 'h6', text: "West Delhi to Gurgaon" },
+            { type: 'p', text: "Dwarka, Janakpuri, Uttam Nagar to Gurgaon Cyber City, Udyog Vihar, DLF Phase 1 to 5." },
+            { type: 'h6', text: "North Delhi to Central Delhi" },
+            { type: 'p', text: "Rohini, Pitampura, Shalimar Bagh to Connaught Place, Karol Bagh, Netaji Subhash Place." },
+            { type: 'h6', text: "East Delhi to Noida" },
+            { type: 'p', text: "Mayur Vihar, Laxmi Nagar, Preet Vihar to Noida Sector 16 to 62, Film City, Expressway." },
+            { type: 'h6', text: "Ghaziabad and NCR East" },
+            { type: 'p', text: "Indirapuram, Vaishali, Vasundhara, Kaushambi to Noida and Greater Noida." },
+            { type: 'h6', text: "South Delhi to Gurgaon" },
+            { type: 'p', text: "Saket, Malviya Nagar, Vasant Kunj to Gurgaon MG Road, Golf Course Road." },
+            { type: 'h6', text: "Faridabad to Okhla and Nehru Place" },
+            { type: 'p', text: "Southern corridor for industrial and corporate employees." },
+            { type: 'p', text: "Pickup points within each zone are set at housing society gates, main markets, or Metro station exits, including HUDA City Centre, Botanical Garden, and Rajiv Chowk." },
+
+            { type: 'h5', text: "Airport Pickup and Outstation Trips" },
+            { type: 'p', text: "Working professionals and corporate employees with regular airport travel can add airport pickup and airport drop to their existing Fiesta plan." },
+            { type: 'p', text: "IGI Airport T3 connections are the most requested, covering departures from 4 AM and late-night arrivals. Outstation taxi requirements, including railway station transfers, can be added to the same contract at pre-agreed rates." },
+            { type: 'p', text: "No separate booking. No different vendor. Same professional drivers, same verified network." },
+
+            { type: 'h5', text: "Fiesta vs. Other Cab Services in Delhi" },
+            { type: 'p', text: "Other cab services in Delhi operate on demand-matched trips. You request, the system matches, pricing fluctuates. That works for occasional travel." },
+            { type: 'p', text: "It does not work for a daily office commute where reliability, cost predictability, and driver consistency matter across 22 working days a month." },
+            { type: 'p', text: "Fiesta is a scheduled, contracted service. The comparison is not price per kilometre. It is total monthly cost, total logistics management time, and total disruptions across a full working month. On all three, a contracted office cab plan outperforms daily app cab rides for working professionals on a fixed schedule." },
+            { type: 'p', text: "Public transport covers parts of Delhi NCR but does not solve the doorstep-to-office problem, especially for employees in localities without good Metro access or for those working non-standard hours." },
+            {
+                type: 'table',
+                headers: ["Feature", "Fiesta Fixed Plan", "App-Based Cab", "Public Transport"],
+                rows: [
+                    ["Daily booking needed", "No", "Yes", "No"],
+                    ["Surge pricing", "Never", "Frequent", "N/A"],
+                    ["Same driver daily", "Yes", "No", "N/A"],
+                    ["Doorstep pickup", "Yes", "Yes", "No"],
+                    ["Monthly invoice", "Yes", "No", "No"],
+                    ["Night shift safety", "GPS + check-in calls", "Basic", "Limited hours"],
+                    ["Cost predictability", "100% fixed", "Variable", "Fixed but inconvenient"]
+                ]
+            },
+
+            { type: 'h5', text: "Book Your Office Pickup and Drop Plan in Delhi" },
+            { type: 'p', text: "If your current daily commute involves surge pricing, driver cancellations, or late-night safety concerns, a contracted office cab service solves it at the root." },
+            { type: 'p', text: "Share your pickup location, drop location, and shift timings with Fiesta. You will have a transparent plan in your inbox within 24 hours." },
+            { type: 'p', text: "Call us, contact us online, or visit fiestacabs.com to pre book your Delhi NCR office commute plan today." },
+            { type: 'p', text: "Fiesta Smart Mobility Private Limited | Est. 1998 | fiestacabs.com" }
+        ],
+        faqs: [
+            {
+                id: "1",
+                question: "Is the office pickup and drop service available for a single employee or only for companies?",
+                answer: "Both. Individual working professionals subscribe to monthly plans on their specific route. Corporate clients set up multi-employee accounts with coordinated routes. The minimum is one seat.",
+            },
+            {
+                id: "2",
+                question: "Are there any hidden charges?",
+                answer: "No. Fiesta provides a complete fare breakdown before you confirm. No waiting charges, no fuel surcharges, no surprise additions.",
+            },
+            {
+                id: "3",
+                question: "What if my office timings change or I work late on a given day?",
+                answer: "Timing changes with 48 hours advance notice are accommodated without extra charges. Occasional late pickups can be arranged through your account manager. Leave days are handled through carry-forward options depending on your plan.",
+            },
+            {
+                id: "4",
+                question: "Which vehicle types are available for Delhi office commutes?",
+                answer: "Sedans and hatchbacks for within-city routes in New Delhi. SUVs and Toyota Innova vehicles for longer corridors. Luxury cars for senior executive commutes. Tempo Travellers for groups of nine or more.",
+            },
+            {
+                id: "5",
+                question: "Is the service safe for women employees on night shifts?",
+                answer: "Yes. Night routes use GPS-tracked vehicles, verified experienced drivers, women-first drop sequencing, and check-in calls during 11 PM to 5 AM. Corporate clients get real-time tracking access for their security teams.",
+            },
+            {
+                id: "6",
+                question: "Can I add airport pickup or outstation taxi trips to my plan?",
+                answer: "Yes. Airport pickup, airport drop, and outstation trips are added to an existing office commute contract at pre-agreed rates. IGI Airport T3 and railway station transfers are both covered.",
+            },
+            {
+                id: "7",
+                question: "How do I book or get started?",
+                answer: "Contact Fiesta online or by phone. Share your pickup location, drop location, and shift timings. You receive a proposal within 24 to 48 hours. Confirm, get your driver assigned, and your plan starts on the agreed date.",
+            },
+            {
+                id: "8",
+                question: "Does coverage include the full Delhi NCR region or only New Delhi?",
+                answer: "Full Delhi NCR. New Delhi, Gurgaon, Noida, Ghaziabad, Faridabad, and the connecting corridors. Contact us with your specific locations and we will confirm coverage within 24 hours.",
+            },
+        ],
+        testimonial: {
+            quote: "We would like to extend sincere appreciation to you, your team and drivers for the exceptional support provided during the challenges posed by heavy traffic and rains in the city. Your team's commitment to ensuring the turnaround of the cabs for the logouts played a crucial role in managing the situation to ensure employees are safely transported. This is the level of service and commitment that makes a real difference.",
+            company: "Wellsfargo",
+            person: "Wellsfargo Delhi",
+            role: "Transport Desk",
+            rating: 5,
+        }
+    },
+
+    // 9
+    {
+        slug: "office-pickup-and-drop-service-in-gurgaon",
+        title: "Office Pickup and Drop Service in Gurgaon | Fiesta Smart Mobility",
+        date: "May 4, 2026",
+        image: "/images/blog/office-pickup-and-drop-service-in-gurgaon/gurgaon-office-cab.png",
+        bannerImage: "/images/blog/office-pickup-and-drop-service-in-gurgaon/gurgaon-cyber-city.png",
+        excerpt: "Structured office pickup and drop service in Gurgaon for corporate clients and working professionals. Fixed routes, verified drivers, no surge pricing. Monthly plans available.",
+        content: [
+            { type: 'h5', text: "Key Takeaways" },
+            {
+                type: 'ul', items: [
+                    "Fiesta's office pickup and drop service in Gurgaon runs on fixed daily routes with consistent drivers and vehicles, no daily booking required.",
+                    "Corporate clients and individual employees both get transparent monthly billing with no hidden charges.",
+                    "Coverage spans all major residential sectors and office hubs, including Cyber City, Udyog Vihar, Golf Course Road, and Sohna Road.",
+                    "Night shift transport is fully covered with GPS tracking, women-first drop policies, and verified experienced drivers.",
+                    "Getting started takes a single day consultation call or online inquiry."
+                ]
+            },
+
+            { type: 'h5', text: "Introduction: Why Gurgaon Commutes Break Down" },
+            { type: 'p', text: "Gurgaon's office corridors are among the most congested in India." },
+            { type: 'p', text: "NH-48, Golf Course Extension, and Sohna Road during peak hours can stretch a 30-minute journey past two hours. App-based cab rides add surge pricing on top, hitting hardest during monsoon, Diwali week, and the 8 to 9 AM rush." },
+            { type: 'p', text: "For corporate employees with fixed login times, that combination is a daily operational problem. Driver cancellations, no availability, unpredictable fares, these are not minor irritants. They affect attendance, punctuality, and eventually retention." },
+            { type: 'p', text: "A structured office cab service solves this at the root. Fixed schedule. Same driver. Same route. Monthly billing that does not change regardless of what is happening on NH-48 that morning." },
+            { type: 'p', text: "Fiesta Smart Mobility has been running corporate cab service across Gurgaon and Delhi NCR since 1998. Here is how it works." },
+            { type: 'image', src: "/images/blog/office-pickup-and-drop-service-in-gurgaon/gurgaon-office-cab.png", alt: "Fiesta office cab at Gurgaon residential society gate", caption: "Your office cab arrives at your doorstep at the same time every working day." },
+
+            { type: 'h5', text: "What Is an Office Pickup and Drop Service?" },
+            { type: 'p', text: "It is a pre-scheduled cab arrangement built around your office calendar." },
+            { type: 'p', text: "Your vehicle arrives at your doorstep or fixed pickup point at a set time every working day. It follows a planned route to your office. It brings you back at shift end. No app booking required. No surge pricing exposure." },
+            { type: 'p', text: "You subscribe on a monthly basis. Fiesta assigns a driver and vehicle to your route. The same driver covers your route daily, building familiarity with your schedule and your timing." },
+            { type: 'p', text: "Both one-way and two-way commutes are available. Corporate cab booking can be initiated by an individual employee or an HR team managing dozens of routes simultaneously." },
+
+            { type: 'h5', text: "How the Service Works" },
+            { type: 'h6', text: "Step 1: Share your details" },
+            { type: 'p', text: "Home sector or address, office location in Cyber City, Udyog Vihar, or Golf Course Road, shift timings, and working days. This takes under five minutes." },
+            { type: 'h6', text: "Step 2: Route plan and quote" },
+            { type: 'p', text: "Within 24 to 48 hours, Fiesta sends a complete plan covering vehicle type, shared or exclusive format, and monthly fare. No hidden charges. No ambiguous per-trip additions." },
+            { type: 'h6', text: "Step 3: Driver and vehicle assigned" },
+            { type: 'p', text: "Once confirmed, your driver and vehicle are allocated. You receive driver details and a live tracking link before day one." },
+            { type: 'h6', text: "Step 4: Commute without managing logistics" },
+            { type: 'p', text: "Your cab arrives on time. Billing runs monthly. Timing changes, leave days, and headcount adjustments for corporate accounts are handled through your Fiesta account manager." },
+
+            { type: 'h5', text: "Types of Office Cab Service in Gurgaon" },
+
+            { type: 'h6', text: "Individual Monthly Plans" },
+            { type: 'p', text: "A single working professional subscribes to a fixed cab service between two points, say Sushant Lok to DLF Cyber City, for a monthly fee." },
+            { type: 'p', text: "Plans cover 22 to 26 working days. Pricing is locked at booking. Rain, fog, and festival traffic do not change what you pay. Many professionals switching from daily app rides find their travel expenses drop by 30 to 45 percent on a fixed monthly plan." },
+
+            { type: 'h6', text: "Corporate Cab Service for Companies" },
+            { type: 'p', text: "Corporate clients with offices in Cyber City, Udyog Vihar, Golf Course Road, and Sector 44 use Fiesta to manage structured employee transport across multiple shifts and residential zones." },
+            { type: 'p', text: "Employees get fixed pickup points, predefined boarding times, and vehicle IDs in advance. Fiesta provides a central transport contact for your admin team and a consolidated monthly invoice for finance. Route optimization improves over time as data builds on actual traffic patterns across SPR, IFFCO Chowk, and Rajiv Chowk." },
+
+            { type: 'h6', text: "Shared Office Cab Routes" },
+            { type: 'p', text: "Employees living in the same residential sector share a cab, splitting the fare across the group." },
+            { type: 'p', text: "A route covering DLF Phases 1 to 3 into Cyber Hub, or Sectors 49 to 57 into Udyog Vihar, typically serves three to four employees. Individual travel expenses drop by 40 to 60 percent compared to solo cab rides while maintaining a fixed schedule, a professional driver, and a pre-assigned seat." },
+
+            { type: 'h6', text: "Shift-Based and Night Shift Transport" },
+            { type: 'p', text: "BPO centers, hospitals, tech support operations, and banking back-offices in Gurgaon run round the clock." },
+            { type: 'p', text: "Fiesta runs dedicated night shift office cabs for rosters covering 7 PM to 4 AM and beyond. GPS-tracked routes, experienced drivers with night shift certification, women-first drop sequencing, and control room check-ins during 11 PM to 5 AM windows are standard on these contracts." },
+            { type: 'p', text: "Many corporate clients make night shift transport employer-paid as part of their duty of care obligations. Fiesta's contracts are structured to meet standard corporate security and compliance requirements." },
+            { type: 'image', src: "/images/blog/office-pickup-and-drop-service-in-gurgaon/gurgaon-night-shift.png", alt: "Night shift corporate cab at DLF Cyber City Gurgaon", caption: "Safe, GPS-tracked night shift transport with verified drivers." },
+
+            { type: 'h6', text: "Corporate Shuttle Service" },
+            { type: 'p', text: "Larger teams concentrated in nearby residential zones use Tempo Travellers or mini-buses running fixed shuttle routes between Metro stations like Huda City Centre, IFFCO Chowk, and MG Road and their office campus." },
+            { type: 'p', text: "Cost-effective for teams of 10 or more commuting from overlapping zones. Pricing per head is significantly lower than individual cab rides while maintaining fixed timing and a professional driver on every trip." },
+
+            { type: 'h5', text: "Benefits of Fiesta's Office Pickup and Drop Service" },
+
+            { type: 'h6', text: "Predictable Costs, No Surge Pricing" },
+            { type: 'p', text: "A corporate employee commuting daily from DLF Phase 4 to Cyber City on app cabs spends unpredictably every month. Fares spike during monsoon flooding, winter smog, and match days with no warning." },
+            { type: 'p', text: "Fiesta's monthly plans offer affordable rates locked in at booking. No over pricing. No surge pricing. No hidden charges for waiting time or route changes within the agreed plan. One clean invoice every month, useful for both personal budgeting and corporate finance teams forecasting transport costs." },
+
+            { type: 'h6', text: "Same Driver, Every Day" },
+            { type: 'p', text: "Friendly drivers who cover the same route daily know your timing, your pickup point, and your preferences." },
+            { type: 'p', text: "Every driver on Fiesta's network is background-verified and trained on Gurgaon's best routes including corridor-specific navigation through IFFCO Chowk, Golf Course Extension, and Sohna Road during peak hours. Professional drivers are reachable through Fiesta's operations team at all times." },
+
+            { type: 'h6', text: "Right Vehicle for Every Route" },
+            { type: 'p', text: "Within-sector Gurgaon routes use sedans for individual commutes. Longer corridors into Delhi or down Sohna Road use SUVs or Toyota Innova vehicles for maximum comfort on extended daily travel. Luxury sedans and premium SUVs are available for senior executive commutes and visiting corporate clients." },
+            { type: 'p', text: "Tempo Travellers handle team shuttles for larger groups. Vehicle type is recommended based on route distance, group size, and company preference." },
+
+            { type: 'h6', text: "Stress Free Commute" },
+            { type: 'p', text: "Not booking a cab every morning removes a consistent source of daily friction." },
+            { type: 'image', src: "/images/blog/office-pickup-and-drop-service-in-gurgaon/gurgaon-commute-comfort.png", alt: "Professional working on tablet during comfortable cab commute", caption: "Turn your daily commute into productive, stress-free time." },
+            { type: 'p', text: "Knowing your vehicle arrives at your doorstep at a fixed time lets you build your morning around your commute rather than the other way around. Many professionals use this time to travel comfortably, catch up on work, or simply arrive at their office in better shape than they would after navigating public transport or driving themselves through NH-48 peak traffic." },
+
+            { type: 'h6', text: "Safer Night Travel" },
+            { type: 'p', text: "App cabs during late hours in Gurgaon carry genuine safety uncertainty. Fiesta's night shift contracts use GPS-tracked vehicles, verified experienced drivers, women-first drop policies, and mandatory check-in calls. Corporate clients get real-time tracking access for their security and HR teams." },
+
+            { type: 'h5', text: "Coverage: Residential Zones and Office Hubs" },
+            { type: 'image', src: "/images/blog/office-pickup-and-drop-service-in-gurgaon/gurgaon-coverage-map.png", alt: "Gurgaon office commute coverage map", caption: "Fiesta covers all major Gurgaon residential zones and office hubs." },
+
+            { type: 'h6', text: "Residential zones served" },
+            { type: 'p', text: "DLF Phases 1 to 5, Sushant Lok I to III, South City I and II, Golf Course Road and Extension sectors 43 to 69, New Gurgaon sectors 82 to 95, Old Gurgaon sectors 4 to 10." },
+
+            { type: 'h6', text: "Office destinations covered" },
+            { type: 'p', text: "DLF Cyber City and Cyber Hub, Udyog Vihar Phases I to V, Golf Course Road business parks, Sohna Road sectors 47 to 49, Unitech Cyber Park, Sector 44 institutional area, Manesar industrial belt." },
+            { type: 'p', text: "Pickup points within residential zones are set at housing society gates, main market intersections, or Metro station exits including Huda City Centre, IFFCO Chowk, and MG Road Metro." },
+
+            { type: 'h5', text: "Gurgaon to Delhi and Outstation Routes" },
+            { type: 'p', text: "Many corporate employees commute into Gurgaon daily from Delhi, Faridabad, and Manesar." },
+            { type: 'p', text: "Fiesta runs dedicated monthly vehicles for these longer corridors. Employees from Dwarka, Janakpuri, and South Delhi connect to Cyber City and Udyog Vihar on fixed morning and evening schedules. These operate as exclusive cabs rather than shared pickups given the distance involved." },
+            { type: 'p', text: "For corporate clients with employees on outstation trips or business trips requiring airport drops, IGI Airport T3 connections can be added to an existing contract at pre-agreed rates. Same verified driver network, no separate vendor relationship." },
+
+            { type: 'h5', text: "Vehicles Available" },
+            {
+                type: 'table',
+                headers: ["Vehicle Type", "Best For"],
+                rows: [
+                    ["Sedan (Dzire, Etios, Honda City)", "Individual commutes, executive rides"],
+                    ["SUV / Toyota Innova", "Longer corridors, 3 to 5 employees, maximum comfort"],
+                    ["Luxury sedans and SUVs", "Senior executives, corporate clients, business trips"],
+                    ["Tempo Traveller (12 to 17 seater)", "Team shuttles, events, large group commutes"],
+                    ["Mini-bus (20 to 27 seater)", "Large office campuses, campus shuttles"]
+                ]
+            },
+            { type: 'p', text: "All vehicles are air-conditioned, GPS-tracked, regularly sanitized, and carry seat belts for every passenger." },
+
+            { type: 'h5', text: "How to Book" },
+            { type: 'h6', text: "For individuals" },
+            { type: 'p', text: "Share your home sector or address, office location, shift timings, and preferred start date. Receive a quote within 24 to 48 hours. Confirm and get your driver assigned. Plans typically start on the 1st or 16th of the month." },
+            { type: 'h6', text: "For companies" },
+            { type: 'p', text: "A single day consultation call covers your team size, shift patterns, residential zones, and budget. Fiesta proposes routes and schedules within 48 hours. A pilot run of two to four weeks with a subset of employees is recommended for large corporate accounts before full rollout." },
+            { type: 'p', text: "Finalize monthly plans at least five to seven days before the intended start date to allow time for route mapping, driver allocation, and vehicle assignment." },
+
+            { type: 'h5', text: "Book Your Gurgaon Office Cab Plan" },
+            { type: 'p', text: "If your current daily commute involves surge pricing, driver cancellations, or night shift safety concerns, a contracted office pickup and drop service solves it at the root." },
+            { type: 'p', text: "Share your pickup location, drop location, and shift timings with Fiesta. A complete plan is in your inbox within 24 hours, transparent pricing, no obligation." },
+            { type: 'p', text: "Call us, contact us online, or visit fiestacabs.com to book your Gurgaon office commute plan today." },
+            { type: 'p', text: "Fiesta Smart Mobility Private Limited | Est. 1998 | fiestacabs.com" }
+        ],
+        faqs: [
+            {
+                id: "1",
+                question: "Is this service available for a single employee or only for companies?",
+                answer: "Both. Individual working professionals subscribe to monthly plans on their specific route. The minimum is one seat. Corporate clients set up multi-employee accounts across multiple shifts and zones.",
+            },
+            {
+                id: "2",
+                question: "Are there hidden charges?",
+                answer: "No. Fiesta provides a complete fare breakdown before confirmation. No waiting charges, no fuel surcharges, no driver allowance additions mid-contract. GST-compliant invoicing is standard for corporate accounts.",
+            },
+            {
+                id: "3",
+                question: "What vehicle options are available for Gurgaon office commutes?",
+                answer: "Sedans for individual city routes, Toyota Innova and SUVs for longer or multi-passenger corridors, luxury sedans for executive commutes, and Tempo Travellers for team shuttles. Vehicle type is recommended based on route and group size.",
+            },
+            {
+                id: "4",
+                question: "Is the service safe for women employees on night shifts?",
+                answer: "Yes. Night shift routes use GPS-tracked vehicles, verified experienced drivers, women-first drop sequencing, and mandatory check-in calls during 11 PM to 5 AM. Corporate clients receive real-time tracking access for their security teams.",
+            },
+            {
+                id: "5",
+                question: "Can I add airport drops or outstation trips to my office commute plan?",
+                answer: "Yes. Airport drops to IGI T3 and outstation cab requirements for business trips can be added to an existing contract at pre-agreed rates. No separate booking or separate vendor needed.",
+            },
+            {
+                id: "6",
+                question: "How does pricing work? What are the competitive prices?",
+                answer: "Pricing is based on distance, route complexity, vehicle type, and shared or exclusive format. Shared routes offer the most affordable price per head. Dedicated vehicles are priced per kilometre with no surge additions. Fiesta provides a full transparent quote before you confirm, with competitive prices across all vehicle categories.",
+            },
+            {
+                id: "7",
+                question: "What if my office timings change or I have a work from home day?",
+                answer: "Timing changes with 48 hours notice are accommodated without extra charges. Leave days and work from home days are handled through carry-forward options depending on your plan. Corporate accounts with variable shift patterns are managed through a dedicated account manager.",
+            },
+            {
+                id: "8",
+                question: "How quickly can service start after booking?",
+                answer: "Individuals can typically start within three to five working days of confirmation. Corporate accounts with larger headcounts need seven to ten working days for route mapping and driver assignment. Mid-month starts are available at pro-rated pricing.",
+            },
+        ],
+        testimonial: {
+            quote: "Thanks for your wonderful support on arranging vehicles for BCP in CBE office due to heavy rainfall in Chennai city. Appreciate all your efforts and hard work for helping us to run transport operation successfully in critical times. Please share our sincere thanks to all the team members.",
+            company: "Walmart",
+            person: "Walmart Admin Team",
+            role: "Admin Team",
+            rating: 5,
+        }
+    },
+
+    // 10
+    {
+        slug: "daily-office-pickup-and-drop-service-in-bangalore",
+        title: "Daily Office Pickup and Drop Service in Bangalore | Fiesta Smart Mobility",
+        date: "May 4, 2026",
+        image: "/images/blog/daily-office-pickup-and-drop-service-in-bangalore/bangalore-office-cab.png",
+        bannerImage: "/images/blog/daily-office-pickup-and-drop-service-in-bangalore/bangalore-tech-park.png",
+        excerpt: "Reliable daily office pickup and drop service in Bangalore for corporate clients and working professionals. Fixed routes, verified drivers, transparent pricing. Monthly plans available.",
+        content: [
+            { type: 'h5', text: "Key Takeaways" },
+            {
+                type: 'ul', items: [
+                    "Fiesta's daily office pickup and drop service in Bangalore runs on fixed routes with consistent drivers and vehicles, removing the need for daily bookings.",
+                    "Covers all major tech corridors: Whitefield, Electronic City, Manyata Tech Park, Bagmane, ORR, and Sarjapur Road.",
+                    "Available for individual employees and corporate clients of all sizes, with transparent pricing and no hidden charges.",
+                    "Night shift transport is fully covered with GPS tracking, verified drivers, and women-first drop policies.",
+                    "Onboarding takes five to seven working days from your first inquiry to full implementation."
+                ]
+            },
+
+            { type: 'h5', text: "Introduction: Why Bangalore Office Commutes Need a Structured Solution" },
+            { type: 'p', text: "Bangalore's traffic is not getting better." },
+            { type: 'p', text: "Peak hour travel from Whitefield to Silk Board routinely stretches to 90 minutes. The ORR and Electronic City corridors see similar gridlock daily. BMTC buses are overcrowded and run behind schedule. Driving yourself means fuel costs, tech park parking fees, and arriving at work already exhausted." },
+            { type: 'p', text: "App-based cab rides pile on surge pricing during rain, peak hours, and public holidays. For working professionals on a daily office commute, that unpredictability compounds every single month." },
+            { type: 'p', text: "A structured daily office pickup and drop service in Bangalore removes all of it. Fixed route. Fixed time. Same driver. Predictable monthly billing that does not shift based on Bangalore traffic conditions or app demand." },
+            { type: 'p', text: "Fiesta Smart Mobility has run employee transportation across Bangalore and pan-India since 1998. Here is how our service works and what it covers." },
+            { type: 'image', src: "/images/blog/daily-office-pickup-and-drop-service-in-bangalore/bangalore-office-cab.png", alt: "Fiesta office cab at Bangalore residential apartment gate", caption: "Your office cab arrives at your doorstep at the same time every working day." },
+
+            { type: 'h5', text: "What Is a Daily Office Pickup and Drop Service?" },
+            { type: 'p', text: "It is a pre-scheduled cab arrangement built around your office calendar." },
+            { type: 'p', text: "Your vehicle arrives at your doorstep or fixed pickup point at a set time every working day. It follows a planned route to your office. It brings you back at shift end. No app booking required. No surge pricing. No availability uncertainty." },
+            { type: 'p', text: "You subscribe on a monthly basis. Fiesta assigns a driver and vehicle to your route. The same driver covers your route daily, building familiarity with your schedule and your pickup point." },
+            { type: 'p', text: "Operating windows run from 6 AM to 11 PM for standard shifts, with dedicated coverage for night shifts extending to 2 AM and early morning starts from 5:30 AM." },
+
+            { type: 'h5', text: "How It Works: Simple Steps to Get Started" },
+            { type: 'h6', text: "Step 1: Share your details" },
+            { type: 'p', text: "Your pickup address, office location, shift timings, working days, and vehicle preference. This takes under five minutes." },
+            { type: 'h6', text: "Step 2: Receive your plan" },
+            { type: 'p', text: "Within 24 to 48 hours, you get a customized route plan with vehicle type, shared or exclusive format, and monthly fare. Transparent pricing with no hidden charges." },
+            { type: 'h6', text: "Step 3: Driver and vehicle assigned" },
+            { type: 'p', text: "Once confirmed, your driver and vehicle are allocated to your route. You receive driver details and a live tracking link before your first trip." },
+            { type: 'h6', text: "Step 4: Commute without managing logistics" },
+            { type: 'p', text: "Your cab arrives at the agreed time at your doorstep. Billing runs monthly. Changes to timings or headcount are handled through your Fiesta account manager." },
+            { type: 'p', text: "Typical onboarding timeline for corporate clients: five to seven working days from data collection to full implementation." },
+
+            { type: 'h5', text: "Types of Office Pickup and Drop Service Available in Bangalore" },
+
+            { type: 'h6', text: "Individual Daily Cab Plans" },
+            { type: 'p', text: "A single working professional subscribes to a fixed cab service between two points, say HSR Layout to Manyata Tech Park, on a monthly plan." },
+            { type: 'p', text: "Pricing is locked at booking. Rain, traffic, and Bangalore's tech calendar do not change what you pay. Professionals switching from daily app cab rides to a monthly plan typically reduce their travel expenses by 30 to 45 percent. No hidden costs, no end-of-month billing surprises." },
+
+            { type: 'h6', text: "Shared Office Cab Routes" },
+            { type: 'p', text: "Employees living along the same corridor share a cab, splitting the fare." },
+            { type: 'p', text: "Routes like BTM to Bellandur, Hebbal to Manyata, or KR Puram to Whitefield typically serve four to six employees per vehicle. Individual costs drop by 40 to 60 percent compared to solo rides. You still get a pre-assigned seat, a fixed departure time, and experienced drivers on a known schedule." },
+            { type: 'p', text: "Shared routes work best when employees have similar shift timings and live within the same corridor. Fiesta's route planning clusters nearby localities to avoid impractical detours that would stretch journey time." },
+
+            { type: 'h6', text: "Corporate Employee Transportation" },
+            { type: 'p', text: "Corporate clients with offices at Manyata Tech Park, Bagmane Tech Park, Ecospace, Global Village, and ORR campuses use Fiesta to manage structured employee transportation across multiple shifts and residential zones." },
+            { type: 'p', text: "Employees get fixed pickup points, predefined boarding times, and vehicle IDs in advance. Fiesta provides a central transport contact for your admin team and consolidated monthly invoicing for finance. Route optimization improves over time as data builds on actual traffic patterns at Silk Board, Tin Factory, and the Marathahalli flyover." },
+
+            { type: 'h6', text: "Night Shift and Early Morning Office Cabs" },
+            { type: 'p', text: "IT, BPO, and support operations in Bangalore run round the clock." },
+            { type: 'p', text: "Fiesta runs dedicated night shift transport for rosters covering 10:30 PM logouts, 5:30 AM starts, and everything in between. GPS-tracked routes, verified drivers with night shift experience, women-first drop sequencing, and mandatory check-in calls are standard on these contracts." },
+            { type: 'p', text: "Many corporate clients include night shift transport in their duty of care obligations. Fiesta's contracts are structured to meet Karnataka's transport compliance requirements for IT and ITES employee transportation." },
+            { type: 'image', src: "/images/blog/daily-office-pickup-and-drop-service-in-bangalore/bangalore-night-safety.png", alt: "Night shift corporate cab at Bangalore Electronic City", caption: "Safe, GPS-tracked night shift transport with verified experienced drivers." },
+
+            { type: 'h5', text: "Benefits of Fiesta's Office Cab Service in Bangalore" },
+
+            { type: 'h6', text: "Affordable Rates, No Surge Pricing" },
+            { type: 'p', text: "Daily app cab rides in Bangalore during peak hours frequently cost two to three times the base fare. A monthly Fiesta plan eliminates that variability." },
+            { type: 'p', text: "Affordable prices are locked in at the time of booking. No surge pricing during monsoon, no over-pricing on Diwali week, no hidden charges mid-contract. For corporate clients, this means a predictable transport line item in every monthly budget." },
+
+            { type: 'h6', text: "Verified, Experienced Drivers" },
+            { type: 'p', text: "Every driver on Fiesta's Bangalore network holds valid Karnataka licenses, has cleared police verification, and is trained on city-specific routes including congestion points at Silk Board, KR Puram bridge, and Marathahalli." },
+            { type: 'p', text: "Professional drivers follow assigned routes, operate GPS-tracked vehicles, and are reachable through Fiesta's operations team at all times. Friendly drivers who cover the same route daily build genuine familiarity with their passengers, which matters for early morning pickups and late-night drops." },
+
+            { type: 'h6', text: "Safety Features Built Into Every Trip" },
+            { type: 'p', text: "GPS tracking is active on every vehicle. Trip links are shared with employees and, where required, their families." },
+            { type: 'p', text: "Night routes follow well-lit main roads. Female employees are never dropped last on isolated stretches. SOS support is available throughout operating hours. For corporate clients, Fiesta's safety protocols meet standard HR and security team requirements before onboarding a transportation partner." },
+
+            { type: 'h6', text: "Comfortable Journey, Every Day" },
+            { type: 'image', src: "/images/blog/daily-office-pickup-and-drop-service-in-bangalore/bangalore-commute-comfort.png", alt: "Professional reading on tablet during comfortable cab commute in Bangalore", caption: "Turn your daily Bangalore commute into productive, stress-free time." },
+            { type: 'p', text: "Sitting in a pre-booked, air-conditioned cab with a driver you know changes the quality of your everyday travel." },
+            { type: 'p', text: "Many professionals use this time to catch up on emails, read, or simply arrive at work without the fatigue that comes from driving through Bangalore traffic for 90 minutes. Arriving rested and on time makes a tangible difference across a five or six day work week." },
+
+            { type: 'h6', text: "No Hidden Costs" },
+            { type: 'p', text: "Fiesta provides a complete fare breakdown before you confirm your plan. No waiting charges, no fuel surcharges, no driver allowance additions mid-contract, no surprise peak traffic fees. What you agree to at booking is what you pay every month." },
+
+            { type: 'h5', text: "Coverage: Key Corridors and Office Destinations" },
+            { type: 'image', src: "/images/blog/daily-office-pickup-and-drop-service-in-bangalore/bangalore-coverage-map.png", alt: "Bangalore tech corridor and residential coverage map", caption: "Fiesta covers all major Bangalore tech corridors and residential zones." },
+
+            { type: 'h6', text: "South Bangalore" },
+            { type: 'p', text: "BTM Layout, HSR Layout, JP Nagar, Jayanagar, Banashankari to Electronic City, Koramangala, Bellandur." },
+            { type: 'h6', text: "East Bangalore" },
+            { type: 'p', text: "KR Puram, Marathahalli, Whitefield, Indiranagar to Bagmane Tech Park, Prestige Tech Park, ITPL." },
+            { type: 'h6', text: "North Bangalore" },
+            { type: 'p', text: "Hebbal, Yelahanka, Nagawara, Jalahalli to Manyata Tech Park, Kirloskar Business Park." },
+            { type: 'h6', text: "West Bangalore" },
+            { type: 'p', text: "Kengeri, Mysore Road, Rajajinagar to Global Village, Peenya Industrial Area." },
+            { type: 'h6', text: "ORR Corridor" },
+            { type: 'p', text: "Sarjapur Road, Kadubeesanahalli, Bellandur to Outer Ring Road tech parks and Ecospace Business Park." },
+            { type: 'p', text: "Pickup points are set at housing society gates, main road junctions, or Metro station exits depending on your locality." },
+
+            { type: 'h5', text: "Vehicles Available" },
+            {
+                type: 'table',
+                headers: ["Vehicle Type", "Best For"],
+                rows: [
+                    ["Sedan (Swift Dzire, Honda City)", "Individual commutes, narrow HSR and inner-city lanes"],
+                    ["SUV / Toyota Innova", "Longer corridors, 3 to 5 employees, maximum comfort"],
+                    ["Luxury sedans and SUVs", "Senior executive commutes, corporate clients, visiting guests"],
+                    ["Tempo Traveller (12 to 17 seater)", "Team shuttles, large group commutes, office events"]
+                ]
+            },
+            { type: 'p', text: "All vehicles are air-conditioned, GPS-tracked, regularly maintained, and carry seat belts for every passenger. Vehicle type is recommended based on route distance and group size." },
+
+            { type: 'h5', text: "Airport Drop and Outstation Trips" },
+            { type: 'p', text: "Working professionals and corporate clients with regular airport travel can add airport drop and airport pickup to an existing Fiesta office commute plan." },
+            { type: 'p', text: "Kempegowda International Airport connections are the most requested, covering early morning departures and late-night arrivals. Outstation trips for business travel can also be arranged through the same contract at pre-agreed rates. Same verified driver network, no separate vendor relationship." },
+
+            { type: 'h5', text: "Fiesta vs. Other Options in Bangalore" },
+            { type: 'h6', text: "vs. App-based cab rides" },
+            { type: 'p', text: "App cabs in Bangalore are demand-matched and surge-priced. They work for occasional travel. They do not work for a daily office commute where cost predictability, driver consistency, and reliability across 22 working days matter." },
+            { type: 'h6', text: "vs. Self-driving" },
+            { type: 'p', text: "Fuel averaging Rs. 100 per litre, tech park parking at Rs. 2,000 to Rs. 5,000 per month, toll costs, and 90 minutes of daily driving fatigue make self-driving an expensive and exhausting option for most Bangalore professionals." },
+            { type: 'h6', text: "vs. Public transport" },
+            { type: 'p', text: "BMTC covers parts of Bangalore but does not solve the doorstep-to-office problem. For employees in outer suburbs or on non-standard shift timings, public transport is not a reliable primary commute solution." },
+            { type: 'p', text: "A contracted monthly office cab plan consistently outperforms all three on total cost, convenience, safety, and daily reliability." },
+
+            { type: 'h5', text: "Book Your Daily Office Cab Plan in Bangalore" },
+            { type: 'p', text: "If your team's everyday travel involves surge pricing, driver cancellations, or late-night safety concerns, a contracted daily office pickup and drop service solves it at the root." },
+            { type: 'p', text: "Share your office location, pickup details, and shift timings with Fiesta. A complete plan with transparent pricing arrives within 24 hours." },
+            { type: 'p', text: "Call us, contact us online, or visit fiestacabs.com to book your Bangalore office commute plan today." },
+            { type: 'p', text: "Fiesta Smart Mobility Private Limited | Est. 1998 | fiestacabs.com" }
+        ],
+        faqs: [
+            {
+                id: "1",
+                question: "Is this service available for a single employee or only for companies?",
+                answer: "Both. Individual working professionals subscribe to monthly plans on their specific route. Corporate clients set up multi-employee accounts across multiple shifts and zones. The minimum is one seat.",
+            },
+            {
+                id: "2",
+                question: "Are there hidden charges or hidden costs?",
+                answer: "No. Fiesta provides a complete fare breakdown before you confirm. No waiting charges, no fuel surcharges, no surprise additions mid-contract. GST-compliant invoicing is standard for corporate accounts.",
+            },
+            {
+                id: "3",
+                question: "Can employees in different parts of Bangalore share a cab?",
+                answer: "Efficient sharing works when employees live along the same corridor with similar shift timings. Good combinations: BTM to HSR to Bellandur heading to ORR. Impractical combinations: Yelahanka and Electronic City in a single cab. Fiesta's route planning flags these before assignment.",
+            },
+            {
+                id: "4",
+                question: "Are cabs available for early morning starts or late-night shifts?",
+                answer: "Yes. Fiesta covers shifts starting from 5:30 AM and extending to 2 AM. Verified experienced drivers, safe pickup points, and predefined emergency protocols are standard for these windows. Night and early morning rates carry a 20 to 30 percent uplift over standard daytime pricing, disclosed upfront.",
+            },
+            {
+                id: "5",
+                question: "What vehicle types are available for Bangalore office commutes?",
+                answer: "Sedans for individual and inner-city routes. Toyota Innova and SUVs for longer corridors or multi-passenger commutes. Luxury sedans for executive travel. Tempo Travellers for team shuttles and office events.",
+            },
+            {
+                id: "6",
+                question: "How does transparent pricing work? What exactly is included?",
+                answer: "Your monthly fare covers daily pickup and drop for your agreed route and working days. Fiesta discloses all add-ons upfront: night shift surcharges, elevated flyover tolls if applicable, and extra kilometre rates beyond the agreed plan. Nothing is added mid-contract without prior communication.",
+            },
+            {
+                id: "7",
+                question: "Can a company start with a small team and scale the service?",
+                answer: "Yes. Fiesta runs pilot routes for five to twenty employees from one or two localities. As headcount grows or new residential zones are added, route re-optimization happens without disrupting existing employees. This suits growing startups and mid-size firms equally.",
+            },
+            {
+                id: "8",
+                question: "How long does it take to start after booking?",
+                answer: "Individuals are onboarded within three to five working days of confirmation. Corporate accounts need five to seven working days for route mapping, driver allocation, and vehicle assignment. Mid-month starts are available at pro-rated pricing.",
             },
         ],
         testimonial: {
