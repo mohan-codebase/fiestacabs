@@ -188,15 +188,17 @@ export default async function BlogPostPage({ params }: PageProps) {
       <div className="max-w-6xl mx-auto px-4 pb-14 mt-6">
         <div className="grid lg:grid-cols-[minmax(0,1fr)_320px] gap-6">
           <article className="bg-white rounded-2xl shadow-md border border-slate-100 overflow-hidden">
-            <div className="relative aspect-[16/9]">
-              <Image
-                src={currentPost.image}
-                alt={currentPost.title}
-                fill
-                sizes="(max-width: 1024px) 100vw, 740px"
-                className="object-cover"
-              />
-            </div>
+            {!currentPost.hideFeaturedImage && (
+              <div className="relative aspect-[16/9]">
+                <Image
+                  src={currentPost.image}
+                  alt={currentPost.title}
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 740px"
+                  className="object-cover"
+                />
+              </div>
+            )}
 
             <div className="p-5 md:p-7">
               <div className="space-y-6 text-slate-800">
@@ -289,6 +291,73 @@ export default async function BlogPostPage({ params }: PageProps) {
                             </figcaption>
                           )}
                         </figure>
+                      );
+                    case "cta":
+                      return (
+                        <section key={idx} className="relative my-12 overflow-hidden rounded-3xl">
+                          <div className="relative bg-gray-900 min-h-[320px] md:min-h-[380px] flex items-center">
+                            <Image
+                              src={block.image}
+                              alt={block.title}
+                              fill
+                              sizes="(max-width: 1024px) 100vw, 720px"
+                              className="object-cover opacity-40"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-b from-black/55 via-black/50 to-black/60" />
+
+                            <div className="relative z-10 w-full px-6 py-12 md:px-12 text-center text-white">
+                              <h3 className="text-2xl md:text-4xl font-bold mb-5 leading-tight">
+                                {block.title}
+                              </h3>
+
+                              {(block.subtitle || (block.body && block.body.length > 0)) && (
+                                <div className="mx-auto max-w-3xl space-y-4">
+                                  {block.subtitle && (
+                                    <p className="text-lg md:text-xl text-gray-200 leading-relaxed font-medium">
+                                      {block.subtitle}
+                                    </p>
+                                  )}
+                                  {block.body?.map((line, i) => (
+                                    <p
+                                      key={i}
+                                      className="text-[15px] md:text-[17px] text-white/85 leading-relaxed"
+                                    >
+                                      {line}
+                                    </p>
+                                  ))}
+                                </div>
+                              )}
+
+                              <div className="mt-8 flex flex-wrap justify-center gap-4">
+                                <Link
+                                  href={block.buttonHref || "/reach-us"}
+                                  className="bg-[#EC2028] text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all transform hover:-translate-y-1 shadow-xl inline-flex items-center gap-2"
+                                >
+                                  {block.buttonText || "Apply Now"}
+                                  <svg
+                                    className="w-5 h-5"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                  >
+                                    <path
+                                      strokeLinecap="round"
+                                      strokeLinejoin="round"
+                                      strokeWidth={2}
+                                      d="M14 5l7 7m0 0l-7 7m7-7H3"
+                                    />
+                                  </svg>
+                                </Link>
+                              </div>
+
+                              {block.footer && (
+                                <p className="mt-7 text-xs md:text-sm text-white/70">
+                                  {block.footer}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                        </section>
                       );
                     case "table":
                       return (

@@ -8,6 +8,7 @@ export interface BlogPost {
     bannerImage?: string;
     excerpt: string;
     content: (ContentBlock | string)[];
+    hideFeaturedImage?: boolean;
     faqs?: FAQItem[];
     testimonial?: {
         quote: string;
@@ -28,6 +29,16 @@ export type ContentBlock =
     | { type: 'ul'; items: string[] }
     | { type: 'ol'; items: string[] }
     | { type: 'image'; src: string; alt: string; caption?: string }
+    | {
+        type: 'cta';
+        image: string;
+        title: string;
+        subtitle?: string;
+        body?: string[];
+        footer?: string;
+        buttonText?: string;
+        buttonHref?: string;
+      }
     | { type: 'table'; headers: string[]; rows: string[][] };
 
 export const blogPosts: BlogPost[] = [
@@ -1424,6 +1435,7 @@ export const blogPosts: BlogPost[] = [
         image: "/images/blog/office-pickup-and-drop-service-in-gurgaon/gurgaon-office-cab.png",
         bannerImage: "/images/blog/office-pickup-and-drop-service-in-gurgaon/gurgaon-cyber-city.png",
         excerpt: "Structured office pickup and drop service in Gurgaon for corporate clients and working professionals. Fixed routes, verified drivers, no surge pricing. Monthly plans available.",
+        hideFeaturedImage: true,
         content: [
             { type: 'h5', text: "Key Takeaways" },
             {
@@ -1542,11 +1554,20 @@ export const blogPosts: BlogPost[] = [
             { type: 'p', text: "A single day consultation call covers your team size, shift patterns, residential zones, and budget. Fiesta proposes routes and schedules within 48 hours. A pilot run of two to four weeks with a subset of employees is recommended for large corporate accounts before full rollout." },
             { type: 'p', text: "Finalize monthly plans at least five to seven days before the intended start date to allow time for route mapping, driver allocation, and vehicle assignment." },
 
-            { type: 'h5', text: "Book Your Gurgaon Office Cab Plan" },
-            { type: 'p', text: "If your current daily commute involves surge pricing, driver cancellations, or night shift safety concerns, a contracted office pickup and drop service solves it at the root." },
-            { type: 'p', text: "Share your pickup location, drop location, and shift timings with Fiesta. A complete plan is in your inbox within 24 hours, transparent pricing, no obligation." },
-            { type: 'p', text: "Call us, contact us online, or visit fiestacabs.com to book your Gurgaon office commute plan today." },
-            { type: 'p', text: "Fiesta Smart Mobility Private Limited | Est. 1998 | fiestacabs.com" }
+            {
+                type: 'cta',
+                image: "/images/careers/Cta.jpeg",
+                title: "Book Your Gurgaon Office Cab Plan",
+                body: [
+                    "If your current daily commute involves surge pricing, driver cancellations, or night shift safety concerns, a contracted office pickup and drop service solves it at the root.",
+                    "Share your pickup location, drop location, and shift timings with Fiesta. A complete plan is in your inbox within 24 hours, transparent pricing, no obligation.",
+                    "Call us, contact us online, or visit fiestacabs.com to book your Gurgaon office commute plan today."
+                ],
+                footer: "Fiesta Smart Mobility Private Limited | Est. 1998 | fiestacabs.com",
+                buttonText: "Apply Now",
+                buttonHref: "/reach-us"
+            }
+            
         ],
         faqs: [
             {
@@ -1607,6 +1628,7 @@ export const blogPosts: BlogPost[] = [
         image: "/images/blog/daily-office-pickup-and-drop-service-in-bangalore/bangalore-office-cab.png",
         bannerImage: "/images/blog/daily-office-pickup-and-drop-service-in-bangalore/bangalore-tech-park.png",
         excerpt: "Reliable daily office pickup and drop service in Bangalore for corporate clients and working professionals. Fixed routes, verified drivers, transparent pricing. Monthly plans available.",
+        hideFeaturedImage: true,
         content: [
             { type: 'h5', text: "Key Takeaways" },
             {
@@ -1728,11 +1750,19 @@ export const blogPosts: BlogPost[] = [
             { type: 'p', text: "BMTC covers parts of Bangalore but does not solve the doorstep-to-office problem. For employees in outer suburbs or on non-standard shift timings, public transport is not a reliable primary commute solution." },
             { type: 'p', text: "A contracted monthly office cab plan consistently outperforms all three on total cost, convenience, safety, and daily reliability." },
 
-            { type: 'h5', text: "Book Your Daily Office Cab Plan in Bangalore" },
-            { type: 'p', text: "If your team's everyday travel involves surge pricing, driver cancellations, or late-night safety concerns, a contracted daily office pickup and drop service solves it at the root." },
-            { type: 'p', text: "Share your office location, pickup details, and shift timings with Fiesta. A complete plan with transparent pricing arrives within 24 hours." },
-            { type: 'p', text: "Call us, contact us online, or visit fiestacabs.com to book your Bangalore office commute plan today." },
-            { type: 'p', text: "Fiesta Smart Mobility Private Limited | Est. 1998 | fiestacabs.com" }
+            {
+                type: 'cta',
+                image: "/images/careers/Cta.jpeg",
+                title: "Book Your Daily Office Cab Plan in Bangalore",
+                body: [
+                    "If your team's everyday travel involves surge pricing, driver cancellations, or late-night safety concerns, a contracted daily office pickup and drop service solves it at the root.",
+                    "Share your office location, pickup details, and shift timings with Fiesta. A complete plan with transparent pricing arrives within 24 hours.",
+                    "Call us, contact us online, or visit fiestacabs.com to book your Bangalore office commute plan today."
+                ],
+                footer: "Fiesta Smart Mobility Private Limited | Est. 1998 | fiestacabs.com",
+                buttonText: "Apply Now",
+                buttonHref: "/reach-us"
+            }
         ],
         faqs: [
             {
