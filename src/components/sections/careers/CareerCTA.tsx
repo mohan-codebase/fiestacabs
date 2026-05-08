@@ -21,7 +21,7 @@ const CareerCTA = () => {
                     {/* Content Overlay */}
                     <div className="relative z-10 w-full max-w-4xl mx-auto px-8 py-16 md:px-16 text-center text-white">
                         <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                            Fiesta Cabs does more than move people.  
+                            Fiesta Smart Mobility does more than move people.  
                             {/* <br className="hidden md:block" /> */}
                             We help businesses operate smoothly every day.
                         </h2>

@@ -18,7 +18,7 @@ export default function BlogPage() {
   const posts: CardPost[] = blogPosts.map((post) => ({
     title: post.title,
     excerpt: post.excerpt,
-    image: post.image,
+    image: post.hideFeaturedImage ? (post.bannerImage || post.image) : post.image,
     url: `/blog/${post.slug}`,
     date: post.date,
   }));

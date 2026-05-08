@@ -9,7 +9,7 @@ const WhoWeAre = () => {
                     <div className="relative h-[400px] lg:h-[500px] rounded-3xl overflow-hidden shadow-2xl">
                         <Image
                             src="/images/careers/who-we-are.png"
-                            alt="Who We Are - Fiesta Cabs"
+                            alt="Who We Are - Fiesta Smart Mobility"
                             fill
                             className="object-cover"
                         />
@@ -17,7 +17,7 @@ const WhoWeAre = () => {
                     <div>
                         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Who We Are</h2>
                         <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-                            Fiesta Cabs is a professional transportation company focused on:
+                            Fiesta Smart Mobility is a professional transportation company focused on:
                         </p>
 
                         <div className="space-y-6">

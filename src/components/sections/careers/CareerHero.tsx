@@ -38,7 +38,7 @@ const CareerHero = ({ title, subtitle, imageSrc }: CareerHeroProps) => {
                         href="#open-positions"
                         className="bg-[#EC2028] text-white px-10 py-4 rounded-full font-bold hover:bg-white hover:text-black transition-all transform hover:scale-105 shadow-2xl"
                     >
-                        Explore Open Roles
+                        Apply Now
                     </Link>
                 </div>
             </div>

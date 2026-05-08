@@ -56,7 +56,7 @@ const HiringProcess = () => {
 
                         <div className="mt-12 flex flex-wrap gap-4 items-center">
                             <Link
-                                href="#open-positions"
+                                href="/reach-us"
                                 className="bg-[#EC2028] text-white px-8 py-3 rounded-full font-bold hover:bg-black transition-all shadow-lg"
                             >
                                 Apply Now

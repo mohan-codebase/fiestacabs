@@ -16,7 +16,7 @@ export default function Careers() {
         <div className="w-full bg-white">
             <CareerHero
                 title="Build the Future of Employee Transportation"
-                subtitle="At Fiesta Cabs, we provide a tech-enabled, reliable employee transportation network for businesses. If you are seeking growth in a dynamic, operations-driven environment and want to help businesses thrive, you are in the right place."
+                subtitle="At Fiesta Smart Mobility, we provide a tech-enabled, reliable employee transportation network for businesses. If you are seeking growth in a dynamic, operations-driven environment and want to help businesses thrive, you are in the right place."
                 imageSrc="/images/careers/hero-career.jpeg"
             />
 

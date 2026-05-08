@@ -35,9 +35,9 @@ const WhyJoin = () => {
         <section className="py-24 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="mb-16">
-                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Join Fiesta Cabs</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Why Join Fiesta Smart Mobility</h2>
                     <p className="text-gray-600 max-w-3xl leading-relaxed text-lg">
-                        At Fiesta Cabs, you become part of a dynamic logistics ecosystem.
+                        At Fiesta Smart Mobility, you become part of a dynamic logistics ecosystem.
                     </p>
                 </div>
 

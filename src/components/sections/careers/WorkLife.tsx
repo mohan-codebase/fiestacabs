@@ -69,7 +69,7 @@ const WorkLife = () => {
                         </div>
                         <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
                             <span className="w-10 h-10 bg-[#EC2028] text-white rounded-lg flex items-center justify-center text-sm font-bold">02</span>
-                            Life at Fiesta Cabs
+                            Life at Fiesta Smart Mobility
                         </h3>
                         <p className="text-gray-300 mb-8 leading-relaxed">
                             You become part of a team that operates around the clock.
