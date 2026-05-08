@@ -1219,6 +1219,7 @@ export const blogPosts: BlogPost[] = [
             role: "Admin Team",
             rating: 5,
         }
+        
     }
 
 ];

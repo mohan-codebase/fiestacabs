@@ -3,34 +3,14 @@ import { FaChevronDown } from 'react-icons/fa';
 
 const jobCategories = [
     {
-        name: "Asset Management / Strategy",
+        name: "Finance & Accounts",
         jobs: [
-            { title: "GTM Lead", location: "Chennai, TN / Bangalore, KA" },
-            { title: "Head of Operations, Mobility Programs", location: "Chennai, TN / Mumbai, MH" },
-            { title: "Strategy Associate", location: "Bangalore, KA / Delhi, NCR" }
-        ]
-    },
-    {
-        name: "Customer Success & Operations",
-        jobs: [
-            { title: "Clinical Operations Lead", location: "Hyderabad, TS / Pune, MH" },
-            { title: "Customer Success Manager", location: "Chennai, TN / Bangalore, KA" }
-        ]
-    },
-    {
-        name: "Data",
-        jobs: [
-            { title: "Senior Data Engineer", location: "Remote / Chennai, TN" },
-            { title: "Founding Engineer, Data Platform", location: "Bangalore, KA" },
-            { title: "Senior Software Engineer (Data & AI)", location: "Hyderabad, TS" }
-        ]
-    },
-    {
-        name: "Engineering",
-        jobs: [
-            { title: "Senior Software Engineer (Mobility Platforms)", location: "Bangalore, KA" },
-            { title: "Senior Product Designer", location: "Chennai, TN" },
-            { title: "Product Manager, Fleet Automation", location: "Mumbai, MH" }
+            { 
+                title: "Accounts Department", 
+                location: "Chennai, TN",
+                experience: "2+ Years",
+                requirement: "Male candidates only"
+            }
         ]
     }
 ];
@@ -45,7 +25,7 @@ const OpenPositions = () => {
                 </div>
 
                 {/* Filters */}
-                <div className="flex flex-wrap gap-4 mb-20">
+                {/* <div className="flex flex-wrap gap-4 mb-20">
                     <div className="bg-white/40 border border-black/5 px-4 py-2 rounded-sm min-w-[140px] flex items-center justify-between cursor-pointer">
                         <div className="flex flex-col">
                             <span className="text-[10px] text-gray-500 uppercase font-bold tracking-wider">Department</span>
@@ -60,7 +40,7 @@ const OpenPositions = () => {
                         </div>
                         <FaChevronDown className="text-gray-400 text-xs ml-4" />
                     </div>
-                </div>
+                </div> */}
 
                 <div className="space-y-12">
                     {jobCategories.map((category, catIndex) => (
@@ -69,12 +49,26 @@ const OpenPositions = () => {
                                 {category.name}
                             </h3>
                             <div className="border-t border-black/20">
-                                {category.jobs.map((job, jobIndex) => (
-                                    <div key={jobIndex} className="py-6 flex flex-col md:flex-row justify-between items-start md:items-center border-b border-black/10 hover:bg-black/5 px-1 transition-all">
-                                        <div className="text-[17px] font-semibold text-gray-900 mb-2 md:mb-0">
-                                            {job.title}
+                                {category.jobs.map((job: any, jobIndex) => (
+                                    <div key={jobIndex} className="py-8 flex flex-col md:flex-row justify-between items-start md:items-center border-b border-black/10 hover:bg-black/5 px-1 transition-all">
+                                        <div className="mb-4 md:mb-0">
+                                            <div className="text-[20px] font-bold text-gray-900">
+                                                {job.title}
+                                            </div>
+                                            <div className="flex flex-wrap gap-3 mt-2">
+                                                {job.experience && (
+                                                    <span className="bg-gray-100 text-gray-700 text-[11px] px-2 py-1 rounded font-bold uppercase tracking-wider">
+                                                        Exp: {job.experience}
+                                                    </span>
+                                                )}
+                                                {job.requirement && (
+                                                    <span className="bg-blue-50 text-blue-700 text-[11px] px-2 py-1 rounded font-bold uppercase tracking-wider">
+                                                        {job.requirement}
+                                                    </span>
+                                                )}
+                                            </div>
                                         </div>
-                                        <div className="text-gray-700 text-[13px] font-medium">
+                                        <div className="text-gray-700 text-[14px] font-semibold bg-gray-50 px-4 py-2 rounded-full border border-black/5">
                                             {job.location}
                                         </div>
                                     </div>
