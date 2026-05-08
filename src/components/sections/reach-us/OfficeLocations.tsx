@@ -79,13 +79,6 @@ const OfficeLocations = () => {
             mapLink: "https://maps.app.goo.gl/GPb8QGLZcnGrUpsS7"
         },
         {
-            title: "Mumbai",
-            description: "# 109, 1st Floor, ACME Industrial Park, Goregaon East, Mumbai - 400 063.",
-            calls: ["+91 74188 85492"],
-            mail: "sales_mumbai@fiestaindia.net",
-            mapLink: "https://maps.app.goo.gl/hRzXwzYehaateDti7"
-        },
-        {
             title: "Hyderabad",
             description: "8-1-43/1/B, 1st Floor Satya Colony, Opp: Hanuman Temple, Shaikpet, Golconda, Hyderabad- 500008.",
             calls: ["+91 91001 09864"],
@@ -93,25 +86,11 @@ const OfficeLocations = () => {
             mapLink: "https://maps.app.goo.gl/XE5QtytQx78EJCjs7"
         },
         {
-            title: "Mahindra World City",
-            description: "58, Bharathiyar Street, near Mcity, Mahindra World City, Veerapuram, Tamil Nadu - 603002",
-            calls: ["+91 73059 80807"],
-            mail: "m_city@fiestaindia.net",
-            mapLink: "https://maps.app.goo.gl/7sreBh2Y777LipL46"
-        },
-        {
-            title: "Hosur (Tamil nadu)",
-            description: "No.3/36/1, Gandhi Nagar, Thorapalli Agraharam, Hosur-635 109.",
-            calls: ["+91 733 877 7076"],
-            mail: "bts_hosur@fiestaindia.net",
-            mapLink: "https://maps.app.goo.gl/xMG8HDRK2Ux2Y9vz9"
-        },
-        {
-            title: "Gurgaon",
-            description: "H-103 GF, Sushant Shopping Arcade, Sushant Lok-1, Gurgaon-122009",
-            calls: ["+91 81488 22633"],
-            mail: "sales_gurgaon@fiestaindia.net",
-            mapLink: "https://maps.app.goo.gl/Cz8fyv8PDHfdUUiM6"
+            title: "Mumbai",
+            description: "# 109, 1st Floor, ACME Industrial Park, Goregaon East, Mumbai - 400 063.",
+            calls: ["+91 74188 85492"],
+            mail: "sales_mumbai@fiestaindia.net",
+            mapLink: "https://maps.app.goo.gl/hRzXwzYehaateDti7"
         },
         {
             title: "Pune",
@@ -119,6 +98,13 @@ const OfficeLocations = () => {
             calls: ["+91 82913 82323"],
             mail: "sales_pune@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/S439Q7RD5yHzxxQN7"
+        },
+        {
+            title: "Gurgaon",
+            description: "H-103 GF, Sushant Shopping Arcade, Sushant Lok-1, Gurgaon-122009",
+            calls: ["+91 81488 22633"],
+            mail: "sales_gurgaon@fiestaindia.net",
+            mapLink: "https://maps.app.goo.gl/Cz8fyv8PDHfdUUiM6"
         },
         {
             title: "Kolkata",
@@ -133,6 +119,20 @@ const OfficeLocations = () => {
             calls: ["+91 98840 13783"],
             mail: "rac_ord@fiestaindia.net",
             mapLink: "https://maps.app.goo.gl/AXH4hubFwTsP7kL46"
+        },
+        {
+            title: "Mahindra World City",
+            description: "58, Bharathiyar Street, near Mcity, Mahindra World City, Veerapuram, Tamil Nadu - 603002",
+            calls: ["+91 73059 80807"],
+            mail: "m_city@fiestaindia.net",
+            mapLink: "https://maps.app.goo.gl/7sreBh2Y777LipL46"
+        },
+        {
+            title: "Hosur (Tamil nadu)",
+            description: "No.3/36/1, Gandhi Nagar, Thorapalli Agraharam, Hosur-635 109.",
+            calls: ["+91 733 877 7076"],
+            mail: "bts_hosur@fiestaindia.net",
+            mapLink: "https://maps.app.goo.gl/xMG8HDRK2Ux2Y9vz9"
         }
     ];
 
