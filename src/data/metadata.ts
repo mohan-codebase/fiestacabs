@@ -262,7 +262,16 @@ export const PAGE_METADATA: Record<string, PageMetadata> = {
         description: "Reliable daily office pickup and drop service in Bangalore for corporate clients and working professionals. Fixed routes, verified drivers, transparent pricing. Monthly plans available.",
         keywords: "Daily Office Pickup and Drop Service in Bangalore"
     },
-
+    "/blog/office-pickup-and-drop-service-in-mumbai": {
+        title: "Daily Office Pickup and Drop Service in Mumbai | Fiesta Smart Mobility",
+        description: "Reliable daily office pickup and drop service in Mumbai for corporate clients and working professionals. Fixed routes, verified drivers, transparent pricing. Monthly plans available.",
+        keywords: "Office Pickup and Drop Service in Mumbai"
+    },
+    "/blog/office-pickup-and-drop-service-in-chennai": {
+        title: "Office Pickup and Drop Service in Chennai | Fiesta Smart Mobility",
+        description: "Reliable office pickup and drop service in Chennai for corporate clients and working professionals. Fixed routes, verified drivers, transparent pricing. Monthly plans available.",
+        keywords: "Office Pickup and Drop Service in Chennai"
+    }
 
 };
 
