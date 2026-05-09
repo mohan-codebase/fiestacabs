@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import Script from "next/script";
+
 import "./globals.css";
 import Header from "../components/layout/Header";
 import Footer from "../components/layout/Footer";
@@ -61,7 +63,7 @@ export default function RootLayout({
       >
         <ModalProvider>
           <Header />
-          <main className="min-h-screen">
+          <main className="min-h-screen"> 
             {children}
           </main>
           <Footer />
@@ -69,7 +71,26 @@ export default function RootLayout({
           <ScrollToTop />
           <GlobalModal />
         </ModalProvider>
+        <Script id="zsiqchat" strategy="afterInteractive">
+          {`
+            var $zoho=$zoho || {};
+            $zoho.salesiq = $zoho.salesiq || {
+                          widgetcode: "siq8dc889cb6780acd2bfd30fc91d07dcdb44bae525f81bfa66e5d65f1c2414880e016070d80d383b405e205f9433dd516b", 
+
+              values: {},
+              ready: function() {}
+            };
+          `}
+        </Script>
+        <Script
+          id="zsiqscript"
+          src="https://salesiq.zoho.in/widget"
+          strategy="afterInteractive"
+          defer
+        />
+
       </body>
+
     </html>
   );
 }
