@@ -167,6 +167,11 @@ const Banner = () => {
         .swiper-pagination {
             bottom: 180px !important;
         }
+        @media (max-width: 768px) {
+            .swiper-pagination {
+                bottom: 100px !important;
+            }
+        }
       `}</style>
         </section>
     );
