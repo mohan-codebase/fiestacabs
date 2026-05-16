@@ -43,7 +43,7 @@ const Banner = () => {
     ];
 
     return (
-        <section className="relative w-full h-[100vh] lg:h-[100vh] text-white overflow-hidden">
+        <section className="relative w-full h-[100vh] lg:h-[110vh] text-white overflow-hidden">
             <Swiper
                 spaceBetween={0}
                 centeredSlides={true}
@@ -64,9 +64,9 @@ const Banner = () => {
             >
                 {slides.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <div className="relative w-full h-full flex items-center justify-center">
+                        <div className="relative w-full h-[90vh] flex items-center justify-center">
                             {/* Background Image -desktop view*/}
-                            <div className="hidden lg:block absolute inset-0 z-0">
+                            <div className="hidden lg:block absolute inset-0 z-0 h-[120vh]">
                                 <Image
                                     src={slide.image}
                                     alt={slide.title}
@@ -165,7 +165,7 @@ const Banner = () => {
             color: white;
         }
         .swiper-pagination {
-            bottom: 40px !important;
+            bottom: 180px !important;
         }
       `}</style>
         </section>
